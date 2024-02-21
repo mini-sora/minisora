@@ -23,6 +23,13 @@ minisora 开源社区定位为由社区同学自发组织的开源社区（免�
 
 ## 相关工作
 
+### Diffusion Model
+| **Paper**  | **Links** |
+| ------------- | ------------- |
+| 1) Diffusion Models Beat GANs on Image Synthesis | [Paper](https://arxiv.org/abs/2105.05233), [Github](https://github.com/openai/guided-diffusion) |
+| 2) High-Resolution Image Synthesis with Latent Diffusion Models | [Paper](https://arxiv.org/abs/2112.10752), [Github](https://github.com/CompVis/latent-diffusion) |
+| 3) Elucidating the Design Space of Diffusion-Based Generative Models | [Paper](https://arxiv.org/abs/2206.00364), [Github](https://github.com/NVlabs/edm) |
+
 ### Diffusion Transformer
 | **Paper**  | **Links** |
 | ------------- | ------------- |
