@@ -29,6 +29,7 @@ minisora 开源社区定位为由社区同学自发组织的开源社区（免�
 | 1) **UViT**: All are Worth Words: A ViT Backbone for Diffusion Models | [Paper](https://arxiv.org/abs/2209.12152), [Github](https://github.com/baofff/U-ViT) |
 | 2) **DiT**: Scalable Diffusion Models with Transformers | [Paper](https://arxiv.org/abs/2212.09748), [Github](https://github.com/facebookresearch/DiT) |
 | 3) **SiT**: Exploring Flow and Diffusion-based Generative Models with Scalable Interpolant Transformers | [Paper](https://arxiv.org/abs/2401.08740), [Github](https://github.com/willisma/SiT) |
+| 4) **FiT**: Flexible Vision Transformer for Diffusion Model | [Paper](https://arxiv.org/abs/2402.12376), [Github](https://github.com/whlzy/FiT) |
 
 ### Video Generation
 | **Paper**  | **Links** |
