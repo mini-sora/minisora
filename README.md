@@ -30,7 +30,13 @@ minisora 开源社区定位为由社区同学自发组织的开源社区（免�
 
 ## Mini Sora 微信社区社区交流群
 
-![logo](https://github.com/mini-sora/minisora/assets/25839884/2ed6bad8-a454-4ace-a3af-a788c8fa333e)
+<div align="center">
+
+<img src="assets/qrcode.png" width="200"/>
+  <div>&nbsp;</div>
+  <div align="center">
+  </div>
+</div>
 
 
 ## 现有高质量资料
