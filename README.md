@@ -38,7 +38,7 @@ minisora 开源社区定位为由社区同学自发组织的开源社区（免�
 | 5) **MoCoGAN**: Decomposing Motion and Content for Video Generation | [Paper](https://arxiv.org/abs/1707.04993) |
 | 6) Adversarial Video Generation on Complex Datasets | [Paper](https://arxiv.org/abs/1907.06571) |
 | 7) Photorealistic Video Generation with Diffusion Models | [Paper](https://arxiv.org/abs/2312.06662) |
-| 8) **VideoGPT**: Video Generation using VQ-VAE and Transformers | [Paper](https://arxiv.org/abs/2104.10157) |
+| 8) **VideoGPT**: Video Generation using VQ-VAE and Transformers | [Paper](https://arxiv.org/abs/2104.10157), [Github](https://github.com/wilson1yan/VideoGPT) |
 
 ## Mini Sora 微信社区社区交流群
 
