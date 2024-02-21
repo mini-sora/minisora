@@ -9,10 +9,10 @@ minisora 开源社区定位为由社区同学自发组织的开源社区（免�
 
 - Diffussion Model
 
+## Mini Sora 微信社区社区交流群
 
-## 微信社区社区交流群
+![logo](https://github.com/mini-sora/minisora/assets/25839884/2ed6bad8-a454-4ace-a3af-a788c8fa333e)
 
-![image](https://github.com/mini-sora/minisora/assets/25839884/5e525627-d974-438b-bdd5-ac3aaa179b72)
 
 ## 社区贡献者
 
