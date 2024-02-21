@@ -1,4 +1,4 @@
-# Mini-Sora 社区
+# Mini Sora 社区
 
 <div align="center">
 
