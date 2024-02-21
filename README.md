@@ -22,11 +22,18 @@ minisora 开源社区定位为由社区同学自发组织的开源社区（免�
 
 ## 相关工作
 
+### 视频生成工作
 - [MoCoGAN: Decomposing Motion and Content for Video Generation](https://arxiv.org/abs/1707.04993)
 - [Adversarial Video Generation on Complex Datasets](https://arxiv.org/abs/1907.06571)
 - [VideoGPT: Video Generation using VQ-VAE and Transformers](https://arxiv.org/abs/2104.10157)
 - [Imagen Video: High Definition Video Generation with Diffusion Models](https://arxiv.org/abs/2210.02303)
 - [Photorealistic Video Generation with Diffusion Models](https://arxiv.org/abs/2312.06662)
+
+### Long-context 工作
+- [World Model on Million-Length Video And Language With RingAttention](https://arxiv.org/abs/2402.08268)
+- [Ring Attention with Blockwise Transformers for Near-Infinite Context](https://arxiv.org/abs/2310.01889)
+- [Extending LLMs' Context Window with 100 Samples](https://arxiv.org/abs/2401.07004)
+- [Efficient Streaming Language Models with Attention Sinks](https://arxiv.org/abs/2309.17453)
 
 ## Mini Sora 微信社区社区交流群
 
