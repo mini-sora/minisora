@@ -7,7 +7,9 @@ minisora 开源社区定位为由社区同学自发组织的开源社区（免�
 
 ## 论文共读计划
 
-- Diffussion Model
+- Sora 技术报告: [Video generation models as world simulators](https://openai.com/research/video-generation-models-as-world-simulators)
+- DiT: [Scalable Diffusion Models with Transformers](https://arxiv.org/abs/2212.09748)
+- Coming soon...
 
 ## Mini Sora 微信社区社区交流群
 
