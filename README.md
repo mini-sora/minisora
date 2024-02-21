@@ -11,6 +11,14 @@ minisora 开源社区定位为由社区同学自发组织的开源社区（免�
 - DiT: [Scalable Diffusion Models with Transformers](https://arxiv.org/abs/2212.09748)
 - Coming soon...
 
+## 相关工作
+
+- [MoCoGAN: Decomposing Motion and Content for Video Generation](https://arxiv.org/abs/1707.04993)
+- [Adversarial Video Generation on Complex Datasets](https://arxiv.org/abs/1907.06571)
+- [VideoGPT: Video Generation using VQ-VAE and Transformers](https://arxiv.org/abs/2104.10157)
+- [Imagen Video: High Definition Video Generation with Diffusion Models](https://arxiv.org/abs/2210.02303)
+- [Photorealistic Video Generation with Diffusion Models](https://arxiv.org/abs/2312.06662)
+
 ## Mini Sora 微信社区社区交流群
 
 ![logo](https://github.com/mini-sora/minisora/assets/25839884/2ed6bad8-a454-4ace-a3af-a788c8fa333e)
