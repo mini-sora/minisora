@@ -1,4 +1,4 @@
-# mini-sora
+# Mini-Sora 社区
 
 minisora 开源社区定位为由社区同学自发组织的开源社区（免费不收取任何费用、不割韭菜），minisora 计划探索实现 sora 的实现路径可发展可能
 
