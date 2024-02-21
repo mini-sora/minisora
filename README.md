@@ -1,5 +1,14 @@
 # Mini-Sora 社区
 
+<div align="center">
+
+<img src="assets/logo.jpg" width="600"/>
+  <div>&nbsp;</div>
+  <div align="center">
+  </div>
+</div>
+
+
 minisora 开源社区定位为由社区同学自发组织的开源社区（免费不收取任何费用、不割韭菜），minisora 计划探索实现 sora 的实现路径可发展可能
 
 - 将定期举办sora的圆桌和社区一起探讨可能性
@@ -21,7 +30,13 @@ minisora 开源社区定位为由社区同学自发组织的开源社区（免�
 
 ## Mini Sora 微信社区社区交流群
 
-![logo](https://github.com/mini-sora/minisora/assets/25839884/2ed6bad8-a454-4ace-a3af-a788c8fa333e)
+<div align="center">
+
+<img src="assets/qrcode.png" width="200"/>
+  <div>&nbsp;</div>
+  <div align="center">
+  </div>
+</div>
 
 
 ## 现有高质量资料
