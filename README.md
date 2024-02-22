@@ -101,10 +101,11 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 
 | **资料**  | **链接** |
 | ------------- | ------------- |
-| 1) Awesome-Video-Diffusion |  [Github](https://github.com/showlab/Awesome-Video-Diffusion) |
-| 2) Awesome-Video-Diffusion-Models |  [Github](https://github.com/ChenHsing/Awesome-Video-Diffusion-Models) |
-| 3) Video Generation Task in Papers With Code |  [Task](https://paperswithcode.com/task/video-generation) |
-| 4) 11 Best AI Video Generators of 2024 |  [Blog](https://www.synthesia.io/post/best-ai-video-generators) |
+| 1) A Survey on Generative Diffusion Model | [Paper](https://arxiv.org/pdf/2209.02646.pdf),   [Github](https://github.com/chq1155/A-Survey-on-Generative-Diffusion-Model) |
+| 2) Awesome-Video-Diffusion |  [Github](https://github.com/showlab/Awesome-Video-Diffusion) |
+| 3) Awesome-Video-Diffusion-Models |  [Github](https://github.com/ChenHsing/Awesome-Video-Diffusion-Models) |
+| 4) Video Generation Task in Papers With Code |  [Task](https://paperswithcode.com/task/video-generation) |
+| 5) 11 Best AI Video Generators of 2024 |  [Blog](https://www.synthesia.io/post/best-ai-video-generators) |
 
 ## 社区贡献者
 
