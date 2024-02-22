@@ -16,7 +16,7 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 
 ## 论文共读计划
 
-- **[Sora:Creating video from text](https://openai.com/sora) 技术报告**: [Video generation models as world simulators](https://openai.com/research/video-generation-models-as-world-simulators)
+- **[Sora: Creating video from text](https://openai.com/sora) 技术报告**: [Video generation models as world simulators](https://openai.com/research/video-generation-models-as-world-simulators)
 - **DiT**: [Scalable Diffusion Models with Transformers](https://arxiv.org/abs/2212.09748)
 - **Latte**: [Latte: Latent Diffusion Transformer for Video Generation](https://maxin-cn.github.io/latte_project/)
 - 更新中...
@@ -66,7 +66,7 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 | 5) The What, Why, and How of Context Length Extension Techniques in Large Language Models – A Detailed Survey | [Paper](https://arxiv.org/pdf/2401.07872) |
 
 ### Base Video Models
-| **Paper**  | **Links** |
+| **论文**  | **链接** |
 | ------------- | ------------- |
 | 1) ViViT: A Video Vision Transformer | [Paper](https://arxiv.org/pdf/2103.15691v2.pdf), [Github](https://github.com/google-research/scenic) |
 
