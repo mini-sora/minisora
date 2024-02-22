@@ -60,6 +60,13 @@ minisora 开源社区定位为由社区同学自发组织的开源社区（免�
 | 2) Ring Attention with Blockwise Transformers for Near-Infinite Context | [Paper](https://arxiv.org/abs/2310.01889), [Github](https://github.com/lhao499/RingAttention) |
 | 3) Extending LLMs' Context Window with 100 Samples | [Paper](https://arxiv.org/abs/2401.07004), [Github](https://github.com/GAIR-NLP/Entropy-ABF) |
 | 4) Efficient Streaming Language Models with Attention Sinks | [Paper](https://arxiv.org/abs/2309.17453), [Github](https://github.com/mit-han-lab/streaming-llm) |
+| 5) The What, Why, and How of Context Length Extension Techniques in Large Language Models – A Detailed Survey | [Paper](https://arxiv.org/pdf/2401.07872) |
+
+### Base Video Models
+| **Paper**  | **Links** |
+| ------------- | ------------- |
+| 1) ViViT: A Video Vision Transformer | [Paper](https://arxiv.org/pdf/2103.15691v2.pdf), [Github](https://github.com/google-research/scenic) |
+
 
 ## Mini Sora 微信社区社区交流群
 
