@@ -26,7 +26,7 @@ minisora 开源社区定位为由社区同学自发组织的开源社区（免�
 ### Diffusion Model
 | **Paper**  | **Links** |
 | ------------- | ------------- |
-| 1) Diffusion Models Beat GANs on Image Synthesis | [Paper](https://arxiv.org/abs/2105.05233), [Github](https://github.com/openai/guided-diffusion) |
+| 1) Diffusion Models Beat GANs on Image Synthesis | [Paper](https://arxiv.org/abs/2105.05233), [Github](https://github.com/openai/guided-diffusion)|
 | 2) High-Resolution Image Synthesis with Latent Diffusion Models | [Paper](https://arxiv.org/abs/2112.10752), [Github](https://github.com/CompVis/latent-diffusion) |
 | 3) Elucidating the Design Space of Diffusion-Based Generative Models | [Paper](https://arxiv.org/abs/2206.00364), [Github](https://github.com/NVlabs/edm) |
 | 4) Denoising Diffusion Probabilistic Models | [Paper](https://arxiv.org/abs/2006.11239), [Github](https://github.com/hojonathanho/diffusion) |
@@ -35,17 +35,16 @@ minisora 开源社区定位为由社区同学自发组织的开源社区（免�
 ### Diffusion Transformer
 | **Paper**  | **Links** |
 | ------------- | ------------- |
-| 1) **UViT**: All are Worth Words: A ViT Backbone for Diffusion Models | [Paper](https://arxiv.org/abs/2209.12152), [Github](https://github.com/baofff/U-ViT) |
-| 2) **DiT**: Scalable Diffusion Models with Transformers | [Paper](https://arxiv.org/abs/2212.09748), [Github](https://github.com/facebookresearch/DiT) |
-| 3) **SiT**: Exploring Flow and Diffusion-based Generative Models with Scalable Interpolant Transformers | [Paper](https://arxiv.org/abs/2401.08740), [Github](https://github.com/willisma/SiT) |
+| 1) **UViT**: All are Worth Words: A ViT Backbone for Diffusion Models | [Paper](https://arxiv.org/abs/2209.12152), [Github](https://github.com/baofff/U-ViT) [ModelScope](https://modelscope.cn/models?name=UVit&page=1) |
+| 2) **DiT**: Scalable Diffusion Models with Transformers | [Paper](https://arxiv.org/abs/2212.09748), [Github](https://github.com/facebookresearch/DiT)  [ModelScope](https://modelscope.cn/models?name=Dit&page=1)|
+| 3) **SiT**: Exploring Flow and Diffusion-based Generative Models with Scalable Interpolant Transformers | [Paper](https://arxiv.org/abs/2401.08740), [Github](https://github.com/willisma/SiT) [ModelScope](https://modelscope.cn/models/AI-ModelScope/SiT-XL-2-256/summary)|
 | 4) **FiT**: Flexible Vision Transformer for Diffusion Model | [Paper](https://arxiv.org/abs/2402.12376), [Github](https://github.com/whlzy/FiT) |
 
 ### Video Generation
 | **Paper**  | **Links** |
 | ------------- | ------------- |
-| 1) **Animatediff**: Animate Your Personalized Text-to-Image Diffusion Models without Specific Tuning | [Paper](https://arxiv.org/abs/2307.04725), [Github](https://github.com/guoyww/animatediff/) |
-| 2) **I2VGen-XL**: High-Quality Image-to-Video Synthesis via Cascaded Diffusion Models | [Paper](https://arxiv.org/abs/2311.04145), [Github](https://github.com/ali-vilab/i2vgen-xl) |
-| 3) **Animatediff**: Animate Your Personalized Text-to-Image Diffusion Models without Specific Tuning | [Paper](https://arxiv.org/abs/2307.04725), [Github](https://github.com/guoyww/animatediff/) |
+| 1) **Animatediff**: Animate Your Personalized Text-to-Image Diffusion Models without Specific Tuning | [Paper](https://arxiv.org/abs/2307.04725), [Github](https://github.com/guoyww/animatediff/) [ModelScope](https://modelscope.cn/models?name=Animatediff&page=1) |
+| 2) **I2VGen-XL**: High-Quality Image-to-Video Synthesis via Cascaded Diffusion Models | [Paper](https://arxiv.org/abs/2311.04145), [Github](https://github.com/ali-vilab/i2vgen-xl)  [ModelScope](https://modelscope.cn/models/iic/i2vgen-xl/summary)|
 | 4) **Imagen Video**: High Definition Video Generation with Diffusion Models | [Paper](https://arxiv.org/abs/2210.02303) |
 | 5) **MoCoGAN**: Decomposing Motion and Content for Video Generation | [Paper](https://arxiv.org/abs/1707.04993) |
 | 6) Adversarial Video Generation on Complex Datasets | [Paper](https://arxiv.org/abs/1907.06571) |
