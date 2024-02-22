@@ -18,6 +18,7 @@
 
 <p align="center">
     👋 join us on  <a href="https://cdn.vansin.top/minisora.jpg" target="_blank">WeChat</a>
+    <br/>
     Telegram：https://t.me/+XFQB9MyMa38yMzg1
 </p>
 
