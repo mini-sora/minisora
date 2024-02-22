@@ -8,7 +8,16 @@
   </div>
 </div>
 
+<div align="center">
+
 简体中文 | [English](README_EN.md)
+
+</div>
+
+<p align="center">
+    👋 加入我们的 <a href="https://cdn.vansin.top/minisora.jpg" target="_blank">微信社区</a>
+</p>
+
 
 Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**免费不收取任何费用、不割韭菜**），Mini Sora 计划探索 Sora 的实现路径和后续的发展方向：
 
