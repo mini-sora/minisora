@@ -8,7 +8,7 @@
   </div>
 </div>
 
-Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**免费不收取任何费用、不割韭菜**），Mini Sora 计划探索实现 Sora 的实现路径可发展可能：
+Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**免费不收取任何费用、不割韭菜**），Mini Sora 计划探索 Sora 的实现路径和后续的发展方向：
 
 - 将定期举办 Sora 的圆桌和社区一起探讨可能性
 - 视频生成的现有技术路径探讨
@@ -16,9 +16,9 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 
 ## 论文共读计划
 
-- Sora 技术报告: [Video generation models as world simulators](https://openai.com/research/video-generation-models-as-world-simulators)
-- DiT: [Scalable Diffusion Models with Transformers](https://arxiv.org/abs/2212.09748)
-- Latte: [Latte: Latent Diffusion Transformer for Video Generation](https://maxin-cn.github.io/latte_project/)
+- **[Sora:Creating video from text](https://openai.com/sora) 技术报告**: [Video generation models as world simulators](https://openai.com/research/video-generation-models-as-world-simulators)
+- **DiT**: [Scalable Diffusion Models with Transformers](https://arxiv.org/abs/2212.09748)
+- **Latte**: [Latte: Latent Diffusion Transformer for Video Generation](https://maxin-cn.github.io/latte_project/)
 - 更新中...
 
 ## 相关工作
