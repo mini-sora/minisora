@@ -8,7 +8,7 @@
   </div>
 </div>
 
-[简体中文](README.md) | [English 
+[简体中文](README.md) | English 
 
 The Mini Sora open-source community is positioned as a community-driven initiative (**free of charge and devoid of any exploitation**) organized spontaneously by community members. The Mini Sora project aims to explore the implementation path and future development direction of Sora.
 
