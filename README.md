@@ -16,6 +16,7 @@
 
 <p align="center">
     👋 加入我们的 <a href="https://cdn.vansin.top/minisora.jpg" target="_blank">微信社区</a>
+    Telegram：https://t.me/+XFQB9MyMa38yMzg1
 </p>
 
 
