@@ -81,6 +81,10 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 | ------------- | ------------- |
 | 1) ViViT: A Video Vision Transformer | [Paper](https://arxiv.org/pdf/2103.15691v2.pdf), [Github](https://github.com/google-research/scenic) |
 | 2) **VideoLDM**: Align your Latents: High-Resolution Video Synthesis with Latent Diffusion Models | [Paper](https://arxiv.org/abs/2304.08818) |
+| 3) **LVDM**: Latent Video Diffusion Models for High-Fidelity Long Video Generation | [Paper](https://arxiv.org/abs/2211.13221), [Github](https://github.com/YingqingHe/LVDM) |
+| 4) **LFDM**: Conditional Image-to-Video Generation with Latent Flow Diffusion Models | [Paper](https://arxiv.org/abs/2304.08818), [Github](https://github.com/nihaomiao/CVPR23_LFDM) |
+| 5) **MotionDirector**: Motion Customization of Text-to-Video Diffusion Models | [Paper](https://arxiv.org/abs/2310.08465), [Github](https://github.com/showlab/MotionDirector) |
+
 
 ## Mini Sora 微信社区社区交流群
 
