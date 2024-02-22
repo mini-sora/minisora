@@ -1,4 +1,4 @@
-# Mini Sora 社区
+# Mini Sora Community 
 
 <div align="center">
 
@@ -8,34 +8,36 @@
   </div>
 </div>
 
+</div>
+
 <div align="center">
 
-简体中文 | [English](README_EN.md)
+  [简体中文](README.md) | English
 
 </div>
 
+
 <p align="center">
-    👋 加入我们的 <a href="https://cdn.vansin.top/minisora.jpg" target="_blank">微信社区</a>
+    👋 join us on  <a href="https://cdn.vansin.top/minisora.jpg" target="_blank">WeChat</a>
 </p>
 
+The Mini Sora open-source community is positioned as a community-driven initiative (**free of charge and devoid of any exploitation**) organized spontaneously by community members. The Mini Sora project aims to explore the implementation path and future development direction of Sora.
 
-Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**免费不收取任何费用、不割韭菜**），Mini Sora 计划探索 Sora 的实现路径和后续的发展方向：
-
-- 将定期举办 Sora 的圆桌和社区一起探讨可能性
-- 视频生成的现有技术路径探讨
+- Regular roundtable discussions will be held with the Sora team and the community to explore possibilities.
+- We will delve into existing technological pathways for video generation.
 
 
-## 论文共读计划
+## Paper Reading Program
 
-- **[Sora: Creating video from text](https://openai.com/sora) 技术报告**: [Video generation models as world simulators](https://openai.com/research/video-generation-models-as-world-simulators)
+- **[Sora: Creating video from text](https://openai.com/sora) Technical Report**: [Video generation models as world simulators](https://openai.com/research/video-generation-models-as-world-simulators)
 - **DiT**: [Scalable Diffusion Models with Transformers](https://arxiv.org/abs/2212.09748)
 - **Latte**: [Latte: Latent Diffusion Transformer for Video Generation](https://maxin-cn.github.io/latte_project/)
-- 更新中...
+- Updating...
 
-## 相关工作
+## Related Work
 
 ### Diffusion Model
-| **论文**  | **链接** |
+| **Paper** | **Link** |
 | ------------- | ------------- |
 | 1) **Guided-Diffusion**: Diffusion Models Beat GANs on Image Synthesis | [Paper](https://arxiv.org/abs/2105.05233), [Github](https://github.com/openai/guided-diffusion)|
 | 2) **Latent Diffusion**: High-Resolution Image Synthesis with Latent Diffusion Models | [Paper](https://arxiv.org/abs/2112.10752), [Github](https://github.com/CompVis/latent-diffusion) |
@@ -45,7 +47,7 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 | 6) **Score-Based Diffusion**: Score-Based Generative Modeling through Stochastic Differential Equations | [Paper](https://arxiv.org/abs/2011.13456), [Github](https://github.com/yang-song/score_sde), [Blog](https://yang-song.net/blog/2021/score) |
 
 ### Diffusion Transformer
-| **论文**  | **链接** |
+| **Paper** | **Link** |
 | ------------- | ------------- |
 | 1) **UViT**: All are Worth Words: A ViT Backbone for Diffusion Models | [Paper](https://arxiv.org/abs/2209.12152), [Github](https://github.com/baofff/U-ViT), [ModelScope](https://modelscope.cn/models?name=UVit&page=1) |
 | 2) **DiT**: Scalable Diffusion Models with Transformers | [Paper](https://arxiv.org/abs/2212.09748), [Github](https://github.com/facebookresearch/DiT),  [ModelScope](https://modelscope.cn/models?name=Dit&page=1)|
@@ -54,7 +56,7 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 | 5) **k-diffusion**: Scalable High-Resolution Pixel-Space Image Synthesis with Hourglass Diffusion Transformers | [Paper](https://arxiv.org/pdf/2401.11605v1.pdf), [Github](https://github.com/crowsonkb/k-diffusion) |
 
 ### Video Generation
-| **论文**  | **链接** |
+| **Paper** | **Link** |
 | ------------- | ------------- |
 | 1) **Animatediff**: Animate Your Personalized Text-to-Image Diffusion Models without Specific Tuning | [Paper](https://arxiv.org/abs/2307.04725), [Github](https://github.com/guoyww/animatediff/), [ModelScope](https://modelscope.cn/models?name=Animatediff&page=1) |
 | 2) **I2VGen-XL**: High-Quality Image-to-Video Synthesis via Cascaded Diffusion Models | [Paper](https://arxiv.org/abs/2311.04145), [Github](https://github.com/ali-vilab/i2vgen-xl),  [ModelScope](https://modelscope.cn/models/iic/i2vgen-xl/summary)|
@@ -68,7 +70,7 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 | 11) **VideoPoet**: A Large Language Model for Zero-Shot Video Generation | [Paper](https://arxiv.org/abs/2312.14125) 
 
 ### Long-context
-| **论文**  | **链接** |
+| **Paper** | **Link** |
 | ------------- | ------------- |
 | 1) World Model on Million-Length Video And Language With RingAttention | [Paper](https://arxiv.org/abs/2402.08268), [Github](https://github.com/LargeWorldModel/LWM) |
 | 2) Ring Attention with Blockwise Transformers for Near-Infinite Context | [Paper](https://arxiv.org/abs/2310.01889), [Github](https://github.com/lhao499/RingAttention) |
@@ -77,12 +79,12 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 | 5) The What, Why, and How of Context Length Extension Techniques in Large Language Models – A Detailed Survey | [Paper](https://arxiv.org/pdf/2401.07872) |
 
 ### Base Video Models
-| **论文**  | **链接** |
+| **Paper** | **Link** |
 | ------------- | ------------- |
 | 1) ViViT: A Video Vision Transformer | [Paper](https://arxiv.org/pdf/2103.15691v2.pdf), [Github](https://github.com/google-research/scenic) |
 | 2) **VideoLDM**: Align your Latents: High-Resolution Video Synthesis with Latent Diffusion Models | [Paper](https://arxiv.org/abs/2304.08818) |
 
-## Mini Sora 微信社区社区交流群
+## Mini Sora WeChat Community Exchange Group
 
 <div align="center">
 
@@ -93,14 +95,9 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 </div>
 
 
-## 现有高质量资料
+## Existing high-quality resources
 
-| **资料**  | **链接** |
-| ------------- | ------------- |
-| 1) Awesome-Video-Diffusion |  [Github](https://github.com/showlab/Awesome-Video-Diffusion) |
-| 2) Awesome-Video-Diffusion-Models |  [Github](https://github.com/ChenHsing/Awesome-Video-Diffusion-Models) |
-| 3) Video Generation Task in Papers With Code |  [Task](https://paperswithcode.com/task/video-generation) |
-| 4) 11 Best AI Video Generators of 2024 |  [Blog](https://www.synthesia.io/post/best-ai-video-generators) |
 
-## 社区贡献者
+
+## Community contributors
 
