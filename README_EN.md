@@ -36,8 +36,9 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 
 ## Related Work
 
+| <h2>Related Work</h2> | |
+| :------------- | :------------- |
 | <h3>Diffusion Models</h3> |  |
-| ------------- | ------------- |
 | **Paper** | **Link** |
 | 1) **Guided-Diffusion**: Diffusion Models Beat GANs on Image Synthesis | [Paper](https://arxiv.org/abs/2105.05233), [Github](https://github.com/openai/guided-diffusion)|
 | 2) **Latent Diffusion**: High-Resolution Image Synthesis with Latent Diffusion Models | [Paper](https://arxiv.org/abs/2112.10752), [Github](https://github.com/CompVis/latent-diffusion) |
