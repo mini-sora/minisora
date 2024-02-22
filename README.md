@@ -29,6 +29,8 @@ minisora 开源社区定位为由社区同学自发组织的开源社区（免�
 | 1) Diffusion Models Beat GANs on Image Synthesis | [Paper](https://arxiv.org/abs/2105.05233), [Github](https://github.com/openai/guided-diffusion) |
 | 2) High-Resolution Image Synthesis with Latent Diffusion Models | [Paper](https://arxiv.org/abs/2112.10752), [Github](https://github.com/CompVis/latent-diffusion) |
 | 3) Elucidating the Design Space of Diffusion-Based Generative Models | [Paper](https://arxiv.org/abs/2206.00364), [Github](https://github.com/NVlabs/edm) |
+| 4) Denoising Diffusion Probabilistic Models | [Paper](https://arxiv.org/abs/2006.11239), [Github](https://github.com/hojonathanho/diffusion) |
+| 5) Score-Based Generative Modeling through Stochastic Differential Equations | [Paper](https://arxiv.org/abs/2011.13456), [Github](https://github.com/yang-song/score_sde) |
 
 ### Diffusion Transformer
 | **Paper**  | **Links** |
