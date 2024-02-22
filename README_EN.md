@@ -8,7 +8,18 @@
   </div>
 </div>
 
-[简体中文](README.md) | English 
+</div>
+
+<div align="center">
+
+  [简体中文](README.md) | English
+
+</div>
+
+
+<p align="center">
+    👋 join us on  <a href="https://cdn.vansin.top/minisora.jpg" target="_blank">WeChat</a>
+</p>
 
 The Mini Sora open-source community is positioned as a community-driven initiative (**free of charge and devoid of any exploitation**) organized spontaneously by community members. The Mini Sora project aims to explore the implementation path and future development direction of Sora.
 
