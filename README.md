@@ -8,7 +8,16 @@
   </div>
 </div>
 
+<div align="center">
+
 简体中文 | [English](README_EN.md)
+
+</div>
+
+<p align="center">
+    👋 加入我们的 <a href="https://cdn.vansin.top/minisora.jpg" target="_blank">微信社区</a>
+</p>
+
 
 Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**免费不收取任何费用、不割韭菜**），Mini Sora 计划探索 Sora 的实现路径和后续的发展方向：
 
@@ -86,7 +95,12 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 
 ## 现有高质量资料
 
-
+| **资料**  | **链接** |
+| ------------- | ------------- |
+| 1) Awesome-Video-Diffusion |  [Github](https://github.com/showlab/Awesome-Video-Diffusion) |
+| 2) Awesome-Video-Diffusion-Models |  [Github](https://github.com/ChenHsing/Awesome-Video-Diffusion-Models) |
+| 3) Video Generation Task in Papers With Code |  [Task](https://paperswithcode.com/task/video-generation) |
+| 4) 11 Best AI Video Generators of 2024 |  [Blog](https://www.synthesia.io/post/best-ai-video-generators) |
 
 ## 社区贡献者
 
