@@ -31,7 +31,7 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 | 3) **EDM**: Elucidating the Design Space of Diffusion-Based Generative Models | [Paper](https://arxiv.org/abs/2206.00364), [Github](https://github.com/NVlabs/edm) |
 | 4) **DDPM**: Denoising Diffusion Probabilistic Models | [Paper](https://arxiv.org/abs/2006.11239), [Github](https://github.com/hojonathanho/diffusion) |
 | 5) **DDIM**: Denoising Diffusion Implicit Models | [Paper](https://arxiv.org/abs/2010.02502), [Github](https://github.com/ermongroup/ddim) |
-| 6) **Score-Based Diffusion**: Score-Based Generative Modeling through Stochastic Differential Equations | [Paper](https://arxiv.org/abs/2011.13456), [Github](https://github.com/yang-song/score_sde) |
+| 6) **Score-Based Diffusion**: Score-Based Generative Modeling through Stochastic Differential Equations | [Paper](https://arxiv.org/abs/2011.13456), [Github](https://github.com/yang-song/score_sde), [Blog](https://yang-song.net/blog/2021/score) |
 
 ### Diffusion Transformer
 | **论文**  | **链接** |
