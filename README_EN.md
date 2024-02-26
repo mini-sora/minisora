@@ -45,6 +45,7 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 | 4) **DDPM**: Denoising Diffusion Probabilistic Models | [Paper](https://arxiv.org/abs/2006.11239), [Github](https://github.com/hojonathanho/diffusion) |
 | 5) **DDIM**: Denoising Diffusion Implicit Models | [Paper](https://arxiv.org/abs/2010.02502), [Github](https://github.com/ermongroup/ddim) |
 | 6) **Score-Based Diffusion**: Score-Based Generative Modeling through Stochastic Differential Equations | [Paper](https://arxiv.org/abs/2011.13456), [Github](https://github.com/yang-song/score_sde), [Blog](https://yang-song.net/blog/2021/score) |
+| 7) **Würstchen**: An efficient architecture for large-scale text-to-image diffusion models | [Paper](https://openreview.net/forum?id=gU58d5QeGv), [Github](https://github.com/Stability-AI/StableCascade), [Blog](https://stability.ai/news/introducing-stable-cascade) |
 | <h3>Diffusion Transformer</h3> | |
 | 1) **UViT**: All are Worth Words: A ViT Backbone for Diffusion Models | [Paper](https://arxiv.org/abs/2209.12152), [Github](https://github.com/baofff/U-ViT), [ModelScope](https://modelscope.cn/models?name=UVit&page=1) |
 | 2) **DiT**: Scalable Diffusion Models with Transformers | [Paper](https://arxiv.org/abs/2212.09748), [Github](https://github.com/facebookresearch/DiT),  [ModelScope](https://modelscope.cn/models?name=Dit&page=1)|
@@ -85,6 +86,15 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 
 ## Existing high-quality resources
 
+| **Resources**  | **Link** |
+| ------------- | ------------- |
+| 1) Datawhale - AI视频生成学习 | [Feishu doc](https://datawhaler.feishu.cn/docx/G4LkdaffWopVbwxT1oHceiv9n0c) | 
+| 2) A Survey on Generative Diffusion Model | [Paper](https://arxiv.org/pdf/2209.02646.pdf),   [Github](https://github.com/chq1155/A-Survey-on-Generative-Diffusion-Model) |
+| 3) Awesome-Video-Diffusion-Models | [Paper](https://arxiv.org/pdf/2310.10647.pdf ), [Github](https://github.com/ChenHsing/Awesome-Video-Diffusion-Models) |
+| 4) Awesome-Text-To-Video：A Survey on Text-to-Video Generation/Synthesis  | [Github](https://github.com/jianzhnie/awesome-text-to-video)
+| 5) video-generation-survey: A reading list of video generation| [Github](https://github.com/yzhang2016/video-generation-survey)
+| 6) Awesome-Video-Diffusion |  [Github](https://github.com/showlab/Awesome-Video-Diffusion) |
+| 7) Video Generation Task in Papers With Code |  [Task](https://paperswithcode.com/task/video-generation) |
 
 
 ## Community contributors
