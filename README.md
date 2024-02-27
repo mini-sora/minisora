@@ -118,7 +118,8 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 </div>
 
 ## 社区贡献者
-
+<!-- readme: collaborators,contributors -start -->
+<!-- readme: collaborators,contributors -end -->
 <a href="https://github.com/mini-sora/minisora/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=mini-sora/minisora" />
 </a>
