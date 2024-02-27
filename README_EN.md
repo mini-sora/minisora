@@ -105,3 +105,6 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 
 ## Community contributors
 
+<a href="https://github.com/mini-sora/minisora/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=mini-sora/minisora" />
+</a>
