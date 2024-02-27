@@ -90,7 +90,9 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 | 5) video-generation-survey: A reading list of video generation| [Github](https://github.com/yzhang2016/video-generation-survey)
 | 6) Awesome-Video-Diffusion |  [Github](https://github.com/showlab/Awesome-Video-Diffusion) |
 | 7) Video Generation Task in Papers With Code |  [Task](https://paperswithcode.com/task/video-generation) |
-
+| <h3>Others</h3> | |
+| **Resources**  | **Link** |
+| 1) **OpenDiT**: An Easy, Fast and Memory-Efficent System for DiT Training and Inference |  [Github](https://github.com/showlab/Awesome-Video-Diffusion) |
 
 ## Mini Sora WeChat Community Exchange Group
 
