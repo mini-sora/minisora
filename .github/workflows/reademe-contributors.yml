@@ -11,6 +11,6 @@ jobs:
     name: A job to automate contrib in readme
     steps:
       - name: Contribute List
-        uses: mini-sora/contributors-readme-action@v2.3.4
+        uses: mini-sora/minisora@v2.3.4
         # env:
         #   GITHUB_TOKEN: ${{ secrets.CONTRIBUTORS_TOKEN }}
