@@ -4,6 +4,7 @@ on:
       - main
 
 name: Generate a list of contributors
+# https://wiki.eryajf.net/pages/47a507/
 
 jobs:
   contrib-readme-en-job:
@@ -11,6 +12,6 @@ jobs:
     name: A job to automate contrib in readme
     steps:
       - name: Contribute List
-        uses: mini-sora/minisora@v2.3.4
+        uses: minisora/contributors-readme-action@v2.3.4
         # env:
         #   GITHUB_TOKEN: ${{ secrets.CONTRIBUTORS_TOKEN }}
