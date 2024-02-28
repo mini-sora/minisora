@@ -34,6 +34,9 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 - **Latte**: [Latte: Latent Diffusion Transformer for Video Generation](https://maxin-cn.github.io/latte_project/)
 - Updating...
 
+## Hot News
+- [**OpenDiT**: An Easy, Fast and Memory-Efficent System for DiT Training and Inference](https://github.com/NUS-HPC-AI-Lab/OpenDiT)
+
 ## Related Work
 
 
