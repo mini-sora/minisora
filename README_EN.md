@@ -75,6 +75,7 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 | 9) **MCVD**: Masked Conditional Video Diffusion for Prediction, Generation, and Interpolation | [Paper](https://arxiv.org/abs/2205.09853), [Github](https://github.com/voletiv/mcvd-pytorch), [Project](https://mask-cond-video-diffusion.github.io/), [Blog](https://ajolicoeur.ca/2022/05/22/masked-conditional-video-diffusion/) |
 | 10) **VideoPoet**: A Large Language Model for Zero-Shot Video Generation | [Paper](https://arxiv.org/abs/2312.14125) |
 | 11) **MAGVIT**: Masked Generative Video Transformer | [Paper](https://arxiv.org/abs/2212.05199), [Github](https://github.com/google-research/magvit), [Project](https://magvit.cs.cmu.edu/), [Colab](https://github.com/google-research/magvit/blob/main) |
+| 12) **EMO**: Emote Portrait Alive - Generating Expressive Portrait Videos with Audio2Video Diffusion Model under Weak Conditions | [Paper](https://arxiv.org/abs/2402.17485), [Github](https://github.com/HumanAIGC/EMO), [Project](https://humanaigc.github.io/emote-portrait-alive/) |
 | <h3>Long-context</h3> | |
 | **Paper** | **Link** |
 | 1) World Model on Million-Length Video And Language With RingAttention | [Paper](https://arxiv.org/abs/2402.08268), [Github](https://github.com/LargeWorldModel/LWM) |
