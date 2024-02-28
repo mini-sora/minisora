@@ -114,6 +114,7 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 | 5) video-generation-survey: A reading list of video generation| [Github](https://github.com/yzhang2016/video-generation-survey)
 | 6) Awesome-Video-Diffusion |  [Github](https://github.com/showlab/Awesome-Video-Diffusion) |
 | 7) Video Generation Task in Papers With Code |  [Task](https://paperswithcode.com/task/video-generation) |
+| 8) Sora: A Review on Background, Technology, Limitations, and Opportunities of Large Vision Models |  [Paper](https://arxiv.org/pdf/2402.17177.pdf) |
 
 ## Mini Sora 微信社区社区交流群
 
