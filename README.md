@@ -51,6 +51,9 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 - **Latte**: [Latte: Latent Diffusion Transformer for Video Generation](https://maxin-cn.github.io/latte_project/)
 - 更新中...
 
+## 最近更新
+- [**OpenDiT**: An Easy, Fast and Memory-Efficent System for DiT Training and Inference](https://github.com/NUS-HPC-AI-Lab/OpenDiT)
+
 ## 相关工作
 
 | <h3>Diffusion Model</h3> |  |
