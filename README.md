@@ -40,7 +40,7 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 
 - **[Sora: Creating video from text](https://openai.com/sora) 技术报告**: [Video generation models as world simulators](https://openai.com/research/video-generation-models-as-world-simulators)
 - **DiT**: [Scalable Diffusion Models with Transformers](https://arxiv.org/abs/2212.09748)
-- **Latte**: [Latte: Latent Diffusion Transformer for Video Generation](https://maxin-cn.github.io/latte_project/)
+- **Latte**: [Latte: Latent Diffusion Transformer for Video Generation](https://maxin-cn.github.io/latte_project/)  [**latte论文精读翻译.pdf**](./notes/latte%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AF%BB%E7%BF%BB%E8%AF%91.pdf)
 - 更新中...
   
 ### 论文共读发表者募集
