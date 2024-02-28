@@ -53,7 +53,7 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 | 4) **DDPM**: Denoising Diffusion Probabilistic Models | [Paper](https://arxiv.org/abs/2006.11239), [Github](https://github.com/hojonathanho/diffusion) |
 | 5) **DDIM**: Denoising Diffusion Implicit Models | [Paper](https://arxiv.org/abs/2010.02502), [Github](https://github.com/ermongroup/ddim) |
 | 6) **Score-Based Diffusion**: Score-Based Generative Modeling through Stochastic Differential Equations | [Paper](https://arxiv.org/abs/2011.13456), [Github](https://github.com/yang-song/score_sde), [Blog](https://yang-song.net/blog/2021/score) |
-| 7) **Würstchen**: An efficient architecture for large-scale text-to-image diffusion models | [Paper](https://openreview.net/forum?id=gU58d5QeGv), [Github](https://github.com/Stability-AI/StableCascade), [Blog](https://stability.ai/news/introducing-stable-cascade) |
+| 7) **Stable Cascade**: Würstchen: An efficient architecture for large-scale text-to-image diffusion models | [Paper](https://openreview.net/forum?id=gU58d5QeGv), [Github](https://github.com/Stability-AI/StableCascade), [Blog](https://stability.ai/news/introducing-stable-cascade) |
 | <h3>Diffusion Transformer</h3> | |
 | **Paper** | **Link** |
 | 1) **UViT**: All are Worth Words: A ViT Backbone for Diffusion Models | [Paper](https://arxiv.org/abs/2209.12152), [Github](https://github.com/baofff/U-ViT), [ModelScope](https://modelscope.cn/models?name=UVit&page=1) |
@@ -69,13 +69,14 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 | 3) **Imagen Video**: High Definition Video Generation with Diffusion Models | [Paper](https://arxiv.org/abs/2210.02303) |
 | 4) **MoCoGAN**: Decomposing Motion and Content for Video Generation | [Paper](https://arxiv.org/abs/1707.04993) |
 | 5) Adversarial Video Generation on Complex Datasets | [Paper](https://arxiv.org/abs/1907.06571) |
-| 6) Photorealistic Video Generation with Diffusion Models | [Paper](https://arxiv.org/abs/2312.06662) |
+| 6) **W.A.L.T**: Photorealistic Video Generation with Diffusion Models | [Paper](https://arxiv.org/abs/2312.06662) [Project](https://walt-video-diffusion.github.io/)|
 | 7) **VideoGPT**: Video Generation using VQ-VAE and Transformers | [Paper](https://arxiv.org/abs/2104.10157), [Github](https://github.com/wilson1yan/VideoGPT) |
 | 8) Video Diffusion Models | [Paper](https://arxiv.org/abs/2204.03458), [Github](https://github.com/lucidrains/video-diffusion-pytorch), [Project](https://video-diffusion.github.io/)|
 | 9) **MCVD**: Masked Conditional Video Diffusion for Prediction, Generation, and Interpolation | [Paper](https://arxiv.org/abs/2205.09853), [Github](https://github.com/voletiv/mcvd-pytorch), [Project](https://mask-cond-video-diffusion.github.io/), [Blog](https://ajolicoeur.ca/2022/05/22/masked-conditional-video-diffusion/) |
 | 10) **VideoPoet**: A Large Language Model for Zero-Shot Video Generation | [Paper](https://arxiv.org/abs/2312.14125) |
 | 11) **MAGVIT**: Masked Generative Video Transformer | [Paper](https://arxiv.org/abs/2212.05199), [Github](https://github.com/google-research/magvit), [Project](https://magvit.cs.cmu.edu/), [Colab](https://github.com/google-research/magvit/blob/main) |
 | 12) **EMO**: Emote Portrait Alive - Generating Expressive Portrait Videos with Audio2Video Diffusion Model under Weak Conditions | [Paper](https://arxiv.org/abs/2402.17485), [Github](https://github.com/HumanAIGC/EMO), [Project](https://humanaigc.github.io/emote-portrait-alive/) |
+| 13) **SimDA**: Simple Diffusion Adapter for Efficient Video Generation | [Paper](https://arxiv.org/pdf/2308.09710.pdf), [Github](https://github.com/ChenHsing/SimDA), [Project](https://chenhsing.github.io/SimDA/) |
 | <h3>Long-context</h3> | |
 | **Paper** | **Link** |
 | 1) World Model on Million-Length Video And Language With RingAttention | [Paper](https://arxiv.org/abs/2402.08268), [Github](https://github.com/LargeWorldModel/LWM) |
@@ -99,6 +100,7 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 | 5) video-generation-survey: A reading list of video generation| [Github](https://github.com/yzhang2016/video-generation-survey)
 | 6) Awesome-Video-Diffusion |  [Github](https://github.com/showlab/Awesome-Video-Diffusion) |
 | 7) Video Generation Task in Papers With Code |  [Task](https://paperswithcode.com/task/video-generation) |
+| 8) Sora: A Review on Background, Technology, Limitations, and Opportunities of Large Vision Models |  [Paper](https://arxiv.org/pdf/2402.17177.pdf) |
 
 ## Mini Sora WeChat Community Exchange Group
 
