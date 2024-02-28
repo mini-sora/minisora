@@ -95,7 +95,6 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 | 6) Awesome-Video-Diffusion |  [Github](https://github.com/showlab/Awesome-Video-Diffusion) |
 | 7) Video Generation Task in Papers With Code |  [Task](https://paperswithcode.com/task/video-generation) |
 
-
 ## Mini Sora WeChat Community Exchange Group
 
 <div align="center">
