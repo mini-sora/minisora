@@ -77,7 +77,7 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 | 3) **Imagen Video**: High Definition Video Generation with Diffusion Models | [Paper](https://arxiv.org/abs/2210.02303) |
 | 4) **MoCoGAN**: Decomposing Motion and Content for Video Generation | [Paper](https://arxiv.org/abs/1707.04993) |
 | 5) Adversarial Video Generation on Complex Datasets | [Paper](https://arxiv.org/abs/1907.06571) |
-| 6) **W.A.L.T**:Photorealistic Video Generation with Diffusion Models | [Paper](https://arxiv.org/abs/2312.06662) [Project](https://walt-video-diffusion.github.io/)|
+| 6) **W.A.L.T**: Photorealistic Video Generation with Diffusion Models | [Paper](https://arxiv.org/abs/2312.06662) [Project](https://walt-video-diffusion.github.io/)|
 | 7) **VideoGPT**: Video Generation using VQ-VAE and Transformers | [Paper](https://arxiv.org/abs/2104.10157), [Github](https://github.com/wilson1yan/VideoGPT) |
 | 8) Video Diffusion Models | [Paper](https://arxiv.org/abs/2204.03458), [Github](https://github.com/lucidrains/video-diffusion-pytorch), [Project](https://video-diffusion.github.io/)|
 | 9) **MCVD**: Masked Conditional Video Diffusion for Prediction, Generation, and Interpolation | [Paper](https://arxiv.org/abs/2205.09853), [Github](https://github.com/voletiv/mcvd-pytorch), [Project](https://mask-cond-video-diffusion.github.io/), [Blog](https://ajolicoeur.ca/2022/05/22/masked-conditional-video-diffusion/) |
