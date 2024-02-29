@@ -40,6 +40,7 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 
 ## Hot News
 - [**OpenDiT**: An Easy, Fast and Memory-Efficent System for DiT Training and Inference](https://github.com/NUS-HPC-AI-Lab/OpenDiT)
+- [**Large-DiT**: Large Diffusion Transformer](https://github.com/Alpha-VLLM/LLaMA2-Accessory/tree/main/Large-DiT)
 
 ## Related Work
 
