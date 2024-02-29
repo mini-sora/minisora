@@ -8,7 +8,6 @@
   </div>
 </div>
 
-</div>
 
 <div align="center">
 
@@ -36,7 +35,7 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 
 ### Recruitment of Presenters
 - [**DiT** Paper](https://github.com/orgs/mini-sora/discussions/39)
-- [**Latte** Paper](https://github.com/orgs/mini-sora/discussions/38)
+- [**Latte** Paper](https://github.com/orgs/mini-sora/discussions/38)  [**Intensive reading and translation of latte.pdf in Chinese**](./notes/latte%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AF%BB%E7%BF%BB%E8%AF%91.pdf)    [**Latte Thesis Interpretation in Chinese**](./notes/Latte.md)
 
 ## Hot News
 - [**OpenDiT**: An Easy, Fast and Memory-Efficent System for DiT Training and Inference](https://github.com/NUS-HPC-AI-Lab/OpenDiT)
@@ -94,7 +93,7 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 | 5) **MotionDirector**: Motion Customization of Text-to-Video Diffusion Models | [Paper](https://arxiv.org/abs/2310.08465), [Github](https://github.com/showlab/MotionDirector) |
 | <h3>Existing high-quality resources</h3> | |
 | **Resources**  | **Link** |
-| 1) Datawhale - AI视频生成学习 | [Feishu doc](https://datawhaler.feishu.cn/docx/G4LkdaffWopVbwxT1oHceiv9n0c) | 
+| 1) Datawhale - AI视频生成学习 | [Feishu doc](https://datawhaler.feishu.cn/docx/G4LkdaffWopVbwxT1oHceiv9n0c) |
 | 2) A Survey on Generative Diffusion Model | [Paper](https://arxiv.org/pdf/2209.02646.pdf),   [Github](https://github.com/chq1155/A-Survey-on-Generative-Diffusion-Model) |
 | 3) Awesome-Video-Diffusion-Models | [Paper](https://arxiv.org/pdf/2310.10647.pdf ), [Github](https://github.com/ChenHsing/Awesome-Video-Diffusion-Models) |
 | 4) Awesome-Text-To-Video：A Survey on Text-to-Video Generation/Synthesis  | [Github](https://github.com/jianzhnie/awesome-text-to-video)
@@ -113,6 +112,15 @@ The Mini Sora open-source community is positioned as a community-driven initiati
   </div>
 </div>
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=mini-sora/minisora&type=Date)](https://star-history.com/#mini-sora/minisora&Date)
+
+## How to Contribute to the Mini Sora Community
+
+We greatly appreciate your contributions to the Mini Sora open-source community and helping us make it even better than it is now!
+
+For more details, please refer to the [Contribution Guidelines](./CONTRIBUTING_EN.md)
 
 ## Community contributors
 
