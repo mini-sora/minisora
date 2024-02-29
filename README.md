@@ -18,7 +18,6 @@
     👋 加入我们的 <a href="https://cdn.vansin.top/minisora.jpg" target="_blank">微信社区</a>
 </p>
 
-
 Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**免费不收取任何费用、不割韭菜**），Mini Sora 计划探索 Sora 的实现路径和后续的发展方向：
 
 - 将定期举办 Sora 的圆桌和社区一起探讨可能性
@@ -27,6 +26,7 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 ## 论文复现小组
 
 复现论文主要有
+
 - DiT with OpenDiT
 - SiT
 - W.A.L.T
@@ -42,13 +42,15 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 </div>
 
 ## 近期圆桌讨论
+
 ### Sora 夜谈之Video Diffusion 综述
+
 **主讲**: 邢桢 复旦大学视觉与学习实验室博士生
 
 **直播看点**: 图像生成扩散模型基础/文生视频扩散模型的发展/浅谈 Sora 背后技术和复现挑战
 
 **在线直播时间**: 02/28 20:00-21:00
-  
+
 **回放微信视频号搜索**: 聊聊 Sora 之 Video Diffusion 综述
 
 **PPT**: [飞书下载链接](https://aicarrier.feishu.cn/file/Ds0BbCAo6oTazdxxo3Zciw1Nnne)
@@ -57,14 +59,16 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 
 - **[Sora: Creating video from text](https://openai.com/sora) 技术报告**: [Video generation models as world simulators](https://openai.com/research/video-generation-models-as-world-simulators)
 - **DiT**: [Scalable Diffusion Models with Transformers](https://arxiv.org/abs/2212.09748)
-- **Latte**: [Latte: Latent Diffusion Transformer for Video Generation](https://maxin-cn.github.io/latte_project/)  [**latte论文精读翻译.pdf**](./notes/latte%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AF%BB%E7%BF%BB%E8%AF%91.pdf)
+- **Latte**: [Latte: Latent Diffusion Transformer for Video Generation](https://maxin-cn.github.io/latte_project/)  [**latte论文精读翻译.pdf**](./notes/latte%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AF%BB%E7%BF%BB%E8%AF%91.pdf)    [**Latte论文解读**](./notes/Latte.md)
 - 更新中...
-  
+
 ### 论文共读发表者募集
+
 - [**DiT** Paper](https://github.com/orgs/mini-sora/discussions/39)
 - [**Latte** Paper](https://github.com/orgs/mini-sora/discussions/38)
 
 ## 最近更新
+
 - [**OpenDiT**: An Easy, Fast and Memory-Efficent System for DiT Training and Inference](https://github.com/NUS-HPC-AI-Lab/OpenDiT)
 
 ## 相关工作
@@ -140,8 +144,11 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 </div>
 
 ## 社区贡献者
+
 <!-- readme: collaborators,contributors -start -->
+
 <!-- readme: collaborators,contributors -end -->
+
 <a href="https://github.com/mini-sora/minisora/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=mini-sora/minisora" />
 </a>
