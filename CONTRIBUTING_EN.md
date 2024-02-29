@@ -94,6 +94,6 @@ The following types are reserved for future code collaboration if needed.
 
 ```
 # [Journal Name] Paper Title
-[CVPR 24]lovieChat: From Dense Token to Sparse Memory for Long VideoUnderstanding
+[CVPR 24] lovieChat: From Dense Token to Sparse Memory for Long VideoUnderstanding
 ```
 
