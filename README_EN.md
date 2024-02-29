@@ -38,7 +38,7 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 - [**Latte** Paper](https://github.com/orgs/mini-sora/discussions/38)  [**Intensive Reading of Translated Latte Paper**](./notes/latte%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AF%BB%E7%BF%BB%E8%AF%91.pdf)    [**Notes of Latte Paper in Chinese**](./notes/Latte.md)
 
 ## Hot News
-- [**OpenDiT**: An Easy, Fast and Memory-Efficent System for DiT Training and Inference](https://github.com/NUS-HPC-AI-Lab/OpenDiT)
+- [**OpenDiT**: An Easy, Fast and Memory-Efficient System for DiT Training and Inference](https://github.com/NUS-HPC-AI-Lab/OpenDiT)
 
 ## Related Work
 
@@ -60,7 +60,7 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 | 3) **SiT**: Exploring Flow and Diffusion-based Generative Models with Scalable Interpolant Transformers | [Paper](https://arxiv.org/abs/2401.08740), [Github](https://github.com/willisma/SiT), [ModelScope](https://modelscope.cn/models/AI-ModelScope/SiT-XL-2-256/summary)|
 | 4) **FiT**: Flexible Vision Transformer for Diffusion Model | [Paper](https://arxiv.org/abs/2402.12376), [Github](https://github.com/whlzy/FiT) |
 | 5) **k-diffusion**: Scalable High-Resolution Pixel-Space Image Synthesis with Hourglass Diffusion Transformers | [Paper](https://arxiv.org/pdf/2401.11605v1.pdf), [Github](https://github.com/crowsonkb/k-diffusion) |
-| 6) **OpenDiT**: An Easy, Fast and Memory-Efficent System for DiT Training and Inference | [Github](https://github.com/NUS-HPC-AI-Lab/OpenDiT) |
+| 6) **OpenDiT**: An Easy, Fast and Memory-Efficient System for DiT Training and Inference | [Github](https://github.com/NUS-HPC-AI-Lab/OpenDiT) |
 | 7) **Large-DiT**: Large Diffusion Transformer | [Github](https://github.com/Alpha-VLLM/LLaMA2-Accessory/tree/main/Large-DiT) |
 | <h3>Video Generation</h3> | |
 | **Paper** | **Link** |
