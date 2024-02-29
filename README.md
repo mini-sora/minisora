@@ -24,6 +24,23 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 - 将定期举办 Sora 的圆桌和社区一起探讨可能性
 - 视频生成的现有技术路径探讨
 
+## 论文复现小组
+
+复现论文主要有
+- DiT with OpenDiT
+- SiT
+- W.A.L.T
+
+欢迎加入 Sora 有关论文复现小组！
+
+<div align="center">
+
+<img src="assets/sora-reproduce.png" width="200"/>
+  <div>&nbsp;</div>
+  <div align="center">
+  </div>
+</div>
+
 ## 近期圆桌讨论
 ### Sora 夜谈之Video Diffusion 综述
 **主讲**: 邢桢 复旦大学视觉与学习实验室博士生
