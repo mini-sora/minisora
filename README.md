@@ -24,31 +24,40 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 - 将定期举办 Sora 的圆桌和社区一起探讨可能性
 - 视频生成的现有技术路径探讨
 
-## 近期圆桌讨论
-### Sora 夜谈之Video Diffusion 综述
-**主讲**: 邢桢 复旦大学视觉与学习实验室博士生
+## 论文复现小组
 
-**直播看点**:
-- 图像生成扩散模型基础
-- 文生视频扩散模型的发展
-- 浅谈 Sora 背后技术和复现挑战
+复现论文主要有
+- DiT with OpenDiT
+- SiT
+- W.A.L.T
 
-**在线直播时间**: 02/28 20:00-21:00
-  
-扫描二维码进入微信群和预约直播
+欢迎加入 Sora 有关论文复现小组！
+
 <div align="center">
 
-<img src="assets/sora夜谈.png" width="200"/>
+<img src="assets/sora-reproduce.png" width="200"/>
   <div>&nbsp;</div>
   <div align="center">
   </div>
 </div>
 
+## 近期圆桌讨论
+### Sora 夜谈之Video Diffusion 综述
+**主讲**: 邢桢 复旦大学视觉与学习实验室博士生
+
+**直播看点**: 图像生成扩散模型基础/文生视频扩散模型的发展/浅谈 Sora 背后技术和复现挑战
+
+**在线直播时间**: 02/28 20:00-21:00
+  
+**回放微信视频号搜索**: 聊聊 Sora 之 Video Diffusion 综述
+
+**PPT**: [飞书下载链接](https://aicarrier.feishu.cn/file/Ds0BbCAo6oTazdxxo3Zciw1Nnne)
+
 ## 论文共读计划
 
 - **[Sora: Creating video from text](https://openai.com/sora) 技术报告**: [Video generation models as world simulators](https://openai.com/research/video-generation-models-as-world-simulators)
 - **DiT**: [Scalable Diffusion Models with Transformers](https://arxiv.org/abs/2212.09748)
-- **Latte**: [Latte: Latent Diffusion Transformer for Video Generation](https://maxin-cn.github.io/latte_project/)
+- **Latte**: [Latte: Latent Diffusion Transformer for Video Generation](https://maxin-cn.github.io/latte_project/)  [**latte论文精读翻译.pdf**](./notes/latte%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AF%BB%E7%BF%BB%E8%AF%91.pdf)
 - 更新中...
   
 ### 论文共读发表者募集
@@ -85,7 +94,7 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 | 3) **Imagen Video**: High Definition Video Generation with Diffusion Models | [Paper](https://arxiv.org/abs/2210.02303) |
 | 4) **MoCoGAN**: Decomposing Motion and Content for Video Generation | [Paper](https://arxiv.org/abs/1707.04993) |
 | 5) Adversarial Video Generation on Complex Datasets | [Paper](https://arxiv.org/abs/1907.06571) |
-| 6) **W.A.L.T**:Photorealistic Video Generation with Diffusion Models | [Paper](https://arxiv.org/abs/2312.06662) [Project](https://walt-video-diffusion.github.io/)|
+| 6) **W.A.L.T**: Photorealistic Video Generation with Diffusion Models | [Paper](https://arxiv.org/abs/2312.06662) [Project](https://walt-video-diffusion.github.io/)|
 | 7) **VideoGPT**: Video Generation using VQ-VAE and Transformers | [Paper](https://arxiv.org/abs/2104.10157), [Github](https://github.com/wilson1yan/VideoGPT) |
 | 8) Video Diffusion Models | [Paper](https://arxiv.org/abs/2204.03458), [Github](https://github.com/lucidrains/video-diffusion-pytorch), [Project](https://video-diffusion.github.io/)|
 | 9) **MCVD**: Masked Conditional Video Diffusion for Prediction, Generation, and Interpolation | [Paper](https://arxiv.org/abs/2205.09853), [Github](https://github.com/voletiv/mcvd-pytorch), [Project](https://mask-cond-video-diffusion.github.io/), [Blog](https://ajolicoeur.ca/2022/05/22/masked-conditional-video-diffusion/) |
@@ -93,6 +102,7 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 | 11) **MAGVIT**: Masked Generative Video Transformer | [Paper](https://arxiv.org/abs/2212.05199), [Github](https://github.com/google-research/magvit), [Project](https://magvit.cs.cmu.edu/), [Colab](https://github.com/google-research/magvit/blob/main) |
 | 12) **EMO**: Emote Portrait Alive - Generating Expressive Portrait Videos with Audio2Video Diffusion Model under Weak Conditions | [Paper](https://arxiv.org/abs/2402.17485), [Github](https://github.com/HumanAIGC/EMO), [Project](https://humanaigc.github.io/emote-portrait-alive/) |
 | 13) **SimDA**: Simple Diffusion Adapter for Efficient Video Generation | [Paper](https://arxiv.org/pdf/2308.09710.pdf), [Github](https://github.com/ChenHsing/SimDA), [Project](https://chenhsing.github.io/SimDA/) |
+| 14) [ICCV 23] **StableVideo**: Text-driven Consistency-aware Diffusion Video Editing | [Paper](https://arxiv.org/abs/2308.09592), [Github](https://github.com/rese1f/StableVideo), [Project](https://rese1f.github.io/StableVideo/) |
 | <h3>Long-context</h3> | |
 | **论文**  | **链接** |
 | 1) World Model on Million-Length Video And Language With RingAttention | [Paper](https://arxiv.org/abs/2402.08268), [Github](https://github.com/LargeWorldModel/LWM) |
@@ -100,6 +110,7 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 | 3) Extending LLMs' Context Window with 100 Samples | [Paper](https://arxiv.org/abs/2401.07004), [Github](https://github.com/GAIR-NLP/Entropy-ABF) |
 | 4) Efficient Streaming Language Models with Attention Sinks | [Paper](https://arxiv.org/abs/2309.17453), [Github](https://github.com/mit-han-lab/streaming-llm) |
 | 5) The What, Why, and How of Context Length Extension Techniques in Large Language Models – A Detailed Survey | [Paper](https://arxiv.org/pdf/2401.07872) |
+| 6) [CVPR 24] **MovieChat**: From Dense Token to Sparse Memory for Long Video Understanding | [Paper](https://arxiv.org/abs/2307.16449), [Github](https://github.com/rese1f/MovieChat), [Project](https://rese1f.github.io/MovieChat/) |
 | <h3>Base Video Models</h3> | |
 | **论文**  | **链接** |
 | 1) **ViViT**: A Video Vision Transformer | [Paper](https://arxiv.org/pdf/2103.15691v2.pdf), [Github](https://github.com/google-research/scenic) |
