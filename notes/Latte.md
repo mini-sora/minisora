@@ -13,7 +13,7 @@
 和 [Stable Diffusion](https://stable-diffusion-art.com/how-stable-diffusion-work/) 原理基本一致，首先使用 VAE 压缩视频，提取视频 patch 组成 tokens，然后进行扩散-去噪过程，区别在于使用 Transforme r替换 U-Net 预测噪声的均值和方差，并且噪声是4维的，最后解码成视频。
 ![网络结构](../assets/Latte/Latte网络结构.png)
 
-**输入**：视频片段经VAE压缩后假设为 $F·H·W·C$，编码后得到 tokens $Z$，维度为$n_f·n_h·n_w·d$， $Z$ 和位置时空位置编码  $p$ 相加构成Transformer的输入 $Z'$。
+**输入**：视频片段经VAE压缩后假设为 $F·H·W·C$，编码后得到 tokens $Z$，维度为 $n_f·n_h·n_w·d$ ， $Z$ 和位置时空位置编码  $p$ 相加构成Transformer的输入 $Z'$。
 
 **主干网**：
 a）首先将输入 reshape 成 $Z_s$，维度为$n_f·t·d$，其中 $t=n_h·n_w$ ，先过空间Transoformer block，然后 reshape 成 $Z_t$，维度为$t·n_f·d$，过时间 Transformer block，循环几次。
