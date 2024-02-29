@@ -16,6 +16,8 @@
 
 <p align="center">
     👋 加入我们的 <a href="https://cdn.vansin.top/minisora.jpg" target="_blank">微信社区</a>
+    <br/>
+    Telegram：https://t.me/+XFQB9MyMa38yMzg1
 </p>
 
 Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**免费不收取任何费用、不割韭菜**），Mini Sora 计划探索 Sora 的实现路径和后续的发展方向：
@@ -124,7 +126,7 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 | 5) **MotionDirector**: Motion Customization of Text-to-Video Diffusion Models | [Paper](https://arxiv.org/abs/2310.08465), [Github](https://github.com/showlab/MotionDirector) |
 | <h3>现有高质量资料</h3> | |
 | **资料**  | **链接** |
-| 1) Datawhale - AI视频生成学习 | [Feishu doc](https://datawhaler.feishu.cn/docx/G4LkdaffWopVbwxT1oHceiv9n0c) | 
+| 1) Datawhale - AI视频生成学习 | [Feishu doc](https://datawhaler.feishu.cn/docx/G4LkdaffWopVbwxT1oHceiv9n0c) |
 | 2) A Survey on Generative Diffusion Model | [Paper](https://arxiv.org/pdf/2209.02646.pdf),   [Github](https://github.com/chq1155/A-Survey-on-Generative-Diffusion-Model) |
 | 3) Awesome-Video-Diffusion-Models | [Paper](https://arxiv.org/pdf/2310.10647.pdf ), [Github](https://github.com/ChenHsing/Awesome-Video-Diffusion-Models) |
 | 4) Awesome-Text-To-Video：A Survey on Text-to-Video Generation/Synthesis  | [Github](https://github.com/jianzhnie/awesome-text-to-video)
@@ -146,6 +148,12 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=mini-sora/minisora&type=Date)](https://star-history.com/#mini-sora/minisora&Date)
+
+## 如何向Mini Sora 社区贡献
+
+我们非常希望你们能够为 Mini Sora 开源社区做出贡献，并且帮助我们把它做得比现在更好！
+
+具体查看[贡献指南](./CONTRIBUTING.md)
 
 ## 社区贡献者
 
