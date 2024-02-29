@@ -13,12 +13,12 @@
 和 [Stable Diffusion](https://stable-diffusion-art.com/how-stable-diffusion-work/) 原理基本一致，首先使用 VAE 压缩视频，提取视频 patch 组成 tokens，然后进行扩散-去噪过程，区别在于使用 Transforme r替换 U-Net 预测噪声的均值和方差，并且噪声是4维的，最后解码成视频。
 ![网络结构](../assets/Latte/Latte网络结构.png)
 
-**输入**：视频片段经VAE压缩后假设为 $F·H·W·C$，编码后得到 tokens $Z$，维度为$n_f·n_h·n_w·d$， $Z$ 和位置时空位置编码  $p$ 相加构成Transformer的输入 $Z'$。
+**输入**：视频片段经VAE压缩后假设为 $F·H·W·C$，编码后得到 tokens $Z$，维度为 $n_f·n_h·n_w·d$， $Z$ 和位置时空位置编码  $p$ 相加构成Transformer的输入 $Z'$。
 
-**主干网**：
-a）首先将输入 reshape 成 $Z_s$，维度为$n_f·t·d$，其中 $t=n_h·n_w$ ，先过空间Transoformer block，然后 reshape 成 $Z_t$，维度为$t·n_f·d$，过时间 Transformer block，循环几次。
-b）类似a，只是先一组空间再一组时序。
-c）a、b都使用完整的 Tranformer block 学习单一时间或空间信息，c是修改了 Tranformer block 内部结构，MHA 先在空间维度计算自注意力，然后在时间维度计算。这样每个 Tranformer block 就相当于融合了时间和空间信息。
+**主干网**   
+a）首先将输入 reshape 成 $Z_s$，维度为 $n_f·t·d$，其中 $t=n_h·n_w$ ，先过空间Transoformer block，然后 reshape 成 $Z_t$，维度为 $t·n_f·d$ ，过时间 Transformer block，循环几次。  
+b）类似a，只是先一组空间再一组时序。  
+c）a、b都使用完整的 Tranformer block 学习单一时间或空间信息，c是修改了 Tranformer block 内部结构，MHA 先在空间维度计算自注意力，然后在时间维度计算。这样每个 Tranformer block 就相当于融合了时间和空间信息。  
 d）在 Tranformer block 内部将 MHA 分成了两部分，一部分计算空间，一部分计算时间，最后再融合。
 
 **输出**：解码得到噪声均值和协方差，二者维度同样为 $F·H·W·C$
@@ -31,7 +31,7 @@ d）在 Tranformer block 内部将 MHA 分成了两部分，一部分计算空�
 Patch embedding 是在潜空间进行的，文中图示使用了原视频帧方便展示：
 ![patch_embedding.png](../assets/Latte/patch_embedding.png)
 
-1）所有帧都使用 [ViT](http://arxiv.org/abs/2010.11929) 的 patch 方式，类似平面操作，这样 $n_f=F, n_w=W/w，n_h=H/h$，$w$ 和 $h$ 表示每个 patch 的大小。
+1）所有帧都使用 [ViT](http://arxiv.org/abs/2010.11929) 的 patch 方式，类似平面操作，这样 $n_f=F, n_w=W/w，n_h=H/h$， $w$ 和 $h$ 表示每个 patch 的大小。  
 2）使用 [ViViT](https://arxiv.org/pdf/2103.15691v2.pdf) 的方式，在时序上采样 $s$，类似立体操作，这样 $n_f=F/s$
 
 ### 1.3 Timestep-class 信息融入
@@ -41,7 +41,7 @@ Patch embedding 是在潜空间进行的，文中图示使用了原视频帧方�
 Timestep 以及 class 信息 $c$ 注入到模型采用了两种方式：
 
 * 作为 tokens 加到输入中
-* 使用 [DiT](https://arxiv.org/abs/2212.09748) 的自适应层归一化 AdaLN 方式，$c$ 先通过 MLP 计算出 $γ_c$ 和 $β_c$，这样 $AdaLN(h, c) = γ_c{\text{LayerNorm}}(h)+β_c$，其中 $h$ 为隐藏向量。本文又新增了一个 scale 向量 $α_c$，应用在所有残差连接中，最终 $RCs(h, c) = α_ch + AdaLN(h, c)$，取了个名字叫 S-AdaLN。
+* 使用 [DiT](https://arxiv.org/abs/2212.09748) 的自适应层归一化 AdaLN 方式，$c$ 先通过 MLP 计算出 $γ_c$ 和 $β_c$，这样 $AdaLN(h, c) = γ_c{\text{LayerNorm}}(h)+β_c$，其中 $h$ 为隐藏向量。本文又新增了一个 scale 向量 $α_c$，应用在所有残差连接中，最终 $RCs(h, c) = α_ch + AdaLN(h, c)$ ，取了个名字叫 S-AdaLN。
 
 ### 1.4 空间位置 embedding
 
