@@ -41,7 +41,7 @@ Patch embedding 是在潜空间进行的，文中图示使用了原视频帧方�
 Timestep 以及 class 信息 $c$ 注入到模型采用了两种方式：
 
 * 作为 tokens 加到输入中
-* 使用 [DiT](https://arxiv.org/abs/2212.09748) 的自适应层归一化 AdaLN 方式，$c$ 先通过 MLP 计算出 $γ_c$ 和 $β_c$，这样 $AdaLN(h, c) = γ_c{\text{LayerNorm}}(h)+β_c$，其中 $h$ 为隐藏向量。本文又新增了一个 scale 向量 $α_c$，应用在所有残差连接中，最终 $RCs(h, c) = α_ch + AdaLN(h, c)$ ，取了个名字叫 S-AdaLN。
+* 使用 [DiT](https://arxiv.org/abs/2212.09748) 的自适应层归一化 AdaLN 方式， $c$ 先通过 MLP 计算出 $γ_c$ 和 $β_c$，这样 $AdaLN(h, c) = γ_c{\text{LayerNorm}}(h)+β_c$，其中 $h$ 为隐藏向量。本文又新增了一个 scale 向量 $α_c$，应用在所有残差连接中，最终 $RCs(h, c) = α_ch + AdaLN(h, c)$ ，取了个名字叫 S-AdaLN。
 
 ### 1.4 空间位置 embedding
 
