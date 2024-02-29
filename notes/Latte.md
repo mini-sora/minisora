@@ -37,7 +37,7 @@ Patch embedding 是在潜空间进行的，文中图示使用了原视频帧方�
 ### 1.3 Timestep-class 信息融入
 
 <div align="center">
-<img src="../assets/Latte/S-AdaLN.png" width="350"/>
+<img src="../assets/Latte/S-AdaLN.png" width="450"/>
   <div>&nbsp;</div>
   <div align="center">
   </div>
