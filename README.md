@@ -143,6 +143,10 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
   </div>
 </div>
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=mini-sora/minisora&type=Date)](https://star-history.com/#mini-sora/minisora&Date)
+
 ## 社区贡献者
 
 <!-- readme: collaborators,contributors -start -->
