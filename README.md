@@ -25,14 +25,14 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 
 ## 论文复现小组
 
-复现论文主要有
+候选复现论文主要有以下三篇，来作为后续Sora复现的Baseline，社区已经(02/29)将OpenDiT和SiT代码Fork到codes文件夹下，期待贡献者提交PR，将Baseline代码迁移到Sora复现工作上来。
 
 - DiT with OpenDiT
 - SiT
-- W.A.L.T
+- W.A.L.T(还未release)
 
-欢迎加入 Sora 有关论文复现小组！
-
+提交PR或者Issue后，可以申请加入 Sora 有关论文复现小组！
+<!-- 
 <div align="center">
 
 <img src="assets/sora-reproduce.png" width="200"/>
@@ -40,7 +40,7 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
   <div align="center">
   </div>
 </div>
-
+-->
 ## 近期圆桌讨论
 
 ### Sora 夜谈之Video Diffusion 综述
