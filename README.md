@@ -70,7 +70,7 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 ## 最近更新
 
 - [**OpenDiT**: An Easy, Fast and Memory-Efficent System for DiT Training and Inference](https://github.com/NUS-HPC-AI-Lab/OpenDiT)
-- [**L-DiT**: Large Diffusion Transformer](https://github.com/Alpha-VLLM/LLaMA2-Accessory/tree/main/Large-DiT)
+- [**Large-DiT**: Large Diffusion Transformer](https://github.com/Alpha-VLLM/LLaMA2-Accessory/tree/main/Large-DiT)
 
 ## 相关工作
 
