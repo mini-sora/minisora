@@ -70,7 +70,6 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 ## 最近更新
 
 - [**OpenDiT**: An Easy, Fast and Memory-Efficent System for DiT Training and Inference](https://github.com/NUS-HPC-AI-Lab/OpenDiT)
-- [**Large-DiT**: Large Diffusion Transformer](https://github.com/Alpha-VLLM/LLaMA2-Accessory/tree/main/Large-DiT)
 
 ## 相关工作
 
@@ -92,6 +91,7 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 | 4) **FiT**: Flexible Vision Transformer for Diffusion Model | [Paper](https://arxiv.org/abs/2402.12376), [Github](https://github.com/whlzy/FiT) |
 | 5) **k-diffusion**: Scalable High-Resolution Pixel-Space Image Synthesis with Hourglass Diffusion Transformers | [Paper](https://arxiv.org/pdf/2401.11605v1.pdf), [Github](https://github.com/crowsonkb/k-diffusion) |
 | 6) **OpenDiT**: An Easy, Fast and Memory-Efficent System for DiT Training and Inference | [Github](https://github.com/NUS-HPC-AI-Lab/OpenDiT) |
+| 7) **Large-DiT**: Large Diffusion Transformer | [Github](https://github.com/Alpha-VLLM/LLaMA2-Accessory/tree/main/Large-DiT) |
 | <h3>Video Generation</h3> | |
 | **论文**  | **链接** |
 | 1) **Animatediff**: Animate Your Personalized Text-to-Image Diffusion Models without Specific Tuning | [Paper](https://arxiv.org/abs/2307.04725), [Github](https://github.com/guoyww/animatediff/), [ModelScope](https://modelscope.cn/models?name=Animatediff&page=1) |
