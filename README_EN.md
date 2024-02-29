@@ -35,7 +35,7 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 
 ### Recruitment of Presenters
 - [**DiT** Paper](https://github.com/orgs/mini-sora/discussions/39)
-- [**Latte** Paper](https://github.com/orgs/mini-sora/discussions/38)  [**Intensive Reading and Translation of Latte.pdf in Chinese**](./notes/latte%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AF%BB%E7%BF%BB%E8%AF%91.pdf)    [**Paper Interpretation of Latte in Chinese**](./notes/Latte.md)
+- [**Latte** Paper](https://github.com/orgs/mini-sora/discussions/38)  [**Intensive Reading of Translated Latte Paper.pdf in Chinese**](./notes/latte%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AF%BB%E7%BF%BB%E8%AF%91.pdf)    [**Notes of Latte Paper in Chinese**](./notes/Latte.md)
 
 ## Hot News
 - [**OpenDiT**: An Easy, Fast and Memory-Efficent System for DiT Training and Inference](https://github.com/NUS-HPC-AI-Lab/OpenDiT)
