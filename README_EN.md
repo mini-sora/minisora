@@ -111,6 +111,10 @@ The Mini Sora open-source community is positioned as a community-driven initiati
   </div>
 </div>
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=mini-sora/minisora&type=Date)](https://star-history.com/#mini-sora/minisora&Date)
+
 ## How to Contribute to the Mini Sora Community
 
 We greatly appreciate your contributions to the Mini Sora open-source community and helping us make it even better than it is now!
