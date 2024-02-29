@@ -37,7 +37,7 @@ Patch embedding 是在潜空间进行的，文中图示使用了原视频帧方�
 ### 1.3 Timestep-class 信息融入
 
 <div style="text-align:center;">
-  <img src="../assets/Latte/S-AdaLN.png" alt="Your Image Alt Text" style="max-width:55%; height:auto;">
+  <img src="../assets/Latte/S-AdaLN.png" alt="Your Image Alt Text" style="width:350; height:auto;">
 </div>
 
 Timestep 以及 class 信息 $c$ 注入到模型采用了两种方式：
