@@ -123,7 +123,7 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 
 We greatly appreciate your contributions to the Mini Sora open-source community and helping us make it even better than it is now!
 
-For more details, please refer to the [Contribution Guidelines](./CONTRIBUTING_EN.md)
+For more details, please refer to the [Contribution Guidelines](./docs/CONTRIBUTING_EN.md)
 
 ## Community contributors
 
