@@ -111,6 +111,7 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 | 6) Awesome-Video-Diffusion |  [Github](https://github.com/showlab/Awesome-Video-Diffusion) |
 | 7) Video Generation Task in Papers With Code |  [Task](https://paperswithcode.com/task/video-generation) |
 | 8) Sora: A Review on Background, Technology, Limitations, and Opportunities of Large Vision Models |  [**Paper**](https://arxiv.org/abs/2402.17177), [Github](https://github.com/lichao-sun/SoraReview) |
+| 9) Open-Sora-Plan (PKU-YuanGroup) |  [Github](https://github.com/PKU-YuanGroup/Open-Sora-Plan) |
 
 ## Mini Sora WeChat Community Exchange Group
 
@@ -130,7 +131,7 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 
 We greatly appreciate your contributions to the Mini Sora open-source community and helping us make it even better than it is now!
 
-For more details, please refer to the [Contribution Guidelines](./CONTRIBUTING_EN.md)
+For more details, please refer to the [Contribution Guidelines](./docs/CONTRIBUTING_EN.md)
 
 ## Community contributors
 
