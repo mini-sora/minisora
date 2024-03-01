@@ -10,7 +10,7 @@
 
 ### 1.1 整体架构
 
-和 [Stable Diffusion](https://stable-diffusion-art.com/how-stable-diffusion-work/) 原理基本一致，首先使用 VAE 压缩视频，提取视频 patch 组成 tokens，然后进行扩散-去噪过程，区别在于使用 Transforme r替换 U-Net 预测噪声的均值和方差，并且噪声是4维的，最后解码成视频。
+和 [Stable Diffusion](https://stable-diffusion-art.com/how-stable-diffusion-work/) 原理基本一致，首先使用 VAE 压缩视频，提取视频 patch 组成 tokens，然后进行扩散-去噪过程，区别在于使用 Transformer 替换 U-Net 预测噪声的均值和方差，并且噪声是4维的，最后解码成视频。
 ![网络结构](../assets/Latte/Latte网络结构.png)
 
 **输入**：视频片段经VAE压缩后假设为 $F·H·W·C$，编码后得到 tokens $Z$，维度为 $n_f·n_h·n_w·d$ ， $Z$ 和位置时空位置编码  $p$ 相加构成Transformer的输入 $Z'$。
@@ -42,6 +42,7 @@ Patch embedding 是在潜空间进行的，文中图示使用了原视频帧方�
   <div align="center">
   </div>
 </div>
+
 Timestep 以及 class 信息 $c$ 注入到模型采用了两种方式： 
 
 * 作为 tokens 加到输入中
