@@ -60,6 +60,8 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 
 **PPT**: [飞书下载链接](https://aicarrier.feishu.cn/file/Ds0BbCAo6oTazdxxo3Zciw1Nnne)
 
+**Notes**: [A Survey on Generative Diffusion Model 生成扩散模型综述 - 知乎](https://zhuanlan.zhihu.com/p/684795460)
+
 ## 论文共读计划
 
 - **[Sora: Creating video from text](https://openai.com/sora) 技术报告**: [Video generation models as world simulators](https://openai.com/research/video-generation-models-as-world-simulators)
