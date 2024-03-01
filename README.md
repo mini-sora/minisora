@@ -134,6 +134,10 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 | <h3>Audio Related Resource</h3> | |
 | **论文**  | **链接** |
 | 1) **Stable Audio**: Fast Timing-Conditioned Latent Audio Diffusion | [Link](https://stability.ai/research/stable-audio-efficient-timing-latent-diffusion) |
+| <h3>一致性/Consistency </h3> | |
+| **论文**  | **链接** |
+| 1) Layered Neural Atlases for Consistent Video Editing | [**TOG 21 Paper**](https://arxiv.org/pdf/2109.11418.pdf), [Github](https://github.com/ykasten/layered-neural-atlases), [Project](https://layered-neural-atlases.github.io/), |
+| 2) **StableVideo**: Text-driven Consistency-aware Diffusion Video Editing | [**ICCV 23 Paper**](https://arxiv.org/abs/2308.09592), [Github](https://github.com/rese1f/StableVideo), [Project](https://rese1f.github.io/StableVideo/) |
 | <h3>现有高质量资料</h3> | |
 | **资料**  | **链接** |
 | 1) Datawhale - AI视频生成学习 | [Feishu doc](https://datawhaler.feishu.cn/docx/G4LkdaffWopVbwxT1oHceiv9n0c) |
