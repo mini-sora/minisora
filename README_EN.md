@@ -53,7 +53,7 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 | 5) **DDIM**: Denoising Diffusion Implicit Models | [Paper](https://arxiv.org/abs/2010.02502), [Github](https://github.com/ermongroup/ddim) |
 | 6) **Score-Based Diffusion**: Score-Based Generative Modeling through Stochastic Differential Equations | [Paper](https://arxiv.org/abs/2011.13456), [Github](https://github.com/yang-song/score_sde), [Blog](https://yang-song.net/blog/2021/score) |
 | 7) **Stable Cascade**: Würstchen: An efficient architecture for large-scale text-to-image diffusion models | [Paper](https://openreview.net/forum?id=gU58d5QeGv), [Github](https://github.com/Stability-AI/StableCascade), [Blog](https://stability.ai/news/introducing-stable-cascade) |
-| 8) Diffusion Models in Vision: A Survey| [**TPAMI 2023 Paper**](https://arxiv.org/abs/2011.13456), [Github](https://github.com/CroitoruAlin/Diffusion-Models-in-Vision-A-Survey)|
+| 8) Diffusion Models in Vision: A Survey| [**TPAMI 23 Paper**](https://arxiv.org/abs/2011.13456), [Github](https://github.com/CroitoruAlin/Diffusion-Models-in-Vision-A-Survey)|
 | <h3>Diffusion Transformer</h3> | |
 | **Paper** | **Link** |
 | 1) **UViT**: All are Worth Words: A ViT Backbone for Diffusion Models | [Paper](https://arxiv.org/abs/2209.12152), [Github](https://github.com/baofff/U-ViT), [ModelScope](https://modelscope.cn/models?name=UVit&page=1) |
