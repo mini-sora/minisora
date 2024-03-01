@@ -59,6 +59,8 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 
 8. 回到GitHub仓库页面，提交PR到`minisora:main`
 
+9. 加入"最近更新"的工作栏目中添加的工作应该与视频生成有关，并且应该是非常令人印象深刻的工作。
+
 ## Commit消息格式
 
 提交的 commit message  必须包含`<type>`和`<summary>`两部分
