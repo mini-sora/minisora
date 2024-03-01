@@ -23,7 +23,6 @@ Mention any specific points you would like reviewers to focus on, such as comple
 
 - Please review the added content for accuracy and formatting.
 - Check that the links provided are correct and lead to the intended resources.
-- Other ...
 
 ### Related Issues
 Link the GitHub issues that are addressed or related to this pull request.
@@ -35,5 +34,5 @@ Include any other relevant information that might be useful for understanding th
 
 ### Checklist
 
-- [ ] I checked that all tests are passing and that the code follows the project's style guidelines before submitting the pull request. 
+- [ ] I checked that all tests passed and that the code followed the project's style guidelines before submitting the pull request. 
 
