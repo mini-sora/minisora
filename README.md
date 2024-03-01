@@ -26,17 +26,17 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 ## 论文复现小组
 
 ### 复现目标
-1. GPU-Green: 最好对GPU内存大小和GPU数量要求较低，比如8卡A100，4KA6000，单卡Rtx4090之类的算力可以训练和推理
-2. 对训练时长友好：不需要训练太久即可有较好的效果
-3. 生成视频长度和分辨率不追求过高， 如3-10s，480p都是可接受的
+1. GPU-Green: 最好对GPU内存大小和GPU数量要求较低,比如8卡A100,4KA6000,单卡Rtx4090之类的算力可以训练和推理
+2. 训练时长友好: 不需要训练太久即可有较好的效果
+3. 生成视频长度和分辨率不要求过高, 如3-10s,480p都是可接受的
 
-候选复现论文主要有以下三篇，来作为后续Sora复现的Baseline，社区已经(02/29)将OpenDiT和SiT代码Fork到codes文件夹下，期待贡献者提交PR，将Baseline代码迁移到Sora复现工作上来。
+候选复现论文主要有以下三篇, 来作为后续Sora复现的Baseline, 社区已经(02/29)将OpenDiT和SiT代码Fork到codes文件夹下, 期待贡献者提交PR, 将Baseline代码迁移到Sora复现工作上来.
 
 - DiT with OpenDiT
 - SiT
 - W.A.L.T(还未release)
 
-**提交PR或者Issue后**，可以申请加入MiniSora贡献者社群并申请加入 Sora 有关论文复现小组！
+**提交PR或者Issue后**, 可以申请加入MiniSora贡献者社群并申请加入 Sora 有关论文复现小组！
 <!-- 
 <div align="center">
 
@@ -114,6 +114,8 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 | 12) **EMO**: Emote Portrait Alive - Generating Expressive Portrait Videos with Audio2Video Diffusion Model under Weak Conditions | [**Paper**](https://arxiv.org/abs/2402.17485), [Github](https://github.com/HumanAIGC/EMO), [Project](https://humanaigc.github.io/emote-portrait-alive/) |
 | 13) **SimDA**: Simple Diffusion Adapter for Efficient Video Generation | [**Paper**](https://arxiv.org/pdf/2308.09710.pdf), [Github](https://github.com/ChenHsing/SimDA), [Project](https://chenhsing.github.io/SimDA/) |
 | 14) **StableVideo**: Text-driven Consistency-aware Diffusion Video Editing | [**ICCV 23 Paper**](https://arxiv.org/abs/2308.09592), [Github](https://github.com/rese1f/StableVideo), [Project](https://rese1f.github.io/StableVideo/) |
+| 15) **SVD**: Stable Video Diffusion: Scaling Latent Video Diffusion Models to Large Datasets| [**Paper**](https://static1.squarespace.com/static/6213c340453c3f502425776e/t/655ce779b9d47d342a93c890/1700587395994/stable_video_diffusion.pdf), [Github](https://github.com/Stability-AI/generative-models)|
+| 16) **ADD**: Adversarial Diffusion Distillation| [**Paper**](https://static1.squarespace.com/static/6213c340453c3f502425776e/t/65663480a92fba51d0e1023f/1701197769659/adversarial_diffusion_distillation.pdf), [Github](https://github.com/Stability-AI/generative-models) |
 | <h3>Long-context</h3> | |
 | **论文**  | **链接** |
 | 1) World Model on Million-Length Video And Language With RingAttention | [**Paper**](https://arxiv.org/abs/2402.08268), [Github](https://github.com/LargeWorldModel/LWM) |
@@ -129,6 +131,9 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 | 3) **LVDM**: Latent Video Diffusion Models for High-Fidelity Long Video Generation | [**Paper**](https://arxiv.org/abs/2211.13221), [Github](https://github.com/YingqingHe/LVDM) |
 | 4) **LFDM**: Conditional Image-to-Video Generation with Latent Flow Diffusion Models | [**CVPR 23 Paper**](https://arxiv.org/abs/2304.08818), [Github](https://github.com/nihaomiao/CVPR23_LFDM) |
 | 5) **MotionDirector**: Motion Customization of Text-to-Video Diffusion Models | [**Paper**](https://arxiv.org/abs/2310.08465), [Github](https://github.com/showlab/MotionDirector) |
+| <h3>Audio Related Resource</h3> | |
+| **论文**  | **链接** |
+| 1) **Stable Audio**: Fast Timing-Conditioned Latent Audio Diffusion | [Link](https://stability.ai/research/stable-audio-efficient-timing-latent-diffusion) |
 | <h3>现有高质量资料</h3> | |
 | **资料**  | **链接** |
 | 1) Datawhale - AI视频生成学习 | [Feishu doc](https://datawhaler.feishu.cn/docx/G4LkdaffWopVbwxT1oHceiv9n0c) |
@@ -137,7 +142,7 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 | 4) Awesome-Text-To-Video：A Survey on Text-to-Video Generation/Synthesis  | [Github](https://github.com/jianzhnie/awesome-text-to-video)
 | 5) video-generation-survey: A reading list of video generation| [Github](https://github.com/yzhang2016/video-generation-survey)
 | 6) Awesome-Video-Diffusion |  [Github](https://github.com/showlab/Awesome-Video-Diffusion) |
-| 7) Video Generation Task in Papers With Code |  [Task](https://paperswithcode.com/task/video-generation) |
+| 7) Video Generation Task in Papers With Code |  [Link](https://paperswithcode.com/task/video-generation) |
 | 8) Sora: A Review on Background, Technology, Limitations, and Opportunities of Large Vision Models |  [**Paper**](https://arxiv.org/abs/2402.17177), [Github](https://github.com/lichao-sun/SoraReview) |
 
 ## Mini Sora 微信社区社区交流群
