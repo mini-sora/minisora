@@ -62,6 +62,8 @@ As a contributor, before submitting your request, here are the guidelines we hop
 
 8. Go back to the GitHub repository page and submit a pull request to `minisora:main`.
 
+9. The works added to the "最近更新" Section should be related to Video Generation and should be a Very Impressive Work.
+
 ## Commit Message Format
 
 The commit message must include both `<type>` and `<summary>` sections.
