@@ -56,6 +56,20 @@ Feel free to contribute with other improvements to replicate Sora.
 
 ...
 
+## 其他项目
+
+- 非Sora一键文本生成视频 : [Text2Video](./Others/Text2Video.md)
+  - 项目介绍: 这是一个文本转视频的项目，通过输入文本，一键直接生成对应的视频。
+  - 技术栈：
+    - 文本处理，分割文本，生成 prompt
+    - 语音合成，将文本转换为语音 text to speech (TTS)，azure speech
+    - 图片生成，将文本转成图片，openai DALL·E
+    - 视频合成，将图片和语音合成视频，moviepy
+  - 项目要求:
+    - openai key，用 DALL·E 生成图片；
+    - azure speech key，将文本转成语音。
+  
+
 <!-- 
 **提交PR或者Issue后**, 可以申请加入MiniSora贡献者社群并申请加入 Sora 有关论文复现小组！
 
