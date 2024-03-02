@@ -35,7 +35,9 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 
 ## 近期圆桌讨论
 
-[Sora 夜谈之Video Diffusion 综述](https://github.com/mini-sora/minisora/blob/main/notes/README.md)
+[**Sora夜谈之Video Diffusion 综述**](https://github.com/mini-sora/minisora/blob/main/notes/README.md)
+
+**知乎Notes**: [A Survey on Generative Diffusion Model 生成扩散模型综述](https://zhuanlan.zhihu.com/p/684795460)
 
 ## 论文共读计划
 

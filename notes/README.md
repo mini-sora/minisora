@@ -22,4 +22,4 @@
 
 **PPT**: [飞书下载链接](https://aicarrier.feishu.cn/file/Ds0BbCAo6oTazdxxo3Zciw1Nnne)
 
-**知乎Notes**: [A Survey on Generative Diffusion Model 生成扩散模型综述 - 知乎](https://zhuanlan.zhihu.com/p/684795460)
+**知乎Notes**: [A Survey on Generative Diffusion Model 生成扩散模型综述](https://zhuanlan.zhihu.com/p/684795460)
