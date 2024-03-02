@@ -1,6 +1,15 @@
-# 论文共读与圆桌讨论
 
-## 论文阅读笔记
+# Mini Sora 社区
+<div align="center">
+
+<img src="../assets/logo.jpg" width="600"/>
+  <div>&nbsp;</div>
+  <div align="center"></div>
+</div>
+
+## 论文共读与圆桌讨论
+
+### 论文阅读笔记
 
 [**数据Notes**](./dataset_note.md)
 
@@ -8,9 +17,9 @@
 
 [**Latte论文解读**](./Latte.md)
 
-## 圆桌讨论
+### 圆桌讨论
 
-### Sora 夜谈之Video Diffusion 综述
+#### Sora 夜谈之Video Diffusion 综述
 
 **主讲**: 邢桢 复旦大学视觉与学习实验室博士生
 
