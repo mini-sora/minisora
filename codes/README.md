@@ -68,11 +68,10 @@ Feel free to contribute with other improvements to replicate Sora.
 </div>
 -->
 
-## Mini Sora 微信社区社区交流群
+## Sora复现小组-MiniSora社区微信交流群
 
 <div align="center">
 
-<img src="../assets/qrcode.png" width="200"/>
 <img src="../assets/sora-reproduce.png" width="200"/>
   <div>&nbsp;</div>
   <div align="center">
