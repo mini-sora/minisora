@@ -23,6 +23,12 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 - 将定期举办 Sora 的圆桌和社区一起探讨可能性
 - 视频生成的现有技术路径探讨
 
+## 最近更新
+
+- [State of the Art on Diffusion Models for Visual Computing](http://arxiv.org/abs/2310.07204)
+- **CSUR 24 Paper**: [Diffusion Models: A Comprehensive Survey of Methods and Applications](https://arxiv.org/abs/2209.00796)
+- [**OpenDiT**: An Easy, Fast and Memory-Efficient System for DiT Training and Inference](https://github.com/NUS-HPC-AI-Lab/OpenDiT)
+
 ## 论文复现小组
 
 [项目页面](https://github.com/mini-sora/minisora/tree/main/codes)
@@ -57,10 +63,6 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 
 - [**DiT** (ICCV 23 Paper)](https://github.com/orgs/mini-sora/discussions/39)
 - [**Stable Cascade** (ICLR 24 Paper)](https://github.com/orgs/mini-sora/discussions/145)
-
-## 最近更新
-
-- [**OpenDiT**: An Easy, Fast and Memory-Efficient System for DiT Training and Inference](https://github.com/NUS-HPC-AI-Lab/OpenDiT)
 
 ## 相关工作
 
