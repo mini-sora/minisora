@@ -22,8 +22,6 @@ log/
 *.log
 .clang-format
 .clang_format.hook
-MiniSora_README.md
-MiniSora_reproduce_README.md
 temp/
 build/
 dist/
