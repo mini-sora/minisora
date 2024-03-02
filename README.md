@@ -133,26 +133,26 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 | 3) **CoDeF**: Content Deformation Fields for Temporally Consistent Video Processing | [Paper](https://arxiv.org/pdf/2308.07926.pdf), [Github](https://github.com/qiuyu96/CoDeF), [Project](https://qiuyu96.github.io/CoDeF/) |
 | <h3>Prompt Engineering</h3> | |
 | **论文**  | **链接** |
-| 1) RealCompo: Dynamic Equilibrium between Realism and Compositionality Improves Text-to-Image Diffusion Models | [Paper](https://arxiv.org/abs/2402.12908), [Github](https://github.com/YangLing0818/RealCompo) |
+| 1) **RealCompo**: Dynamic Equilibrium between Realism and Compositionality Improves Text-to-Image Diffusion Models | [Paper](https://arxiv.org/abs/2402.12908), [Github](https://github.com/YangLing0818/RealCompo), [Project](https://cominclip.github.io/RealCompo_Page/) |
 | 2) Mastering Text-to-Image Diffusion: Recaptioning, Planning, and Generating with Multimodal LLMs | [Paper](https://arxiv.org/abs/2401.11708), [Github](https://github.com/YangLing0818/RPG-DiffusionMaster) |
-| 3) LLM-grounded Diffusion: Enhancing Prompt Understanding of Text-to-Image Diffusion Models with Large Language Models | [**TMLR 23 Paper**](https://arxiv.org/abs/2305.13655) |
-| 4) LLM BLUEPRINT: ENABLING TEXT-TO-IMAGE GEN-ERATION WITH COMPLEX AND DETAILED PROMPTS | [**ICLR 24 Paper**](https://arxiv.org/abs/2310.10640) |
+| 3) LLM-grounded Diffusion: Enhancing Prompt Understanding of Text-to-Image Diffusion Models with Large Language Models | [**TMLR 23 Paper**](https://arxiv.org/abs/2305.13655), [Github](https://github.com/TonyLianLong/LLM-groundedDiffusion) |
+| 4) LLM BLUEPRINT: ENABLING TEXT-TO-IMAGE GEN-ERATION WITH COMPLEX AND DETAILED PROMPTS | [**ICLR 24 Paper**](https://arxiv.org/abs/2310.10640), [Github](https://github.com/hananshafi/llmblueprint) |
 | 5) Progressive Text-to-Image Diffusion with Soft Latent Direction | [Paper](https://arxiv.org/abs/2309.09466) |
-| 6) Self-correcting LLM-controlled Diffusion Models | [**CVPR 24 Paper**](https://arxiv.org/abs/2311.16090) |
-| 7) LayoutLLM-T2I: Eliciting Layout Guidance from LLM for Text-to-Image Generation | [**MM 23 Paper**](https://arxiv.org/abs/2308.05095) |
-| 8) LayoutGPT: Compositional Visual Planning and Generation with Large Language Models | [**NeurIPS 23 Paper**](https://arxiv.org/abs/2305.15393) |
-| 9) Gen4Gen: Generative Data Pipeline for Generative Multi-Concept Composition | [Paper](https://arxiv.org/abs/2402.15504) |
-| 10) InstructEdit: Improving Automatic Masks for Diffusion-based Image Editing With User Instructions | [Paper](https://arxiv.org/abs/2305.18047) |
+| 6) Self-correcting LLM-controlled Diffusion Models | [**CVPR 24 Paper**](https://arxiv.org/abs/2311.16090), [Github](https://github.com/tsunghan-wu/SLD) |
+| 7) **LayoutLLM-T2I**: Eliciting Layout Guidance from LLM for Text-to-Image Generation | [**MM 23 Paper**](https://arxiv.org/abs/2308.05095) |
+| 8) **LayoutGPT**: Compositional Visual Planning and Generation with Large Language Models | [**NeurIPS 23 Paper**](https://arxiv.org/abs/2305.15393), [Github](https://github.com/weixi-feng/LayoutGPT) |
+| 9) **Gen4Gen**: Generative Data Pipeline for Generative Multi-Concept Composition | [Paper](https://arxiv.org/abs/2402.15504), [Github](https://github.com/louisYen/Gen4Gen) |
+| 10) **InstructEdit**: Improving Automatic Masks for Diffusion-based Image Editing With User Instructions | [Paper](https://arxiv.org/abs/2305.18047), [Github](https://github.com/QianWangX/InstructEdit) |
 | 11) Controllable Text-to-Image Generation with GPT-4 | [Paper](https://arxiv.org/abs/2305.18583) |
 | 12) LLM-grounded Video Diffusion Models | [**ICLR 24 Paper**](https://arxiv.org/abs/2309.17444) |
-| 13) VideoDirectorGPT: Consistent Multi-scene Video Generation via LLM-Guided Planning | [Paper](https://arxiv.org/abs/2309.15091) |
-| 14) FlowZero: Zero-Shot Text-to-Video Synthesis with LLM-Driven Dynamic Scene Syntax | [Paper](https://arxiv.org/abs/2311.15813) |
-| 15) VideoDrafter: Content-Consistent Multi-Scene Video Generation with LLM | [Paper](https://arxiv.org/abs/2401.01256) |
-| 16) VideoDirectorGPT: Consistent Multi-scene Video Generation via LLM-Guided Planning | [Paper](https://arxiv.org/abs/2309.15091) |
-| 17) Free-Bloom: Zero-Shot Text-to-Video Generator with LLM Director and LDM Animator | [**NeurIPS 23 Paper**](https://arxiv.org/abs/2309.14494) |
+| 13) **VideoDirectorGPT**: Consistent Multi-scene Video Generation via LLM-Guided Planning | [Paper](https://arxiv.org/abs/2309.15091) |
+| 14) **FlowZero**: Zero-Shot Text-to-Video Synthesis with LLM-Driven Dynamic Scene Syntax | [Paper](https://arxiv.org/abs/2311.15813) |
+| 15) **VideoDrafter**: Content-Consistent Multi-Scene Video Generation with LLM | [Paper](https://arxiv.org/abs/2401.01256) |
+| 16) **VideoDirectorGPT**: Consistent Multi-scene Video Generation via LLM-Guided Planning | [Paper](https://arxiv.org/abs/2309.15091) |
+| 17) **Free-Bloom**: Zero-Shot Text-to-Video Generator with LLM Director and LDM Animator | [**NeurIPS 23 Paper**](https://arxiv.org/abs/2309.14494) |
 | 18) Empowering Dynamics-aware Text-to-Video Diffusion with Large Language Models | [Paper](https://arxiv.org/abs/2308.13812) |
-| 19) MotionZero: Exploiting Motion Priors for Zero-shot Text-to-Video Generation | [Paper](https://arxiv.org/abs/2311.16635) |
-| 20) GPT4Motion: Scripting Physical Motions in Text-to-Video Generation via Blender-Oriented GPT Planning | [Paper](https://arxiv.org/abs/2311.12631) |
+| 19) **MotionZero**: Exploiting Motion Priors for Zero-shot Text-to-Video Generation | [Paper](https://arxiv.org/abs/2311.16635) |
+| 20) **GPT4Motion**: Scripting Physical Motions in Text-to-Video Generation via Blender-Oriented GPT Planning | [Paper](https://arxiv.org/abs/2311.12631) |
 | <h3>Security</h3> | |
 | **论文**  | **链接** |
 | | |
