@@ -1,4 +1,4 @@
-# Mini Sora 社区Sora复现小组: Sora应用技术的分析
+# Mini Sora 社区Sora复现小组
 <!-- 
 ## Replication Group of Mini Sora
 
