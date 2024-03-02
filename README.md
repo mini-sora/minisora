@@ -129,6 +129,12 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 | <h3>Prompt Engineering</h3> | |
 | **论文**  | **链接** |
 | | |
+| <h3>Security</h3> | |
+| **论文**  | **链接** |
+| | |
+| <h3>World Model</h3> | |
+| **论文**  | **链接** |
+| | |
 | <h3>Dataset</h3> | |
 | **数据集名称**  | **链接** |
 | 1) **Panda-70M**: Captioning 70M Videos with Multiple Cross-Modality Teachers | [Paper](https://arxiv.org/abs/2402.19479), [Github](https://github.com/snap-research/Panda-70M), [Project](https://snap-research.github.io/Panda-70M/), |
