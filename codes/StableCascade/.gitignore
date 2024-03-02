@@ -1,0 +1,12 @@
+*.yml
+*.out
+dist_file_*
+__pycache__/*
+*/__pycache__/*
+*/**/__pycache__/*
+*_latest_output.jpg
+*_sample.jpg
+jobs/*.sh
+.ipynb_checkpoints
+*.safetensors
+*_test.yaml
