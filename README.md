@@ -24,11 +24,14 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 - 视频生成的现有技术路径探讨
 
 ## 论文复现小组
+
 [项目页面](https://github.com/mini-sora/minisora/tree/main/codes)
+
 ### 复现目标
-1. **GPU-Friendly**: 最好对GPU内存大小和GPU数量要求较低,比如8卡A100,4KA6000,单卡Rtx4090之类的算力可以训练和推理
+
+1. **GPU-Friendly** : 最好对GPU内存大小和GPU数量要求较低, 比如8卡A100, 4KA6000, 单卡Rtx4090之类的算力可以训练和推理
 2. **Training-Efficiency** : 不需要训练太久即可有较好的效果
-3. **Inference-Efficiency**: 推理生成视频时, 长度和分辨率不要求过高, 如3-10s,480p都是可接受的
+3. **Inference-Efficiency** : 推理生成视频时, 长度和分辨率不要求过高, 如3-10s,480p都是可接受的
 
 ## 近期圆桌讨论
 
@@ -173,4 +176,3 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 <a href="https://github.com/mini-sora/minisora/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=mini-sora/minisora" />
 </a>
-
