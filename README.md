@@ -39,17 +39,22 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 
 ## 论文共读计划
 
-- **[Sora: Creating video from text](https://openai.com/sora) 技术报告**: [Video generation models as world simulators](https://openai.com/research/video-generation-models-as-world-simulators)
+- [**Sora**: Creating video from text](https://openai.com/sora)
+- **Sora技术报告**: [Video generation models as world simulators](https://openai.com/research/video-generation-models-as-world-simulators)
   - [飞书·翻译+精读](https://aibee.feishu.cn/docx/L3JQdoWmLo7gUQxuHJYcglWInwh)
   - [微信公众号·OpenAI Sora视频生成模型技术报告中英全文](https://mp.weixin.qq.com/s?__biz=MzIwOTA1MDAyNA%3D%3D&mid=2649996785&idx=1&sn=2409190221c7f2aaf8ba4f2c1215f6ac)
+- **Latte**: [Latte: Latent Diffusion Transformer for Video Generation](https://maxin-cn.github.io/latte_project/)  
+  - [Latte论文精读翻译](./notes/latte%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AF%BB%E7%BF%BB%E8%AF%91.pdf)
+  - [Latte论文解读](./notes/Latte.md)
 - **DiT**: [Scalable Diffusion Models with Transformers](https://arxiv.org/abs/2212.09748)
-- **Latte**: [Latte: Latent Diffusion Transformer for Video Generation](https://maxin-cn.github.io/latte_project/)  [**latte论文精读翻译.pdf**](./notes/latte%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AF%BB%E7%BF%BB%E8%AF%91.pdf)    [**Latte论文解读**](./notes/Latte.md)
+- **Stable Cascade (ICLR 24 Paper)**: [Würstchen: An efficient architecture for large-scale text-to-image diffusion models](https://openreview.net/forum?id=gU58d5QeGv)
+
 - 更新中...
 
 ### 论文共读发表者募集
 
-- [**DiT** Paper](https://github.com/orgs/mini-sora/discussions/39)
-- [**Latte** Paper](https://github.com/orgs/mini-sora/discussions/38)
+- [**DiT** (ICCV 23 Paper)](https://github.com/orgs/mini-sora/discussions/39)
+- [**Stable Cascade** (ICLR 24 Paper)](https://github.com/orgs/mini-sora/discussions/145)
 
 ## 最近更新
 
