@@ -24,14 +24,13 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 - 视频生成的现有技术路径探讨
 
 ## 论文复现小组
-
+[项目页面](https://github.com/mini-sora/minisora/tree/main/codes)
 ### 复现目标
-1. GPU-Green: 最好对GPU内存大小和GPU数量要求较低,比如8卡A100,4KA6000,单卡Rtx4090之类的算力可以训练和推理
-2. 训练时长友好: 不需要训练太久即可有较好的效果
-3. 生成视频长度和分辨率不要求过高, 如3-10s,480p都是可接受的
+1. **GPU-Friendly**: 最好对GPU内存大小和GPU数量要求较低,比如8卡A100,4KA6000,单卡Rtx4090之类的算力可以训练和推理
+2. **Training-Efficiency** : 不需要训练太久即可有较好的效果
+3. **Inference-Efficiency**: 推理生成视频时, 长度和分辨率不要求过高, 如3-10s,480p都是可接受的
 
 候选复现论文主要有以下三篇, 来作为后续Sora复现的Baseline, 社区已经(02/29)将OpenDiT和SiT代码Fork到codes文件夹下, 期待贡献者提交PR, 将Baseline代码迁移到Sora复现工作上来.
-
 - DiT with OpenDiT
 - SiT
 - W.A.L.T(还未release)
