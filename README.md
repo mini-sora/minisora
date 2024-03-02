@@ -35,19 +35,7 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 
 ## 近期圆桌讨论
 
-### Sora 夜谈之Video Diffusion 综述
-
-**主讲**: 邢桢 复旦大学视觉与学习实验室博士生
-
-**直播看点**: 图像生成扩散模型基础/文生视频扩散模型的发展/浅谈 Sora 背后技术和复现挑战
-
-**在线直播时间**: 02/28 20:00-21:00
-
-**回放微信视频号搜索**: 聊聊 Sora 之 Video Diffusion 综述
-
-**PPT**: [飞书下载链接](https://aicarrier.feishu.cn/file/Ds0BbCAo6oTazdxxo3Zciw1Nnne)
-
-**Notes**: [A Survey on Generative Diffusion Model 生成扩散模型综述 - 知乎](https://zhuanlan.zhihu.com/p/684795460)
+Sora 夜谈之Video Diffusion 综述
 
 ## 论文共读计划
 
