@@ -171,6 +171,8 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 | 7) Video Generation Task in Papers With Code |  [Link](https://paperswithcode.com/task/video-generation) |
 | 8) Sora: A Review on Background, Technology, Limitations, and Opportunities of Large Vision Models |  [**Paper**](https://arxiv.org/abs/2402.17177), [Github](https://github.com/lichao-sun/SoraReview), [中文翻译](https://mp.weixin.qq.com/s/KsmRg7SyCpRs7Bf3D48D2A)|
 | 9) Open-Sora-Plan (PKU-YuanGroup) |  [Github](https://github.com/PKU-YuanGroup/Open-Sora-Plan) |
+| 10) State of the Art on Diffusion Models for Visual Computing | [Paper](http://arxiv.org/abs/2310.07204)  |
+| 11) Diffusion Models: A Comprehensive Survey of Methods and Applications | [**CSUR 24 Paper**](https://arxiv.org/abs/2209.00796), [Github](https://github.com/YangLing0818/Diffusion-Models-Papers-Survey-Taxonomy) |
 
 ## Mini Sora 微信社区社区交流群
 
