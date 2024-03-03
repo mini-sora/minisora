@@ -1,5 +1,14 @@
 
 # Mini Sora 社区
+<!-- PROJECT SHIELDS -->
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![Stargazers][stars-shield]][stars-url]
+<br />
+
+<!-- PROJECT LOGO -->
 <div align="center">
 
 <img src="../assets/logo.jpg" width="600"/>
@@ -32,3 +41,14 @@
 **PPT**: [飞书下载链接](https://aicarrier.feishu.cn/file/Ds0BbCAo6oTazdxxo3Zciw1Nnne)
 
 **知乎Notes**: [A Survey on Generative Diffusion Model 生成扩散模型综述](https://zhuanlan.zhihu.com/p/684795460)
+
+[contributors-shield]: https://img.shields.io/github/contributors/mini-sora/minisora.svg?style=flat-square
+[contributors-url]: https://github.com/mini-sora/minisora/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/mini-sora/minisora.svg?style=flat-square
+[forks-url]: https://github.com/mini-sora/minisora/network/members
+[stars-shield]: https://img.shields.io/github/stars/mini-sora/minisora.svg?style=flat-square
+[stars-url]: https://github.com/mini-sora/minisora/stargazers
+[issues-shield]: https://img.shields.io/github/issues/mini-sora/minisora.svg?style=flat-square
+[issues-url]: https://img.shields.io/github/issues/mini-sora/minisora.svg
+[license-shield]: https://img.shields.io/github/license/mini-sora/minisora.svg?style=flat-square
+[license-url]: https://github.com/mini-sora/minisora/blob/main/LICENSE
