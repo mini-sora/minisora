@@ -33,6 +33,23 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 - [Generate Impressive Videos with Text Instructions: A Review of OpenAI Sora, Stable Diffusion, Lumiere and Comparable](https://www.techrxiv.org/users/684880/articles/718900-generate-impressive-videos-with-text-instructions-a-review-of-openai-sora-stable-diffusion-lumiere-and-comparable)
 - [**OpenDiT**: An Easy, Fast and Memory-Efficient System for DiT Training and Inference](https://github.com/NUS-HPC-AI-Lab/OpenDiT)
 
+## Paper Reproduction Group
+
+[Project Page](https://github.com/mini-sora/minisora/tree/main/codes)
+
+### Reproduction Goals
+
+1. **GPU-Friendly**: Ideally, it should have low requirements for GPU memory size and the number of GPUs, such as being trainable and inferable with compute power like 8 A100 80G cards, 8 A6000 48G cards, or RTX4090 24G.
+2. **Training-Efficiency**: It should achieve good results without requiring extensive training time.
+3. **Inference-Efficiency**: When generating videos during inference, there is no need for high length or resolution; acceptable parameters include 3-10 seconds in length and 480p resolution.
+
+## Recent Roundtable Discussions
+
+[**Sora Night Talk on Video Diffusion Overview**](https://github.com/mini-sora/minisora/blob/main/notes/README.md)
+
+**Zhihu Notes**: [A Survey on Generative Diffusion Model: An Overview of Generative Diffusion Models](https://zhuanlan.zhihu.com/p/684795460)
+
+
 ## Paper Reading Program
 
 - **[Sora: Creating video from text](https://openai.com/sora) Technical Report**: [Video generation models as world simulators](https://openai.com/research/video-generation-models-as-world-simulators)
@@ -83,6 +100,8 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 | 12) **EMO**: Emote Portrait Alive - Generating Expressive Portrait Videos with Audio2Video Diffusion Model under Weak Conditions | [**Paper**](https://arxiv.org/abs/2402.17485), [Github](https://github.com/HumanAIGC/EMO), [Project](https://humanaigc.github.io/emote-portrait-alive/) |
 | 13) **SimDA**: Simple Diffusion Adapter for Efficient Video Generation | [**Paper**](https://arxiv.org/pdf/2308.09710.pdf), [Github](https://github.com/ChenHsing/SimDA), [Project](https://chenhsing.github.io/SimDA/) |
 | 14) **StableVideo**: Text-driven Consistency-aware Diffusion Video Editing | [**ICCV 23 Paper**](https://arxiv.org/abs/2308.09592), [Github](https://github.com/rese1f/StableVideo), [Project](https://rese1f.github.io/StableVideo/) |
+| 15) **SVD**: Stable Video Diffusion: Scaling Latent Video Diffusion Models to Large Datasets| [**Paper**](https://static1.squarespace.com/static/6213c340453c3f502425776e/t/655ce779b9d47d342a93c890/1700587395994/stable_video_diffusion.pdf), [Github](https://github.com/Stability-AI/generative-models)|
+| 16) **ADD**: Adversarial Diffusion Distillation| [**Paper**](https://static1.squarespace.com/static/6213c340453c3f502425776e/t/65663480a92fba51d0e1023f/1701197769659/adversarial_diffusion_distillation.pdf), [Github](https://github.com/Stability-AI/generative-models) |
 | <h3>Long-context</h3> | |
 | **Paper** | **Link** |
 | 1) World Model on Million-Length Video And Language With RingAttention | [**Paper**](https://arxiv.org/abs/2402.08268), [Github](https://github.com/LargeWorldModel/LWM) |
@@ -109,6 +128,34 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 | 1) Layered Neural Atlases for Consistent Video Editing | [**TOG 21 Paper**](https://arxiv.org/pdf/2109.11418.pdf), [Github](https://github.com/ykasten/layered-neural-atlases), [Project](https://layered-neural-atlases.github.io/), |
 | 2) **StableVideo**: Text-driven Consistency-aware Diffusion Video Editing | [**ICCV 23 Paper**](https://arxiv.org/abs/2308.09592), [Github](https://github.com/rese1f/StableVideo), [Project](https://rese1f.github.io/StableVideo/) |
 | 3) **CoDeF**: Content Deformation Fields for Temporally Consistent Video Processing | [Paper](https://arxiv.org/pdf/2308.07926.pdf), [Github](https://github.com/qiuyu96/CoDeF), [Project](https://qiuyu96.github.io/CoDeF/) |
+| <h3>Prompt Engineering</h3> | |
+| **Paper**  | **Link** |
+| 1) **RealCompo**: Dynamic Equilibrium between Realism and Compositionality Improves Text-to-Image Diffusion Models | [Paper](https://arxiv.org/abs/2402.12908), [Github](https://github.com/YangLing0818/RealCompo), [Project](https://cominclip.github.io/RealCompo_Page/) |
+| 2) Mastering Text-to-Image Diffusion: Recaptioning, Planning, and Generating with Multimodal LLMs | [Paper](https://arxiv.org/abs/2401.11708), [Github](https://github.com/YangLing0818/RPG-DiffusionMaster) |
+| 3) LLM-grounded Diffusion: Enhancing Prompt Understanding of Text-to-Image Diffusion Models with Large Language Models | [**TMLR 23 Paper**](https://arxiv.org/abs/2305.13655), [Github](https://github.com/TonyLianLong/LLM-groundedDiffusion) |
+| 4) LLM BLUEPRINT: ENABLING TEXT-TO-IMAGE GEN-ERATION WITH COMPLEX AND DETAILED PROMPTS | [**ICLR 24 Paper**](https://arxiv.org/abs/2310.10640), [Github](https://github.com/hananshafi/llmblueprint) |
+| 5) Progressive Text-to-Image Diffusion with Soft Latent Direction | [Paper](https://arxiv.org/abs/2309.09466) |
+| 6) Self-correcting LLM-controlled Diffusion Models | [**CVPR 24 Paper**](https://arxiv.org/abs/2311.16090), [Github](https://github.com/tsunghan-wu/SLD) |
+| 7) **LayoutLLM-T2I**: Eliciting Layout Guidance from LLM for Text-to-Image Generation | [**MM 23 Paper**](https://arxiv.org/abs/2308.05095) |
+| 8) **LayoutGPT**: Compositional Visual Planning and Generation with Large Language Models | [**NeurIPS 23 Paper**](https://arxiv.org/abs/2305.15393), [Github](https://github.com/weixi-feng/LayoutGPT) |
+| 9) **Gen4Gen**: Generative Data Pipeline for Generative Multi-Concept Composition | [Paper](https://arxiv.org/abs/2402.15504), [Github](https://github.com/louisYen/Gen4Gen) |
+| 10) **InstructEdit**: Improving Automatic Masks for Diffusion-based Image Editing With User Instructions | [Paper](https://arxiv.org/abs/2305.18047), [Github](https://github.com/QianWangX/InstructEdit) |
+| 11) Controllable Text-to-Image Generation with GPT-4 | [Paper](https://arxiv.org/abs/2305.18583) |
+| 12) LLM-grounded Video Diffusion Models | [**ICLR 24 Paper**](https://arxiv.org/abs/2309.17444) |
+| 13) **VideoDirectorGPT**: Consistent Multi-scene Video Generation via LLM-Guided Planning | [Paper](https://arxiv.org/abs/2309.15091) |
+| 14) **FlowZero**: Zero-Shot Text-to-Video Synthesis with LLM-Driven Dynamic Scene Syntax | [Paper](https://arxiv.org/abs/2311.15813) |
+| 15) **VideoDrafter**: Content-Consistent Multi-Scene Video Generation with LLM | [Paper](https://arxiv.org/abs/2401.01256) |
+| 16) **VideoDirectorGPT**: Consistent Multi-scene Video Generation via LLM-Guided Planning | [Paper](https://arxiv.org/abs/2309.15091) |
+| 17) **Free-Bloom**: Zero-Shot Text-to-Video Generator with LLM Director and LDM Animator | [**NeurIPS 23 Paper**](https://arxiv.org/abs/2309.14494) |
+| 18) Empowering Dynamics-aware Text-to-Video Diffusion with Large Language Models | [Paper](https://arxiv.org/abs/2308.13812) |
+| 19) **MotionZero**: Exploiting Motion Priors for Zero-shot Text-to-Video Generation | [Paper](https://arxiv.org/abs/2311.16635) |
+| 20) **GPT4Motion**: Scripting Physical Motions in Text-to-Video Generation via Blender-Oriented GPT Planning | [Paper](https://arxiv.org/abs/2311.12631) |
+| <h3>Security</h3> | |
+| **Paper**  | **Link** |
+| | |
+| <h3>World Model</h3> | |
+| **Paper**  | **Link** |
+| | |
 | <h3>Dataset</h3> | |
 | **Dataset Name**  | **Link** |
 | 1) **HD-VILA-100M**: Advancing High-Resolution Video-Language Representation with Large-Scale Video Transcriptions|[Paper](https://arxiv.org/abs/2111.10337),[Github](https://github.com/microsoft/XPretrain/blob/main/hd-vila-100m/README.md),|
