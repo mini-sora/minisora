@@ -160,7 +160,8 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 | | |
 | <h3>World Model</h3> | |
 | **论文**  | **链接** |
-| | |
+| 1) **NExT-GPT**: Any-to-Any Multimodal LLM | [Paper](https://arxiv.org/abs/2309.05519), [Github](https://github.com/NExT-GPT/NExT-GPT) |
+|  | |
 | <h3>Dataset</h3> | |
 | **数据集名称**  | **链接** |
 | 1) **HD-VILA-100M**: Advancing High-Resolution Video-Language Representation with Large-Scale Video Transcriptions|[Paper](https://arxiv.org/abs/2111.10337),[Github](https://github.com/microsoft/XPretrain/blob/main/hd-vila-100m/README.md),|
@@ -186,13 +187,13 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 | 13) On the Design Fundamentals of Diffusion Models: A Survey | [**Paper**](http://arxiv.org/abs/2306.04542) |
 | 14) Efficient Diffusion Models for Vision: A Survey | [**Paper**](http://arxiv.org/abs/2210.09292) |
 | 15) Text-to-Image Diffusion Models in Generative AI: A Survey | [**Paper**](http://arxiv.org/abs/2303.07909) |
-| 16) Awesome-Diffusion-Transformers: | [GitHub](https://github.com/ShoufaChen/Awesome-Diffusion-Transformers), [Page](https://www.shoufachen.com/Awesome-Diffusion-Transformers/)
+| 16) Awesome-Diffusion-Transformers: | [GitHub](https://github.com/ShoufaChen/Awesome-Diffusion-Transformers), [Page](https://www.shoufachen.com/Awesome-Diffusion-Transformers/) |
 
 ## Mini Sora 微信社区社区交流群
 
 <div align="center">
-
 <img src="assets/qrcode.png" width="200"/>
+
   <div>&nbsp;</div>
   <div align="center">
   </div>
