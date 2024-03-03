@@ -110,6 +110,7 @@
   <img src="https://contrib.rocks/image?repo=mini-sora/minisora" />
 </a>
 
+[your-project-path]: mini-sora/minisora
 [contributors-shield]: https://img.shields.io/github/contributors/mini-sora/minisora.svg?style=flat-square
 [contributors-url]: https://github.com/mini-sora/minisora/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/mini-sora/minisora.svg?style=flat-square
