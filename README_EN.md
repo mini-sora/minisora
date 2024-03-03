@@ -1,5 +1,14 @@
-# Mini Sora Community 
+# Mini Sora Community
 
+<!-- PROJECT SHIELDS -->
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![Stargazers][stars-shield]][stars-url]
+<br />
+
+<!-- PROJECT LOGO -->
 <div align="center">
 
 <img src="assets/logo.jpg" width="600"/>
@@ -8,13 +17,11 @@
   </div>
 </div>
 
-
 <div align="center">
 
   [简体中文](README.md) | [English](https://github.com/mini-sora/minisora/blob/main/README_EN.md)
 
 </div>
-
 
 <p align="center">
     👋 join us on  <a href="https://cdn.vansin.top/minisora.jpg" target="_blank">WeChat</a>
@@ -49,7 +56,6 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 
 **Zhihu Notes**: [A Survey on Generative Diffusion Model: An Overview of Generative Diffusion Models](https://zhuanlan.zhihu.com/p/684795460)
 
-
 ## Paper Reading Program
 
 - **[Sora: Creating video from text](https://openai.com/sora) Technical Report**: [Video generation models as world simulators](https://openai.com/research/video-generation-models-as-world-simulators)
@@ -58,11 +64,11 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 - Updating...
 
 ### Recruitment of Presenters
+
 - [**DiT** Paper](https://github.com/orgs/mini-sora/discussions/39)
 - [**Latte** Paper](https://github.com/orgs/mini-sora/discussions/38)  [**Intensive Reading of Translated Latte Paper**](./notes/latte%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AF%BB%E7%BF%BB%E8%AF%91.pdf)    [**Notes of Latte Paper in Chinese**](./notes/Latte.md)
 
 ## Related Work
-
 
 | <h3>Diffusion Models</h3> |  |
 | :------------- | :------------- |
@@ -210,3 +216,15 @@ For more details, please refer to the [Contribution Guidelines](./docs/CONTRIBUT
 <a href="https://github.com/mini-sora/minisora/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=mini-sora/minisora" />
 </a>
+
+[your-project-path]: mini-sora/minisora
+[contributors-shield]: https://img.shields.io/github/contributors/mini-sora/minisora.svg?style=flat-square
+[contributors-url]: https://github.com/mini-sora/minisora/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/mini-sora/minisora.svg?style=flat-square
+[forks-url]: https://github.com/mini-sora/minisora/network/members
+[stars-shield]: https://img.shields.io/github/stars/mini-sora/minisora.svg?style=flat-square
+[stars-url]: https://github.com/mini-sora/minisora/stargazers
+[issues-shield]: https://img.shields.io/github/issues/mini-sora/minisora.svg?style=flat-square
+[issues-url]: https://img.shields.io/github/issues/mini-sora/minisora.svg
+[license-shield]: https://img.shields.io/github/license/mini-sora/minisora.svg?style=flat-square
+[license-url]: https://github.com/mini-sora/minisora/blob/main/LICENSE
