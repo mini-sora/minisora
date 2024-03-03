@@ -160,7 +160,8 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 | | |
 | <h3>World Model</h3> | |
 | **论文**  | **链接** |
-| | |
+| 1) **NExT-GPT**: Any-to-Any Multimodal LLM | [Paper](https://arxiv.org/abs/2309.05519), [Github](https://github.com/NExT-GPT/NExT-GPT) |
+|  | |
 | <h3>Dataset</h3> | |
 | **数据集名称**  | **链接** |
 | 1) **HD-VILA-100M**: Advancing High-Resolution Video-Language Representation with Large-Scale Video Transcriptions|[Paper](https://arxiv.org/abs/2111.10337),[Github](https://github.com/microsoft/XPretrain/blob/main/hd-vila-100m/README.md),|

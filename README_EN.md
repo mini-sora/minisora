@@ -156,7 +156,8 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 | | |
 | <h3>World Model</h3> | |
 | **Paper**  | **Link** |
-| | |
+| 1) **NExT-GPT**: Any-to-Any Multimodal LLM | [Paper](https://arxiv.org/abs/2309.05519), [Github](https://github.com/NExT-GPT/NExT-GPT) |
+|  | |
 | <h3>Dataset</h3> | |
 | **Dataset Name**  | **Link** |
 | 1) **HD-VILA-100M**: Advancing High-Resolution Video-Language Representation with Large-Scale Video Transcriptions|[Paper](https://arxiv.org/abs/2111.10337),[Github](https://github.com/microsoft/XPretrain/blob/main/hd-vila-100m/README.md),|
