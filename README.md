@@ -1,5 +1,14 @@
 # Mini Sora 社区
 
+<!-- PROJECT SHIELDS -->
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![Stargazers][stars-shield]][stars-url]
+<br />
+
+<!-- PROJECT LOGO -->
 <div align="center">
 
 <img src="assets/logo.jpg" width="600"/>
@@ -10,7 +19,7 @@
 
 <div align="center">
 
-[简体中文](README.md) | [English](README_EN.md)
+  [简体中文](README.md) | [English](https://github.com/mini-sora/minisora/blob/main/README_EN.md)
 
 </div>
 
@@ -218,3 +227,15 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 <a href="https://github.com/mini-sora/minisora/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=mini-sora/minisora" />
 </a>
+
+[your-project-path]: mini-sora/minisora
+[contributors-shield]: https://img.shields.io/github/contributors/mini-sora/minisora.svg?style=flat-square
+[contributors-url]: https://github.com/mini-sora/minisora/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/mini-sora/minisora.svg?style=flat-square
+[forks-url]: https://github.com/mini-sora/minisora/network/members
+[stars-shield]: https://img.shields.io/github/stars/mini-sora/minisora.svg?style=flat-square
+[stars-url]: https://github.com/mini-sora/minisora/stargazers
+[issues-shield]: https://img.shields.io/github/issues/mini-sora/minisora.svg?style=flat-square
+[issues-url]: https://img.shields.io/github/issues/mini-sora/minisora.svg
+[license-shield]: https://img.shields.io/github/license/mini-sora/minisora.svg?style=flat-square
+[license-url]: https://github.com/mini-sora/minisora/blob/main/LICENSE
