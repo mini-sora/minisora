@@ -216,6 +216,7 @@ For more details, please refer to the [Contribution Guidelines](./docs/CONTRIBUT
 <a href="https://github.com/mini-sora/minisora/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=mini-sora/minisora" />
 </a>
+
 [your-project-path]: mini-sora/minisora
 [contributors-shield]: https://img.shields.io/github/contributors/mini-sora/minisora.svg?style=flat-square
 [contributors-url]: https://github.com/mini-sora/minisora/graphs/contributors
