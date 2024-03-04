@@ -1,6 +1,7 @@
 # Mini Sora 社区Sora复现小组
 
 <!-- PROJECT SHIELDS -->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Issues][issues-shield]][issues-url]
@@ -19,7 +20,7 @@
 
 <div align="center">
 
-[简体中文](./README.md) | [English](./README_EN.md)
+[English](README.md) | [简体中文](https://github.com/mini-sora/minisora/blob/main/README_CN.md)  
 
 </div>
 
@@ -110,6 +111,7 @@
   <img src="https://contrib.rocks/image?repo=mini-sora/minisora" />
 </a>
 
+[your-project-path]: mini-sora/minisora
 [contributors-shield]: https://img.shields.io/github/contributors/mini-sora/minisora.svg?style=flat-square
 [contributors-url]: https://github.com/mini-sora/minisora/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/mini-sora/minisora.svg?style=flat-square

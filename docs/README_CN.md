@@ -1,6 +1,7 @@
 # MiniSora  docs
 
 <!-- PROJECT SHIELDS -->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Issues][issues-shield]][issues-url]
@@ -9,6 +10,7 @@
 <br />
 
 <!-- PROJECT LOGO -->
+
 <div align="center">
 
 <img src="../assets/logo.jpg" width="600"/>
@@ -22,11 +24,9 @@
 
 </div>
 
-The "docs" directory contains various documents related to the minisora repository.
+docs目录下存放的是minisora仓库相关的一些文档
 
-* [Community Contribution Guidelines Document](./CONTRIBUTING_EN.md)
-
-
+* [社区贡献说明文档](./CONTRIBUTING.md)
 
 
 [your-project-path]: mini-sora/minisora

@@ -1,6 +1,7 @@
 # Mini Sora复现Pipline计划
 
 <!-- PROJECT SHIELDS -->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Issues][issues-shield]][issues-url]
@@ -19,7 +20,7 @@
 
 <div align="center">
 
-[简体中文](./README.md) | [English](./README_EN.md)
+[English](README.md) | [简体中文](https://github.com/mini-sora/minisora/blob/main/README_CN.md)  
 
 </div>
 # 目标
