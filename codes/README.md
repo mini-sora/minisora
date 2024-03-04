@@ -20,7 +20,7 @@
 
 <div align="center">
 
-[English](README.md) | [简体中文](https://github.com/mini-sora/minisora/blob/main/README_CN.md)  
+English | [简体中文](./README_CN.md)  
 
 </div>
 
