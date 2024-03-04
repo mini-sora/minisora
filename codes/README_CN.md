@@ -34,11 +34,8 @@
 候选复现论文主要有以下三篇, 来作为后续Sora复现的Baseline, 社区已经(02/29)将[OpenDiT](https://github.com/NUS-HPC-AI-Lab/OpenDiT)和[SiT](https://github.com/willisma/SiT)代码Fork到codes文件夹下, 期待贡献者提交PR, 将Baseline代码迁移到Sora复现工作上来. [**Update**] 03/02, 添加[StableCascade](https://github.com/Stability-AI/StableCascade) codes
 
 - DiT with **OpenDiT**
-  - OpenDiT采用分布式训练，生成图片采用8卡A100训练
-  - 另外社区小伙伴咨询了OpenDiT负责人，得到如下信息
-    - 采用百卡，训练一个月到3月15号可以出更多的测试视频
-    - 用OpenDiT跑Sora，他估计最少要千卡，如果只有很少的卡也能训练起来，但是效果非常差，如果卡不够，一个视频做token时，只能丢弃一些，在扩散生成的时候，视频还原度很低
-  - OpenDiT采用的sd的vae编码，采用的是sd的预训练模型，可能根本不适合视频生成数据集，Sora应该是重新训练了vae，压缩率高了
+  - OpenDiT采用分布式训练，生成图片采用8卡A100训练。
+  - OpenDiT采用的sd的vae编码，采用的是sd的预训练模型，实测出来效果会比VideoGPT的vqvae效果更好。
   - Sora Leader做过DALLE3，生成视频 的 解码 是用类似DALLE3的扩散方式, 所以压缩编码的时候应该是DALLE3的 反方向的方式
 - **SiT**
 - **W.A.L.T**(还未release)
