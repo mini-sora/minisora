@@ -59,15 +59,17 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 
 ## Paper Reading Program
 
-- **[Sora: Creating video from text](https://openai.com/sora) Technical Report**: [Video generation models as world simulators](https://openai.com/research/video-generation-models-as-world-simulators)
-- **DiT**: [Scalable Diffusion Models with Transformers](https://arxiv.org/abs/2212.09748)
+- **[Sora: Creating video from text](https://openai.com/sora)
+- **Technical Report**: [Video generation models as world simulators](https://openai.com/research/video-generation-models-as-world-simulators)
 - **Latte**: [Latte: Latent Diffusion Transformer for Video Generation](https://maxin-cn.github.io/latte_project/)
+- **DiT**: [Scalable Diffusion Models with Transformers](https://arxiv.org/abs/2212.09748)
+- **Stable Cascade (ICLR 24 Paper)**: [Würstchen: An efficient architecture for large-scale text-to-image diffusion models](https://openreview.net/forum?id=gU58d5QeGv)
 - Updating...
 
 ### Recruitment of Presenters
 
-- [**DiT** Paper](https://github.com/orgs/mini-sora/discussions/39)
-- [**Latte** Paper](https://github.com/orgs/mini-sora/discussions/38)  [**Intensive Reading of Translated Latte Paper**](./notes/latte%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AF%BB%E7%BF%BB%E8%AF%91.pdf)    [**Notes of Latte Paper in Chinese**](./notes/Latte.md)
+- [**DiT** (ICCV 23 Paper)](https://github.com/orgs/mini-sora/discussions/39)
+- [**Stable Cascade** (ICLR 24 Paper)](https://github.com/orgs/mini-sora/discussions/145)
 
 ## Related Work
 
