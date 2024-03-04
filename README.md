@@ -114,7 +114,7 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 | 16) **ADD**: Adversarial Diffusion Distillation| [**Paper**](https://static1.squarespace.com/static/6213c340453c3f502425776e/t/65663480a92fba51d0e1023f/1701197769659/adversarial_diffusion_distillation.pdf), [Github](https://github.com/Stability-AI/generative-models) |
 | 17) **GenTron:** Diffusion Transformers for Image and Video Generation | [**CVPR 24 Paper**](http://arxiv.org/abs/2312.04557), [Project](https://www.shoufachen.com/gentron_website/)|
 | <h3>Patches Project<h3> | |
-| **论文** | **链接** |
+| **Paper** | **Link** |
 | 1) Interactive Video Stylization Using Few-Shot Patch-Based Training | [Paper](https://ondrejtexler.github.io/res/Texler20-SIG_patch-based_training_main.pdf),[Github](https://github.com/OndrejTexler/Few-Shot-Patch-Based-Training) |
 | 2)  Zoom-VQA: Patches, Frames and Clips Integration for Video Quality Assessment | [Paper](https://arxiv.org/pdf/2304.06440.pdf),[Github](https://github.com/k-zha14/Zoom-VQA) |
 | 3) FlexiViT: One Model for All Patch Sizes | [Paper](https://arxiv.org/pdf/2212.08013.pdf),[Github](https://github.com/bwconrad/flexivit.git) |
