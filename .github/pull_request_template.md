@@ -1,5 +1,7 @@
 ## Pull Request Description
 
+Please read [CONTRIBUTING](../docs/CONTRIBUTING_EN.md) manual before submitting your PR.
+
 ### Title
 [Add/Update/Remove/Correct/Other] - Brief Description
 
