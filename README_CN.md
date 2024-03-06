@@ -70,7 +70,7 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 
 ## 近期圆桌讨论
 
-### Stable Diffusion 3 论文解读，MMagic 核心贡献者直播分享
+### Stable Diffusion 3 论文(MM-DiT)解读
 
 **主讲**：MMagic 核心贡献者
 
