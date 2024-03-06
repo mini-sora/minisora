@@ -78,8 +78,10 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 
 **直播看点**：MMagic 核心贡献者为我们领读 Stable Diffusion 3 论文，介绍 Stable Diffusion 3 的架构细节和设计思路。
 
+请使用微信扫码预约视频号直播:
+
 <div align="center">
-<img src="assets/SD3论文领读.png" width="600"/>
+<img src="assets/SD3论文领读.png" width="100"/>
 
   <div>&nbsp;</div>
   <div align="center">
