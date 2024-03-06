@@ -1,4 +1,4 @@
-# Mini Sora Community Sora Replication Team
+# Mini Sora Community Sora Reproduction Group
 
 <!-- PROJECT SHIELDS -->
 
@@ -20,28 +20,27 @@
 
 <div align="center">
 
-English | [简体中文](./README_CN.md)  
+[English](./README.md)| [简体中文](./README_CN.md)  
 
 </div>
 
-## Mini Sora Replication Goals
 
-1. **GPU-Friendly**: Preferably, the model should have low GPU memory requirements and be able to train and infer on hardware such as 8-card A100, 4-card A6000, or single-card RTX4090.
-2. **Training Efficiency**: The model should achieve good results without requiring excessively long training times.
-3. **Inference Efficiency**: When generating videos during inference, the length and resolution of the videos should not be excessively high; for example, lengths of 3-10 seconds and resolutions of 480p are acceptable.
+## Mini Sora Reproduction Objectives
 
-The three candidate papers for replication, which will serve as baselines for future Sora replication, are already (as of 02/29) forked into the "codes" directory by the community. We look forward to contributors submitting pull requests to migrate the baseline code to the Sora replication effort. [**Update**] 03/02, Added [StableCascade](https://github.com/Stability-AI/StableCascade) codes.
+1. **GPU-Friendly**: Ideally, it should have low requirements for GPU memory size and the number of GPUs, such as training and inference on 8 A100 cards, 4K A6000 cards, or a single RTX 4090 card.
+2. **Training-Efficiency** : It should achieve good results without requiring long training periods.
+3. **Inference-Efficiency**: For video generation, there is no stringent requirement for the length and resolution of the produced videos. For instance, generating videos that are 3 to 10 seconds long with a resolution of 480p is considered acceptable.
 
-* DiT with **OpenDiT**
-  * OpenDiT adopts distributed training and trains image generation using 8-card A100.
-  * Additionally, community members consulted the OpenDiT project lead and received the following information:
-    - Training with hundreds of cards could produce more test videos by March 15th.
-    - Running Sora with OpenDiT would ideally require thousands of cards. While it's possible to train with fewer cards, the results would be subpar. If there aren't enough cards, some tokens in a video may need to be discarded during tokenization, resulting in poor video reconstruction during diffusion generation.
-  * OpenDiT utilizes SD's VAE encoding with pretrained models, which may not be suitable for video generation datasets. Sora likely retrained the VAE, resulting in higher compression rates.
-  * The Sora team, having worked on DALLE3, employs a diffusion-like decoding method for video generation. Thus, during compression encoding, they likely utilize a reverse process similar to DALLE3.
+The candidate papers for replication primarily include the following three, serving as baselines for subsequent Sora replication efforts. The community has, as of February 29th, forked the [OpenDiT](https://github.com/NUS-HPC-AI-Lab/OpenDiT) and [SiT](https://github.com/willisma/SiT) into the codes folder, looking forward to contributors submitting PRs to migrate the baseline codes to the Sora replication project. [**Update**] On March 2nd, [StableCascade](https://github.com/Stability-AI/StableCascade) codes were added.
 
+
+- DiT with **OpenDiT**
+  - OpenDiT utilizes distributed training for image generation, employing a setup with 8 A100 GPUs for the training process.
+  - OpenDiT employs the VAE encoding from Stable Diffusion, utilizing its pre-trained model. In practice, this has been found to yield better results than the vqvae used in VideoGPT.
+  - The Sora Leader has experience with DALLE3, and the video generation process utilizes a decoding method similar to the diffusion approach used in DALLE3. Therefore, the encoding process for compression should be the reverse of DALLE3's method.
 - **SiT**
-- **W.A.L.T**(Not yet released)
+- **W.A.L.T**(not release)
+
 - **StableCascade**
   - ToDo: make it as a video-based model with additional temp layer in the near future
 
@@ -53,23 +52,11 @@ The three candidate papers for replication, which will serve as baselines for fu
 
 ...
 
-## Computational Requirements
+
+## Computational Power Requirements
 
 ...
 
-## Other Projects
-
-- Non-Sora One-Click Text-to-Video Generation: [Text2Video](./Others/Text2Video.md)
-
-  - Project Description: This is a project for generating videos directly from text input with a single click.
-- Technology Stack:
-    - Text processing, text segmentation, and prompt generation
-    - Speech synthesis, converting text to speech (TTS) using Azure Speech
-    - Image generation, converting text to images using OpenAI DALL·E
-    - Video composition, combining images and speech to generate videos using MoviePy
-  - Project Requirements:
-    - OpenAI key for using DALL·E to generate images
-    - Azure Speech key for converting text to speech
 
 <!-- 
 **After submitting a PR or Issue**, you can apply to join the Mini Sora contributors community and request to join the Sora-related paper replication group!
@@ -83,7 +70,9 @@ The three candidate papers for replication, which will serve as baselines for fu
 </div>
 -->
 
+
 ## Sora Replication Team - MiniSora Community WeChat Discussion Group
+
 
 <div align="center">
 
@@ -99,11 +88,13 @@ The three candidate papers for replication, which will serve as baselines for fu
 
 ## How to Contribute to the Mini Sora Community
 
+
 We greatly appreciate your contributions to the Mini Sora open-source community and helping us make it even better than it is now!
 
 For more details, please refer to the [Contribution Guidelines](../docs/CONTRIBUTING.md)
 
 ## Community contributors
+
 
 <!-- readme: collaborators,contributors -start -->
 
