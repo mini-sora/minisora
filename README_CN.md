@@ -35,7 +35,6 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 
 ## MiniSora社区复现小组
 
-
 [**MiniSora复现小组页面**](https://github.com/mini-sora/minisora/tree/main/codes)
 
 ### MiniSora的Sora复现目标
