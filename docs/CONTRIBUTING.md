@@ -96,6 +96,11 @@ The following types are reserved for future code collaboration if needed.
 
 
 > Format ——  **[Journal Name]** Paper Title
-Example——**[CVPR 24 paper]** **lovieChat**: From Dense Token to Sparse Memory for Long VideoUnderstanding
+>
+> Example1——**[CVPR 24** paper**]** **lovieChat:** From Dense Token to Sparse Memory for Long Video Understanding
+>
+> Example2——**[Paper]** **Sora:** Creating video from text
+>
+> 
 
 
