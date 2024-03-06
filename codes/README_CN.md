@@ -67,6 +67,7 @@
     - openai key，用 DALL·E 生成图片；
     - azure speech key，将文本转成语音。
   
+
 <!-- 
 **提交PR或者Issue后**, 可以申请加入MiniSora贡献者社群并申请加入 Sora 有关论文复现小组！
 
@@ -97,7 +98,7 @@
 
 我们非常希望你们能够为 Mini Sora 开源社区做出贡献，并且帮助我们把它做得比现在更好！
 
-具体查看[贡献指南](../docs/CONTRIBUTING.md)
+具体查看[贡献指南](../docs/CONTRIBUTING_CN.md)
 
 ## 社区贡献者
 

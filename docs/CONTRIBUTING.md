@@ -1,98 +1,101 @@
-# 如何向Mini Sora 社区贡献
+# How to contribute to the Mini Sora community
 
-Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**免费不收取任何费用、不割韭菜**）
+The Mini Sora open-source community is positioned as a community-driven initiative (**free of charge and devoid of any exploitation**) organized spontaneously by community members. 
 
-我们非常希望你们能够为 Mini Sora 开源社区做出贡献，并且帮助我们把它做得比现在更好！如果你首次为 Mini Sora 做贡献，可以查看 [good first PR](https://github.com/mini-sora/minisora/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+PR%22) 的 issue 列表。
+We really hope that you can contribute to the Mini Sora open source community and help us make it better than it is now! If you're making your first contribution to Mini Sora, you can check out the list of issues labeled [good first PR](https://github.com/mini-sora/minisora/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+PR%22).
 
-## 提交请求（PR）
+## Submitting a Pull Request (PR)
 
-作为贡献者，在你提交你的请求之前，以下是我们希望你遵循的规范：
+As a contributor, before submitting your request, here are the guidelines we hope you follow:
 
-1. 首先，在 [Mini Sora GitHub](https://github.com/mini-sora/minisora/pulls) 中搜索与您想要提交相关的内容开放或关闭的 PR。我们想您也不希望重复现有的工作。
+1. Firstly, please search in the [Mini Sora GitHub](https://github.com/mini-sora/minisora/pulls) to see if there are any open or closed pull requests related to the content you intend to submit. We assume you wouldn't want to duplicate existing work.
 
-2. 然后 [Fork](https://github.com/mini-sora/minisora/fork) [minisora](https://github.com/mini-sora/minisora) 仓库，并下载你的仓库到本地
+2. Next, [fork](https://github.com/mini-sora/minisora/fork) the [minisora](https://github.com/mini-sora/minisora) repository, and download your forked repository to your local machine.
 
    ```
-   git clone 【你fork的仓库地址】
+   git clone 【your-forked-repository-url】
    ```
 
-3. 添加mini-sora原仓库，方便同步远程仓库最新的更新
+3. To add the original Mini Sora repository as a remote and facilitate syncing with the latest updates:
 
    ```
    git remote add upstream https://github.com/mini-sora/minisora
    ```
    
-4. 同步主仓库代码到你本地，以及同步回你fork的远程仓库
+4. Sync the code from the main repository to your local machine, and then sync it back to your forked remote repository.
 
    ```
-   # 从upstream分支上，拉取最新代码
+   # Pull the latest code from the upstream branch
    git fetch upstream
-   # 切换到main分支上
+   
+   # Switch to the main branch
    git checkout main
-   # 把upstream分支上的更新内容合并到mian上,本地的main分支就和上游同步了
+   
+   # Merge the updates from the upstream branch into main, synchronizing the local main branch with the upstream
    git merge upstream/main
-   # 还需把本地main同步到【你fork的仓库地址】的远程分支
+   
+   # Additionally, sync the local main branch to the remote branch of your forked repository
    git push origin main
    ```
 
-   > 注意：每次开始提交前，请先同步主仓库的代码
+   > Note: Before starting each submission, please synchronize the code from the main repository.
 
    
 
-5. 在你自己fork的仓库，请创建一个分支用于提交你的变更内容。分支名尽可能的有一定意义。
+5. In your forked repository, please create a branch for submitting your changes. The branch name should preferably be meaningful.
 
    ```
    git checkout -b my-docs-branch main
    ```
 
-6. 在你的分支上面进行修改，提交commit时，请按照我们的[Commit消息格式](#Commit消息格式)进行编写commit描述，当你是添加了论文，在填写论文索引时，请按照[论文命名规范](#论文命名规范)填写索引数据。
+6. While making modifications on your branch and committing changes, please adhere to our [Commit Message Format](#Commit-Message-Format) for composing commit descriptions. If you're adding a paper, please follow the [Paper Naming Convention](#Paper-Naming-Convention) when filling in the paper index information.
 
    ```
    git commit -m "[docs]: xxxx"
    ```
 
-7. 提交数据到你的GitHub仓库
+7. Submit your data to your GitHub repository.
 
    ```
    git push origin  my-docs-branch
    ```
 
-8. 回到GitHub仓库页面，提交PR到`minisora:main`
+8. Go back to the GitHub repository page and submit a pull request to `minisora:main`.
 
-9. 加入"最近更新"的工作栏目中添加的工作应该与视频生成有关，并且应该是非常令人印象深刻的工作。
+9. The works added to the "最近更新" Section should be related to Video Generation and should be a Very Impressive Work.
 
-## Commit消息格式
+## Commit Message Format
 
-提交的 commit message  必须包含`<type>`和`<summary>`两部分
+The commit message must include both `<type>` and `<summary>` sections.
 
 ```
 [<type>]: <summary>
   │        │
-  │        └─⫸ 简短描述你的修改内容，结尾没有句号
+  │        └─⫸ Briefly describe your changes, without ending with a period.
   │
   └─⫸ Commit Type: |docs|feat|fix|refactor|
 ```
 
 ### Type 
 
-* **docs**：当你修改了文档，或者添加了文档，选择`docs`
+* **docs**：When you modify a document or add a document, select `docs`
 
-以下类型是如果后续涉及到代码协作预留
+The following types are reserved for future code collaboration if needed.
 
-* **feat**：这里是指一个新的功能
-* **fix**：修复bug
-* **refactor**: 重构代码，不涉及新功能或者bug修复
+* **feat**：Here it refers to a new feature.
+* **fix**：fix bug
+* **refactor**: Refactor code, no new features or bug fixes involved
 
 ### summary
 
-* 用英文描述修改的内容，不要用句号(.)结尾
+* Describe the modifications in English, without ending with a period (.)
 
 > eg: git commit -m "[docs]: add a contributing.md file"
 
-## 论文命名规范
+## Paper Naming Convention
 
 ```
-# [期刊名] 论文名称
+# [Journal Name] Paper Title
 [CVPR 24] lovieChat: From Dense Token to Sparse Memory for Long VideoUnderstanding
 ```
 

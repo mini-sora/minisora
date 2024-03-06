@@ -1,4 +1,4 @@
-# Mini Sora 社区Sora复现小组
+# Mini Sora Community Sora Replication Team
 
 <!-- PROJECT SHIELDS -->
 
@@ -24,53 +24,55 @@ English | [简体中文](./README_CN.md)
 
 </div>
 
-## Mini Sora 复现目标
+## Mini Sora Replication Goals
 
-1. **GPU-Friendly**: 最好对GPU内存大小和GPU数量要求较低,比如8卡A100,4KA6000,单卡Rtx4090之类的算力可以训练和推理
-2. **Training-Efficiency** : 不需要训练太久即可有较好的效果
-3. **Inference-Efficiency**: 推理生成视频时, 长度和分辨率不要求过高, 如3-10s,480p都是可接受的
+1. **GPU-Friendly**: Preferably, the model should have low GPU memory requirements and be able to train and infer on hardware such as 8-card A100, 4-card A6000, or single-card RTX4090.
+2. **Training Efficiency**: The model should achieve good results without requiring excessively long training times.
+3. **Inference Efficiency**: When generating videos during inference, the length and resolution of the videos should not be excessively high; for example, lengths of 3-10 seconds and resolutions of 480p are acceptable.
 
-候选复现论文主要有以下三篇, 来作为后续Sora复现的Baseline, 社区已经(02/29)将[OpenDiT](https://github.com/NUS-HPC-AI-Lab/OpenDiT)和[SiT](https://github.com/willisma/SiT)代码Fork到codes文件夹下, 期待贡献者提交PR, 将Baseline代码迁移到Sora复现工作上来. [**Update**] 03/02, 添加[StableCascade](https://github.com/Stability-AI/StableCascade) codes
+The three candidate papers for replication, which will serve as baselines for future Sora replication, are already (as of 02/29) forked into the "codes" directory by the community. We look forward to contributors submitting pull requests to migrate the baseline code to the Sora replication effort. [**Update**] 03/02, Added [StableCascade](https://github.com/Stability-AI/StableCascade) codes.
 
-- DiT with **OpenDiT**
-  - OpenDiT采用分布式训练，生成图片采用8卡A100训练
-  - 另外社区小伙伴咨询了OpenDiT负责人，得到如下信息
-    - 采用百卡，训练一个月到3月15号可以出更多的测试视频
-    - 用OpenDiT跑Sora，他估计最少要千卡，如果只有很少的卡也能训练起来，但是效果非常差，如果卡不够，一个视频做token时，只能丢弃一些，在扩散生成的时候，视频还原度很低
-  - OpenDiT采用的sd的vae编码，采用的是sd的预训练模型，可能根本不适合视频生成数据集，Sora应该是重新训练了vae，压缩率高了
-  - Sora Leader做过DALLE3，生成视频 的 解码 是用类似DALLE3的扩散方式, 所以压缩编码的时候应该是DALLE3的 反方向的方式
+* DiT with **OpenDiT**
+  * OpenDiT adopts distributed training and trains image generation using 8-card A100.
+  * Additionally, community members consulted the OpenDiT project lead and received the following information:
+    - Training with hundreds of cards could produce more test videos by March 15th.
+    - Running Sora with OpenDiT would ideally require thousands of cards. While it's possible to train with fewer cards, the results would be subpar. If there aren't enough cards, some tokens in a video may need to be discarded during tokenization, resulting in poor video reconstruction during diffusion generation.
+  * OpenDiT utilizes SD's VAE encoding with pretrained models, which may not be suitable for video generation datasets. Sora likely retrained the VAE, resulting in higher compression rates.
+  * The Sora team, having worked on DALLE3, employs a diffusion-like decoding method for video generation. Thus, during compression encoding, they likely utilize a reverse process similar to DALLE3.
+
 - **SiT**
-- **W.A.L.T**(还未release)
+- **W.A.L.T**(Not yet released)
 - **StableCascade**
   - ToDo: make it as a video-based model with additional temp layer in the near future
 
-## 数据集
+## Dataset
 
 ...
 
-## 模型架构
+## Model Architecture
 
 ...
 
-## 算力需求
+## Computational Requirements
 
 ...
 
-## 其他项目
+## Other Projects
 
-- 非Sora一键文本生成视频 : [Text2Video](./Others/Text2Video.md)
-  - 项目介绍: 这是一个文本转视频的项目，通过输入文本，一键直接生成对应的视频。
-  - 技术栈：
-    - 文本处理，分割文本，生成 prompt
-    - 语音合成，将文本转换为语音 text to speech (TTS)，azure speech
-    - 图片生成，将文本转成图片，openai DALL·E
-    - 视频合成，将图片和语音合成视频，moviepy
-  - 项目要求:
-    - openai key，用 DALL·E 生成图片；
-    - azure speech key，将文本转成语音。
-  
+- Non-Sora One-Click Text-to-Video Generation: [Text2Video](./Others/Text2Video.md)
+
+  - Project Description: This is a project for generating videos directly from text input with a single click.
+- Technology Stack:
+    - Text processing, text segmentation, and prompt generation
+    - Speech synthesis, converting text to speech (TTS) using Azure Speech
+    - Image generation, converting text to images using OpenAI DALL·E
+    - Video composition, combining images and speech to generate videos using MoviePy
+  - Project Requirements:
+    - OpenAI key for using DALL·E to generate images
+    - Azure Speech key for converting text to speech
+
 <!-- 
-**提交PR或者Issue后**, 可以申请加入MiniSora贡献者社群并申请加入 Sora 有关论文复现小组！
+**After submitting a PR or Issue**, you can apply to join the Mini Sora contributors community and request to join the Sora-related paper replication group!
 
 <div align="center">
 
@@ -81,7 +83,7 @@ English | [简体中文](./README_CN.md)
 </div>
 -->
 
-## Sora复现小组-MiniSora社区微信交流群
+## Sora Replication Team - MiniSora Community WeChat Discussion Group
 
 <div align="center">
 
@@ -95,13 +97,13 @@ English | [简体中文](./README_CN.md)
 
 [![Star History Chart](https://api.star-history.com/svg?repos=mini-sora/minisora&type=Date)](https://star-history.com/#mini-sora/minisora&Date)
 
-## 如何向Mini Sora 社区贡献
+## How to Contribute to the Mini Sora Community
 
-我们非常希望你们能够为 Mini Sora 开源社区做出贡献，并且帮助我们把它做得比现在更好！
+We greatly appreciate your contributions to the Mini Sora open-source community and helping us make it even better than it is now!
 
-具体查看[贡献指南](../docs/CONTRIBUTING.md)
+For more details, please refer to the [Contribution Guidelines](../docs/CONTRIBUTING.md)
 
-## 社区贡献者
+## Community contributors
 
 <!-- readme: collaborators,contributors -start -->
 
