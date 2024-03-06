@@ -91,8 +91,5 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 
 ## 论文命名规范
 
-```
-# [期刊名] 论文名称
-[CVPR 24] lovieChat: From Dense Token to Sparse Memory for Long VideoUnderstanding
-```
-
+>格式—— **[期刊名]** 论文名称
+样例——**[CVPR 24 paper]** **lovieChat**: From Dense Token to Sparse Memory for Long VideoUnderstanding

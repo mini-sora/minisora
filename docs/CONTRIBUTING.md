@@ -94,8 +94,8 @@ The following types are reserved for future code collaboration if needed.
 
 ## Paper Naming Convention
 
-```
-# [Journal Name] Paper Title
-[CVPR 24] lovieChat: From Dense Token to Sparse Memory for Long VideoUnderstanding
-```
+
+> Format ——  **[Journal Name]** Paper Title
+Example——**[CVPR 24 paper]** **lovieChat**: From Dense Token to Sparse Memory for Long VideoUnderstanding
+
 
