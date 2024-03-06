@@ -33,46 +33,68 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 - Regular roundtable discussions will be held with the Sora team and the community to explore possibilities.
 - We will delve into existing technological pathways for video generation.
 
-## Hot News
+## Reproduction Group of MiniSora Community
 
-- [State of the Art on Diffusion Models for Visual Computing](http://arxiv.org/abs/2310.07204)
-- **CSUR 24 Paper**: [Diffusion Models: A Comprehensive Survey of Methods and Applications](https://arxiv.org/abs/2209.00796)
-- [Sora: A Review on Background, Technology, Limitations, and Opportunities of Large Vision Models](https://arxiv.org/abs/2402.17177)
-- [Generate Impressive Videos with Text Instructions: A Review of OpenAI Sora, Stable Diffusion, Lumiere and Comparable](https://www.techrxiv.org/users/684880/articles/718900-generate-impressive-videos-with-text-instructions-a-review-of-openai-sora-stable-diffusion-lumiere-and-comparable)
-- [**OpenDiT**: An Easy, Fast and Memory-Efficient System for DiT Training and Inference](https://github.com/NUS-HPC-AI-Lab/OpenDiT)
+[**MiniSora Reproduction Group Page**](https://github.com/mini-sora/minisora/tree/main/codes)
 
-## Paper Reproduction Group
-
-[Project Page](https://github.com/mini-sora/minisora/tree/main/codes)
-
-### Reproduction Goals
+### Sora Reproduction Goals of MiniSora
 
 1. **GPU-Friendly**: Ideally, it should have low requirements for GPU memory size and the number of GPUs, such as being trainable and inferable with compute power like 8 A100 80G cards, 8 A6000 48G cards, or RTX4090 24G.
 2. **Training-Efficiency**: It should achieve good results without requiring extensive training time.
 3. **Inference-Efficiency**: When generating videos during inference, there is no need for high length or resolution; acceptable parameters include 3-10 seconds in length and 480p resolution.
 
+### MiniSora-DiT: Reproducing the DiT Paper with XTuner
+
+[**MiniSora-DiT Group Page**: https://github.com/mini-sora/minisora-DiT](https://github.com/mini-sora/minisora-DiT)
+
+#### Requirements
+
+We are recruiting MiniSora Community contributors to reproduce `DiT` using [XTuner](https://github.com/internLM/xtuner). 
+
+We hope the community member has the following characteristics:
+
+1. Familiarity with the `OpenMMLab MMEngine` mechanism.
+2. Familiarity with `DiT`.
+
+#### Background
+
+1. The author of `DiT` is the same as the author of `Sora`.
+2. [XTuner](https://github.com/internLM/xtuner) has the core technology to efficiently train sequences of length `1000K`.
+
+#### Support
+
+1. Computational resources: 2*A100.
+2. Strong supports from [XTuner](https://github.com/internLM/xtuner) core developer [P佬@pppppM](https://github.com/pppppM).
+
+## Hot News
+
+- [**Stable Diffusion 3**: MM-DiT: Scaling Rectified Flow Transformers for High-Resolution Image Synthesis](https://stability.ai/news/stable-diffusion-3-research-paper)
+
 ## Recent Roundtable Discussions
 
-### Interpretation of Stable Diffusion 3 Paper, Live Sharing by MMagic Core Contributors
+### Paper Interpretation of Stable Diffusion 3 paper: MM-DiT
 
 **Speaker**: MMagic Core Contributors
 
 **Live Streaming Time**: 03/12 20:00
 
-**Highlights**: MMagic core contributors will lead us in interpreting the Stable Diffusion 3 paper, discussing the architecture details and design principles of Stable Diffusion 3.
+**Highlights**: MMagic core contributors will lead us in interpreting the Stable Diffusion 3 paper, discussing the architecture details and design principles of Stable Diffusion 3. 
+
+Please scan the QR code with WeChat to book a live video session.
 
 <div align="center">
-<img src="assets/SD3论文领读.png" width="600"/>
+<img src="assets/SD3论文领读.png" width="100"/>
 
   <div>&nbsp;</div>
   <div align="center">
   </div>
 </div>
 
+### Highlights from Previous Discussions
 
-[**Sora Night Talk on Video Diffusion Overview**](https://github.com/mini-sora/minisora/blob/main/notes/README.md)
+[**Night Talk with Sora: Video Diffusion Overview**](https://github.com/mini-sora/minisora/blob/main/notes/README.md)
 
-**Zhihu Notes**: [A Survey on Generative Diffusion Model: An Overview of Generative Diffusion Models](https://zhuanlan.zhihu.com/p/684795460)
+**ZhiHu Notes**: [A Survey on Generative Diffusion Model: An Overview of Generative Diffusion Models](https://zhuanlan.zhihu.com/p/684795460)
 
 ## Paper Reading Program
 
@@ -112,13 +134,13 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 | 6) **OpenDiT**: An Easy, Fast and Memory-Efficient System for DiT Training and Inference | [GitHub](https://github.com/NUS-HPC-AI-Lab/OpenDiT) |
 | 7) **Large-DiT**: Large Diffusion Transformer | [GitHub](https://github.com/Alpha-VLLM/LLaMA2-Accessory/tree/main/Large-DiT) |
 | 8) **VisionLLaMA**: A Unified LLaMA Interface for Vision Tasks | [**Paper**](https://arxiv.org/abs/2403.00522), [GitHub](https://github.com/Meituan-AutoML/VisionLLaMA) |
-| 9) **MM-DiT**: Scaling Rectified Flow Transformers for High-Resolution Image Synthesis | [**Paper**](https://stabilityai-public-packages.s3.us-west-2.amazonaws.com/Stable+Diffusion+3+Paper.pdf), [Blog](https://stability.ai/news/stable-diffusion-3-research-paper) |
+| 9) **Stable Diffusion 3**: MM-DiT: Scaling Rectified Flow Transformers for High-Resolution Image Synthesis | [**Paper**](https://stabilityai-public-packages.s3.us-west-2.amazonaws.com/Stable+Diffusion+3+Paper.pdf), [Blog](https://stability.ai/news/stable-diffusion-3-research-paper) |
 | <h3>Baseline Video Generation Models</h3> | |
 | **Paper** | **Link** |
 | 1) **ViViT**: A Video Vision Transformer | [**ICCV 21 Paper**](https://arxiv.org/pdf/2103.15691v2.pdf), [GitHub](https://github.com/google-research/scenic) |
 | 2) **VideoLDM**: Align your Latents: High-Resolution Video Synthesis with Latent Diffusion Models | [**CVPR 23 Paper**](https://arxiv.org/abs/2304.08818) |
 | 3) **LVDM**: Latent Video Diffusion Models for High-Fidelity Long Video Generation | [**Paper**](https://arxiv.org/abs/2211.13221), [GitHub](https://github.com/YingqingHe/LVDM) |
-| 4) **LFDM**: Conditional Image-to-Video Generation with Latent Flow Diffusion Models | [**CVPR 23 Paper**](https://arxiv.org/abs/2304.08818), [GitHub](https://github.com/nihaomiao/CVPR23_LFDM) |
+| 4) **LFDM**: Conditional Image-to-Video Generation with Latent Flow Diffusion Models | [**CVPR 23 Paper**](https://arxiv.org/abs/2303.13744), [GitHub](https://github.com/nihaomiao/CVPR23_LFDM) |
 | 5) **MotionDirector**: Motion Customization of Text-to-Video Diffusion Models | [**Paper**](https://arxiv.org/abs/2310.08465), [GitHub](https://github.com/showlab/MotionDirector) |
 | 6) **TGAN-ODE**: Latent Neural Differential Equations for Video Generation | [**Paper**](https://arxiv.org/pdf/2011.03864v3.pdf), [GitHub](https://github.com/Zasder3/Latent-Neural-Differential-Equations-for-Video-Generation) |
 | 7) **Text2Video-Zero**: Text-to-Image Diffusion Models are Zero-Shot Video Generators | [**Paper**](https://arxiv.org/abs/2303.13439), [GitHub](https://github.com/Picsart-AI-Research/Text2Video-Zero) |
@@ -217,13 +239,17 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 | 1) **NExT-GPT**: Any-to-Any Multimodal LLM | [**Paper**](https://arxiv.org/abs/2309.05519), [GitHub](https://github.com/NExT-GPT/NExT-GPT) |
 |  | |
 | <h3>Dataset</h3> | |
-| **Dataset Name**  | **Link** |
-| 1) **HD-VILA-100M**: Advancing High-Resolution Video-Language Representation with Large-Scale Video Transcriptions|[**Paper**](https://arxiv.org/abs/2111.10337),[GitHub](https://github.com/microsoft/XPretrain/blob/main/hd-vila-100m/README.md),|
-| 2) **HowTo100M**: Learning a Text-Video Embedding by Watching Hundred Million Narrated Video Clips | [**Paper**](https://arxiv.org/abs/1906.03327), [GitHub](https://github.com/antoine77340/howto100m), [Project](https://www.di.ens.fr/willow/research/howto100m/), |
-| 3) **YT-Temporal-180M**: A dataset for learning multimodal script knowledge derived from 6 million public YouTube videos | [**Paper**](https://arxiv.org/abs/2106.02636), [GitHub](https://github.com/rowanz/merlot), [Project](https://rowanzellers.com/merlot/#data), |
-| 4) **Panda-70M**: Captioning 70M Videos with Multiple Cross-Modality Teachers | [**Paper**](https://arxiv.org/abs/2402.19479), [GitHub](https://github.com/snap-research/Panda-70M), [Project](https://snap-research.github.io/Panda-70M/), |
-| 5) **UCF101**: Action Recognition Data Set | [**Paper**](https://arxiv.org/abs/1212.0402), [Project](https://www.crcv.ucf.edu/research/data-sets/ucf101/), |
-| 6) **video2dataset**: A Simple Tool For Large Video Dataset Curation | [Tool](https://laion.ai/blog/video2dataset/), [GitHub](https://github.com/iejMac/video2dataset), |
+| **Dataset Name - Paper**  | **Link** |
+| 1) **Panda-70M** - Panda-70M: Captioning 70M Videos with Multiple Cross-Modality Teachers<br><small>`70M Clips, 720P, Downloadable`</small>|[**CVPR 24 Paper**](https://arxiv.org/abs/2402.19479), [Github](https://github.com/snap-research/Panda-70M), [Project](https://snap-research.github.io/Panda-70M/)|
+| 2) **InternVid-10M** - InternVid: A Large-scale Video-Text Dataset for Multimodal Understanding and Generation<br><small>`10M Clips, 720P, Downloadable`</small>|[**ArXiv 24 Paper**](https://arxiv.org/abs/2307.06942), [Github](https://github.com/OpenGVLab/InternVideo/tree/main/Data/InternVid)|
+| 3) **CelebV-Text** - CelebV-Text: A Large-Scale Facial Text-Video Dataset<br><small>`70K Clips, 720P, Downloadable`</small>|[**CVPR 23 Paper**](https://arxiv.org/abs/2303.14717), [Github](https://github.com/celebv-text/CelebV-Text), [Project](https://celebv-text.github.io/)|
+| 4) **HD-VG-130M** - VideoFactory: Swap Attention in Spatiotemporal Diffusions for Text-to-Video Generation<br><small> `130M Clips, 720P, Downloadable`</small>|[**ArXiv 23 Paper**](https://arxiv.org/abs/2305.10874), [Github](https://github.com/daooshee/HD-VG-130M), [Tool](https://github.com/Breakthrough/PySceneDetect)|
+| 5) **HD-VILA-100M** - Advancing High-Resolution Video-Language Representation with Large-Scale Video Transcriptions<br><small> `100M Clips, 720P, Downloadable`</small>|[**CVPR 22 Paper**](https://arxiv.org/abs/2111.10337), [Github](https://github.com/microsoft/XPretrain/blob/main/hd-vila-100m/README.md)|
+| 6) **VideoCC** - Learning Audio-Video Modalities from Image Captions<br><small>`10.3M Clips, 720P, Downloadable`</small>|[**ECCV 22 Paper**](https://arxiv.org/abs/2204.00679), [Github](https://github.com/google-research-datasets/videoCC-data)|
+| 7) **YT-Temporal-180M** - MERLOT: Multimodal Neural Script Knowledge Models<br><small>`180M Clips, 480P, Downloadable`</small>| [**NeurIPS 21 Paper**](https://arxiv.org/abs/2106.02636), [Github](https://github.com/rowanz/merlot), [Project](https://rowanzellers.com/merlot/#data)|
+| 8) **HowTo100M** - HowTo100M: Learning a Text-Video Embedding by Watching Hundred Million Narrated Video Clips<br><small>`136M Clips, 240P, Downloadable`</small>| [**ICCV 19 Paper**](https://arxiv.org/abs/1906.03327), [Github](https://github.com/antoine77340/howto100m), [Project](https://www.di.ens.fr/willow/research/howto100m/)|
+| 9) **UCF101** - UCF101: A Dataset of 101 Human Actions Classes From Videos in The Wild<br><small>`13K Clips, 240P, Downloadable`</small>| [**CVPR 12 Paper**](https://arxiv.org/abs/1212.0402), [Project](https://www.crcv.ucf.edu/data/UCF101.php)|
+| 10) **MSVD** - Collecting Highly Parallel Data for Paraphrase Evaluation<br><small>`122K Clips, 240P, Downloadable`</small> | [**ACL 11 Paper**](https://aclanthology.org/P11-1020.pdf), [Project](https://www.cs.utexas.edu/users/ml/clamp/videoDescription/)|
 | <h3>Existing high-quality resources</h3> | |
 | **Resources**  | **Link** |
 | 1) Datawhale - AI视频生成学习 | [Feishu doc](https://datawhaler.feishu.cn/docx/G4LkdaffWopVbwxT1oHceiv9n0c) |
@@ -242,7 +268,7 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 | 14) Efficient Diffusion Models for Vision: A Survey | [**Paper**](http://arxiv.org/abs/2210.09292) |
 | 15) Text-to-Image Diffusion Models in Generative AI: A Survey | [**Paper**](http://arxiv.org/abs/2303.07909) |
 | 16) Awesome-Diffusion-Transformers | [GitHub](https://github.com/ShoufaChen/Awesome-Diffusion-Transformers), [Page](https://www.shoufachen.com/Awesome-Diffusion-Transformers/) |
-
+| 17) Open-Sora (HPC-AI Tech) |  [GitHub](https://github.com/hpcaitech/Open-Sora), [Blog](https://hpc-ai.com/blog/open-sora) |
 
 
 ## Mini Sora WeChat Community Exchange Group
