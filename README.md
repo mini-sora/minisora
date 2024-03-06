@@ -49,7 +49,7 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 
 #### Requirements
 
-We are recruiting MiniSora Community contributors to reproduce `DiT` using XTuner. 
+We are recruiting MiniSora Community contributors to reproduce `DiT` using [XTuner](https://github.com/internLM/xtuner). 
 
 We hope the community member has the following characteristics:
 
@@ -59,14 +59,12 @@ We hope the community member has the following characteristics:
 #### Background
 
 1. The author of `DiT` is the same as the author of `Sora`.
-2. XTuner has the core technology to efficiently train sequences of length `1000K`.
+2. [XTuner](https://github.com/internLM/xtuner) has the core technology to efficiently train sequences of length `1000K`.
 
 #### Support
 
 1. Computational resources: 2*A100.
-2. Strong supports from XTuner core developer [P佬@pppppM](https://github.com/pppppM).
-
-[**XTuner**: https://github.com/internLM/xtuner](https://github.com/internLM/xtuner)
+2. Strong supports from [XTuner](https://github.com/internLM/xtuner) core developer [P佬@pppppM](https://github.com/pppppM).
 
 ## Hot News
 
