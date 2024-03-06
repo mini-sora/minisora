@@ -45,7 +45,7 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 
 ### MiniSora-DiT: Reproducing the DiT Paper with XTuner
 
-[**MiniSora-DiT Group Page**: https://github.com/mini-sora/minisora/tree/main/codes](https://github.com/mini-sora/minisora/tree/main/codes)
+[**MiniSora-DiT Group Page**: https://github.com/mini-sora/minisora-DiT](https://github.com/mini-sora/minisora-DiT)
 
 #### Requirements
 
