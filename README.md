@@ -80,10 +80,12 @@ We hope the community member has the following characteristics:
 
 **Live Streaming Time**: 03/12 20:00
 
-**Highlights**: MMagic core contributors will lead us in interpreting the Stable Diffusion 3 paper, discussing the architecture details and design principles of Stable Diffusion 3.
+**Highlights**: MMagic core contributors will lead us in interpreting the Stable Diffusion 3 paper, discussing the architecture details and design principles of Stable Diffusion 3. 
+
+Please scan the QR code with WeChat to book a live video session.
 
 <div align="center">
-<img src="assets/SD3论文领读.png" width="400"/>
+<img src="assets/SD3论文领读.png" width="100"/>
 
   <div>&nbsp;</div>
   <div align="center">
