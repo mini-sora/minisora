@@ -239,15 +239,17 @@ Please scan the QR code with WeChat to book a live video session.
 | 1) **NExT-GPT**: Any-to-Any Multimodal LLM | [**Paper**](https://arxiv.org/abs/2309.05519), [GitHub](https://github.com/NExT-GPT/NExT-GPT) |
 |  | |
 | <h3>Dataset</h3> | |
-| **Dataset Name**  | **Link** |
-| 1) **HD-VILA-100M**: Advancing High-Resolution Video-Language Representation with Large-Scale Video Transcriptions|[**Paper**](https://arxiv.org/abs/2111.10337),[GitHub](https://github.com/microsoft/XPretrain/blob/main/hd-vila-100m/README.md),|
-| 2) **HowTo100M**: Learning a Text-Video Embedding by Watching Hundred Million Narrated Video Clips | [**Paper**](https://arxiv.org/abs/1906.03327), [GitHub](https://github.com/antoine77340/howto100m), [Project](https://www.di.ens.fr/willow/research/howto100m/), |
-| 3) **YT-Temporal-180M**: A dataset for learning multimodal script knowledge derived from 6 million public YouTube videos | [**Paper**](https://arxiv.org/abs/2106.02636), [GitHub](https://github.com/rowanz/merlot), [Project](https://rowanzellers.com/merlot/#data), |
-| 4) **Panda-70M**: Captioning 70M Videos with Multiple Cross-Modality Teachers | [**Paper**](https://arxiv.org/abs/2402.19479), [GitHub](https://github.com/snap-research/Panda-70M), [Project](https://snap-research.github.io/Panda-70M/), |
-| 5) **UCF101**: Action Recognition Data Set | [**Paper**](https://arxiv.org/abs/1212.0402), [Project](https://www.crcv.ucf.edu/research/data-sets/ucf101/), |
-| 6) **video2dataset**: A Simple Tool For Large Video Dataset Curation | [Tool](https://laion.ai/blog/video2dataset/), [GitHub](https://github.com/iejMac/video2dataset), |
-| 7) **Fashion-Text2Video**: A human video dataset with rich label and text annotations | [**Paper**](https://arxiv.org/pdf/2304.08483.pdf), [Github](https://github.com/yumingj/Fashion-Text2Video), [Project](https://yumingj.github.io/projects/Text2Performer.html), |
-| 8) **MSVD**: The data consists of 122K descriptions for 2089 video clips. | [Project](https://www.cs.utexas.edu/users/ml/clamp/videoDescription/), |
+| **Dataset Name - Paper**  | **Link** |
+| 1) **Panda-70M** - Panda-70M: Captioning 70M Videos with Multiple Cross-Modality Teachers<br><small>`70M Clips, 720P, Downloadable`</small>|[**CVPR 24 Paper**](https://arxiv.org/abs/2402.19479), [Github](https://github.com/snap-research/Panda-70M), [Project](https://snap-research.github.io/Panda-70M/)|
+| 2) **InternVid-10M** - InternVid: A Large-scale Video-Text Dataset for Multimodal Understanding and Generation<br><small>`10M Clips, 720P, Downloadable`</small>|[**ArXiv 24 Paper**](https://arxiv.org/abs/2307.06942), [Github](https://github.com/OpenGVLab/InternVideo/tree/main/Data/InternVid)|
+| 3) **CelebV-Text** - CelebV-Text: A Large-Scale Facial Text-Video Dataset<br><small>`70K Clips, 720P, Downloadable`</small>|[**CVPR 23 Paper**](https://arxiv.org/abs/2303.14717), [Github](https://github.com/celebv-text/CelebV-Text), [Project](https://celebv-text.github.io/)|
+| 4) **HD-VG-130M** - VideoFactory: Swap Attention in Spatiotemporal Diffusions for Text-to-Video Generation<br><small> `130M Clips, 720P, Downloadable`</small>|[**ArXiv 23 Paper**](https://arxiv.org/abs/2305.10874), [Github](https://github.com/daooshee/HD-VG-130M), [Tool](https://github.com/Breakthrough/PySceneDetect)|
+| 5) **HD-VILA-100M** - Advancing High-Resolution Video-Language Representation with Large-Scale Video Transcriptions<br><small> `100M Clips, 720P, Downloadable`</small>|[**CVPR 22 Paper**](https://arxiv.org/abs/2111.10337), [Github](https://github.com/microsoft/XPretrain/blob/main/hd-vila-100m/README.md)|
+| 6) **VideoCC** - Learning Audio-Video Modalities from Image Captions<br><small>`10.3M Clips, 720P, Downloadable`</small>|[**ECCV 22 Paper**](https://arxiv.org/abs/2204.00679), [Github](https://github.com/google-research-datasets/videoCC-data)|
+| 7) **YT-Temporal-180M** - MERLOT: Multimodal Neural Script Knowledge Models<br><small>`180M Clips, 480P, Downloadable`</small>| [**NeurIPS 21 Paper**](https://arxiv.org/abs/2106.02636), [Github](https://github.com/rowanz/merlot), [Project](https://rowanzellers.com/merlot/#data)|
+| 8) **HowTo100M** - HowTo100M: Learning a Text-Video Embedding by Watching Hundred Million Narrated Video Clips<br><small>`136M Clips, 240P, Downloadable`</small>| [**ICCV 19 Paper**](https://arxiv.org/abs/1906.03327), [Github](https://github.com/antoine77340/howto100m), [Project](https://www.di.ens.fr/willow/research/howto100m/)|
+| 9) **UCF101** - UCF101: A Dataset of 101 Human Actions Classes From Videos in The Wild<br><small>`13K Clips, 240P, Downloadable`</small>| [**CVPR 12 Paper**](https://arxiv.org/abs/1212.0402), [Project](https://www.crcv.ucf.edu/data/UCF101.php)|
+| 10) **MSVD** - Collecting Highly Parallel Data for Paraphrase Evaluation<br><small>`122K Clips, 240P, Downloadable`</small> | [**ACL 11 Paper**](https://aclanthology.org/P11-1020.pdf), [Project](https://www.cs.utexas.edu/users/ml/clamp/videoDescription/)|
 | <h3>Existing high-quality resources</h3> | |
 | **Resources**  | **Link** |
 | 1) Datawhale - AI视频生成学习 | [Feishu doc](https://datawhaler.feishu.cn/docx/G4LkdaffWopVbwxT1oHceiv9n0c) |
