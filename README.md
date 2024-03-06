@@ -33,30 +33,50 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 - Regular roundtable discussions will be held with the Sora team and the community to explore possibilities.
 - We will delve into existing technological pathways for video generation.
 
-## Hot News
+## Reproduction Group of MiniSora Community
 
-- [State of the Art on Diffusion Models for Visual Computing](http://arxiv.org/abs/2310.07204)
-- **CSUR 24 Paper**: [Diffusion Models: A Comprehensive Survey of Methods and Applications](https://arxiv.org/abs/2209.00796)
-- [Sora: A Review on Background, Technology, Limitations, and Opportunities of Large Vision Models](https://arxiv.org/abs/2402.17177)
-- [Generate Impressive Videos with Text Instructions: A Review of OpenAI Sora, Stable Diffusion, Lumiere and Comparable](https://www.techrxiv.org/users/684880/articles/718900-generate-impressive-videos-with-text-instructions-a-review-of-openai-sora-stable-diffusion-lumiere-and-comparable)
-- [**OpenDiT**: An Easy, Fast and Memory-Efficient System for DiT Training and Inference](https://github.com/NUS-HPC-AI-Lab/OpenDiT)
-- [Stable Diffusion 3](https://stability.ai/news/stable-diffusion-3-research-paper)
+[**MiniSora Reproduction Group Page**: https://github.com/mini-sora/minisora/tree/main/codes](https://github.com/mini-sora/minisora/tree/main/codes)
 
-## Paper Reproduction Group
-
-[Project Page](https://github.com/mini-sora/minisora/tree/main/codes)
-
-### Reproduction Goals
+### Sora Reproduction Goals of MiniSora
 
 1. **GPU-Friendly**: Ideally, it should have low requirements for GPU memory size and the number of GPUs, such as being trainable and inferable with compute power like 8 A100 80G cards, 8 A6000 48G cards, or RTX4090 24G.
 2. **Training-Efficiency**: It should achieve good results without requiring extensive training time.
 3. **Inference-Efficiency**: When generating videos during inference, there is no need for high length or resolution; acceptable parameters include 3-10 seconds in length and 480p resolution.
 
+### MiniSora-DiT: Reproducing the DiT Paper with XTuner
+
+[**MiniSora-DiT Group Page**: https://github.com/mini-sora/minisora/tree/main/codes](https://github.com/mini-sora/minisora/tree/main/codes)
+
+#### Requirements
+
+We are recruiting MiniSora Community contributors to reproduce `DiT` using XTuner. 
+
+We hope the community member has the following characteristics:
+
+1. Familiarity with the `OpenMMLab MMEngine` mechanism.
+2. Familiarity with `DiT`.
+
+#### Background
+
+1. The author of `DiT` is the same as the author of `Sora`.
+2. XTuner has the core technology to efficiently train sequences of length `1000K`.
+
+#### Support
+
+1. Computational resources: 2*A100.
+2. Strong supports from XTuner core developer [P佬@pppppM](https://github.com/pppppM).
+
+[**XTuner**: https://github.com/internLM/xtuner](https://github.com/internLM/xtuner)
+
+## Hot News
+
+- [**SD3**:](https://stability.ai/news/stable-diffusion-3-research-paper)
+
 ## Recent Roundtable Discussions
 
-[**Sora Night Talk on Video Diffusion Overview**](https://github.com/mini-sora/minisora/blob/main/notes/README.md)
+[**Night Talk with Sora on Video Diffusion Overview**](https://github.com/mini-sora/minisora/blob/main/notes/README.md)
 
-**Zhihu Notes**: [A Survey on Generative Diffusion Model: An Overview of Generative Diffusion Models](https://zhuanlan.zhihu.com/p/684795460)
+**ZhiHu Notes**: [A Survey on Generative Diffusion Model: An Overview of Generative Diffusion Models](https://zhuanlan.zhihu.com/p/684795460)
 
 ## Paper Reading Program
 

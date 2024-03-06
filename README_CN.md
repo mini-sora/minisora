@@ -22,7 +22,6 @@
 
 [English](README.md) | 简体中文  
 
-
 </div>
 
 <p align="center">
@@ -34,24 +33,43 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 - 将定期举办 Sora 的圆桌和社区一起探讨可能性
 - 视频生成的现有技术路径探讨
 
-## 最近更新
-
-- [State of the Art on Diffusion Models for Visual Computing](http://arxiv.org/abs/2310.07204)
-- **CSUR 24 Paper**: [Diffusion Models: A Comprehensive Survey of Methods and Applications](https://arxiv.org/abs/2209.00796)
-- [Sora: A Review on Background, Technology, Limitations, and Opportunities of Large Vision Models](https://arxiv.org/abs/2402.17177)
-- [Generate Impressive Videos with Text Instructions: A Review of OpenAI Sora, Stable Diffusion, Lumiere and Comparable](https://www.techrxiv.org/users/684880/articles/718900-generate-impressive-videos-with-text-instructions-a-review-of-openai-sora-stable-diffusion-lumiere-and-comparable)
-- [**OpenDiT**: An Easy, Fast and Memory-Efficient System for DiT Training and Inference](https://github.com/NUS-HPC-AI-Lab/OpenDiT)
-- [Stable Diffusion 3](https://stability.ai/news/stable-diffusion-3-research-paper)
-
 ## 论文复现小组
 
-[项目页面](https://github.com/mini-sora/minisora/tree/main/codes)
+## MiniSora社区复现小组
 
-### 复现目标
+
+[**MiniSora复现小组页面**](https://github.com/mini-sora/minisora/tree/main/codes)
+
+### MiniSora的Sora复现目标
 
 1. **GPU-Friendly** : 最好对GPU内存大小和GPU数量要求较低, 比如8卡A100 80G, 8卡A6000 48G, RTX4090 24G之类的算力可以训练和推理
 2. **Training-Efficiency** : 不需要训练太久即可有较好的效果
 3. **Inference-Efficiency** : 推理生成视频时, 长度和分辨率不要求过高, 如3-10s,480p都是可接受的
+
+### MiniSora-DiT: 基于XTuner复现论文DiT
+
+#### 招募要求
+
+招募MiniSora社区同学使用 `XTuner` 复现 `DiT`, 希望领取任务同学有如下特点：
+
+1. 熟悉 `OpenMMLab MMEngine` 机制
+2. 熟悉 `DiT`
+
+#### 背景
+
+1. `DiT` 作者和 `Sora` 作者为同一个
+2. `XTuner` 现有能够高效训练 `1000K` 序列长度的核心技术
+
+#### 支持
+
+1. 算力提供 2*A100
+2. XTuner 核心开发者 [P佬@pppppM](https://github.com/pppppM) 会大力支持~
+
+[**XTuner**: https://github.com/internLM/xtuner](https://github.com/internLM/xtuner)
+
+## 最近更新
+
+- [**SD3**:](https://stability.ai/news/stable-diffusion-3-research-paper)
 
 ## 近期圆桌讨论
 
