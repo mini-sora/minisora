@@ -228,6 +228,8 @@ We hope the community member has the following characteristics:
 | 4) **Panda-70M**: Captioning 70M Videos with Multiple Cross-Modality Teachers | [**Paper**](https://arxiv.org/abs/2402.19479), [GitHub](https://github.com/snap-research/Panda-70M), [Project](https://snap-research.github.io/Panda-70M/), |
 | 5) **UCF101**: Action Recognition Data Set | [**Paper**](https://arxiv.org/abs/1212.0402), [Project](https://www.crcv.ucf.edu/research/data-sets/ucf101/), |
 | 6) **video2dataset**: A Simple Tool For Large Video Dataset Curation | [Tool](https://laion.ai/blog/video2dataset/), [GitHub](https://github.com/iejMac/video2dataset), |
+| 7) **Fashion-Text2Video**: A human video dataset with rich label and text annotations | [**Paper**](https://arxiv.org/pdf/2304.08483.pdf), [Github](https://github.com/yumingj/Fashion-Text2Video), [Project](https://yumingj.github.io/projects/Text2Performer.html), |
+| 8) **MSVD**: The data consists of 122K descriptions for 2089 video clips. | [Project](https://www.cs.utexas.edu/users/ml/clamp/videoDescription/), |
 | <h3>Existing high-quality resources</h3> | |
 | **Resources**  | **Link** |
 | 1) Datawhale - AI视频生成学习 | [Feishu doc](https://datawhaler.feishu.cn/docx/G4LkdaffWopVbwxT1oHceiv9n0c) |
