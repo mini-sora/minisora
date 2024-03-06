@@ -35,7 +35,7 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 
 ## Reproduction Group of MiniSora Community
 
-[**MiniSora Reproduction Group Page**: https://github.com/mini-sora/minisora/tree/main/codes](https://github.com/mini-sora/minisora/tree/main/codes)
+[**MiniSora Reproduction Group Page**](https://github.com/mini-sora/minisora/tree/main/codes)
 
 ### Sora Reproduction Goals of MiniSora
 
