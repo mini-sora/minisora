@@ -2,7 +2,7 @@
 
 Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**免费不收取任何费用、不割韭菜**）
 
-我们非常希望你们能够为 Mini Sora 开源社区做出贡献，并且帮助我们把它做得比现在更好！
+我们非常希望你们能够为 Mini Sora 开源社区做出贡献，并且帮助我们把它做得比现在更好！如果你首次为 Mini Sora 做贡献，可以查看 [good first PR](https://github.com/mini-sora/minisora/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+PR%22) 的 issue 列表。
 
 ## 提交请求（PR）
 
