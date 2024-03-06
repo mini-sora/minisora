@@ -289,7 +289,7 @@ Please scan the QR code with WeChat to book a live video session.
 
 We greatly appreciate your contributions to the Mini Sora open-source community and helping us make it even better than it is now!
 
-For more details, please refer to the [Contribution Guidelines](./docs/CONTRIBUTING_EN.md)
+For more details, please refer to the [Contribution Guidelines](./docs/CONTRIBUTING.md)
 
 ## Community contributors
 

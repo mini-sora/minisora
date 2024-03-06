@@ -24,6 +24,7 @@
 
 </div>
 
+
 ## Mini Sora Reproduction Objectives
 
 1. **GPU-Friendly**: Ideally, it should have low requirements for GPU memory size and the number of GPUs, such as training and inference on 8 A100 cards, 4K A6000 cards, or a single RTX 4090 card.
@@ -39,6 +40,7 @@ The candidate papers for replication primarily include the following three, serv
   - The Sora Leader has experience with DALLE3, and the video generation process utilizes a decoding method similar to the diffusion approach used in DALLE3. Therefore, the encoding process for compression should be the reverse of DALLE3's method.
 - **SiT**
 - **W.A.L.T**(not release)
+
 - **StableCascade**
   - ToDo: make it as a video-based model with additional temp layer in the near future
 
@@ -50,13 +52,14 @@ The candidate papers for replication primarily include the following three, serv
 
 ...
 
+
 ## Computational Power Requirements
 
 ...
 
-  
+
 <!-- 
-**提交PR或者Issue后**, 可以申请加入MiniSora贡献者社群并申请加入 Sora 有关论文复现小组！
+**After submitting a PR or Issue**, you can apply to join the Mini Sora contributors community and request to join the Sora-related paper replication group!
 
 <div align="center">
 
@@ -67,7 +70,9 @@ The candidate papers for replication primarily include the following three, serv
 </div>
 -->
 
-## Sora Group - MiniSora Community WeChat Discussion Group
+
+## Sora Replication Team - MiniSora Community WeChat Discussion Group
+
 
 <div align="center">
 
@@ -83,11 +88,13 @@ The candidate papers for replication primarily include the following three, serv
 
 ## How to Contribute to the Mini Sora Community
 
-We sincerely hope that you can contribute to the Mini Sora open-source community and help us make it even better than it is now!
 
-Please refer to the [Contribution Guide](../docs/CONTRIBUTING.md) for specific details.
+We greatly appreciate your contributions to the Mini Sora open-source community and helping us make it even better than it is now!
 
-## Community Contributors
+For more details, please refer to the [Contribution Guidelines](../docs/CONTRIBUTING.md)
+
+## Community contributors
+
 
 <!-- readme: collaborators,contributors -start -->
 
