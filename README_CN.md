@@ -60,9 +60,7 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 #### 支持
 
 1. 算力提供 2*A100
-2. XTuner 核心开发者 [P佬@pppppM](https://github.com/pppppM) 会大力支持~
-
-[**XTuner**: https://github.com/internLM/xtuner](https://github.com/internLM/xtuner)
+2. [**XTuner**](https://github.com/internLM/xtuner) 核心开发者 [P佬@pppppM](https://github.com/pppppM) 会大力支持~
 
 ## 最近更新
 
