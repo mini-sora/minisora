@@ -54,6 +54,16 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 
 ## 近期圆桌讨论
 
+### Stable Diffusion 3 论文解读，MMagic 核心贡献者直播分享
+
+**主讲**：MMagic 核心贡献者
+
+**在线直播时间**：03/12 20:00
+
+**直播看点**：MMagic 核心贡献者为我们领读 Stable Diffusion 3 论文，介绍 Stable Diffusion 3 的架构细节和设计思路。
+
+![SD3论文领读](assets/SD3论文领读.png)
+
 [**Sora夜谈之Video Diffusion 综述**](https://github.com/mini-sora/minisora/blob/main/notes/README.md)
 
 **知乎Notes**: [A Survey on Generative Diffusion Model 生成扩散模型综述](https://zhuanlan.zhihu.com/p/684795460)

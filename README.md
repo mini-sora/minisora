@@ -53,6 +53,16 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 
 ## Recent Roundtable Discussions
 
+### Interpretation of Stable Diffusion 3 Paper, Live Sharing by MMagic Core Contributors
+
+**Speaker**: MMagic Core Contributors
+
+**Live Streaming Time**: 03/12 20:00
+
+**Highlights**: MMagic core contributors will lead us in interpreting the Stable Diffusion 3 paper, discussing the architecture details and design principles of Stable Diffusion 3.
+
+![SD3论文领读](assets/SD3论文领读.png)
+
 [**Sora Night Talk on Video Diffusion Overview**](https://github.com/mini-sora/minisora/blob/main/notes/README.md)
 
 **Zhihu Notes**: [A Survey on Generative Diffusion Model: An Overview of Generative Diffusion Models](https://zhuanlan.zhihu.com/p/684795460)
