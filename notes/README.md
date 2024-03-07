@@ -27,13 +27,13 @@ English | [简体中文](./README_zh-CN.md)
 
 ### Paper Reading Notes
 
-[**Data Notes(CN)**](./dataset_note.md)
+[**Data Notes(zh-CN)**](./dataset_note.md)
 
-[**Latte Paper Intensive Translation(CN)**](./latte%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AF%BB%E7%BF%BB%E8%AF%91.pdf)
+[**Latte Paper Intensive Translation(zh-CN)**](./latte%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AF%BB%E7%BF%BB%E8%AF%91.pdf)
 
-[**Latte Paper Interpretation(CN)**](./Latte.md)
+[**Latte Paper Interpretation(zh-CN)**](./Latte.md)
 
-[**Parallel Acceleration Method for Diffusion Models: DistriFusion Paper Discussion(CN)**](https://mp.weixin.qq.com/s/K6juxdW5RdBpFERmVrsUkA)
+[**Parallel Acceleration Method for Diffusion Models: DistriFusion Paper Discussion(zh-CN)**](https://mp.weixin.qq.com/s/K6juxdW5RdBpFERmVrsUkA)
 
 ### Previous round-table discussions
 
@@ -45,11 +45,11 @@ English | [简体中文](./README_zh-CN.md)
 
 **Online Live Streaming Time**: 02/28 20:00-21:00
 
-**Bilibili Playback**: [Sora 之 Video Diffusion 综述(CN)](https://www.bilibili.com/video/BV1cJ4m1e7sQ)
+**Bilibili Playback**: [Sora 之 Video Diffusion 综述(zh-CN)](https://www.bilibili.com/video/BV1cJ4m1e7sQ)
 
-**PPT**: [Feishu Download Links(CN)](https://aicarrier.feishu.cn/file/Ds0BbCAo6oTazdxxo3Zciw1Nnne)
+**PPT**: [Feishu Download Links(zh-CN)](https://aicarrier.feishu.cn/file/Ds0BbCAo6oTazdxxo3Zciw1Nnne)
 
-**Zhihu Notes**: [A Survey on Generative Diffusion Model(CN)](https://zhuanlan.zhihu.com/p/684795460)
+**Zhihu Notes**: [A Survey on Generative Diffusion Model(zh-CN)](https://zhuanlan.zhihu.com/p/684795460)
 
 [contributors-shield]: https://img.shields.io/github/contributors/mini-sora/minisora.svg?style=flat-square
 [contributors-url]: https://github.com/mini-sora/minisora/graphs/contributors
