@@ -166,11 +166,13 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 | 17) **GenTron:** Diffusion Transformers for Image and Video Generation | [**CVPR 24 Paper**](http://arxiv.org/abs/2312.04557), [Project](https://www.shoufachen.com/gentron_website/)|
 | <h3>Patches Project<h3> | |
 | **论文** | **链接** |
-| 1) Interactive Video Stylization Using Few-Shot Patch-Based Training | [**Paper**](https://ondrejtexler.github.io/res/Texler20-SIG_patch-based_training_main.pdf),[Github](https://github.com/OndrejTexler/Few-Shot-Patch-Based-Training) |
-| 2)  **Zoom-VQA**: Patches, Frames and Clips Integration for Video Quality Assessment | [**Paper**](https://arxiv.org/pdf/2304.06440.pdf),[Github](https://github.com/k-zha14/Zoom-VQA) |
-| 3) **FlexiViT**: One Model for All Patch Sizes | [**Paper**](https://arxiv.org/pdf/2212.08013.pdf),[Github](https://github.com/bwconrad/flexivit.git) |
-| 4) **MagViT2**: Language Model Beats Diffusion -- Tokenizer is Key to Visual Generation | [**ICLR 24 Paper**](https://arxiv.org/pdf/2310.05737.pdf),[Github](https://github.com/lucidrains/magvit2-pytorch) |
+| 1) Interactive Video Stylization Using Few-Shot Patch-Based Training | [**Paper**](https://ondrejtexler.github.io/res/Texler20-SIG_patch-based_training_main.pdf), [Github](https://github.com/OndrejTexler/Few-Shot-Patch-Based-Training) |
+| 2)  **Zoom-VQA**: Patches, Frames and Clips Integration for Video Quality Assessment | [**Paper**](https://arxiv.org/pdf/2304.06440.pdf), [Github](https://github.com/k-zha14/Zoom-VQA) |
+| 3) **FlexiViT**: One Model for All Patch Sizes | [**Paper**](https://arxiv.org/pdf/2212.08013.pdf), [Github](https://github.com/bwconrad/flexivit.git) |
+| 4) **MagViT2**: Language Model Beats Diffusion -- Tokenizer is Key to Visual Generation | [**ICLR 24 Paper**](https://arxiv.org/pdf/2310.05737.pdf), [Github](https://github.com/lucidrains/magvit2-pytorch) |
 | 5) **CogVideo**: Large-scale Pretraining for Text-to-Video Generation via Transformers | [**ICLR 23 Paper**](https://arxiv.org/pdf/2205.15868.pdf), [Github](https://github.com/THUDM/CogVideo.git) |
+| 6) **BLIP**: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation | [**Paper**](https://arxiv.org/abs/2201.12086), [Github](https://github.com/salesforce/BLIP) |
+| 7) **BLIP-2**: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models | [**Paper**](https://arxiv.org/abs/2301.12597), [Github](https://github.com/salesforce/LAVIS/tree/main/projects/blip2) |
 | <h3>Long-context</h3> | |
 | **论文**  | **链接** |
 | 1) World Model on Million-Length Video And Language With RingAttention | [**Paper**](https://arxiv.org/abs/2402.08268), [Github](https://github.com/LargeWorldModel/LWM) |
@@ -257,6 +259,7 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 | 15) Text-to-Image Diffusion Models in Generative AI: A Survey | [**Paper**](http://arxiv.org/abs/2303.07909) |
 | 16) Awesome-Diffusion-Transformers | [GitHub](https://github.com/ShoufaChen/Awesome-Diffusion-Transformers), [Page](https://www.shoufachen.com/Awesome-Diffusion-Transformers/) |
 | 17) Open-Sora (HPC-AI Tech) |  [GitHub](https://github.com/hpcaitech/Open-Sora), [Blog](https://hpc-ai.com/blog/open-sora) |
+| 18) **LAVIS** - A Library for Language-Vision Intelligence | [GitHub](https://github.com/salesforce/lavis), [Page](https://opensource.salesforce.com/LAVIS//latest/index.html) |
 
 ## Mini Sora 微信社区社区交流群
 
