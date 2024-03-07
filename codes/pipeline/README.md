@@ -1,4 +1,4 @@
-# Mini Sora复现Pipline计划
+# Pipeline
 
 <!-- PROJECT SHIELDS -->
 
@@ -20,16 +20,17 @@
 
 <div align="center">
 
-[English](README.md) | [简体中文](https://github.com/mini-sora/minisora/blob/main/README_CN.md)  
+English | [简体中文](./README_zh-CN.md)
 
 </div>
-# 目标
 
-形成一个带有视频理解labeling功能, 且对丰富标注具有审查功能的repo
+## Objectives
 
-# 效果
+A codebase equipped with video understanding labeling functionality and a review feature for rich annotations.
 
-生成用于SVD训练的数据，以期待满足训练完成后模型可以生成长度一分钟乃至十几分钟的高质量视频
+## Performance
+
+Generate data for SVD training with the expectation that, the model will be capable of producing high-quality videos ranging from one minute to several minutes.
 
 [your-project-path]: mini-sora/minisora
 [contributors-shield]: https://img.shields.io/github/contributors/mini-sora/minisora.svg?style=flat-square
