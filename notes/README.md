@@ -1,5 +1,5 @@
 
-# Mini Sora 社区
+# Mini Sora Community
 <!-- PROJECT SHIELDS -->
 
 [![Contributors][contributors-shield]][contributors-url]
@@ -17,31 +17,37 @@
   <div align="center"></div>
 </div>
 
-## 论文共读与圆桌讨论
+<div align="center">
 
-### 论文阅读笔记
+English | [简体中文](./README_CN.md)  
 
-[**数据Notes**](./dataset_note.md)
+</div>
 
-[**Latte论文精读翻译**](./latte%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AF%BB%E7%BF%BB%E8%AF%91.pdf)
+## Paper reading and round-table discussion
 
-[**Latte论文解读**](./Latte.md)
+### Paper Reading Notes
 
-### 圆桌讨论
+[**Data Notes**](./dataset_note.md)
 
-#### Sora 夜谈之Video Diffusion 综述
+[**Latte Paper Intensive Translation**](./latte%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AF%BB%E7%BF%BB%E8%AF%91.pdf)
 
-**主讲**: 邢桢 复旦大学视觉与学习实验室博士生
+[**Latte Paper Interpretation**](./Latte.md)
 
-**直播看点**: 图像生成扩散模型基础/文生视频扩散模型的发展/浅谈 Sora 背后技术和复现挑战
+### Round-table discussions
 
-**在线直播时间**: 02/28 20:00-21:00
+#### Video Diffusion Reviews of Sora's discussion at night
 
-**B站回放**: [Sora 之 Video Diffusion 综述](https://www.bilibili.com/video/BV1cJ4m1e7sQ)
+**Speaker**: Xing Zhen， PhD candidate in the Vision and Learning Lab, Fudan University
 
-**PPT**: [飞书下载链接](https://aicarrier.feishu.cn/file/Ds0BbCAo6oTazdxxo3Zciw1Nnne)
+**What to Watch live**: Fundamentals of Diffusion Modeling for Image Generation / Development of Diffusion Modeling for Text to Video / An Introduction to the Technology and Reproduction Challenges Behind Sora
 
-**知乎Notes**: [A Survey on Generative Diffusion Model 生成扩散模型综述](https://zhuanlan.zhihu.com/p/684795460)
+**Online Live Streaming Time**: 02/28 20:00-21:00
+
+**Bilibili Playback**: [Sora 之 Video Diffusion 综述](https://www.bilibili.com/video/BV1cJ4m1e7sQ)
+
+**PPT**: [Feishu Download Links](https://aicarrier.feishu.cn/file/Ds0BbCAo6oTazdxxo3Zciw1Nnne)
+
+**Zhihu Notes**: [A Survey on Generative Diffusion Model](https://zhuanlan.zhihu.com/p/684795460)
 
 [contributors-shield]: https://img.shields.io/github/contributors/mini-sora/minisora.svg?style=flat-square
 [contributors-url]: https://github.com/mini-sora/minisora/graphs/contributors
