@@ -20,7 +20,7 @@
 
 <div align="center">
 
-[English](README.md) | 简体中文  
+[English](README.md) | 简体中文
 
 </div>
 
@@ -276,7 +276,7 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 
 我们非常希望你们能够为 Mini Sora 开源社区做出贡献，并且帮助我们把它做得比现在更好！
 
-具体查看[贡献指南](./docs/CONTRIBUTING_CN.md)
+具体查看[贡献指南](./.github/CONTRIBUTING_zh-CN.md)
 
 ## 社区贡献者
 

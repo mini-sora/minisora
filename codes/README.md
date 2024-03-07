@@ -20,7 +20,7 @@
 
 <div align="center">
 
-[English](./README.md)| [简体中文](./README_CN.md)  
+English | [简体中文](./README_zh-CN.md)  
 
 </div>
 
@@ -91,7 +91,7 @@ The candidate papers for replication primarily include the following three, serv
 
 We greatly appreciate your contributions to the Mini Sora open-source community and helping us make it even better than it is now!
 
-For more details, please refer to the [Contribution Guidelines](../docs/CONTRIBUTING.md)
+For more details, please refer to the [Contribution Guidelines](../.github/CONTRIBUTING.md)
 
 ## Community contributors
 

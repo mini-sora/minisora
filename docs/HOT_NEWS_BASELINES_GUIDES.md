@@ -20,7 +20,7 @@
 
 <div align="center">
 
-English | [简体中文](HOT_NEWS_BASELINES_GUIDES_CN.md)  
+English | [简体中文](./HOT_NEWS_BASELINES_GUIDES_zh-CN.md)
 
 </div>
 

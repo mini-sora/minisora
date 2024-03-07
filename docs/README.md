@@ -19,13 +19,13 @@
 
 <div align="center">
 
-English | [简体中文](README_CN.md)  
+English | [简体中文](README_zh-CN.md)  
 
 </div>
 
 The "docs" directory contains various documents related to the minisora repository.
 
-* [Community Contribution Guidelines Document](./CONTRIBUTING_EN.md)
+* [Community Contribution Guidelines Document](../.github/CONTRIBUTING.md)
 
 [your-project-path]: mini-sora/minisora
 [contributors-shield]: https://img.shields.io/github/contributors/mini-sora/minisora.svg?style=flat-square

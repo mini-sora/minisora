@@ -20,7 +20,7 @@
 
 <div align="center">
 
-[English](README.md) | [简体中文](https://github.com/mini-sora/minisora/blob/main/README_CN.md)  
+[English](README.md) | 简体中文
 
 
 </div>
@@ -84,7 +84,7 @@
 
 我们非常希望你们能够为 Mini Sora 开源社区做出贡献，并且帮助我们把它做得比现在更好！
 
-具体查看[贡献指南](../docs/CONTRIBUTING_CN.md)
+具体查看[贡献指南](../.github/CONTRIBUTING_zh-CN.md)
 
 ## 社区贡献者
 

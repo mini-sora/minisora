@@ -1,5 +1,5 @@
-# MiniSora 热点更新和Baseline模型模块贡献指南
 
+# Mini Sora 社区
 <!-- PROJECT SHIELDS -->
 
 [![Contributors][contributors-shield]][contributors-url]
@@ -10,7 +10,6 @@
 <br />
 
 <!-- PROJECT LOGO -->
-
 <div align="center">
 
 <img src="../assets/logo.jpg" width="600"/>
@@ -19,38 +18,37 @@
 </div>
 
 <div align="center">
-
-简体中文 | [English](./HOT_NEWS_BASELINES_GUIDES.md)
+  
+[English](./README.md) | 简体中文
 
 </div>
 
-## Baseline 论文标准
+## 论文共读与圆桌讨论
 
-满足以下要求之一即可被列为“Baseline”：
+### 论文阅读笔记
 
-1. 顶会最佳论文提名（含最佳论文）或者Top期刊论文
-2. 引用数大于100
-3. GitHub Star数大于500
+[**数据Notes**](./dataset_note.md)
 
-## 热点更新标准
+[**Latte论文精读翻译**](./latte%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AF%BB%E7%BF%BB%E8%AF%91.pdf)
 
-满足以下要求之一即可被列为“热点更新”：
+[**Latte论文解读**](./Latte.md)
 
-1. 顶会最佳论文提名（含最佳论文）或者Top期刊论文
-2. GitHub Star数大于500
-3. **满足以上两项的有关工作**的优化 、改进或修复，如**OpenDiT**和**OpenSora**等
-4. 之前工作成果显著的后续工作，对原始代码的重构或模型的调参等，如**SD3**等
+### 圆桌讨论
 
-## 如何添加研究工作到热点更新和Baseline
+#### Sora 夜谈之Video Diffusion 综述
 
-1. 在Issue提出有关论文的论文名(或者Blog链接，GitHub链接等)
-2. 等待MiniSora member验证回复，
-3. 确认同意后，方可在PR中添加研究工作到这两个部分中
-4. 注意：不被认同的论文添加将会被拒绝PR merge
+**主讲**: 邢桢 复旦大学视觉与学习实验室博士生
 
-### [更多社区贡献说明文档](./CONTRIBUTING.md)
+**直播看点**: 图像生成扩散模型基础/文生视频扩散模型的发展/浅谈 Sora 背后技术和复现挑战
 
-[your-project-path]: mini-sora/minisora
+**在线直播时间**: 02/28 20:00-21:00
+
+**B站回放**: [Sora 之 Video Diffusion 综述](https://www.bilibili.com/video/BV1cJ4m1e7sQ)
+
+**PPT**: [飞书下载链接](https://aicarrier.feishu.cn/file/Ds0BbCAo6oTazdxxo3Zciw1Nnne)
+
+**知乎Notes**: [A Survey on Generative Diffusion Model 生成扩散模型综述](https://zhuanlan.zhihu.com/p/684795460)
+
 [contributors-shield]: https://img.shields.io/github/contributors/mini-sora/minisora.svg?style=flat-square
 [contributors-url]: https://github.com/mini-sora/minisora/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/mini-sora/minisora.svg?style=flat-square
