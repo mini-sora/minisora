@@ -336,8 +336,7 @@ Please scan the QR code with WeChat to book a live video session.
 | 18) **LAVIS** - A Library for Language-Vision Intelligence | [**ACL 23 Paper**](https://aclanthology.org/2023.acl-demo.3.pdf), [GitHub](https://github.com/salesforce/lavis), [Project](https://opensource.salesforce.com/LAVIS//latest/index.html) |
 | 19) **OpenDiT**: An Easy, Fast and Memory-Efficient System for DiT Training and Inference | [GitHub](https://github.com/NUS-HPC-AI-Lab/OpenDiT) |
 
-
-## Mini Sora WeChat Community Exchange Group
+## Minisora Community WeChat Group
 
 <div align="center">
 
