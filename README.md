@@ -231,6 +231,7 @@ Please scan the QR code with WeChat to book a live video session.
 | 4) Efficient Streaming Language Models with Attention Sinks | [**ICLR 24 Paper**](https://arxiv.org/abs/2309.17453), [GitHub](https://github.com/mit-han-lab/streaming-llm) |
 | 5) The What, Why, and How of Context Length Extension Techniques in Large Language Models – A Detailed Survey | [**Paper**](https://arxiv.org/pdf/2401.07872) |
 | 6) **MovieChat**: From Dense Token to Sparse Memory for Long Video Understanding | [**CVPR 24 Paper**](https://arxiv.org/abs/2307.16449), [GitHub](https://github.com/rese1f/MovieChat), [Project](https://rese1f.github.io/MovieChat/) |
+| 7) **MemoryBank**: Enhancing Large Language Models with Long-Term Memory | [**Paper**](https://arxiv.org/pdf/2305.10250.pdf), [GitHub](https://github.com/zhongwanjun/MemoryBank-SiliconFriend) |
 | <h3 id="audio-related-resource">Audio Related Resource</h3> | |
 | **Paper**  | **Link** |
 | 1) **Stable Audio**: Fast Timing-Conditioned Latent Audio Diffusion | [**Paper**](https://arxiv.org/abs/2402.04825), [Github](https://github.com/Stability-AI/stable-audio-tools), [Blog](https://stability.ai/research/stable-audio-efficient-timing-latent-diffusion)|
