@@ -35,6 +35,8 @@ English | [简体中文](./README_zh-CN.md)
 
 [**Parallel Acceleration Method for Diffusion Models: DistriFusion Paper Discussion(zh-CN)**](https://mp.weixin.qq.com/s/K6juxdW5RdBpFERmVrsUkA)
 
+**SD3 Paper Interpretation([zh-CN](./SD3%E8%AE%BA%E6%96%87%E8%A7%A3%E6%9E%90.pdf), [zhihu](https://zhuanlan.zhihu.com/p/686273242))**
+
 ### Previous round-table discussions
 
 #### Video Diffusion Reviews of Sora's discussion at night
