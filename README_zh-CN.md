@@ -373,6 +373,7 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 | 1) Long Movie Clip Classification with State-Space Video Models | [**ECCV 22 Paper**](https://link.springer.com/chapter/10.1007/978-3-031-19833-5_6), [Github](https://github.com/md-mohaiminul/ViS4mer) |
 | 2) Selective Structured State-Spaces for Long-Form Video Understanding | [**CVPR 23 Paper**](https://openaccess.thecvf.com/content/CVPR2023/html/Wang_Selective_Structured_State-Spaces_for_Long-Form_Video_Understanding_CVPR_2023_paper.html) |
 | 3) Efficient Movie Scene Detection Using State-Space Transformers | [**CVPR 23 Paper**](https://openaccess.thecvf.com/content/CVPR2023/html/Islam_Efficient_Movie_Scene_Detection_Using_State-Space_Transformers_CVPR_2023_paper.html), [Github](https://github.com/md-mohaiminul/TranS4mer) |
+| 4) VideoMamba: State Space Model for Efficient Video Understanding | [**Paper**](http://arxiv.org/abs/2403.06977), [Github](https://github.com/OpenGVLab/VideoMamba) |
 | <h4 id="medical-image-processing">Medical Image Processing</h4> | |
 | **论文** | **链接** |
 | 1) **Swin-UMamba**: Mamba-based UNet with ImageNet-based pretraining | [**Paper**](https://arxiv.org/abs/2402.03302), [Github](https://github.com/JiarunLiu/Swin-UMamba) |
