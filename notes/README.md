@@ -47,9 +47,9 @@ English | [简体中文](./README_zh-CN.md)
 
 **Bilibili**: [Sora 之 Video Diffusion 综述(zh-CN)](https://www.bilibili.com/video/BV1cJ4m1e7sQ)
 
-**PPT**: [Feishu Download Links(zh-CN)](https://aicarrier.feishu.cn/file/Ds0BbCAo6oTazdxxo3Zciw1Nnne)
+**PPT**: [FeiShu Link](https://aicarrier.feishu.cn/file/Ds0BbCAo6oTazdxxo3Zciw1Nnne)
 
-**Zhihu Notes**: [A Survey on Generative Diffusion Model(zh-CN)](https://zhuanlan.zhihu.com/p/684795460)
+**ZhiHu Notes**: [A Survey on Generative Diffusion Model(zh-CN)](https://zhuanlan.zhihu.com/p/684795460)
 
 ------------------
 
@@ -61,7 +61,7 @@ English | [简体中文](./README_zh-CN.md)
 
 **Time of Online Live**: 03/12 20:00
 
-**PPT**: [Feishu Download Links(zh-CN)](https://aicarrier.feishu.cn/file/NXnTbo5eqo8xNYxeHnecjLdJnQq)
+**PPT**: [FeiShu Link](https://aicarrier.feishu.cn/file/NXnTbo5eqo8xNYxeHnecjLdJnQq)
 
 [contributors-shield]: https://img.shields.io/github/contributors/mini-sora/minisora.svg?style=flat-square
 [contributors-url]: https://github.com/mini-sora/minisora/graphs/contributors

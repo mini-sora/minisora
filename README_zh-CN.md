@@ -33,6 +33,12 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 - 将定期举办 Sora 的圆桌和社区一起探讨可能性
 - 视频生成的现有技术路径探讨
 
+## 最近更新
+
+- [**Stable Diffusion 3**: MM-DiT: Scaling Rectified Flow Transformers for High-Resolution Image Synthesis](https://stability.ai/news/stable-diffusion-3-research-paper)
+- [Minisora与Sora复现最新进展](./docs/survey_README_zh-CN.md)
+![](./docs/Minisora_LPRS/0001.jpg)
+
 ## [MiniSora社区复现小组](./codes/README_zh-CN.md)
 
 ### MiniSora的Sora复现目标
@@ -62,9 +68,6 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 1. 算力提供 2*A100
 2. [**XTuner**](https://github.com/internLM/xtuner) 核心开发者 [P佬@pppppM](https://github.com/pppppM) 会大力支持~
 
-## 最近更新
-
-- [**Stable Diffusion 3**: MM-DiT: Scaling Rectified Flow Transformers for High-Resolution Image Synthesis](https://stability.ai/news/stable-diffusion-3-research-paper)
 
 ## 近期圆桌讨论
 
@@ -76,7 +79,7 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 
 **直播看点**：MMagic 核心贡献者为我们领读 Stable Diffusion 3 论文，介绍 Stable Diffusion 3 的架构细节和设计思路。
 
-**PPT**: [飞书下载链接](https://aicarrier.feishu.cn/file/NXnTbo5eqo8xNYxeHnecjLdJnQq)
+**PPT**: [飞书链接](https://aicarrier.feishu.cn/file/NXnTbo5eqo8xNYxeHnecjLdJnQq)
 <!-- 
 请使用微信扫码预约视频号直播:
 

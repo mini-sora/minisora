@@ -1,4 +1,4 @@
-# MiniSora Survey Paper Progress
+# Minisora与Sora复现最新进展
 
 <!-- PROJECT SHIELDS -->
 
@@ -22,6 +22,23 @@
 
 </div>
 
+如果您有兴趣加入我们的Sora综述论文团队，请在Issue和PR留下您的信息。我们将尽快回复您的问题。
+
+![](./Minisora_LPRS/0001.jpg)
+![](./Minisora_LPRS/0002.jpg)
+![](./Minisora_LPRS/0003.jpg)
+![](./Minisora_LPRS/0004.jpg)
+![](./Minisora_LPRS/0005.jpg)
+![](./Minisora_LPRS/0006.jpg)
+![](./Minisora_LPRS/0007.jpg)
+![](./Minisora_LPRS/0008.jpg)
+![](./Minisora_LPRS/0009.jpg)
+![](./Minisora_LPRS/0010.jpg)
+![](./Minisora_LPRS/0011.jpg)
+![](./Minisora_LPRS/0012.jpg)
+![](./Minisora_LPRS/0013.jpg)
+![](./Minisora_LPRS/0014.jpg)
+![](./Minisora_LPRS/0015.jpg)
 
 
 [your-project-path]: mini-sora/minisora
