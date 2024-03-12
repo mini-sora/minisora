@@ -1,7 +1,6 @@
-# MiniSora  docs
+# Minisora and Latest Progress in Replicating Sora
 
 <!-- PROJECT SHIELDS -->
-
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Issues][issues-shield]][issues-url]
@@ -23,9 +22,23 @@ English | [简体中文](README_zh-CN.md)
 
 </div>
 
-The "docs" directory contains various documents related to the minisora repository.
+If you are interested in joining our Sora Survey Paper Team, please leave your messages in the Issues and PRs section. We will respond to your inquiries as promptly as possible.
 
-* [Community Contribution Guidelines Document](../.github/CONTRIBUTING.md)
+![](./Minisora_LPRS/0001.jpg)
+![](./Minisora_LPRS/0002.jpg)
+![](./Minisora_LPRS/0003.jpg)
+![](./Minisora_LPRS/0004.jpg)
+![](./Minisora_LPRS/0005.jpg)
+![](./Minisora_LPRS/0006.jpg)
+![](./Minisora_LPRS/0007.jpg)
+![](./Minisora_LPRS/0008.jpg)
+![](./Minisora_LPRS/0009.jpg)
+![](./Minisora_LPRS/0010.jpg)
+![](./Minisora_LPRS/0011.jpg)
+![](./Minisora_LPRS/0012.jpg)
+![](./Minisora_LPRS/0013.jpg)
+![](./Minisora_LPRS/0014.jpg)
+![](./Minisora_LPRS/0015.jpg)
 
 [your-project-path]: mini-sora/minisora
 [contributors-shield]: https://img.shields.io/github/contributors/mini-sora/minisora.svg?style=flat-square

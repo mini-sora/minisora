@@ -30,8 +30,14 @@ English | [简体中文](README_zh-CN.md)
 
 The Mini Sora open-source community is positioned as a community-driven initiative (**free of charge and devoid of any exploitation**) organized spontaneously by community members. The Mini Sora project aims to explore the implementation path and future development direction of Sora.
 
-- Regular roundtable discussions will be held with the Sora team and the community to explore possibilities.
+- Regular round-table discussions will be held with the Sora team and the community to explore possibilities.
 - We will delve into existing technological pathways for video generation.
+
+## Hot News
+
+- [**Stable Diffusion 3**: MM-DiT: Scaling Rectified Flow Transformers for High-Resolution Image Synthesis](https://stability.ai/news/stable-diffusion-3-research-paper)
+- [Minisora与Sora复现最新进展](./docs/survey_README_zh-CN.md)
+![](./docs/Minisora_LPRS/0001.jpg)
 
 ## [Reproduction Group of MiniSora Community](./codes/README.md)
 
@@ -64,11 +70,7 @@ We hope the community member has the following characteristics:
 1. Computational resources: 2*A100.
 2. Strong supports from [XTuner](https://github.com/internLM/xtuner) core developer [P佬@pppppM](https://github.com/pppppM).
 
-## Hot News
-
-- [**Stable Diffusion 3**: MM-DiT: Scaling Rectified Flow Transformers for High-Resolution Image Synthesis](https://stability.ai/news/stable-diffusion-3-research-paper)
-
-## Recent Roundtable Discussions
+## Recent round-table Discussions
 
 ### Paper Interpretation of Stable Diffusion 3 paper: MM-DiT
 
@@ -78,7 +80,7 @@ We hope the community member has the following characteristics:
 
 **Highlights**: MMagic core contributors will lead us in interpreting the Stable Diffusion 3 paper, discussing the architecture details and design principles of Stable Diffusion 3. 
 
-**PPT**: [Feishu Download Links(zh-CN)](https://aicarrier.feishu.cn/file/NXnTbo5eqo8xNYxeHnecjLdJnQq)
+**PPT**: [FeiShu Link](https://aicarrier.feishu.cn/file/NXnTbo5eqo8xNYxeHnecjLdJnQq)
 
 <!-- Please scan the QR code with WeChat to book a live video session.
 

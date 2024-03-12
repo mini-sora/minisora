@@ -47,7 +47,7 @@
 
 **B站回放**: [Sora 之 Video Diffusion 综述](https://www.bilibili.com/video/BV1cJ4m1e7sQ)
 
-**PPT**: [飞书下载链接](https://aicarrier.feishu.cn/file/Ds0BbCAo6oTazdxxo3Zciw1Nnne)
+**PPT**: [飞书链接](https://aicarrier.feishu.cn/file/Ds0BbCAo6oTazdxxo3Zciw1Nnne)
 
 **知乎Notes**: [A Survey on Generative Diffusion Model 生成扩散模型综述](https://zhuanlan.zhihu.com/p/684795460)
 
@@ -61,7 +61,7 @@
 
 **在线直播时间**：03/12 20:00
 
-**PPT**: [飞书下载链接](https://aicarrier.feishu.cn/file/NXnTbo5eqo8xNYxeHnecjLdJnQq)
+**PPT**: [飞书链接](https://aicarrier.feishu.cn/file/NXnTbo5eqo8xNYxeHnecjLdJnQq)
 
 [contributors-shield]: https://img.shields.io/github/contributors/mini-sora/minisora.svg?style=flat-square
 [contributors-url]: https://github.com/mini-sora/minisora/graphs/contributors
