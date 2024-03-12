@@ -101,7 +101,7 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 - **DiT**: [Scalable Diffusion Models with Transformers](https://arxiv.org/abs/2212.09748)
 - **Stable Cascade (ICLR 24 Paper)**: [Würstchen: An efficient architecture for large-scale text-to-image diffusion models](https://openreview.net/forum?id=gU58d5QeGv)
 - [**Stable Diffusion 3**: MM-DiT: Scaling Rectified Flow Transformers for High-Resolution Image Synthesis](https://stability.ai/news/stable-diffusion-3-research-paper)
-  - [SD3论文精读中文笔记](./SD3_zh-CN.md)([知乎](https://zhuanlan.zhihu.com/p/686273242))
+  - [SD3论文精读中文笔记](./notes/SD3_zh-CN.md)([知乎](https://zhuanlan.zhihu.com/p/686273242))
 - 更新中...
 
 ### 论文共读发表者募集
