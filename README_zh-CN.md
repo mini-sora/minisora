@@ -37,7 +37,7 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 
 - [**Stable Diffusion 3**: MM-DiT: Scaling Rectified Flow Transformers for High-Resolution Image Synthesis](https://stability.ai/news/stable-diffusion-3-research-paper)
 - [Minisora与Sora复现最新进展](./docs/survey_README_zh-CN.md)
-![](./docs/Minisora_LPRS/0001.jpg)
+![[empty](./docs/survey_README_zh-CN.md)](./docs/Minisora_LPRS/0001.jpg)
 
 ## [MiniSora社区复现小组](./codes/README_zh-CN.md)
 
