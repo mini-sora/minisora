@@ -260,6 +260,7 @@ We hope the community member has the following characteristics:
 | 12) **AudioLM**: a Language Modeling Approach to Audio Generation| [**Paper**](https://arxiv.org/abs/2209.03143) |
 | 13) **AudioGen**: Textually Guided Audio Generation| [**ICLR 23 Paper**](https://iclr.cc/virtual/2023/poster/11521), [Project](https://felixkreuk.github.io/audiogen/) |
 | 14) **VideoPoet**: A Large Language Model for Zero-Shot Video Generation (-) | [**Paper**](https://arxiv.org/abs/2312.14125), [Project](http://sites.research.google/videopoet/), [Blog](https://blog.research.google/2023/12/videopoet-large-language-model-for-zero.html) |
+| 15) **AudioLDM**: Text-to-audio generation with latent diffusion models | [**ICML 23 Paper**](https://proceedings.mlr.press/v202/liu23f/liu23f.pdf), [GitHub](https://github.com/haoheliu/AudioLDM), [Project](https://audioldm.github.io/), [Huggingface](https://huggingface.co/spaces/haoheliu/audioldm-text-to-audio-generation) |
 | <h3 id="consistency">Consistency</h3> | |
 | **Paper**  | **Link** |
 | 1) Layered Neural Atlases for Consistent Video Editing | [**TOG 21 Paper**](https://arxiv.org/pdf/2109.11418.pdf), [GitHub](https://github.com/ykasten/layered-neural-atlases), [Project](https://layered-neural-atlases.github.io/) |
