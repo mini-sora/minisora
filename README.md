@@ -127,7 +127,8 @@ Please scan the QR code with WeChat to book a live video session.
 11. [Security](#security)
 12. [World Model](#world-model)
 13. [Video Compression](#video-compression)
-14. [Existing high-quality resources](#existing-high-quality-resources)
+14. [Mamba](#Mamba)
+15. [Existing high-quality resources](#existing-high-quality-resources)
 
 | <h3 id="diffusion-models">Diffusion Models</h3> |  |
 | :------------- | :------------- |
@@ -343,6 +344,31 @@ Please scan the QR code with WeChat to book a live video session.
 | 16) **DCVC-DC**: Neural Video Compression with Diverse Contexts | [**CVPR 23 Paper**](https://arxiv.org/abs/2302.14402), [Github](https://github.com/microsoft/DCVC/tree/main/DCVC-DC) |
 | 17) **DCVC-FM**: Neural Video Compression with Feature Modulation | [**CVPR 24 Paper**](https://arxiv.org/abs/2402.17414), [Github](https://github.com/microsoft/DCVC/tree/main/DCVC-FM) |
 | 18) **SSF**: Scale-Space Flow for End-to-End Optimized Video Compression | [**CVPR 20 Paper**](https://openaccess.thecvf.com/content_CVPR_2020/html/Agustsson_Scale-Space_Flow_for_End-to-End_Optimized_Video_Compression_CVPR_2020_paper.html), [Github](https://github.com/InterDigitalInc/CompressAI) |
+| <h3 id="Mamba">Mamba</h3> | 
+| <h4 id="Theoretical Foundations and Model Architecture">Theoretical Foundations and Model Architecture</h4> | |
+| **Paper** | **Link** |
+| 1) **Mamba**: Linear-Time Sequence Modeling with Selective State Spaces | [**Paper**](https://arxiv.org/abs/2312.00752), [Github](https://github.com/state-spaces/mamba) |
+| 2) Efficiently Modeling Long Sequences with Structured State Spaces | [**ICLR 22 Paper**](https://iclr.cc/virtual/2022/poster/6959), [Github](https://github.com/state-spaces/s4) |
+| 3) Modeling Sequences with Structured State Spaces | [**Paper**](https://purl.stanford.edu/mb976vf9362) |
+| 4) Long Range Language Modeling via Gated State Spaces | [**Paper**](https://arxiv.org/abs/2206.13947), [GitHub](https://github.com/lucidrains/gated-state-spaces-pytorch) |
+| <h4 id="Image Generation and Visual Applications">Image Generation and Visual Applications</h4> | |
+| **Paper** | **Link** |
+| 1) Diffusion Models Without Attention | [**Paper**](https://arxiv.org/abs/2311.18257) |
+| 2) **Pan-Mamba**: Effective Pan-Sharpening with State Space Model  | [**Paper**](https://arxiv.org/abs/2402.12192), [Github](https://github.com/alexhe101/Pan-Mamba) |
+| 3) Pretraining Without Attention | [**Paper**](https://arxiv.org/abs/2212.10544), [Github](https://github.com/jxiw/BiGS) |
+| 4) Block-State Transformers | [**NIPS 23 Paper**](https://proceedings.neurips.cc/paper_files/paper/2023/hash/16ccd203e9e3696a7ab0dcf568316379-Abstract-Conference.html) |
+| 5) **Vision Mamba**: Efficient Visual Representation Learning with Bidirectional State Space Model | [**Paper**](https://arxiv.org/abs/2401.09417), [Github](https://github.com/hustvl/Vim) |
+| 6) VMamba: Visual State Space Model | [**Paper**](https://arxiv.org/abs/2401.10166), [Github](https://github.com/MzeroMiko/VMamba) |
+| <h4 id="Video Processing and Understanding">Video Processing and Understanding</h4> | |
+| **Paper** | **Link** |
+| 1) Long Movie Clip Classification with State-Space Video Models | [**ECCV 22 Paper**](https://link.springer.com/chapter/10.1007/978-3-031-19833-5_6), [Github](https://github.com/md-mohaiminul/ViS4mer) |
+| 2) Selective Structured State-Spaces for Long-Form Video Understanding | [**CVPR 23 Paper**](https://openaccess.thecvf.com/content/CVPR2023/html/Wang_Selective_Structured_State-Spaces_for_Long-Form_Video_Understanding_CVPR_2023_paper.html) |
+| 3) Efficient Movie Scene Detection Using State-Space Transformers | [**CVPR 23 Paper**](https://openaccess.thecvf.com/content/CVPR2023/html/Islam_Efficient_Movie_Scene_Detection_Using_State-Space_Transformers_CVPR_2023_paper.html), [Github](https://github.com/md-mohaiminul/TranS4mer) |
+| <h4 id="Medical Image Processing">Medical Image Processing</h4> | |
+| **Paper** | **Link** |
+| 1) **Swin-UMamba**: Mamba-based UNet with ImageNet-based pretraining | [**Paper**](https://arxiv.org/abs/2402.03302), [Github](https://github.com/JiarunLiu/Swin-UMamba) |
+| 2) **MambaIR**: A Simple Baseline for Image Restoration with State-Space Model | [**Paper**](https://arxiv.org/abs/2402.15648), [Github](https://github.com/csguoh/MambaIR) |
+| 3) VM-UNet: Vision Mamba UNet for Medical Image Segmentation | [**Paper**](https://arxiv.org/abs/2402.02491), [Github](https://github.com/JCruan519/VM-UNet) |
 |  | |
 | <h3 id="existing-high-quality-resources">Existing high-quality resources</h3> | |
 | **Resources**  | **Link** |
