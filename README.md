@@ -130,7 +130,7 @@ Please scan the QR code with WeChat to book a live video session.
 - 14 [Mamba](#Mamba)
     - 14.1 [Theoretical Foundations and Model Architecture](#Theoretical Foundations and Model Architecture)
     - 14.2 [Image Generation and Visual Applications](#Image Generation and Visual Applications)
-    - 14.3 [Video Processing and Understanding](#Video Processing and Understanding)
+    - 14.3 [Video Processing and Understanding](#video-processing-and-understanding)
     - 14.4 [Medical Image Processing](#Medical Image Processing)
 - 15 [Existing high-quality resources](#existing-high-quality-resources)
 
@@ -363,7 +363,7 @@ Please scan the QR code with WeChat to book a live video session.
 | 4) Block-State Transformers | [**NIPS 23 Paper**](https://proceedings.neurips.cc/paper_files/paper/2023/hash/16ccd203e9e3696a7ab0dcf568316379-Abstract-Conference.html) |
 | 5) **Vision Mamba**: Efficient Visual Representation Learning with Bidirectional State Space Model | [**Paper**](https://arxiv.org/abs/2401.09417), [Github](https://github.com/hustvl/Vim) |
 | 6) VMamba: Visual State Space Model | [**Paper**](https://arxiv.org/abs/2401.10166), [Github](https://github.com/MzeroMiko/VMamba) |
-| <h4 id="Video Processing and Understanding">Video Processing and Understanding</h4> | |
+| <h4 id="video-processing-and-understanding">Video Processing and Understanding</h4> | |
 | **Paper** | **Link** |
 | 1) Long Movie Clip Classification with State-Space Video Models | [**ECCV 22 Paper**](https://link.springer.com/chapter/10.1007/978-3-031-19833-5_6), [Github](https://github.com/md-mohaiminul/ViS4mer) |
 | 2) Selective Structured State-Spaces for Long-Form Video Understanding | [**CVPR 23 Paper**](https://openaccess.thecvf.com/content/CVPR2023/html/Wang_Selective_Structured_State-Spaces_for_Long-Form_Video_Understanding_CVPR_2023_paper.html) |
