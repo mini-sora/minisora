@@ -22,7 +22,9 @@ SD3相比之前的SD一个最大的变化是采用**Rectified Flow**来作为生
 
  $$dz_{t}=v(z_{t},t)\,dt $$
 这里  $t\in[0,1] $，而  $v(z_{t},t) $称之为**向量场（vector field）**。我们用这样的一个ODE来构建一个**概率路径（probability path）**  $p_t $，它可以实现从一个噪音分布  $p_1  $到另外一个数据分布 $p_0 $的转变（可以称之为**a flow**），注意这里我们在时间上是和FM论文中的定义是相反的，这其实是为了后面和扩散模型统一起来。这里的噪音分布我们采用高斯噪音，即 $p_{1}=\mathcal{N}(0,1) $，而 $p_0 $是我们要建模的数据分布 $q(x_0) $。一旦我们知道了 $v(z_{t},t) $，我们就可以用ODE的求解器比如欧拉方法（Euler method）实现从一个噪音到真实数据的生成。这里，我们可以用一个参数为 $\theta $的神经网络 $v_\theta(z_{t},t) $来建模向量场，FM的优化目标为：
- $$\displaystyle\mathcal{L}_{FM}=\mathbb{E}_{t,p_{t}(z)}||v_{\theta}(z,t)-u_{t}(z)||_{2}^{2} $$
+ ```math
+ \displaystyle\mathcal{L}_{FM}=\mathbb{E}_{t,p_{t}(z)}||v_{\theta}(z,t)-u_{t}(z)||_{2}^{2} 
+ ```
 这里的 $u_{t}(z) $是目标向量场，它可以产生噪音分布 $p_1 $到真实数据分布 $q(x_0) $的概率路径 $p_t(z) $。所以其实FM的优化目标就是直接回归目标向量场。有很多的概率路径可以满足 $p_1\approx q(x_0) $，但是果没有任何先验， $u_{t}(z) $是不可知的，FM的优化目标也就无法实现。
 一个解决思路是我们先预先构建一个 $u_{t}(z) $，并让它能够保证我们的目标概率路径 $p_t(z) $。为此，FM论文中引入了条件概率路径 $p_t(z|x_0) $，这里的条件是真实数据 $x_0 $，这个条件概率采用如下的高斯分布：
  $$p_{t}(z|x_{0})=\mathcal{N}(z|a_{t}x_{0}, b_{t}^{2}I) $$
@@ -32,35 +34,51 @@ SD3相比之前的SD一个最大的变化是采用**Rectified Flow**来作为生
 后面我们也会看到FM其实是可以看成扩散模型，只是采用了不一样的优化目标（等价于采用不同的loss权重）。
 
 接下来，我们来看一个新的优化目标，那就是**Conditional Flow Matching** (**CFM**)目标：
- $$\mathcal{L}_{CFM}=\mathbb{E}_{t,q(x_0),p_{t}(z|x_0)}||v_{\theta}(z,t)-u_{t}(z|x_0)||_{2}^{2} $$
+ ```math
+\mathcal{L}_{CFM}=\mathbb{E}_{t,q(x_0),p_{t}(z|x_0)}||v_{\theta}(z,t)-u_{t}(z|x_0)||_{2}^{2}
+```
 这里的条件向量场 $u_{t}(z|x_0) $产生条件概率路径 $p_t(z|x_0) $。对于CM目标和CFM目标，一个很重要的结论是两者之间只相差一个与参数 $\theta $无关的常量，这也就意味着：
- $$\nabla_{\theta} \mathcal{L}_{FM}(\theta) = \nabla_{\theta} \mathcal{L}_{CFM}(\theta) $$
+```math
+\nabla_{\theta} \mathcal{L}_{FM}(\theta) = \nabla_{\theta} \mathcal{L}_{CFM}(\theta)
+```
 换句话说，使用CFM目标来训练 $\theta $是和采用CM目标来训练 $\theta $是等价的。这里我们就不展开证明了，感兴趣的可以看FM论文中的证明。一个直观的解释是，我们采用CFM目标来训练 $\theta $也是能够达到我们的目标，那就是从噪音分布 $p_1 $到真实数据分布 $q(x_0) $，只不过这里我们人工设定了一个路径 $u_{t}(z|x_0) $而已。而且后面我们会看到不同的生成模型的差异除了优化目标之外就在于定义的路径（前向过程）的差异。
 虽然 $u_{t}(z) $是不可知的，但是引入条件后的 $u_{t}(z|x_0) $是可以计算出来的：
- $$u_{t}(z|x_0)=z'_t=a'_{t}x_{0}+b'_{t}\epsilon $$
+```math
+u_{t}(z|x_0)=z'_t=a'_{t}x_{0}+b'_{t}\epsilon
+```
 进一步根据前向过程我们有： $x_0=(z_t-b_t\epsilon)/a_t $，我们将其代入上式，可以得到：
  $$u_{t}(z|x_0)=\frac{a_{t}^{\prime}}{a_{t}}z_{t}-
 \epsilon b_{t}(\frac{a_{t}^{\prime}}{a_{t}}-\frac{b_{t}^{\prime}}{b_{t}}) $$
 这里我们定义信噪比 $\lambda_{t}=\log\frac{a_{t}^{2}}{b_{t}^{2}} $，进而有 $\lambda_{t}^{\prime}=2(\frac{a_{t}^{\prime}}{a_{t}}-\frac{b_{t}^{\prime}}{b_{t
 }}) $，所以有：
- $$u_{t}(z|x_0)=\frac{a_{t}^{\prime}}{a_{t}}z_{t}-\frac{b_{t}}{2}\lambda
-_{t}^{\prime}\epsilon $$
+```math
+u_{t}(z|x_0)=\frac{a_{t}^{\prime}}{a_{t}}z_{t}-\frac{b_{t}}{2}\lambda
+_{t}^{\prime}\epsilon
+```
 我们将上式代入CFM目标中，就可以得到：
- $$\mathcal{L}_{CFM}=\mathbb{E}_{t,q(x_0),p_{t}(z|x_0),\epsilon\sim\mathcal{N}(0,I)}||v_{\theta}(z,t)-
+```math
+\mathcal{L}_{CFM}=\mathbb{E}_{t,q(x_0),p_{t}(z|x_0),\epsilon\sim\mathcal{N}(0,I)}||v_{\theta}(z,t)-
 \frac{a_{t}^{\prime}}{a_{t}}z+\frac{b_{t}}{2}\lambda_{t}^{\prime}\epsilon||_{2
-}^{2} $$
+}^{2}
+```
 这里我们对 $v_{\theta}(z,t) $进一步定义为：
- $$v_{\theta}(z,t)=\frac{a_{t}^{\prime}}{a_{t}}z_{t}-\frac{b_{t}}{2}\lambda
-_{t}^{\prime}\epsilon_{\theta}(z,t) $$
+```math
+v_{\theta}(z,t)=\frac{a_{t}^{\prime}}{a_{t}}z_{t}-\frac{b_{t}}{2}\lambda
+_{t}^{\prime}\epsilon_{\theta}(z,t)
+```
 代入CFM优化目标可得到：
- $$\mathcal{L}_{CFM}=\mathbb{E}_{t,q(x_0),p_{t}(z|x_0),\epsilon\sim\mathcal{N}(0,I)}\left(-\frac{b_{t}}{
-2}\lambda_{t}^{\prime}\right)^{2}||\epsilon_{\theta}(z,t)-\epsilon||_{2}^{2} $$
+```math
+\mathcal{L}_{CFM}=\mathbb{E}_{t,q(x_0),p_{t}(z|x_0),\epsilon\sim\mathcal{N}(0,I)}\left(-\frac{b_{t}}{
+2}\lambda_{t}^{\prime}\right)^{2}||\epsilon_{\theta}(z,t)-\epsilon||_{2}^{2}
+```
 此时相当于神经网络变成了预测噪音，这和扩散模型DDPM预测噪音是一样的，但是优化目标的多了一个和 $t $有关的权重系数。所以，FM其实可以看成一个采用不同的权重系数的扩散模型。
 Google的工作[Understanding Diffusion Objectives as the ELBO with Simple Data Augmentation](https://arxiv.org/abs/2303.00848)提出了一个统一的视角，即不同的生成模型包括[DDPM](https://arxiv.org/abs/2006.11239)，[SDE](https://arxiv.org/abs/2011.13456)，[EDM](https://arxiv.org/abs/2206.00364)以及[FM](https://arxiv.org/abs/2210.02747)等的优化目标都可以统一为：
- $$\mathcal{L}_{w}(x_{0})=-\frac{1}{2}\mathbb{E}_{t\sim\mathcal{U}(0, 1),\epsilon
+```math
+\mathcal{L}_{w}(x_{0})=-\frac{1}{2}\mathbb{E}_{t\sim\mathcal{U}(0, 1),\epsilon
 \sim\mathcal{N}(0,I)}\left[w_{t}\lambda_{t}^{\prime}\|\epsilon_{\theta}(z_{t},
-t)-\epsilon\|^{2}\right] $$
-不同的生成模型所采用的优化目标不同，等价于采用不同的权重 $w_t $。对于DDPM所采用的 $\mathcal{L}_{simple} $，这里 $w_t=-2/\lambda'_t $。而对于FM的 $\mathcal{L}_{CFM} $，有 $w_t=-\frac{1}{2}\lambda'_tb_t^2 $。
+t)-\epsilon\|^{2}\right]
+```
+不同的生成模型所采用的优化目标不同，等价于采用不同的权重 $w_t $。对于DDPM所采用的 $`\mathcal{L}_{simple} `$，这里 $`w_t=-2/\lambda'_t `$。而对于FM的 $\mathcal{L}_{CFM} $，有 $w_t=-\frac{1}{2}\lambda'_tb_t^2 $。
 更具体地说，不同类型的生成模型差异在于前向过程和预测目标的差异。不同的前向过程采用不同 $a_t $和 $b_t $，导致不同的概率路径。而预测目标可以为预测噪音 $\epsilon $（DDPM），预测分数 $s $（SDE），以及预测向量场 $v $（FM）等等。但是它们都可以最终统一为基于预测噪音 $\epsilon $的优化目标，只是权重 $w_t $的差异。
 
 ### Rectified Flow
@@ -77,16 +95,17 @@ RF的前向过程一个特点是 $z_t $由数据 $x_0 $和噪音 $\epsilon $线�
   </div>
 </div>
 
-对于RF，有 $z'_t=-x_0+\epsilon $，所以其优化目标就变成了：
- $$\mathcal{L}_{RF}=\mathbb{E}_{t,q(x_0),p_{t}(z|x_0),\epsilon\sim\mathcal{N}(0,I)}||v_{\theta}(z,t)-
+对于RF，有 $`z'_t=-x_0+\epsilon `$，所以其优化目标就变成了：
+```math
+\mathcal{L}_{RF}=\mathbb{E}_{t,q(x_0),p_{t}(z|x_0),\epsilon\sim\mathcal{N}(0,I)}||v_{\theta}(z,t)-
 (\epsilon-x_0)||_{2
-}^{2} $$
-可以看到，最终RF的损失函数是非常简单的。如果将RF转成 $\mathcal{L}_{w}(x_{0}) $，其对应的 $w_t=-\frac{1}{2}\lambda'_tb_t^2=\frac{t}{1-t} $。
+}^{2}
+```
+可以看到，最终RF的损失函数是非常简单的。如果将RF转成 $`\mathcal{L}_{w}(x_{0}) `$，其对应的 $w_t=-\frac{1}{2}\lambda'_tb_t^2=\frac{t}{1-t} $。
 
 SD3论文中除了实验RF模型外，还对其它模型做了对比实验，这里也需要简单介绍一下。
 
-首先是之前版本的SD所采用的(**LDM-**)**Linear**，LDM是基于DDPM，但和DDPM采用了不同的noise schedule。DDPM是基于离散时间 $t=0,\dots,T-1 $的扩散模型，给定扩散系数 $\beta_0 $和 $\beta_T $， $\beta_{t}=\beta_{0}+\frac{t}{T-1}(\beta_{T-1}-\beta_{0}) $（DDPM的noise schedule是线性的）。对于LDM， $\beta_{t}=\left(\sqrt{\beta_{0}\vphantom{\beta_{T-1}}}+\frac{t}{T-1}(\sqrt{%
-\beta_{T-1}}-\sqrt{\beta_{0}\vphantom{\beta_{T-1}}})\right)^{2} $。根据 $\beta_t $，可以得到：
+首先是之前版本的SD所采用的(**LDM-**)**Linear**，LDM是基于DDPM，但和DDPM采用了不同的noise schedule。DDPM是基于离散时间 $t=0,\dots,T-1 $的扩散模型，给定扩散系数 $\beta_0 $和 $\beta_T $， $\beta_{t}=\beta_{0}+\frac{t}{T-1}(\beta_{T-1}-\beta_{0}) $（DDPM的noise schedule是线性的）。对于LDM， $`\beta_t=\left(\sqrt{\beta_0}+\frac t{T-1}(\sqrt{\beta_{T-1}}-\sqrt{\beta_0})\right)^2`$。根据 $\beta_t $，可以得到：
  $a_{t}=(\prod_{s=0}^{t}(1-\beta_{s}))^{\frac{1}{2}}, b_t=\sqrt{1-a^2_t} $
 
 除了线性noise schedule，[I-DDPM](https://arxiv.org/abs/2102.09672)还提出了cosine noise schedule，其前向过程可以定义为（采用连续时间）：
