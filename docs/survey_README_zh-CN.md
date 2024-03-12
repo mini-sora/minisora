@@ -1,4 +1,4 @@
-# Minisora与Sora复现最新进展
+# MiniSora简介与Sora复现最新进展
 
 <!-- PROJECT SHIELDS -->
 
@@ -18,7 +18,7 @@
 
 <div align="center">
 
-[English](README.md) | 简体中文
+[English](./survey_README.md) | 简体中文
 
 </div>
 
