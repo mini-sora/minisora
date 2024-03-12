@@ -178,7 +178,7 @@ We hope the community member has the following characteristics:
 | 7) **VideoGPT**: Video Generation using VQ-VAE and Transformers | [**Paper**](https://arxiv.org/abs/2104.10157), [GitHub](https://github.com/wilson1yan/VideoGPT) |
 | 8) Video Diffusion Models | [**Paper**](https://arxiv.org/abs/2204.03458), [GitHub](https://github.com/lucidrains/video-diffusion-pytorch), [Project](https://video-diffusion.github.io/)|
 | 9) **MCVD**: Masked Conditional Video Diffusion for Prediction, Generation, and Interpolation | [**NeurIPS 22 Paper**](https://arxiv.org/abs/2205.09853), [GitHub](https://github.com/voletiv/mcvd-pytorch), [Project](https://mask-cond-video-diffusion.github.io/), [Blog](https://ajolicoeur.ca/2022/05/22/masked-conditional-video-diffusion/) |
-| 10) **VideoPoet**: A Large Language Model for Zero-Shot Video Generation | [**Paper**](https://arxiv.org/abs/2312.14125) |
+| 10) **VideoPoet**: A Large Language Model for Zero-Shot Video Generation | [**Paper**](https://arxiv.org/abs/2312.14125), [Project](http://sites.research.google/videopoet/), [Blog](https://blog.research.google/2023/12/videopoet-large-language-model-for-zero.html) |
 | 11) **MAGVIT**: Masked Generative Video Transformer | [**CVPR 23 Paper**](https://arxiv.org/abs/2212.05199), [GitHub](https://github.com/google-research/magvit), [Project](https://magvit.cs.cmu.edu/), [Colab](https://github.com/google-research/magvit/blob/main) |
 | 12) **EMO**: Emote Portrait Alive - Generating Expressive Portrait Videos with Audio2Video Diffusion Model under Weak Conditions | [**Paper**](https://arxiv.org/abs/2402.17485), [GitHub](https://github.com/HumanAIGC/EMO), [Project](https://humanaigc.github.io/emote-portrait-alive/) |
 | 13) **SimDA**: Simple Diffusion Adapter for Efficient Video Generation | [**Paper**](https://arxiv.org/pdf/2308.09710.pdf), [GitHub](https://github.com/ChenHsing/SimDA), [Project](https://chenhsing.github.io/SimDA/) |
@@ -231,7 +231,7 @@ We hope the community member has the following characteristics:
 | 14) **TATS**: Long Video Generation with Time-Agnostic VQGAN and Time-Sensitive Transformer | [**ECCV 22 Paper**](https://arxiv.org/abs/2204.03638), [Github](https://bnucsy.github.io/TATS/) |
 | 15) **MAGVIT**: Masked Generative Video Transformer (-) | [**CVPR 23 Paper**](https://arxiv.org/abs/2212.05199), [GitHub](https://github.com/google-research/magvit), [Project](https://magvit.cs.cmu.edu/), [Colab](https://github.com/google-research/magvit/blob/main) |
 | 16) **MagViT2**: Language Model Beats Diffusion -- Tokenizer is Key to Visual Generation | [**ICLR 24 Paper**](https://arxiv.org/pdf/2310.05737.pdf), [Github](https://github.com/lucidrains/magvit2-pytorch) |
-| 17) **VideoPoet**: A Large Language Model for Zero-Shot Video Generation (-) | [**Paper**](https://arxiv.org/abs/2312.14125) |
+| 17) **VideoPoet**: A Large Language Model for Zero-Shot Video Generation (-) | [**Paper**](https://arxiv.org/abs/2312.14125), [Project](http://sites.research.google/videopoet/), [Blog](https://blog.research.google/2023/12/videopoet-large-language-model-for-zero.html) |
 | 18) **CLIP**: Learning Transferable Visual Models From Natural Language Supervision | [**CVPR 21 Paper**](https://arxiv.org/abs/2010.11929), [Github](https://github.com/openai/CLIP) |
 | 19) **BLIP**: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation | [**Paper**](https://arxiv.org/abs/2201.12086), [Github](https://github.com/salesforce/BLIP) |
 | 20) **BLIP-2**: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models | [**Paper**](https://arxiv.org/abs/2301.12597), [Github](https://github.com/salesforce/LAVIS/tree/main/projects/blip2) |
@@ -259,6 +259,7 @@ We hope the community member has the following characteristics:
 | 11) **AudioGPT**: Understanding and Generating Speech, Music, Sound, and Talking Head| [**Paper**](https://arxiv.org/abs/2304.12995), [GitHub](https://github.com/AIGC-Audio/AudioGPT) |
 | 12) **AudioLM**: a Language Modeling Approach to Audio Generation| [**Paper**](https://arxiv.org/abs/2209.03143) |
 | 13) **AudioGen**: Textually Guided Audio Generation| [**ICLR 23 Paper**](https://iclr.cc/virtual/2023/poster/11521), [Project](https://felixkreuk.github.io/audiogen/) |
+| 14) **VideoPoet**: A Large Language Model for Zero-Shot Video Generation (-) | [**Paper**](https://arxiv.org/abs/2312.14125), [Project](http://sites.research.google/videopoet/), [Blog](https://blog.research.google/2023/12/videopoet-large-language-model-for-zero.html) |
 | <h3 id="consistency">Consistency</h3> | |
 | **Paper**  | **Link** |
 | 1) Layered Neural Atlases for Consistent Video Editing | [**TOG 21 Paper**](https://arxiv.org/pdf/2109.11418.pdf), [GitHub](https://github.com/ykasten/layered-neural-atlases), [Project](https://layered-neural-atlases.github.io/) |
