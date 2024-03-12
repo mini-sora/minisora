@@ -8,7 +8,7 @@
 
 从目前给出的例子和评测上，SD3在文字渲染和对文本提示词的遵循上，已经达到甚至超过目前STOA的文生图模型如DALL·E 3、Midjourney v6和Ideogram v1。这篇文章将根据SD3的论文分析SD3的具体实现细节。
 
-[image.png](https://cdn.nlark.com/yuque/0/2024/png/21973811/1709871143271-c299f747-c675-46e1-9edf-db7bee6baab7.png#averageHue=%2380c8e1&clientId=u0cd23905-4720-4&from=paste&height=561&id=ub2bc6e58&originHeight=1235&originWidth=1920&originalType=binary&ratio=2.200000047683716&rotation=0&showTitle=false&size=3412261&status=done&style=none&taskId=u38b03b1a-8524-4475-a704-445bd0c5d8e&title=&width=872.7272538114189)
+![image.png](https://cdn.nlark.com/yuque/0/2024/png/21973811/1709871143271-c299f747-c675-46e1-9edf-db7bee6baab7.png#averageHue=%2380c8e1&clientId=u0cd23905-4720-4&from=paste&height=561&id=ub2bc6e58&originHeight=1235&originWidth=1920&originalType=binary&ratio=2.200000047683716&rotation=0&showTitle=false&size=3412261&status=done&style=none&taskId=u38b03b1a-8524-4475-a704-445bd0c5d8e&title=&width=872.7272538114189)
 
 ## 改进的RF
 
