@@ -35,6 +35,8 @@
 
 [**扩散模型并行加速方法: DistriFusion论文共读**](https://mp.weixin.qq.com/s/K6juxdW5RdBpFERmVrsUkA)
 
+**SD3论文精读([zh-CN](./SD3_zh-CN.md), [ZhiHu](https://zhuanlan.zhihu.com/p/686273242))**
+
 ### 往期圆桌讨论
 
 #### Sora 夜谈之Video Diffusion 综述

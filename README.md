@@ -33,9 +33,7 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 - Regular roundtable discussions will be held with the Sora team and the community to explore possibilities.
 - We will delve into existing technological pathways for video generation.
 
-## Reproduction Group of MiniSora Community
-
-[**MiniSora Reproduction Group Page**](https://github.com/mini-sora/minisora/tree/main/codes)
+## [Reproduction Group of MiniSora Community](./codes/README.md)
 
 ### Sora Reproduction Goals of MiniSora
 
@@ -43,13 +41,13 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 2. **Training-Efficiency**: It should achieve good results without requiring extensive training time.
 3. **Inference-Efficiency**: When generating videos during inference, there is no need for high length or resolution; acceptable parameters include 3-10 seconds in length and 480p resolution.
 
-### MiniSora-DiT: Reproducing the DiT Paper with XTuner
+### [MiniSora-DiT](../minisora-DiT/README.md): Reproducing the DiT Paper with XTuner
 
-[**MiniSora-DiT Group Page**: https://github.com/mini-sora/minisora-DiT](https://github.com/mini-sora/minisora-DiT)
+[https://github.com/mini-sora/minisora-DiT](../minisora-DiT/README.md)
 
 #### Requirements
 
-We are recruiting MiniSora Community contributors to reproduce `DiT` using [XTuner](https://github.com/internLM/xtuner). 
+We are recruiting MiniSora Community contributors to reproduce `DiT` using [XTuner](https://github.com/internLM/xtuner).
 
 We hope the community member has the following characteristics:
 
@@ -96,13 +94,14 @@ Please scan the QR code with WeChat to book a live video session.
 
 **ZhiHu Notes**: [A Survey on Generative Diffusion Model: An Overview of Generative Diffusion Models](https://zhuanlan.zhihu.com/p/684795460)
 
-## Paper Reading Program
+## [Paper Reading Program](./notes/README.md)
 
 - [**Sora**: Creating video from text](https://openai.com/sora)
 - **Technical Report**: [Video generation models as world simulators](https://openai.com/research/video-generation-models-as-world-simulators)
 - **Latte**: [Latte: Latent Diffusion Transformer for Video Generation](https://maxin-cn.github.io/latte_project/)
 - **DiT**: [Scalable Diffusion Models with Transformers](https://arxiv.org/abs/2212.09748)
 - **Stable Cascade (ICLR 24 Paper)**: [Würstchen: An efficient architecture for large-scale text-to-image diffusion models](https://openreview.net/forum?id=gU58d5QeGv)
+- **SD3 Paper Interpretation([zh-CN](./SD3_zh-CN.md), [ZhiHu](https://zhuanlan.zhihu.com/p/686273242))**
 
 - Updating...
 

@@ -33,9 +33,7 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 - 将定期举办 Sora 的圆桌和社区一起探讨可能性
 - 视频生成的现有技术路径探讨
 
-## MiniSora社区复现小组
-
-[**MiniSora复现小组页面**](https://github.com/mini-sora/minisora/tree/main/codes)
+## [MiniSora社区复现小组](./codes/README_zh-CN.md)
 
 ### MiniSora的Sora复现目标
 
@@ -43,7 +41,9 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 2. **Training-Efficiency** : 不需要训练太久即可有较好的效果
 3. **Inference-Efficiency** : 推理生成视频时, 长度和分辨率不要求过高, 如3-10s,480p都是可接受的
 
-### MiniSora-DiT: 基于XTuner复现论文DiT
+### [MiniSora-DiT](https://github.com/mini-sora/minisora-DiT): 基于XTuner复现论文DiT
+
+[https://github.com/mini-sora/minisora-DiT](https://github.com/mini-sora/minisora-DiT)
 
 #### 招募要求
 
@@ -80,18 +80,16 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 
 <div align="center">
 <img src="assets/SD3论文领读.png" width="100"/>
-
   <div>&nbsp;</div>
   <div align="center">
   </div>
 </div>
 
-
 [**Sora夜谈之Video Diffusion 综述**](https://github.com/mini-sora/minisora/blob/main/notes/README.md)
 
 **知乎Notes**: [A Survey on Generative Diffusion Model 生成扩散模型综述](https://zhuanlan.zhihu.com/p/684795460)
 
-## 论文共读计划
+## [论文共读计划](./notes/README_zh-CN.md)
 
 - [**Sora**: Creating video from text](https://openai.com/sora)
 - **Sora技术报告**: [Video generation models as world simulators](https://openai.com/research/video-generation-models-as-world-simulators)
