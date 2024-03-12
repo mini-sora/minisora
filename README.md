@@ -36,7 +36,8 @@ The Mini Sora open-source community is positioned as a community-driven initiati
 ## Hot News
 
 - [**Stable Diffusion 3**: MM-DiT: Scaling Rectified Flow Transformers for High-Resolution Image Synthesis](https://stability.ai/news/stable-diffusion-3-research-paper)
-- [Minisora与Sora复现最新进展](./docs/survey_README_zh-CN.md)
+- [**Introduction of MiniSora and Latest Progress in Replicating Sora**](./docs/survey_README_zh-CN.md)
+
 ![](./docs/Minisora_LPRS/0001.jpg)
 
 ## [Reproduction Group of MiniSora Community](./codes/README.md)

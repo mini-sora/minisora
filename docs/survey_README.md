@@ -1,4 +1,4 @@
-# Minisora and Latest Progress in Replicating Sora
+# Introduction of MiniSora and Latest Progress in Replicating Sora
 
 <!-- PROJECT SHIELDS -->
 [![Contributors][contributors-shield]][contributors-url]
@@ -18,7 +18,7 @@
 
 <div align="center">
 
-English | [简体中文](README_zh-CN.md)  
+English | [简体中文](./survey_README_zh-CN.md)  
 
 </div>
 
