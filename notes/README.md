@@ -1,5 +1,5 @@
 
-# Mini Sora Community
+# Paper reading and round-table discussion of Minisora Community
 <!-- PROJECT SHIELDS -->
 
 [![Contributors][contributors-shield]][contributors-url]
@@ -23,9 +23,7 @@ English | [简体中文](./README_zh-CN.md)
 
 </div>
 
-## Paper reading and round-table discussion
-
-### Paper Reading Notes
+## Paper Reading Notes
 
 [**Data Notes(zh-CN)**](./dataset_note.md)
 
@@ -37,21 +35,33 @@ English | [简体中文](./README_zh-CN.md)
 
 **SD3 Paper Interpretation([zh-CN](./SD3_zh-CN.md), [ZhiHu](https://zhuanlan.zhihu.com/p/686273242))**
 
-### Previous round-table discussions
+## Previous round-table discussions
 
-#### Video Diffusion Reviews of Sora's discussion at night
+### Night Talk with Sora: Video Diffusion Overview
 
 **Speaker**: Xing Zhen, PhD candidate in the Vision and Learning Lab, Fudan University
 
-**What to Watch live**: Fundamentals of Diffusion Modeling for Image Generation / Development of Diffusion Modeling for Text to Video / An Introduction to the Technology and Reproduction Challenges Behind Sora
+**Highlights**: Fundamentals of Diffusion Modeling for Image Generation / Development of Diffusion Modeling for Text to Video / An Introduction to the Technology and Reproduction Challenges Behind Sora
 
-**Online Live Streaming Time**: 02/28 20:00-21:00
+**Time of Online Live**: 02/28 20:00-21:00
 
-**Bilibili Playback**: [Sora 之 Video Diffusion 综述(zh-CN)](https://www.bilibili.com/video/BV1cJ4m1e7sQ)
+**Bilibili**: [Sora 之 Video Diffusion 综述(zh-CN)](https://www.bilibili.com/video/BV1cJ4m1e7sQ)
 
 **PPT**: [Feishu Download Links(zh-CN)](https://aicarrier.feishu.cn/file/Ds0BbCAo6oTazdxxo3Zciw1Nnne)
 
 **Zhihu Notes**: [A Survey on Generative Diffusion Model(zh-CN)](https://zhuanlan.zhihu.com/p/684795460)
+
+------------------
+
+### Paper Interpretation of Stable Diffusion 3 paper: MM-DiT
+
+**Speaker**: MMagic Core Contributors
+
+**Highlights**: MMagic core contributors will lead us in interpreting the Stable Diffusion 3 paper, discussing the architecture details and design principles of Stable Diffusion 3. 
+
+**Time of Online Live**: 03/12 20:00
+
+**PPT**: [Feishu Download Links(zh-CN)](https://aicarrier.feishu.cn/file/NXnTbo5eqo8xNYxeHnecjLdJnQq)
 
 [contributors-shield]: https://img.shields.io/github/contributors/mini-sora/minisora.svg?style=flat-square
 [contributors-url]: https://github.com/mini-sora/minisora/graphs/contributors
