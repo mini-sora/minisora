@@ -111,20 +111,25 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 
 ## 相关工作
 
-1. [Diffusion Model](#diffusion-models)
-2. [Diffusion Transformer](#diffusion-transformer)
-3. [Baseline Video Generation Models](#baseline-video-generation-models)
-4. [Video Generation](#video-generation)
-5. [Dataset](#dataset)
-6. [Patchifying Methods](#patchifying-methods)
-7. [Long-context](#long-context)
-8. [Audio Related Resource](#audio-related-resource)
-9. [Consistency](#consistency)
-10. [Prompt Engineering](#prompt-engineering)
-11. [Security](#security)
-12. [World Model](#world-model)
-13. [Video Compression](#video-compression)
-14. [Existing high-quality resources](#existing-high-quality-resources)
+- 1 [Diffusion Model](#diffusion-models)
+- 2 [Diffusion Transformer](#diffusion-transformer)
+- 3 [Baseline Video Generation Models](#baseline-video-generation-models)
+- 4 [Video Generation](#video-generation)
+- 5 [Dataset](#dataset)
+- 6 [Patchifying Methods](#patchifying-methods)
+- 7 [Long-context](#long-context)
+- 8 [Audio Related Resource](#audio-related-resource)
+- 9 [Consistency](#consistency)
+- 10 [Prompt Engineering](#prompt-engineering)
+- 11 [Security](#security)
+- 12 [World Model](#world-model)
+- 13 [Video Compression](#video-compression)
+- 14 [Mamba](#Mamba)
+    - 14.1 [Theoretical Foundations and Model Architecture](#theoretical-foundations-and-model-architecture)
+    - 14.2 [Image Generation and Visual Applications](#image-generation-and-visual-applications)
+    - 14.3 [Video Processing and Understanding](#video-processing-and-understanding)
+    - 14.4 [Medical Image Processing](#medical-image-processing)
+- 15 [Existing high-quality resources](#existing-high-quality-resources)
 
 | <h3 id="diffusion-models">Diffusion Model</h3> |  |
 | :------------- | :------------- |
@@ -197,7 +202,7 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 | 14) **MSR-VTT** -  A large-scale video benchmark for video understanding<br><small>`10k Clips, Downloadable`</small> | [**CVPR 16 Paper**](https://ieeexplore.ieee.org/document/7780940), [Project](https://cove.thecvf.com/datasets/839)|
 | 15) **The Cityscapes Dataset** -  Benchmark suite and evaluation server for pixel-level, instance-level, and panoptic semantic labeling<br><small>`Downloadable`</small> | [**Arxiv 16 Paper**](https://arxiv.org/pdf/1608.02192v1.pdf), [Project](https://www.cityscapes-dataset.com/)|
 | 16) **Youku-mPLUG** -  First open-source large-scale Chinese video text dataset<br><small>`Downloadable`</small> | [**Arxiv 23 Paper**](https://arxiv.org/abs/2306.04362), [Project](https://github.com/X-PLUG/Youku-mPLUG)|
-| 17) **VidProM** - VidProM: A Million-scale Real Prompt-Gallery Dataset for Text-to-Video Diffusion Models<br><small>`6.69M, Downloadable`</small>| [**Arxiv 24 Paper**](https://arxiv.org/abs/2403.06098), [Github](https://github.com/WangWenhao0716/VidProM) | 
+| 17) **VidProM** - VidProM: A Million-scale Real Prompt-Gallery Dataset for Text-to-Video Diffusion Models<br><small>`6.69M, Downloadable`</small>| [**Arxiv 24 Paper**](https://arxiv.org/abs/2403.06098), [Github](https://github.com/WangWenhao0716/VidProM) |
 | <h4>NMNP: Nice method, not public</h4> | |
 | 1) **WebVid** -  Large-scale text-video dataset, containing 10 million video-text pairs scraped from the stock footage sites<br><small>`10M video-text pairs`</small> | [**Arxiv 21 Paper**](https://arxiv.org/abs/2104.00650), [Project](https://www.robots.ox.ac.uk/~vgg/research/frozen-in-time/)|
 | <h3 id="patchifying-methods">Patchifying Methods</h3> | |
@@ -283,6 +288,16 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 | 17) Empowering Dynamics-aware Text-to-Video Diffusion with Large Language Models | [**Paper**](https://arxiv.org/abs/2308.13812) |
 | 18) **MotionZero**: Exploiting Motion Priors for Zero-shot Text-to-Video Generation | [**Paper**](https://arxiv.org/abs/2311.16635) |
 | 19) **GPT4Motion**: Scripting Physical Motions in Text-to-Video Generation via Blender-Oriented GPT Planning | [**Paper**](https://arxiv.org/abs/2311.12631) |
+| 20) Multimodal Procedural Planning via Dual Text-Image Prompting | [Paper](https://arxiv.org/abs/2305.01795), [Github](https://github.com/YujieLu10/TIP) |
+| 21) **InstructCV**: Instruction-Tuned Text-to-Image Diffusion Models as Vision Generalists | [**ICLR 24 Paper**](https://arxiv.org/abs/2310.00390), [Github](https://github.com/AlaaLab/InstructCV) |
+| 22) **DreamSync**: Aligning Text-to-Image Generation with Image Understanding Feedback | [Paper](https://arxiv.org/abs/2311.17946) |
+| 23) **TaleCrafter**: Interactive Story Visualization with Multiple Characters | [**SIGGRAPH Asia 23 Paper**](https://arxiv.org/abs/2310.00390) |
+| 24) **Reason out Your Layout**: Evoking the Layout Master from Large Language Models for Text-to-Image Synthesis | [Paper](https://arxiv.org/abs/2311.17126), [Github](https://github.com/Xiaohui9607/LLM_layout_generator) |
+| 25) **COLE**: A Hierarchical Generation Framework for Graphic Design | [Paper](https://arxiv.org/abs/2311.16974) |
+| 26) Knowledge-Aware Artifact Image Synthesis with LLM-Enhanced Prompting and Multi-Source Supervision | [Paper](https://arxiv.org/abs/2312.08056) |
+| 27) **Vlogger**: Make Your Dream A Vlog | [**CVPR 24 Paper**](https://arxiv.org/abs/2401.09414), [Github](https://github.com/Vchitect/Vlogger) |
+| 28) **GALA3D**: Towards Text-to-3D Complex Scene Generation via Layout-guided Generative Gaussian Splatting | [Paper](https://github.com/VDIGPKU/GALA3D) |
+| 29) **MuLan**: Multimodal-LLM Agent for Progressive Multi-Object Diffusion | [Paper](https://arxiv.org/abs/2402.12741) |
 | <h3 id="security">Security</h3> | |
 | **论文**  | **链接** |
 | 1) **BeaverTails:** Towards Improved Safety Alignment of LLM via a Human-Preference Dataset | [**NeurIPS 23 Paper**](https://proceedings.neurips.cc/paper_files/paper/2023/file/4dbb61cb68671edc4ca3712d70083b9f-Paper-Datasets_and_Benchmarks.pdf), [Github](https://github.com/PKU-Alignment/beavertails) |
@@ -330,6 +345,31 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 | 16) **DCVC-DC**: Neural Video Compression with Diverse Contexts | [**CVPR 23 Paper**](https://arxiv.org/abs/2302.14402), [Github](https://github.com/microsoft/DCVC/tree/main/DCVC-DC) |
 | 17) **DCVC-FM**: Neural Video Compression with Feature Modulation | [**CVPR 24 Paper**](https://arxiv.org/abs/2402.17414), [Github](https://github.com/microsoft/DCVC/tree/main/DCVC-FM) |
 | 18) **SSF**: Scale-Space Flow for End-to-End Optimized Video Compression | [**CVPR 20 Paper**](https://openaccess.thecvf.com/content_CVPR_2020/html/Agustsson_Scale-Space_Flow_for_End-to-End_Optimized_Video_Compression_CVPR_2020_paper.html), [Github](https://github.com/InterDigitalInc/CompressAI) |
+| <h3 id="Mamba">Mamba</h3> | 
+| <h4 id="theoretical-foundations-and-model-architecture">Theoretical Foundations and Model Architecture</h4> | |
+| **论文** | **链接** |
+| 1) **Mamba**: Linear-Time Sequence Modeling with Selective State Spaces | [**Paper**](https://arxiv.org/abs/2312.00752), [Github](https://github.com/state-spaces/mamba) |
+| 2) Efficiently Modeling Long Sequences with Structured State Spaces | [**ICLR 22 Paper**](https://iclr.cc/virtual/2022/poster/6959), [Github](https://github.com/state-spaces/s4) |
+| 3) Modeling Sequences with Structured State Spaces | [**Paper**](https://purl.stanford.edu/mb976vf9362) |
+| 4) Long Range Language Modeling via Gated State Spaces | [**Paper**](https://arxiv.org/abs/2206.13947), [GitHub](https://github.com/lucidrains/gated-state-spaces-pytorch) |
+| <h4 id="image-generation-and-visual-applications">Image Generation and Visual Applications</h4> | |
+| **论文** | **链接** |
+| 1) Diffusion Models Without Attention | [**Paper**](https://arxiv.org/abs/2311.18257) |
+| 2) **Pan-Mamba**: Effective Pan-Sharpening with State Space Model  | [**Paper**](https://arxiv.org/abs/2402.12192), [Github](https://github.com/alexhe101/Pan-Mamba) |
+| 3) Pretraining Without Attention | [**Paper**](https://arxiv.org/abs/2212.10544), [Github](https://github.com/jxiw/BiGS) |
+| 4) Block-State Transformers | [**NIPS 23 Paper**](https://proceedings.neurips.cc/paper_files/paper/2023/hash/16ccd203e9e3696a7ab0dcf568316379-Abstract-Conference.html) |
+| 5) **Vision Mamba**: Efficient Visual Representation Learning with Bidirectional State Space Model | [**Paper**](https://arxiv.org/abs/2401.09417), [Github](https://github.com/hustvl/Vim) |
+| 6) VMamba: Visual State Space Model | [**Paper**](https://arxiv.org/abs/2401.10166), [Github](https://github.com/MzeroMiko/VMamba) |
+| <h4 id="video-processing-and-understanding">Video Processing and Understanding</h4> | |
+| **论文** | **链接** |
+| 1) Long Movie Clip Classification with State-Space Video Models | [**ECCV 22 Paper**](https://link.springer.com/chapter/10.1007/978-3-031-19833-5_6), [Github](https://github.com/md-mohaiminul/ViS4mer) |
+| 2) Selective Structured State-Spaces for Long-Form Video Understanding | [**CVPR 23 Paper**](https://openaccess.thecvf.com/content/CVPR2023/html/Wang_Selective_Structured_State-Spaces_for_Long-Form_Video_Understanding_CVPR_2023_paper.html) |
+| 3) Efficient Movie Scene Detection Using State-Space Transformers | [**CVPR 23 Paper**](https://openaccess.thecvf.com/content/CVPR2023/html/Islam_Efficient_Movie_Scene_Detection_Using_State-Space_Transformers_CVPR_2023_paper.html), [Github](https://github.com/md-mohaiminul/TranS4mer) |
+| <h4 id="medical-image-processing">Medical Image Processing</h4> | |
+| **论文** | **链接** |
+| 1) **Swin-UMamba**: Mamba-based UNet with ImageNet-based pretraining | [**Paper**](https://arxiv.org/abs/2402.03302), [Github](https://github.com/JiarunLiu/Swin-UMamba) |
+| 2) **MambaIR**: A Simple Baseline for Image Restoration with State-Space Model | [**Paper**](https://arxiv.org/abs/2402.15648), [Github](https://github.com/csguoh/MambaIR) |
+| 3) VM-UNet: Vision Mamba UNet for Medical Image Segmentation | [**Paper**](https://arxiv.org/abs/2402.02491), [Github](https://github.com/JCruan519/VM-UNet) |
 |  | |
 | <h3 id="existing-high-quality-resources">现有高质量资料</h3> | |
 | **资料**  | **链接** |

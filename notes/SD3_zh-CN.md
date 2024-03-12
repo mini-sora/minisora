@@ -20,56 +20,74 @@ SD3相比之前的SD一个最大的变化是采用**Rectified Flow**来作为生
 
 **Flow Matching（FM）**是建立在[continuous normalizing flows](https://arxiv.org/abs/1806.07366)的基础上，这里将生成模型定义为一个**常微分方程（ODE）**：
 
-$$dz_{t}=v(z_{t},t)\,dt$$
-这里 $t\in[0,1]$，而 $v(z_{t},t)$称之为**向量场（vector field）**。我们用这样的一个ODE来构建一个**概率路径（probability path）** $p_t$，它可以实现从一个噪音分布 $p_1 $到另外一个数据分布$p_0$的转变（可以称之为**a flow**），注意这里我们在时间上是和FM论文中的定义是相反的，这其实是为了后面和扩散模型统一起来。这里的噪音分布我们采用高斯噪音，即$p_{1}=\mathcal{N}(0,1)$，而$p_0$是我们要建模的数据分布$q(x_0)$。一旦我们知道了$v(z_{t},t)$，我们就可以用ODE的求解器比如欧拉方法（Euler method）实现从一个噪音到真实数据的生成。这里，我们可以用一个参数为$\theta$的神经网络$v_\theta(z_{t},t)$来建模向量场，FM的优化目标为：
-$$\displaystyle\mathcal{L}_{FM}=\mathbb{E}_{t,p_{t}(z)}||v_{\theta}(z,t)-u_{t}(z)||_{2}^{2}$$
-这里的$u_{t}(z)$是目标向量场，它可以产生噪音分布$p_1$到真实数据分布$q(x_0)$的概率路径$p_t(z)$。所以其实FM的优化目标就是直接回归目标向量场。有很多的概率路径可以满足$p_1\approx q(x_0)$，但是果没有任何先验，$u_{t}(z)$是不可知的，FM的优化目标也就无法实现。
-一个解决思路是我们先预先构建一个$u_{t}(z)$，并让它能够保证我们的目标概率路径$p_t(z)$。为此，FM论文中引入了条件概率路径$p_t(z|x_0)$，这里的条件是真实数据$x_0$，这个条件概率采用如下的高斯分布：
-$$p_{t}(z|x_{0})=\mathcal{N}(z|a_{t}x_{0}, b_{t}^{2}I)$$
-这个高斯分布的均值为$a_{t}x_{0}$，而方差为$b_t$，这里的$a_t$和$b_t$都是和$t$有关的函数，并且是可导的。同时，当$t=0$要满足$a_0=1, b_0=0$，这样$p_{0}(z|x_{0})=q(x_0)$；而当$t=1$要满足$a_1=0, b_1=1$，这样$p_{1}(z|x_{0})=p_1$。这样，这里定义的条件概率路径$p_t(z|x_0)$能够保证噪音分布$p_1$到真实数据分布$q(x_0)$的转变。
-细心的你可能会发现$p_t(z|x_0)$和扩散模型的扩散过程有相同的形式。其实，引入条件概率路径，就是相当于我们定义了一个前向过程：
-$$z_{t}=a_{t}x_{0}+b_{t}\epsilon\quad\text{where}\;\epsilon\sim\mathcal{N}(0,I)$$
+ $$dz_{t}=v(z_{t},t)\,dt $$
+这里  $t\in[0,1] $，而  $v(z_{t},t) $称之为**向量场（vector field）**。我们用这样的一个ODE来构建一个**概率路径（probability path）**  $p_t $，它可以实现从一个噪音分布  $p_1  $到另外一个数据分布 $p_0 $的转变（可以称之为**a flow**），注意这里我们在时间上是和FM论文中的定义是相反的，这其实是为了后面和扩散模型统一起来。这里的噪音分布我们采用高斯噪音，即 $p_{1}=\mathcal{N}(0,1) $，而 $p_0 $是我们要建模的数据分布 $q(x_0) $。一旦我们知道了 $v(z_{t},t) $，我们就可以用ODE的求解器比如欧拉方法（Euler method）实现从一个噪音到真实数据的生成。这里，我们可以用一个参数为 $\theta $的神经网络 $v_\theta(z_{t},t) $来建模向量场，FM的优化目标为：
+ ```math
+ \displaystyle\mathcal{L}_{FM}=\mathbb{E}_{t,p_{t}(z)}||v_{\theta}(z,t)-u_{t}(z)||_{2}^{2} 
+ ```
+这里的 $u_{t}(z) $是目标向量场，它可以产生噪音分布 $p_1 $到真实数据分布 $q(x_0) $的概率路径 $p_t(z) $。所以其实FM的优化目标就是直接回归目标向量场。有很多的概率路径可以满足 $p_1\approx q(x_0) $，但是果没有任何先验， $u_{t}(z) $是不可知的，FM的优化目标也就无法实现。
+一个解决思路是我们先预先构建一个 $u_{t}(z) $，并让它能够保证我们的目标概率路径 $p_t(z) $。为此，FM论文中引入了条件概率路径 $p_t(z|x_0) $，这里的条件是真实数据 $x_0 $，这个条件概率采用如下的高斯分布：
+ $$p_{t}(z|x_{0})=\mathcal{N}(z|a_{t}x_{0}, b_{t}^{2}I) $$
+这个高斯分布的均值为 $a_{t}x_{0} $，而方差为 $b_t $，这里的 $a_t $和 $b_t $都是和 $t $有关的函数，并且是可导的。同时，当 $t=0 $要满足 $a_0=1, b_0=0 $，这样 $p_{0}(z|x_{0})=q(x_0) $；而当 $t=1 $要满足 $a_1=0, b_1=1 $，这样 $p_{1}(z|x_{0})=p_1 $。这样，这里定义的条件概率路径 $p_t(z|x_0) $能够保证噪音分布 $p_1 $到真实数据分布 $q(x_0) $的转变。
+细心的你可能会发现 $p_t(z|x_0) $和扩散模型的扩散过程有相同的形式。其实，引入条件概率路径，就是相当于我们定义了一个前向过程：
+ $$z_{t}=a_{t}x_{0}+b_{t}\epsilon\quad\text{where}\;\epsilon\sim\mathcal{N}(0,I) $$
 后面我们也会看到FM其实是可以看成扩散模型，只是采用了不一样的优化目标（等价于采用不同的loss权重）。
 
 接下来，我们来看一个新的优化目标，那就是**Conditional Flow Matching** (**CFM**)目标：
-$$\mathcal{L}_{CFM}=\mathbb{E}_{t,q(x_0),p_{t}(z|x_0)}||v_{\theta}(z,t)-u_{t}(z|x_0)||_{2}^{2}$$
-这里的条件向量场$u_{t}(z|x_0)$产生条件概率路径$p_t(z|x_0)$。对于CM目标和CFM目标，一个很重要的结论是两者之间只相差一个与参数$\theta$无关的常量，这也就意味着：
-$$\nabla_{\theta} \mathcal{L}_{FM}(\theta) = \nabla_{\theta} \mathcal{L}_{CFM}(\theta)$$
-换句话说，使用CFM目标来训练$\theta$是和采用CM目标来训练$\theta$是等价的。这里我们就不展开证明了，感兴趣的可以看FM论文中的证明。一个直观的解释是，我们采用CFM目标来训练$\theta$也是能够达到我们的目标，那就是从噪音分布$p_1$到真实数据分布$q(x_0)$，只不过这里我们人工设定了一个路径$u_{t}(z|x_0)$而已。而且后面我们会看到不同的生成模型的差异除了优化目标之外就在于定义的路径（前向过程）的差异。
-虽然$u_{t}(z)$是不可知的，但是引入条件后的$u_{t}(z|x_0)$是可以计算出来的：
-$$u_{t}(z|x_0)=z'_t=a'_{t}x_{0}+b'_{t}\epsilon$$
-进一步根据前向过程我们有：$x_0=(z_t-b_t\epsilon)/a_t$，我们将其代入上式，可以得到：
-$$u_{t}(z|x_0)=\frac{a_{t}^{\prime}}{a_{t}}z_{t}-
-\epsilon b_{t}(\frac{a_{t}^{\prime}}{a_{t}}-\frac{b_{t}^{\prime}}{b_{t}})$$
-这里我们定义信噪比$\lambda_{t}=\log\frac{a_{t}^{2}}{b_{t}^{2}}$，进而有$\lambda_{t}^{\prime}=2(\frac{a_{t}^{\prime}}{a_{t}}-\frac{b_{t}^{\prime}}{b_{t
-}})$，所以有：
-$$u_{t}(z|x_0)=\frac{a_{t}^{\prime}}{a_{t}}z_{t}-\frac{b_{t}}{2}\lambda
-_{t}^{\prime}\epsilon$$
+ ```math
+\mathcal{L}_{CFM}=\mathbb{E}_{t,q(x_0),p_{t}(z|x_0)}||v_{\theta}(z,t)-u_{t}(z|x_0)||_{2}^{2}
+```
+这里的条件向量场 $u_{t}(z|x_0) $产生条件概率路径 $p_t(z|x_0) $。对于CM目标和CFM目标，一个很重要的结论是两者之间只相差一个与参数 $\theta $无关的常量，这也就意味着：
+```math
+\nabla_{\theta} \mathcal{L}_{FM}(\theta) = \nabla_{\theta} \mathcal{L}_{CFM}(\theta)
+```
+换句话说，使用CFM目标来训练 $\theta $是和采用CM目标来训练 $\theta $是等价的。这里我们就不展开证明了，感兴趣的可以看FM论文中的证明。一个直观的解释是，我们采用CFM目标来训练 $\theta $也是能够达到我们的目标，那就是从噪音分布 $p_1 $到真实数据分布 $q(x_0) $，只不过这里我们人工设定了一个路径 $u_{t}(z|x_0) $而已。而且后面我们会看到不同的生成模型的差异除了优化目标之外就在于定义的路径（前向过程）的差异。
+虽然 $u_{t}(z) $是不可知的，但是引入条件后的 $u_{t}(z|x_0) $是可以计算出来的：
+```math
+u_{t}(z|x_0)=z'_t=a'_{t}x_{0}+b'_{t}\epsilon
+```
+进一步根据前向过程我们有： $x_0=(z_t-b_t\epsilon)/a_t $，我们将其代入上式，可以得到：
+ $$u_{t}(z|x_0)=\frac{a_{t}^{\prime}}{a_{t}}z_{t}-
+\epsilon b_{t}(\frac{a_{t}^{\prime}}{a_{t}}-\frac{b_{t}^{\prime}}{b_{t}}) $$
+这里我们定义信噪比 $\lambda_{t}=\log\frac{a_{t}^{2}}{b_{t}^{2}} $，进而有 $\lambda_{t}^{\prime}=2(\frac{a_{t}^{\prime}}{a_{t}}-\frac{b_{t}^{\prime}}{b_{t
+}}) $，所以有：
+```math
+u_{t}(z|x_0)=\frac{a_{t}^{\prime}}{a_{t}}z_{t}-\frac{b_{t}}{2}\lambda
+_{t}^{\prime}\epsilon
+```
 我们将上式代入CFM目标中，就可以得到：
-$$\mathcal{L}_{CFM}=\mathbb{E}_{t,q(x_0),p_{t}(z|x_0),\epsilon\sim\mathcal{N}(0,I)}||v_{\theta}(z,t)-
+```math
+\mathcal{L}_{CFM}=\mathbb{E}_{t,q(x_0),p_{t}(z|x_0),\epsilon\sim\mathcal{N}(0,I)}||v_{\theta}(z,t)-
 \frac{a_{t}^{\prime}}{a_{t}}z+\frac{b_{t}}{2}\lambda_{t}^{\prime}\epsilon||_{2
-}^{2}$$
-这里我们对$v_{\theta}(z,t)$进一步定义为：
-$$v_{\theta}(z,t)=\frac{a_{t}^{\prime}}{a_{t}}z_{t}-\frac{b_{t}}{2}\lambda
-_{t}^{\prime}\epsilon_{\theta}(z,t)$$
+}^{2}
+```
+这里我们对 $v_{\theta}(z,t) $进一步定义为：
+```math
+v_{\theta}(z,t)=\frac{a_{t}^{\prime}}{a_{t}}z_{t}-\frac{b_{t}}{2}\lambda
+_{t}^{\prime}\epsilon_{\theta}(z,t)
+```
 代入CFM优化目标可得到：
-$$\mathcal{L}_{CFM}=\mathbb{E}_{t,q(x_0),p_{t}(z|x_0),\epsilon\sim\mathcal{N}(0,I)}\left(-\frac{b_{t}}{
-2}\lambda_{t}^{\prime}\right)^{2}||\epsilon_{\theta}(z,t)-\epsilon||_{2}^{2}$$
-此时相当于神经网络变成了预测噪音，这和扩散模型DDPM预测噪音是一样的，但是优化目标的多了一个和$t$有关的权重系数。所以，FM其实可以看成一个采用不同的权重系数的扩散模型。
+```math
+\mathcal{L}_{CFM}=\mathbb{E}_{t,q(x_0),p_{t}(z|x_0),\epsilon\sim\mathcal{N}(0,I)}\left(-\frac{b_{t}}{
+2}\lambda_{t}^{\prime}\right)^{2}||\epsilon_{\theta}(z,t)-\epsilon||_{2}^{2}
+```
+此时相当于神经网络变成了预测噪音，这和扩散模型DDPM预测噪音是一样的，但是优化目标的多了一个和 $t $有关的权重系数。所以，FM其实可以看成一个采用不同的权重系数的扩散模型。
 Google的工作[Understanding Diffusion Objectives as the ELBO with Simple Data Augmentation](https://arxiv.org/abs/2303.00848)提出了一个统一的视角，即不同的生成模型包括[DDPM](https://arxiv.org/abs/2006.11239)，[SDE](https://arxiv.org/abs/2011.13456)，[EDM](https://arxiv.org/abs/2206.00364)以及[FM](https://arxiv.org/abs/2210.02747)等的优化目标都可以统一为：
-$$\mathcal{L}_{w}(x_{0})=-\frac{1}{2}\mathbb{E}_{t\sim\mathcal{U}(0, 1),\epsilon
+```math
+\mathcal{L}_{w}(x_{0})=-\frac{1}{2}\mathbb{E}_{t\sim\mathcal{U}(0, 1),\epsilon
 \sim\mathcal{N}(0,I)}\left[w_{t}\lambda_{t}^{\prime}\|\epsilon_{\theta}(z_{t},
-t)-\epsilon\|^{2}\right]$$
-不同的生成模型所采用的优化目标不同，等价于采用不同的权重$w_t$。对于DDPM所采用的$\mathcal{L}_{simple}$，这里$w_t=-2/\lambda'_t$。而对于FM的$\mathcal{L}_{CFM}$，有$w_t=-\frac{1}{2}\lambda'_tb_t^2$。
-更具体地说，不同类型的生成模型差异在于前向过程和预测目标的差异。不同的前向过程采用不同$a_t$和$b_t$，导致不同的概率路径。而预测目标可以为预测噪音$\epsilon$（DDPM），预测分数$s$（SDE），以及预测向量场$v$（FM）等等。但是它们都可以最终统一为基于预测噪音$\epsilon$的优化目标，只是权重$w_t$的差异。
+t)-\epsilon\|^{2}\right]
+```
+不同的生成模型所采用的优化目标不同，等价于采用不同的权重 $w_t $。对于DDPM所采用的 $`\mathcal{L}_{simple} `$，这里 $`w_t=-2/\lambda'_t `$。而对于FM的 $\mathcal{L}_{CFM} $，有 $w_t=-\frac{1}{2}\lambda'_tb_t^2 $。
+更具体地说，不同类型的生成模型差异在于前向过程和预测目标的差异。不同的前向过程采用不同 $a_t $和 $b_t $，导致不同的概率路径。而预测目标可以为预测噪音 $\epsilon $（DDPM），预测分数 $s $（SDE），以及预测向量场 $v $（FM）等等。但是它们都可以最终统一为基于预测噪音 $\epsilon $的优化目标，只是权重 $w_t $的差异。
 
 ### Rectified Flow
 
 在FM中，作者给出了一个基于最优传输（ Optimal Transport）具体的前向过程：
-$$z_t=(1-t)x_0+((1-t)\sigma_{min}+t)\epsilon$$
-当$\sigma_{min}=0$，我们就可以得到和[Rectified Flow](https://arxiv.org/abs/2209.03003)中一样的前向过程：
-$$z_t=(1-t)x_0+t\epsilon$$
-RF的前向过程一个特点是$z_t$由数据$x_0$和噪音$\epsilon$线性插值得到，这也意味我们人工定义的概率路径是一条直线。直线的一个好处是采样时我们可以步子迈大一点，这就相当于我们可以减少采样的总步数。关于理论的分析涉及到最优传输，感兴趣的话可以看看论文。
+ $$z_t=(1-t)x_0+((1-t)\sigma_{min}+t)\epsilon $$
+当 $\sigma_{min}=0 $，我们就可以得到和[Rectified Flow](https://arxiv.org/abs/2209.03003)中一样的前向过程：
+ $$z_t=(1-t)x_0+t\epsilon $$
+RF的前向过程一个特点是 $z_t $由数据 $x_0 $和噪音 $\epsilon $线性插值得到，这也意味我们人工定义的概率路径是一条直线。直线的一个好处是采样时我们可以步子迈大一点，这就相当于我们可以减少采样的总步数。关于理论的分析涉及到最优传输，感兴趣的话可以看看论文。
 
 <div align="center">
 <img src="https://cdn.nlark.com/yuque/0/2024/png/21973811/1709954243903-7d0255cc-7220-4aa3-8d4c-23ef451b0288.png#averageHue=%236ead5f&clientId=ue3b9ce99-4c1b-4&from=paste&height=187&id=u052dd81c&originHeight=412&originWidth=594&originalType=binary&ratio=2.200000047683716&rotation=0&showTitle=false&size=81030&status=done&style=none&taskId=u2084ac39-34e4-4f19-8137-0e397d5dc38&title=&width=269.9999941479077" width="40%"/>
@@ -77,28 +95,29 @@ RF的前向过程一个特点是$z_t$由数据$x_0$和噪音$\epsilon$线性插�
   </div>
 </div>
 
-对于RF，有$z'_t=-x_0+\epsilon$，所以其优化目标就变成了：
-$$\mathcal{L}_{RF}=\mathbb{E}_{t,q(x_0),p_{t}(z|x_0),\epsilon\sim\mathcal{N}(0,I)}||v_{\theta}(z,t)-
+对于RF，有 $`z'_t=-x_0+\epsilon `$，所以其优化目标就变成了：
+```math
+\mathcal{L}_{RF}=\mathbb{E}_{t,q(x_0),p_{t}(z|x_0),\epsilon\sim\mathcal{N}(0,I)}||v_{\theta}(z,t)-
 (\epsilon-x_0)||_{2
-}^{2}$$
-可以看到，最终RF的损失函数是非常简单的。如果将RF转成$\mathcal{L}_{w}(x_{0})$，其对应的$w_t=-\frac{1}{2}\lambda'_tb_t^2=\frac{t}{1-t}$。
+}^{2}
+```
+可以看到，最终RF的损失函数是非常简单的。如果将RF转成 $`\mathcal{L}_{w}(x_{0}) `$，其对应的 $w_t=-\frac{1}{2}\lambda'_tb_t^2=\frac{t}{1-t} $。
 
 SD3论文中除了实验RF模型外，还对其它模型做了对比实验，这里也需要简单介绍一下。
 
-首先是之前版本的SD所采用的(**LDM-**)**Linear**，LDM是基于DDPM，但和DDPM采用了不同的noise schedule。DDPM是基于离散时间$t=0,\dots,T-1$的扩散模型，给定扩散系数$\beta_0$和$\beta_T$，$\beta_{t}=\beta_{0}+\frac{t}{T-1}(\beta_{T-1}-\beta_{0})$（DDPM的noise schedule是线性的）。对于LDM，$\beta_{t}=\left(\sqrt{\beta_{0}\vphantom{\beta_{T-1}}}+\frac{t}{T-1}(\sqrt{%
-\beta_{T-1}}-\sqrt{\beta_{0}\vphantom{\beta_{T-1}}})\right)^{2}$。根据$\beta_t$，可以得到：
-$a_{t}=(\prod_{s=0}^{t}(1-\beta_{s}))^{\frac{1}{2}}, b_t=\sqrt{1-a^2_t}$
+首先是之前版本的SD所采用的(**LDM-**)**Linear**，LDM是基于DDPM，但和DDPM采用了不同的noise schedule。DDPM是基于离散时间 $t=0,\dots,T-1 $的扩散模型，给定扩散系数 $\beta_0 $和 $\beta_T $， $\beta_{t}=\beta_{0}+\frac{t}{T-1}(\beta_{T-1}-\beta_{0}) $（DDPM的noise schedule是线性的）。对于LDM， $`\beta_t=\left(\sqrt{\beta_0}+\frac t{T-1}(\sqrt{\beta_{T-1}}-\sqrt{\beta_0})\right)^2`$。根据 $\beta_t $，可以得到：
+ $a_{t}=(\prod_{s=0}^{t}(1-\beta_{s}))^{\frac{1}{2}}, b_t=\sqrt{1-a^2_t} $
 
 除了线性noise schedule，[I-DDPM](https://arxiv.org/abs/2102.09672)还提出了cosine noise schedule，其前向过程可以定义为（采用连续时间）：
-$$z_{t}=\cos (\frac{\pi}{2}t)x_{0}+\sin(\frac{\pi}{2}t)\epsilon$$
+ $$z_{t}=\cos (\frac{\pi}{2}t)x_{0}+\sin(\frac{\pi}{2}t)\epsilon $$
 
 除了此外，SD3还实验了[EDM](https://arxiv.org/abs/2206.00364)，但这里我们不再展开了。
 
 ### 改进的采样方法
 
-这里所说的采样是指的训练过程对时间步$t$的采样，由于$t$是和信噪比SNR正相关的，所以也可以说是对SNR的采样。对于RF，其默认使用均匀分布$t\sim\mathcal{U}(0, 1)$进行采样，这也就是说各个时间步$t$是同等对待的。但是SD3论文中认为不同时间步的任务难度是一样：两边相对容易，而中间是比较难的。所以，这里是设计了一些新的采样方法来提高中间时间步的权重。改变采样的分布，等价于改变权重系数：
-$$w_{t}^{\pi}=\frac{t}{1-t}\pi(t)$$
-这里的$\pi(t)$是采样$t$所遵循的概率分布，当使用均匀分布$t\sim\mathcal{U}(0, 1)$时，$\pi(t)=1$。
+这里所说的采样是指的训练过程对时间步 $t $的采样，由于 $t $是和信噪比SNR正相关的，所以也可以说是对SNR的采样。对于RF，其默认使用均匀分布 $t\sim\mathcal{U}(0, 1) $进行采样，这也就是说各个时间步 $t $是同等对待的。但是SD3论文中认为不同时间步的任务难度是一样：两边相对容易，而中间是比较难的。所以，这里是设计了一些新的采样方法来提高中间时间步的权重。改变采样的分布，等价于改变权重系数：
+ $$w_{t}^{\pi}=\frac{t}{1-t}\pi(t) $$
+这里的 $\pi(t) $是采样 $t $所遵循的概率分布，当使用均匀分布 $t\sim\mathcal{U}(0, 1) $时， $\pi(t)=1 $。
 
 下面我们介绍一下SD3论文中所实验的几种采样方法。
 1. **Logit-Normal Sampling**
@@ -106,31 +125,31 @@ $$w_{t}^{\pi}=\frac{t}{1-t}\pi(t)$$
 3. **CosMap**
 
 第一个采样方法是**Logit-Normal Sampling**，这是采用[Logit-Normal分布](https://en.wikipedia.org/wiki/Logit-normal_distribution)，所谓的Logit-Normal分布是指变量的logit满足正态分布，对于Logit-Normal分布，其概率密度为：
-$$\pi_{\text{ln}}(t;m,s)=\frac{1}{s\sqrt{2\pi}}\frac{1}{t(1-t)}\exp(-
-\frac{(\text{logit}(t)-m)^{2}}{2s^{2}})$$
-这里$\text{logit}(t)=\log\frac{t}{1-t}$。其中参数$m$可以控制$t$的偏向（其中$m=0$时，$t=0.5$是分布的峰值），参数$s$控制分布的宽度（或者说是胖瘦）。下面是不同的参数下分布的可视化：
+ $$\pi_{\text{ln}}(t;m,s)=\frac{1}{s\sqrt{2\pi}}\frac{1}{t(1-t)}\exp(-
+\frac{(\text{logit}(t)-m)^{2}}{2s^{2}}) $$
+这里 $\text{logit}(t)=\log\frac{t}{1-t} $。其中参数 $m $可以控制 $t $的偏向（其中 $m=0 $时， $t=0.5 $是分布的峰值），参数 $s $控制分布的宽度（或者说是胖瘦）。下面是不同的参数下分布的可视化：
 
 ![image.png](https://cdn.nlark.com/yuque/0/2024/png/21973811/1709977129602-7e207ac3-d181-4cd4-a47e-43fbb3dcaeaf.png#averageHue=%23c0aba4&clientId=ud43ec78a-4dae-4&from=paste&height=430&id=u0c5406ad&originHeight=947&originWidth=1320&originalType=binary&ratio=2.200000047683716&rotation=0&showTitle=false&size=70150&status=done&style=none&taskId=u094a2a0b-a8a3-42d1-9527-5c8fb014039&title=&width=599.9999869953505)
 
-在采样过程中，我们可以先基于正态分布$u\sim\mathcal{N}(u;m,s)$采样出一个$u$，然后再转成$t=\frac{e^u}{1+e^u}$。
+在采样过程中，我们可以先基于正态分布 $u\sim\mathcal{N}(u;m,s) $采样出一个 $u $，然后再转成 $t=\frac{e^u}{1+e^u} $。
 
-第二个采样方法是**Mode Sampling with Heavy Tails**。Logit-Normal分布的一个问题是两边$t=0$和$t=1$附近基本采样不到，这个可能会对性能有一定的影响。所以这个第二个采样方法是基于一个重尾分布。首先我们用定义如下的函数：
-$$f_{\text{mode}}(u;s)=1-u-s\cdot(\cos^{2}(\frac{\pi}{2}u)-
-1+u)$$
-这里$-1\leq s\leq\frac{2}{\pi-2}$，此时函数是单调的，我们可以通过$u\sim[0, 1], t=f_{\text{mode}}(u;s)$来采样时间步$t$。根据[变量变换定理](https://en.wikipedia.org/wiki/Probability_density_function#Function_of_random_variables_and_change_of_variables_in_the_probability_density_function)，有$\pi_{\text{mode}}(t;s)=\pi(u)\left|\frac{d}{dt}f_{\text{mode}}^{-1}(t)\right|=\left|\frac{d}{dt}f_{\text{mode}}^{-1}(t)\right|$。这里的参数$s$控制分布是偏向中间（>0）还是偏向两边（<0），当$s=0$时，此时就相当于均匀分布了，即$\pi_{\text{mode}}(t;0)=1$。下面是不同$s$下的分布可视化。
+第二个采样方法是**Mode Sampling with Heavy Tails**。Logit-Normal分布的一个问题是两边 $t=0 $和 $t=1 $附近基本采样不到，这个可能会对性能有一定的影响。所以这个第二个采样方法是基于一个重尾分布。首先我们用定义如下的函数：
+ $$f_{\text{mode}}(u;s)=1-u-s\cdot(\cos^{2}(\frac{\pi}{2}u)-
+1+u) $$
+这里 $-1\leq s\leq\frac{2}{\pi-2} $，此时函数是单调的，我们可以通过 $u\sim[0, 1], t=f_{\text{mode}}(u;s) $来采样时间步 $t $。根据[变量变换定理](https://en.wikipedia.org/wiki/Probability_density_function#Function_of_random_variables_and_change_of_variables_in_the_probability_density_function)，有 $\pi_{\text{mode}}(t;s)=\pi(u)\left|\frac{d}{dt}f_{\text{mode}}^{-1}(t)\right|=\left|\frac{d}{dt}f_{\text{mode}}^{-1}(t)\right| $。这里的参数 $s $控制分布是偏向中间（>0）还是偏向两边（<0），当 $s=0 $时，此时就相当于均匀分布了，即 $\pi_{\text{mode}}(t;0)=1 $。下面是不同 $s $下的分布可视化。
 <div align="center">
 <img src="https://cdn.nlark.com/yuque/0/2024/png/21973811/1709988419049-70ffb93f-27c5-44c5-81e1-3eb4db30fc79.png#averageHue=%23c5b6ae&clientId=uf9cd0e18-eeef-4&from=paste&height=430&id=ud27a5e9f&originHeight=947&originWidth=1320&originalType=binary&ratio=2.200000047683716&rotation=0&showTitle=false&size=70402&status=done&style=none&taskId=u20f08f83-ae04-4245-9a1e-f5476f24e28&title=&width=599.9999869953505" width="70%"/>
   <div align="center">
   </div>
 </div>
 
-最后一个采样方法是**CosMap**。这里其实是想实现下RF下的cosine schedule ，我们可以求解一个映射$f:u\mapsto f(u)=t,\;u\in[0,1]$，让SNR和cosine schedule是一样的，即：
-$$2\log\frac{\cos(\frac{\pi}{2}u)}{\sin(\frac{\pi}{2}u)}=2\log\frac{1-f(u)}{f(u)}$$
+最后一个采样方法是**CosMap**。这里其实是想实现下RF下的cosine schedule ，我们可以求解一个映射 $f:u\mapsto f(u)=t,\;u\in[0,1] $，让SNR和cosine schedule是一样的，即：
+ $$2\log\frac{\cos(\frac{\pi}{2}u)}{\sin(\frac{\pi}{2}u)}=2\log\frac{1-f(u)}{f(u)} $$
 通过上述等式可得：
-$$t=f(u)=1-\frac{1}{\tan(\frac{\pi}{2}u)+1}$$
-同样根据变量变换定理，我们可以得到$t$的概率密度：
-$$\pi_{\text{CosMap}}(t)=\left|\frac{d}{dt}f^{-1}(t)\right|=\frac{2}{\pi-2\pi t+%
-2\pi t^{2}}$$
+ $$t=f(u)=1-\frac{1}{\tan(\frac{\pi}{2}u)+1} $$
+同样根据变量变换定理，我们可以得到 $t $的概率密度：
+ $$\pi_{\text{CosMap}}(t)=\left|\frac{d}{dt}f^{-1}(t)\right|=\frac{2}{\pi-2\pi t+%
+2\pi t^{2}} $$
 
 这里我们可以画出这个分布，如下所示，它也是中间概率密度高：
 
@@ -144,12 +163,12 @@ $$\pi_{\text{CosMap}}(t)=\left|\frac{d}{dt}f^{-1}(t)\right|=\frac{2}{\pi-2\pi t+
 
 为了验证RF是否在文生图上是有效的，SD3论文中做了一系列的对比实验，实验的模型共包括61个，分别是：
 
-- 采用$\epsilon$和$v$优化目标，同时noise schedule采用linear和cosine，这共4个配置：`eps/linear`，`v/linear`，`eps/cos`, `v/cos`，其中`eps/linear`就是LDM所采用的配置。
-- 采用RF和$\pi_{\text{mode}}(t;s)$，这里记为`rf/mode(s)`，其中其中$s$在−1～1.75之间均匀选取7个值，另外还包含一个$s=0$的配置，这其实就是原来的RF。所以这组总共8个配置。
-- 采用RF和$\pi_{\text{ln}}(t;m,s)$，这里记为`rf/lognorm(m, s)`，其中在$m\sim[-1,1]$和$s\sim[0.2,2.2]$以网格方式选择30组$(m,s)$。
-- 采用RF和$\pi_{\text{CosMap}}(t)$，这里记为`rf/cosmap`。
-- 采用EDM，记为$edm(P_{m}, P_{s})$，这两个参数决定EDM的SNR，其中在$P_{m}\sim [-1.2,1.2]$和$P_{s}\sim [0.6,1.8]$均匀选择15组。
-- 采用EDM，但是schedule分别设置为`edm`和`rf`与`v/cos`的`log-SNR`加权匹配，这两个配置分别记为$rf(edm/rf)$和$v/cos(edm/cos)$。
+- 采用 $\epsilon $和 $v $优化目标，同时noise schedule采用linear和cosine，这共4个配置：`eps/linear`，`v/linear`，`eps/cos`, `v/cos`，其中`eps/linear`就是LDM所采用的配置。
+- 采用RF和 $\pi_{\text{mode}}(t;s) $，这里记为`rf/mode(s)`，其中其中 $s $在−1～1.75之间均匀选取7个值，另外还包含一个 $s=0 $的配置，这其实就是原来的RF。所以这组总共8个配置。
+- 采用RF和 $\pi_{\text{ln}}(t;m,s) $，这里记为`rf/lognorm(m, s)`，其中在 $m\sim[-1,1] $和 $s\sim[0.2,2.2] $以网格方式选择30组 $(m,s) $。
+- 采用RF和 $\pi_{\text{CosMap}}(t) $，这里记为`rf/cosmap`。
+- 采用EDM，记为 $edm(P_{m}, P_{s}) $，这两个参数决定EDM的SNR，其中在 $P_{m}\sim [-1.2,1.2] $和 $P_{s}\sim [0.6,1.8] $均匀选择15组。
+- 采用EDM，但是schedule分别设置为`edm`和`rf`与`v/cos`的`log-SNR`加权匹配，这两个配置分别记为 $rf(edm/rf) $和 $v/cos(edm/cos) $。
 
 每个模型的实验配置如下：
 
@@ -197,7 +216,7 @@ SD3除了采用改进的RF，另外一个重要的改进就是采用了一个多
 
 ### 改进的autoencoder
 
-这里的MM-DiT和DiT一样，依然是使用一个autoencoder（VAE）来将图像编码为latent，然后将latent转成patches，送入transformer处理。之前版本的SD所使用的autoencoder是将一个$H\times W\times 3$的图像编码为$\frac{H}{8}\times \frac{W}{8} \times d$的latent，这里的$d=4$，这个压缩还是比较狠的，带来的不利影响是容易产生小物体畸变（比如人眼，文字等）。所以SD3通过增加$d$来提升autoencoder的重建质量。下面是不同的$d$的定量评估：
+这里的MM-DiT和DiT一样，依然是使用一个autoencoder（VAE）来将图像编码为latent，然后将latent转成patches，送入transformer处理。之前版本的SD所使用的autoencoder是将一个 $H\times W\times 3 $的图像编码为 $\frac{H}{8}\times \frac{W}{8} \times d $的latent，这里的 $d=4 $，这个压缩还是比较狠的，带来的不利影响是容易产生小物体畸变（比如人眼，文字等）。所以SD3通过增加 $d $来提升autoencoder的重建质量。下面是不同的 $d $的定量评估：
 
 <div align="center">
 <img src="https://cdn.nlark.com/yuque/0/2024/png/21973811/1710027366566-054cc2ee-9f66-4fca-bf40-0b72a9ba2397.png#averageHue=%23e6e6e6&clientId=u31486502-bc18-4&from=paste&height=238&id=ue334de01&originHeight=524&originWidth=1196&originalType=binary&ratio=2.200000047683716&rotation=0&showTitle=false&size=101821&status=done&style=none&taskId=u60e958b9-b75e-4f91-9130-10be8968aba&title=&width=543.6363518533631" width="60%"/>
@@ -205,7 +224,7 @@ SD3除了采用改进的RF，另外一个重要的改进就是采用了一个多
   </div>
 </div>
 
-当$d=16$时，autoencoder的性能相比的$d=4$有一个比较大的提升，所以SD3使用16通道的autoencoder。要注意，虽然增加通道并不会对生成模型（UNet或者DiT）的参数带来大的影响（只需要修改网络第一层和最后一层的通道数），但是会增加任务的难度，当通道数从4增加到16，网络要拟合的内容增加了4倍，这也意味模型需要增加参数来提供足够的容量。SD3论文中的一个实验对比结果如下所示：
+当 $d=16 $时，autoencoder的性能相比的 $d=4 $有一个比较大的提升，所以SD3使用16通道的autoencoder。要注意，虽然增加通道并不会对生成模型（UNet或者DiT）的参数带来大的影响（只需要修改网络第一层和最后一层的通道数），但是会增加任务的难度，当通道数从4增加到16，网络要拟合的内容增加了4倍，这也意味模型需要增加参数来提供足够的容量。SD3论文中的一个实验对比结果如下所示：
 
 ![image.png](https://cdn.nlark.com/yuque/0/2024/png/21973811/1710027665358-6eeb4bb4-40b7-49cd-8eb2-4fa951cc7625.png#averageHue=%23f4f4f4&clientId=u31486502-bc18-4&from=paste&height=420&id=u8f7dba8d&originHeight=924&originWidth=2458&originalType=binary&ratio=2.200000047683716&rotation=0&showTitle=false&size=256203&status=done&style=none&taskId=u3a834ac5-472e-44df-bedc-db1bd5b3398&title=&width=1117.2727030564936)
 
@@ -312,7 +331,7 @@ MM-DiT和之前文生图模型的一个区别是文本特征不再只是作为�
 
 可以看到MM-DiT是优于其它架构的，其中3套参数的MM-DiT略好于2套参数的MM-DiT，最终还是选择参数量更少的2套参数的MM-DiT。不过，这里和其它架构的对比是否保证了同参数大小，否则实验就显得有点不公平了。
 
-MM-DiT的模型参数主要是模型的深度$d$，即transformer block的数量，此时对应的模型中间特征的维度大小是$64\cdot d$。这意味着当模型的深度$d$增大为$r\cdot d$，模型的参数量会增大$r^3$。比如深度为24的MM-DiT参数量为2B，最大的MM-DiT深度为38，其参数量为$2B*(38/24)^3\approx 8B$。
+MM-DiT的模型参数主要是模型的深度 $d $，即transformer block的数量，此时对应的模型中间特征的维度大小是 $64\cdot d $。这意味着当模型的深度 $d $增大为 $r\cdot d $，模型的参数量会增大 $r^3 $。比如深度为24的MM-DiT参数量为2B，最大的MM-DiT深度为38，其参数量为 $2B*(38/24)^3\approx 8B $。
 
 ### QK-Normalization
 
@@ -328,7 +347,7 @@ MM-DiT的模型参数主要是模型的深度$d$，即transformer block的数量
 
 MM-DiT的位置编码和ViT一样采用2d的frequency embeddings（两个1d frequency embeddings进行concat）。SD3先在256x256尺寸下预训练，但最终会在以1024x1024为中心的多尺度上微调，这就需要MM-DiT的位置编码需要支持变尺度。SD3采用的解决方案是插值+扩展。
 
-这里假定我们的目标分辨率的像素量为$S^2$，各个尺寸的图像满足$H\times W\approx S^2$(比如1024x1024，512x2048，2048x512），其中图像的宽和高最大分别为$H_{\text {max}}$和$W_{\text {max}}$。如果换算为MM-DiT的patches，有$h_{\text{max}}=H_{\text{max}}/16,w_{\text{max}}=W_{\text{max}}/16, s=S/16$，因为autoencoder下采样8x，而patch size为2x2，所以最终下采样16x。预训练模型的位置编码是在256x256下训练的，我们可以先通过插值的方式将位置编码应用到$S\times S$尺度上，此时相当于位置$p$处的网格值为$p\cdot\frac{256}{S}$，进一步地，我们可以将其扩展支持最大的宽和高，以高为例子，这里有$(p-\frac{h_{\text{max}}-s}{2})\cdot\frac{256}{S}$。对于不同的尺寸，我们只需要center crop出对应的2d网格进行embedding得到位置编码。下面的一个比较直观的示意图：
+这里假定我们的目标分辨率的像素量为 $S^2 $，各个尺寸的图像满足 $H\times W\approx S^2 $(比如1024x1024，512x2048，2048x512），其中图像的宽和高最大分别为 $H_{\text {max}} $和 $W_{\text {max}} $。如果换算为MM-DiT的patches，有 $h_{\text{max}}=H_{\text{max}}/16,w_{\text{max}}=W_{\text{max}}/16, s=S/16 $，因为autoencoder下采样8x，而patch size为2x2，所以最终下采样16x。预训练模型的位置编码是在256x256下训练的，我们可以先通过插值的方式将位置编码应用到 $S\times S $尺度上，此时相当于位置 $p $处的网格值为 $p\cdot\frac{256}{S} $，进一步地，我们可以将其扩展支持最大的宽和高，以高为例子，这里有 $(p-\frac{h_{\text{max}}-s}{2})\cdot\frac{256}{S} $。对于不同的尺寸，我们只需要center crop出对应的2d网格进行embedding得到位置编码。下面的一个比较直观的示意图：
 
 <div align="center">
 <img src="https://cdn.nlark.com/yuque/0/2024/png/21973811/1710060830033-04baa21a-9610-4c33-a5c1-acbc2183f0e6.png#averageHue=%23fdfbfa&clientId=u1bfa8ed1-197c-4&from=paste&height=315&id=u42944c6d&originHeight=694&originWidth=708&originalType=binary&ratio=2.200000047683716&rotation=0&showTitle=false&size=25693&status=done&style=none&taskId=ue49e223a-7bf7-48c8-b1fb-47852649599&title=&width=321.81817484296073" width="30%"/>
@@ -342,11 +361,11 @@ MM-DiT的位置编码和ViT一样采用2d的frequency embeddings（两个1d freq
 
 ![image.png](https://cdn.nlark.com/yuque/0/2024/png/21973811/1710061124200-58492ff4-882c-4751-b3f6-33dd80d39d5b.png#averageHue=%239da37e&clientId=ud6e82a60-3f2c-4&from=paste&height=285&id=ucdaa57f4&originHeight=628&originWidth=1948&originalType=binary&ratio=2.200000047683716&rotation=0&showTitle=false&size=1333797&status=done&style=none&taskId=u054cf05e-83a1-48df-86bd-b0528e9bff6&title=&width=885.4545262628354)
 
-一个解决办法是对noise schedule进行偏移，对于RF模型来说，就是timestep schedule的shift。下面我们来理论分析如何进行shift。假定要处理的图像包含$n=H\times W$个像素，但它是一个常量图像，所有的像素值均为$c$。根据RF的前向过程，我们有$z_{t}=(1-t)c\mathbf {1}+t\epsilon$，这里$\mathbf {1},\epsilon\in\mathbb{R}^{n}$。$z_t$可以产生$n$个观察变量$Y=(1-t)c+t\eta$，我们可以计算出均值和标准差：$\mathbb{E}(Y)=(1-t)c, \sigma(Y)=t$。根据$z_t$我们可以估计出$c$，其中估计值$\hat{c}=\frac{1}{1-t}\frac{1}{n}\sum_{i=1}^{n}z_{t,i}$，其标准差为$\sigma(t,n)=\frac{t}{1-t}\sqrt{\frac{1}{n}}$。这里的标准差可以看成我们对$c$的破坏程度，可以看到当图像的宽和高都增大一倍时，破坏程度也相应降低了一倍。这里我们希望，分辨率$n$下的$\sigma(t_n,n)$和分辨率$m$下的$\sigma(t_m,m)$相同。求解可以得到：
-$$t_{m}=\frac{\sqrt{\frac{m}{n}}t_{n}}{1+(\sqrt{\frac{m}{n}}-1)t_{n}}$$
+一个解决办法是对noise schedule进行偏移，对于RF模型来说，就是timestep schedule的shift。下面我们来理论分析如何进行shift。假定要处理的图像包含 $n=H\times W $个像素，但它是一个常量图像，所有的像素值均为 $c $。根据RF的前向过程，我们有 $z_{t}=(1-t)c\mathbf {1}+t\epsilon $，这里 $\mathbf {1},\epsilon\in\mathbb{R}^{n} $。 $z_t $可以产生 $n $个观察变量 $Y=(1-t)c+t\eta $，我们可以计算出均值和标准差： $\mathbb{E}(Y)=(1-t)c, \sigma(Y)=t $。根据 $z_t $我们可以估计出 $c $，其中估计值 $\hat{c}=\frac{1}{1-t}\frac{1}{n}\sum_{i=1}^{n}z_{t,i} $，其标准差为 $\sigma(t,n)=\frac{t}{1-t}\sqrt{\frac{1}{n}} $。这里的标准差可以看成我们对 $c $的破坏程度，可以看到当图像的宽和高都增大一倍时，破坏程度也相应降低了一倍。这里我们希望，分辨率 $n $下的 $\sigma(t_n,n) $和分辨率 $m $下的 $\sigma(t_m,m) $相同。求解可以得到：
+ $$t_{m}=\frac{\sqrt{\frac{m}{n}}t_{n}}{1+(\sqrt{\frac{m}{n}}-1)t_{n}} $$
 根据上式，我们可以计算出SNR，有：
-$$\lambda_{t_{m}}=2\log\frac{1-t_{m}}{t_m}=2\log\frac{1-t_{n}}{\sqrt{\frac{m}{n}}t_{n}}=\lambda_{t_{n}}-\log\frac{m}{n}$$
-这意味两者的SNR要偏移一个$\log\frac{m}{n}$。当分辨率变成1024x1024，论文中是通过人工评测实验来选择最优的$\sqrt\frac{m}{n}$，实验最优值是3.0。
+ $$\lambda_{t_{m}}=2\log\frac{1-t_{m}}{t_m}=2\log\frac{1-t_{n}}{\sqrt{\frac{m}{n}}t_{n}}=\lambda_{t_{n}}-\log\frac{m}{n} $$
+这意味两者的SNR要偏移一个 $\log\frac{m}{n} $。当分辨率变成1024x1024，论文中是通过人工评测实验来选择最优的 $\sqrt\frac{m}{n} $，实验最优值是3.0。
 
 <div align="center">
 <img src="https://cdn.nlark.com/yuque/0/2024/png/21973811/1710063072517-27b10d5a-94d7-4704-b12b-9adb25a4bb2a.png#averageHue=%23856d4e&clientId=u6ae7a9d4-5c99-4&from=paste&height=423&id=uf8260f07&originHeight=930&originWidth=976&originalType=binary&ratio=2.200000047683716&rotation=0&showTitle=false&size=761184&status=done&style=none&taskId=ub20c3128-4a19-45d4-855b-570dc248a84&title=&width=443.6363540208046" width="60%"/>
@@ -412,7 +431,7 @@ transformer一个比较大的优势是有好的scaling能力：当增大模型�
   </div>
 </div>
 
-训练过程需要对文本进行一定的drop来实现Classifier-Free Guidance，这里是三个text encoder各以46.4%的比例单独drop，这也意味着text完全drop的比例为$(46.4\%)^3\approx10\%$。
+训练过程需要对文本进行一定的drop来实现Classifier-Free Guidance，这里是三个text encoder各以46.4%的比例单独drop，这也意味着text完全drop的比例为 $(46.4\%)^3\approx10\% $。
 
 三个text encoder独立drop的一个好处是推理时可以灵活使用text encoder。比如，我们可以去掉比较吃显存的T5模型，只保留两个CLIP text encoder，实验发现这并不会影响视觉美感（没有T5的胜率为50%），并且只会导致文本遵循度略有下降（胜率为46%），这种情况包括文本提示词包含高度详细的场景描述或大量文字。然而，如果想生成文字，还是加上T5，没有T5的胜率只有38%。下面是一些具体的例子：
 
