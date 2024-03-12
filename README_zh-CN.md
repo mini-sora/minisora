@@ -76,6 +76,8 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 
 **直播看点**：MMagic 核心贡献者为我们领读 Stable Diffusion 3 论文，介绍 Stable Diffusion 3 的架构细节和设计思路。
 
+**PPT**: [飞书下载链接](https://aicarrier.feishu.cn/file/NXnTbo5eqo8xNYxeHnecjLdJnQq)
+<!-- 
 请使用微信扫码预约视频号直播:
 
 <div align="center">
@@ -83,7 +85,10 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
   <div>&nbsp;</div>
   <div align="center">
   </div>
-</div>
+</div> 
+-->
+
+### 往期精彩看点
 
 [**Sora夜谈之Video Diffusion 综述**](https://github.com/mini-sora/minisora/blob/main/notes/README.md)
 
@@ -125,10 +130,10 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 - 12 [World Model](#world-model)
 - 13 [Video Compression](#video-compression)
 - 14 [Mamba](#Mamba)
-    - 14.1 [Theoretical Foundations and Model Architecture](#theoretical-foundations-and-model-architecture)
-    - 14.2 [Image Generation and Visual Applications](#image-generation-and-visual-applications)
-    - 14.3 [Video Processing and Understanding](#video-processing-and-understanding)
-    - 14.4 [Medical Image Processing](#medical-image-processing)
+  - 14.1 [Theoretical Foundations and Model Architecture](#theoretical-foundations-and-model-architecture)
+  - 14.2 [Image Generation and Visual Applications](#image-generation-and-visual-applications)
+  - 14.3 [Video Processing and Understanding](#video-processing-and-understanding)
+  - 14.4 [Medical Image Processing](#medical-image-processing)
 - 15 [Existing high-quality resources](#existing-high-quality-resources)
 
 | <h3 id="diffusion-models">Diffusion Model</h3> |  |

@@ -78,7 +78,9 @@ We hope the community member has the following characteristics:
 
 **Highlights**: MMagic core contributors will lead us in interpreting the Stable Diffusion 3 paper, discussing the architecture details and design principles of Stable Diffusion 3. 
 
-Please scan the QR code with WeChat to book a live video session.
+**PPT**: [Feishu Download Links(zh-CN)](https://aicarrier.feishu.cn/file/NXnTbo5eqo8xNYxeHnecjLdJnQq)
+
+<!-- Please scan the QR code with WeChat to book a live video session.
 
 <div align="center">
 <img src="assets/SD3论文领读.png" width="100"/>
@@ -86,11 +88,11 @@ Please scan the QR code with WeChat to book a live video session.
   <div>&nbsp;</div>
   <div align="center">
   </div>
-</div>
+</div> -->
 
 ### Highlights from Previous Discussions
 
-[**Night Talk with Sora: Video Diffusion Overview**](https://github.com/mini-sora/minisora/blob/main/notes/README.md)
+#### [**Night Talk with Sora: Video Diffusion Overview**](https://github.com/mini-sora/minisora/blob/main/notes/README.md)
 
 **ZhiHu Notes**: [A Survey on Generative Diffusion Model: An Overview of Generative Diffusion Models](https://zhuanlan.zhihu.com/p/684795460)
 

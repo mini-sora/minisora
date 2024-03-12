@@ -1,5 +1,5 @@
 
-# Mini Sora 社区
+# Minisora 社区论文阅读和圆桌讨论
 <!-- PROJECT SHIELDS -->
 
 [![Contributors][contributors-shield]][contributors-url]
@@ -23,9 +23,7 @@
 
 </div>
 
-## 论文共读与圆桌讨论
-
-### 论文阅读笔记
+## 论文阅读笔记
 
 [**数据Notes**](./dataset_note.md)
 
@@ -37,9 +35,9 @@
 
 **SD3论文精读([zh-CN](./SD3_zh-CN.md), [ZhiHu](https://zhuanlan.zhihu.com/p/686273242))**
 
-### 往期圆桌讨论
+## 往期圆桌讨论
 
-#### Sora 夜谈之Video Diffusion 综述
+### Sora 夜谈之Video Diffusion 综述
 
 **主讲**: 邢桢 复旦大学视觉与学习实验室博士生
 
@@ -52,6 +50,18 @@
 **PPT**: [飞书下载链接](https://aicarrier.feishu.cn/file/Ds0BbCAo6oTazdxxo3Zciw1Nnne)
 
 **知乎Notes**: [A Survey on Generative Diffusion Model 生成扩散模型综述](https://zhuanlan.zhihu.com/p/684795460)
+
+---------
+
+### Stable Diffusion 3 论文(MM-DiT)解读
+
+**主讲**：MMagic 核心贡献者
+
+**直播看点**：MMagic 核心贡献者为我们领读 Stable Diffusion 3 论文，介绍 Stable Diffusion 3 的架构细节和设计思路。
+
+**在线直播时间**：03/12 20:00
+
+**PPT**: [飞书下载链接](https://aicarrier.feishu.cn/file/NXnTbo5eqo8xNYxeHnecjLdJnQq)
 
 [contributors-shield]: https://img.shields.io/github/contributors/mini-sora/minisora.svg?style=flat-square
 [contributors-url]: https://github.com/mini-sora/minisora/graphs/contributors

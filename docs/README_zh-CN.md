@@ -1,4 +1,4 @@
-# MiniSora  docs
+# MiniSora  Docs
 
 <!-- PROJECT SHIELDS -->
 
