@@ -103,7 +103,7 @@ Please scan the QR code with WeChat to book a live video session.
 - **DiT**: [Scalable Diffusion Models with Transformers](https://arxiv.org/abs/2212.09748)
 - **Stable Cascade (ICLR 24 Paper)**: [Würstchen: An efficient architecture for large-scale text-to-image diffusion models](https://openreview.net/forum?id=gU58d5QeGv)
 - [**Stable Diffusion 3**: MM-DiT: Scaling Rectified Flow Transformers for High-Resolution Image Synthesis](https://stability.ai/news/stable-diffusion-3-research-paper)
-  - [SD3 Paper Interpretation (zh-CN)](./SD3_zh-CN.md), [ZhiHu(zh-CN)](https://zhuanlan.zhihu.com/p/686273242)
+  - [SD3 Paper Interpretation (zh-CN)](./notes/SD3_zh-CN.md), [ZhiHu(zh-CN)](https://zhuanlan.zhihu.com/p/686273242)
 
 - Updating...
 
