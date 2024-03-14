@@ -28,15 +28,19 @@
     👋 加入我们的 <a href="https://cdn.vansin.top/minisora.jpg" target="_blank">微信社区</a>
 </p>
 
-Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**免费不收取任何费用、不割韭菜**），Mini Sora 计划探索 Sora 的实现路径和后续的发展方向：
+MiniSora 开源社区定位为由社区同学自发组织的开源社区，MiniSora 计划探索 Sora 的实现路径和后续的发展方向：
 
 - 将定期举办 Sora 的圆桌和社区一起探讨可能性
 - 视频生成的现有技术路径探讨
+- 牵头复现 Sora 有关的论文或者研究成果, 如 DiT([MiniSora-DiT](https://github.com/mini-sora/minisora-DiT)) 等
+- 开展以Sora有关的核心技术和实现的综述研究, 即, 从 "DDPM 到 Sora: 基于扩散模型的视频生成模型的综述"
 
 ## 最近更新
 
 - [**Stable Diffusion 3**: MM-DiT: Scaling Rectified Flow Transformers for High-Resolution Image Synthesis](https://stability.ai/news/stable-diffusion-3-research-paper)
-- [Minisora与Sora复现最新进展](./docs/survey_README_zh-CN.md)
+- [**MiniSora-DiT**](https://github.com/mini-sora/minisora-DiT): 基于XTuner复现论文DiT
+- [MiniSora与Sora复现最新进展](./docs/survey_README_zh-CN.md)
+- 
 ![[empty](./docs/survey_README_zh-CN.md)](./docs/Minisora_LPRS/0001.jpg)
 
 ## [MiniSora社区复现小组](./codes/README_zh-CN.md)
@@ -405,6 +409,28 @@ Mini Sora 开源社区定位为由社区同学自发组织的开源社区（**�
 | 18) **LAVIS** - A Library for Language-Vision Intelligence | [**ACL 23 Paper**](https://aclanthology.org/2023.acl-demo.3.pdf), [GitHub](https://github.com/salesforce/lavis), [Page](https://opensource.salesforce.com/LAVIS//latest/index.html) |
 | 19) **OpenDiT**: An Easy, Fast and Memory-Efficient System for DiT Training and Inference | [Github](https://github.com/NUS-HPC-AI-Lab/OpenDiT) |
 | 20) Awesome-Long-Context |[GitHub1](https://github.com/zetian1025/awesome-long-context), [GitHub2](https://github.com/showlab/Awesome-Long-Context) |
+
+## 引用
+
+如果本项目对您的工作有所帮助，请使用以下格式引用：
+
+```bibtex
+@misc{minisora,
+    title={MiniSora},
+    author={MiniSora Community},
+    url={https://github.com/mini-sora/minisora},
+    year={2024}
+}
+```
+
+```bibtex
+@misc{minisorasurvey,
+    title={Diffusion Model-based Video Generation Models From DDPM to Sora: A Survey},
+    author={Survey Paper Group of MiniSora Community},
+    url={https://github.com/mini-sora/minisora},
+    year={2024}
+}
+```
 
 ## Mini Sora 微信社区社区交流群
 
