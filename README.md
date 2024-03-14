@@ -165,8 +165,8 @@ We hope the community member has the following characteristics:
 | 7) **VisionLLaMA**: A Unified LLaMA Interface for Vision Tasks | [**Paper**](https://arxiv.org/abs/2403.00522), [GitHub](https://github.com/Meituan-AutoML/VisionLLaMA) |
 | 8) **Stable Diffusion 3**: MM-DiT: Scaling Rectified Flow Transformers for High-Resolution Image Synthesis | [**Paper**](https://stabilityai-public-packages.s3.us-west-2.amazonaws.com/Stable+Diffusion+3+Paper.pdf), [Blog](https://stability.ai/news/stable-diffusion-3-research-paper) |
 | 9) **PIXART-Σ**: Weak-to-Strong Training of Diffusion Transformer for 4K Text-to-Image Generation | [**Paper**](https://arxiv.org/pdf/2403.04692.pdf), [Project](https://pixart-alpha.github.io/PixArt-sigma-project/) |
-| 10) **PIXART-α**: FAST TRAINING OF DIFFUSION TRANSFORMER FOR PHOTOREALISTIC TEXT-TO-IMAGE SYNTHESIS | [**Paper**](https://arxiv.org/pdf/2310.00426.pdf), [GitHub](https://github.com/PixArt-alpha/PixArt-alpha) |
-| 11) **PIXART-δ**: FAST AND CONTROLLABLE IMAGE GENERATION WITH LATENT CONSISTENCY MODEL | [**Paper**](https://arxiv.org/pdf/2401.05252.pdf), |
+| 10) **PIXART-α**: Fast Training of Diffusion Transformer for Photorealistic Text-To-Image Synthesiss | [**Paper**](https://arxiv.org/pdf/2310.00426.pdf), [GitHub](https://github.com/PixArt-alpha/PixArt-alpha) |
+| 11) **PIXART-δ**: Fast and Controllable Image Generation With Latent Consistency Model | [**Paper**](https://arxiv.org/pdf/2401.05252.pdf), |
 | <h3 id="baseline-video-generation-models">Baseline Video Generation Models</h3> | |
 | **Paper** | **Link** |
 | 1) **ViViT**: A Video Vision Transformer | [**ICCV 21 Paper**](https://arxiv.org/pdf/2103.15691v2.pdf), [GitHub](https://github.com/google-research/scenic) |
