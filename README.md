@@ -1,4 +1,4 @@
-# Mini Sora Community
+# MiniSora Community
 
 <!-- PROJECT SHIELDS -->
 
@@ -28,14 +28,17 @@ English | [简体中文](README_zh-CN.md)
     👋 join us on  <a href="https://cdn.vansin.top/minisora.jpg" target="_blank">WeChat</a>
 </p>
 
-The Mini Sora open-source community is positioned as a community-driven initiative (**free of charge and devoid of any exploitation**) organized spontaneously by community members. The Mini Sora project aims to explore the implementation path and future development direction of Sora.
+The MiniSora open-source community is positioned as a community-driven initiative organized spontaneously by community members. The MiniSora community aims to explore the implementation path and future development direction of Sora.
 
 - Regular round-table discussions will be held with the Sora team and the community to explore possibilities.
 - We will delve into existing technological pathways for video generation.
+- Leading the replication of papers or research results related to Sora, such as DiT ([MiniSora-DiT](https://github.com/mini-sora/minisora-DiT)), etc.
+- Conducting a comprehensive review of Sora-related technologies and their implementations, i.e., "**From DDPM to Sora: A Review of Video Generation Models Based on Diffusion Models**".
 
 ## Hot News
 
 - [**Stable Diffusion 3**: MM-DiT: Scaling Rectified Flow Transformers for High-Resolution Image Synthesis](https://stability.ai/news/stable-diffusion-3-research-paper)
+- [**MiniSora-DiT**](../minisora-DiT/README.md): Reproducing the DiT Paper with XTuner
 - [**Introduction of MiniSora and Latest Progress in Replicating Sora**](./docs/survey_README.md)
 
 ![[empty](./docs/survey_README.md)](./docs/Minisora_LPRS/0001.jpg)
@@ -405,6 +408,28 @@ We hope the community member has the following characteristics:
 | 18) **LAVIS** - A Library for Language-Vision Intelligence | [**ACL 23 Paper**](https://aclanthology.org/2023.acl-demo.3.pdf), [GitHub](https://github.com/salesforce/lavis), [Project](https://opensource.salesforce.com/LAVIS//latest/index.html) |
 | 19) **OpenDiT**: An Easy, Fast and Memory-Efficient System for DiT Training and Inference | [GitHub](https://github.com/NUS-HPC-AI-Lab/OpenDiT) |
 | 20) Awesome-Long-Context |[GitHub1](https://github.com/zetian1025/awesome-long-context), [GitHub2](https://github.com/showlab/Awesome-Long-Context) |
+
+## Citation
+
+If this project is helpful to your work, please cite it using the following format:
+
+```bibtex
+@misc{minisora,
+    title={MiniSora},
+    author={MiniSora Community},
+    url={https://github.com/mini-sora/minisora},
+    year={2024}
+}
+```
+
+```bibtex
+@misc{minisora,
+    title={Diffusion Model-based Video Generation Models From DDPM to Sora: A Survey},
+    author={Survey Paper Group of MiniSora Community},
+    url={https://github.com/mini-sora/minisora},
+    year={2024}
+}
+```
 
 ## Minisora Community WeChat Group
 
