@@ -128,6 +128,13 @@ MiniSora 开源社区定位为由社区同学自发组织的开源社区，MiniS
 - 03 [Baseline Video Generation Models](#baseline-video-generation-models)
 - 04 [Video Generation](#video-generation)
 - 05 [Dataset](#dataset)
+  - 5.1 [数据集资源](#dataset_paper)
+  - 5.2 [数据集增强方法](#video_aug)
+    - 5.2.1 [基础变换](#video_aug_basic)
+    - 5.2.2 [由特征空间增强](#video_aug_feature)
+    - 5.2.3 [基于GAN网络增强](#video_aug_gan)
+    - 5.2.4 [基于Encoder/Decoder方法](#video_aug_ed)
+    - 5.2.5 [使用模拟器](#video_aug_simulate)
 - 06 [Patchifying Methods](#patchifying-methods)
 - 07 [Long-context](#long-context)
 - 08 [Audio Related Resource](#audio-related-resource)
@@ -201,7 +208,7 @@ MiniSora 开源社区定位为由社区同学自发组织的开源社区，MiniS
 | 22) **VideoCrafter2**: Overcoming Data Limitations for High-Quality Video Diffusion Models | [**Paper**](https://arxiv.org/abs/2401.09047), [Github](https://github.com/AILab-CVC/VideoCrafter) |
 | 23) **LVDM**: Latent Video Diffusion Models for High-Fidelity Long Video Generation | [**Paper**](https://arxiv.org/abs/2211.13221), [GitHub](https://github.com/YingqingHe/LVDM) |
 | <h3 id="dataset">Dataset</h3> | |
-| **数据集名称 - 论文**  | **链接** |
+| <h4 id="dataset_paper">数据集资源</h4>  | |
 | 1) **Panda-70M** - Panda-70M: Captioning 70M Videos with Multiple Cross-Modality Teachers<br><small>`70M Clips, 720P, Downloadable`</small>|[**CVPR 24 Paper**](https://arxiv.org/abs/2402.19479), [Github](https://github.com/snap-research/Panda-70M), [Project](https://snap-research.github.io/Panda-70M/)|
 | 2) **InternVid-10M** - InternVid: A Large-scale Video-Text Dataset for Multimodal Understanding and Generation<br><small>`10M Clips, 720P, Downloadable`</small>|[**ArXiv 24 Paper**](https://arxiv.org/abs/2307.06942), [Github](https://github.com/OpenGVLab/InternVideo/tree/main/Data/InternVid)|
 | 3) **CelebV-Text** - CelebV-Text: A Large-Scale Facial Text-Video Dataset<br><small>`70K Clips, 720P, Downloadable`</small>|[**CVPR 23 Paper**](https://arxiv.org/abs/2303.14717), [Github](https://github.com/celebv-text/CelebV-Text), [Project](https://celebv-text.github.io/)|
@@ -219,50 +226,40 @@ MiniSora 开源社区定位为由社区同学自发组织的开源社区，MiniS
 | 15) **The Cityscapes Dataset** -  Benchmark suite and evaluation server for pixel-level, instance-level, and panoptic semantic labeling<br><small>`Downloadable`</small> | [**Arxiv 16 Paper**](https://arxiv.org/pdf/1608.02192v1.pdf), [Project](https://www.cityscapes-dataset.com/)|
 | 16) **Youku-mPLUG** -  First open-source large-scale Chinese video text dataset<br><small>`Downloadable`</small> | [**Arxiv 23 Paper**](https://arxiv.org/abs/2306.04362), [Project](https://github.com/X-PLUG/Youku-mPLUG)|
 | 17) **VidProM** - VidProM: A Million-scale Real Prompt-Gallery Dataset for Text-to-Video Diffusion Models<br><small>`6.69M, Downloadable`</small>| [**Arxiv 24 Paper**](https://arxiv.org/abs/2403.06098), [Github](https://github.com/WangWenhao0716/VidProM) |
-| <h4>NMNP: Nice method, not public</h4> | |
-| 1) **WebVid** -  Large-scale text-video dataset, containing 10 million video-text pairs scraped from the stock footage sites<br><small>`10M video-text pairs`</small> | [**Arxiv 21 Paper**](https://arxiv.org/abs/2104.00650), [Project](https://www.robots.ox.ac.uk/~vgg/research/frozen-in-time/)|
-| <h4>视频增强方法</h4> |  |
-| <h5>基础变换</h5> | |
-| <h6>时域变换</h6> | |
+| 18) **WebVid** -  Large-scale text-video dataset, containing 10 million video-text pairs scraped from the stock footage sites<br><small>`10M video-text pairs`</small> | [**Arxiv 21 Paper**](https://arxiv.org/abs/2104.00650), [Project](https://www.robots.ox.ac.uk/~vgg/research/frozen-in-time/)|
+| <h4 id="video_aug">数据集增强方法</h4> |  |
+| <h5 id="video_aug_basic">基础变换</h5> | |
 | Three-stream CNNs for action recognition | [**PRL 17 Paper**](https://www.sciencedirect.com/science/article/pii/S0167865517301071) |
 | Dynamic Hand Gesture Recognition Using Multi-direction 3D Convolutional Neural Networks | [**EL 19 Paper**](http://www.engineeringletters.com/issues_v27/issue_3/EL_27_3_12.pdf)|
-| <h6>图像层面增强</h6> | |
 | Intra-clip Aggregation for Video Person Re-identification | [**ICIP 20 Paper**](https://arxiv.org/abs/1905.01722)|
-| <h6>帧融合增强</h6> | |
 | VideoMix: Rethinking Data Augmentation for Video Classification | [**CVPR 20 Paper**](https://arxiv.org/abs/2012.03457) |
 | mixup: Beyond Empirical Risk Minimization | [**ICLR 17 Paper**](https://arxiv.org/abs/1710.09412) |
 | CutMix: Regularization Strategy to Train Strong Classifiers With Localizable Features | [**ICCV 19 Paper**](https://openaccess.thecvf.com/content_ICCV_2019/html/Yun_CutMix_Regularization_Strategy_to_Train_Strong_Classifiers_With_Localizable_Features_ICCV_2019_paper.html) |
-| <h6>基于光流场变换</h6> | |
 | Video Salient Object Detection via Fully Convolutional Networks | [**ICIP 18 Paper**](https://ieeexplore.ieee.org/abstract/document/8047320) |
-| <h6>亮度分布增强</h6> | |
 | Illumination-Based Data Augmentation for Robust Background Subtraction | [**SKIMA 19 Paper**](https://ieeexplore.ieee.org/abstract/document/8982527) |
 | Image editing-based data augmentation for illumination-insensitive background subtraction | [**EIM 20 Paper**](https://www.emerald.com/insight/content/doi/10.1108/JEIM-02-2020-0042/full/html) |
-| <h6>模拟鱼眼畸变增强</h6> ||
-| Universal Semantic Segmentation for Fisheye Urban Driving Images | [**SMC 20 Paper**](https://ieeexplore.ieee.org/abstract/document/9283099) |
-| <h5>由特征空间增强</h5> | |
+| <h5 id="video_aug_feature">由特征空间增强</h5> | |
 | Feature Re-Learning with Data Augmentation for Content-based Video Recommendation | [**ACM 18 Paper**](https://dl.acm.org/doi/abs/10.1145/3240508.3266441) |
 | GAC-GAN: A General Method for Appearance-Controllable Human Video Motion Transfer | [**Trans 21 Paper**](https://ieeexplore.ieee.org/abstract/document/9147027) |
-| <h5>基于GAN网络增强</h5> | |
+| <h5 id="video_aug_gan">基于GAN网络增强</h5> | |
 | Deep Video-Based Performance Cloning | [**CVPR 18 Paper**](https://arxiv.org/abs/1808.06847) |
 | Adversarial Action Data Augmentation for Similar Gesture Action Recognition | [**IJCNN 19 Paper**](https://ieeexplore.ieee.org/abstract/document/8851993) |
 | Self-Paced Video Data Augmentation by Generative Adversarial Networks with Insufficient Samples | [**MM 20 Paper**](https://dl.acm.org/doi/abs/10.1145/3394171.3414003) |
 | GAC-GAN: A General Method for Appearance-Controllable Human Video Motion Transfer | [**Trans 20 Paper**](https://ieeexplore.ieee.org/abstract/document/9147027) |
 | Dynamic Facial Expression Generation on Hilbert Hypersphere With Conditional Wasserstein Generative Adversarial Nets | [**TPAMI 20 Paper**](https://ieeexplore.ieee.org/abstract/document/9117185) |
 | CrowdGAN: Identity-Free Interactive Crowd Video Generation and Beyond | [**TPAMI 22 Paper**](https://www.computer.org/csdl/journal/tp/5555/01/09286483/1por0TYwZvG) |
-| <h5>基于Encoder/Decoder方法</h5> | |
+| <h5 id="video_aug_ed">基于Encoder/Decoder方法</h5> | |
 | Rotationally-Temporally Consistent Novel View Synthesis of Human Performance Video | [**ECCV 20 Paper**](https://link.springer.com/chapter/10.1007/978-3-030-58548-8_23) |
 | Autoencoder-based Data Augmentation for Deepfake Detection | [**ACM 23 Paper**](https://dl.acm.org/doi/abs/10.1145/3592572.3592840) | 
-| <h5>使用模拟器</h5> | |
-| <h6>基于UE引擎</h6> | |
+| <h5 id="video_aug_simulate">使用模拟器</h5> | |
 | A data augmentation methodology for training machine/deep learning gait recognition algorithms | [**CVPR 16 Paper**](https://arxiv.org/abs/1610.07570) |
 | ElderSim: A Synthetic Data Generation Platform for Human Action Recognition in Eldercare Applications | [**IEEE 21 Paper**](https://ieeexplore.ieee.org/abstract/document/9324837) |
 | Mid-Air: A Multi-Modal Dataset for Extremely Low Altitude Drone Flights | [**CVPR 19 Paper**](https://openaccess.thecvf.com/content_CVPRW_2019/html/UAVision/Fonder_Mid-Air_A_Multi-Modal_Dataset_for_Extremely_Low_Altitude_Drone_Flights_CVPRW_2019_paper.html) |
-| <h6>基于Unity引擎</h6> | |
 | Generating Human Action Videos by Coupling 3D Game Engines and Probabilistic Graphical Models | [**IJCV 19 Paper**](https://link.springer.com/article/10.1007/s11263-019-01222-z) |
 | Using synthetic data for person tracking under adverse weather conditions | [**IVC 21 Paper**](https://www.sciencedirect.com/science/article/pii/S0262885621000925) |
-| <h6>基于GTA游戏</h6> | |
 | Unlimited Road-scene Synthetic Annotation (URSA) Dataset | [**ITSC 18 Paper**](https://ieeexplore.ieee.org/abstract/document/8569519) |
 | SAIL-VOS 3D: A Synthetic Dataset and Baselines for Object Detection and 3D Mesh Reconstruction From Video Data | [**CVPR 21 Paper**](https://openaccess.thecvf.com/content/CVPR2021/html/Hu_SAIL-VOS_3D_A_Synthetic_Dataset_and_Baselines_for_Object_Detection_CVPR_2021_paper.html) |
+| Universal Semantic Segmentation for Fisheye Urban Driving Images | [**SMC 20 Paper**](https://ieeexplore.ieee.org/abstract/document/9283099) |
 | <h3 id="patchifying-methods">Patchifying Methods</h3> | |
 | **论文** | **链接** |
 | 1) **ViT**: An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale | [**CVPR 21 Paper**](https://arxiv.org/abs/2010.11929), [Github](https://github.com/google-research/vision_transformer) |
