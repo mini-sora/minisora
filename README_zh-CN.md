@@ -151,6 +151,7 @@ MiniSora 开源社区定位为由社区同学自发组织的开源社区，MiniS
 - 15 [Existing high-quality resources](#existing-high-quality-resources)
 - 16 [模型训练](#train)
   - 16.1 [Pipeline](#train_pip)
+  - 16.2 [Zero并行](#train_zero)
 - 17 [模型推理](#infer)
   - 17.1 [减少Sampling Steps](#infer_reduce)
     - 17.1.1 [连续Steps](#infer_reduce_continuous)
@@ -475,6 +476,11 @@ MiniSora 开源社区定位为由社区同学自发组织的开源社区，MiniS
 | 5) Efficient large-scale language model training on GPU clusters using megatron-LM | [**SC 21 Paper**](https://dl.acm.org/doi/abs/10.1145/3458817.3476209) |
 | 6) GSPMD: General and Scalable Parallelization for ML Computation Graphs | [**ArXiv 21 Paper**](https://arxiv.org/abs/2105.04663) |
 | 7) OneFlow: Redesign the Distributed Deep Learning Framework from Scratch | [**ArXiv 22 Paper**](https://arxiv.org/abs/2110.15032)|
+| <h4 id="train_zero">Zero并行</h4> | |
+| 1) ZeRO: Memory Optimizations Toward Training Trillion Parameter Models | [**ArXiv 20 Paper**](https://arxiv.org/abs/1910.02054) |
+| 2) DeepSpeed: System Optimizations Enable Training Deep Learning Models with Over 100 Billion Parameters | [**ACM 20 Paper**](https://dl.acm.org/doi/abs/10.1145/3394486.3406703) |
+| 3) ZeRO-Offload: Democratizing Billion-Scale Model Training | [**ArXiv 21 Paper**](https://arxiv.org/abs/2101.06840) |
+| 4) PyTorch FSDP: Experiences on Scaling Fully Sharded Data Parallel | [**ArXiv 23 Paper**](https://arxiv.org/abs/2304.11277) |
 | <h3 id="infer">模型推理</h3> | |
 | <h4 id="infer_reduce">减少Sampling Steps</h4> | |
 | <h5 id="infer_reduce_continuous">连续Steps</h4> | |
