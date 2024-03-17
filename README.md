@@ -362,6 +362,7 @@ We hope the community member has the following characteristics:
 | 27) **Vlogger**: Make Your Dream A Vlog | [**CVPR 24 Paper**](https://arxiv.org/abs/2401.09414), [Github](https://github.com/Vchitect/Vlogger) |
 | 28) **GALA3D**: Towards Text-to-3D Complex Scene Generation via Layout-guided Generative Gaussian Splatting | [**Paper**](https://github.com/VDIGPKU/GALA3D) |
 | 29) **MuLan**: Multimodal-LLM Agent for Progressive Multi-Object Diffusion | [**Paper**](https://arxiv.org/abs/2402.12741) |
+| 30) **ELLA**: ELLA: Equip Diffusion Models with LLM for Enhanced Semantic Alignmentn | [Paper](https://arxiv.org/abs/2403.05135) |
 | <h3 id="security">Security</h3> | |
 | **Paper**  | **Link** |
 | 1) **BeaverTails:** Towards Improved Safety Alignment of LLM via a Human-Preference Dataset | [**NeurIPS 23 Paper**](https://proceedings.neurips.cc/paper_files/paper/2023/file/4dbb61cb68671edc4ca3712d70083b9f-Paper-Datasets_and_Benchmarks.pdf), [Github](https://github.com/PKU-Alignment/beavertails) |
