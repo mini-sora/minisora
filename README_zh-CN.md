@@ -254,7 +254,7 @@ MiniSora 开源社区定位为由社区同学自发组织的开源社区，MiniS
 | CrowdGAN: Identity-Free Interactive Crowd Video Generation and Beyond | [**TPAMI 22 Paper**](https://www.computer.org/csdl/journal/tp/5555/01/09286483/1por0TYwZvG) |
 | <h5>基于Encoder/Decoder方法</h5> | |
 | Rotationally-Temporally Consistent Novel View Synthesis of Human Performance Video | [**ECCV 20 Paper**](https://link.springer.com/chapter/10.1007/978-3-030-58548-8_23) |
-| Autoencoder-based Data Augmentation for Deepfake Detection | [**ACM 23 Paper**](https://dl.acm.org/doi/abs/10.1145/3592572.3592840) | 
+| Autoencoder-based Data Augmentation for Deepfake Detection | [**ACM 23 Paper**](https://dl.acm.org/doi/abs/10.1145/3592572.3592840) |
 | <h5>使用模拟器</h5> | |
 | <h6>基于UE引擎</h6> | |
 | A data augmentation methodology for training machine/deep learning gait recognition algorithms | [**CVPR 16 Paper**](https://arxiv.org/abs/1610.07570) |
@@ -372,6 +372,18 @@ MiniSora 开源社区定位为由社区同学自发组织的开源社区，MiniS
 | 28) **GALA3D**: Towards Text-to-3D Complex Scene Generation via Layout-guided Generative Gaussian Splatting | [Paper](https://github.com/VDIGPKU/GALA3D) |
 | 29) **MuLan**: Multimodal-LLM Agent for Progressive Multi-Object Diffusion | [Paper](https://arxiv.org/abs/2402.12741) |
 | 30) **ELLA**: ELLA: Equip Diffusion Models with LLM for Enhanced Semantic Alignmentn | [**Paper**](https://arxiv.org/abs/2403.05135), [Github](https://github.com/ELLA-Diffusion/ELLA), [Project](https://ella-diffusion.github.io/) |
+| <h4 id="theoretical-foundations-and-model-architecture">Theoretical Foundations and Model Architecture</h4> |  |
+| **Paper** | **Link** |
+| 1) **LAVIE**: High-Quality Video Generation with Cascaded Latent Diffusion Models | [**Paper**](https://arxiv.org/abs/2309.15103), [GitHub](https://github.com/Vchitect/LaVie) |
+| 2) **Reuse and Diffuse**: Iterative Denoising for Text-to-Video Generation | [**Paper**](https://arxiv.org/abs/2309.03549), [GitHub](https://github.com/anonymous0x233/ReuseAndDiffuse) |
+| 3) **CoCa**: Contrastive Captioners are Image-Text Foundation Models | [**Paper**](https://arxiv.org/abs/2205.01917), [Github](https://github.com/lucidrains/CoCa-pytorch) |
+| 4) **CogView3**: Finer and Faster Text-to-Image Generation via Relay Diffusion | [**Paper**](https://arxiv.org/abs/2403.05121) |
+| 5) **VideoChat**: Chat-Centric Video Understanding | [**CVPR 24 Paper**](https://arxiv.org/abs/2305.06355), [Github](https://github.com/OpenGVLab/Ask-Anything) |
+| 6) De-Diffusion Makes Text a Strong Cross-Modal Interface | [**Paper**](https://arxiv.org/abs/2311.00618) |
+| 7) **HowToCaption**: Prompting LLMs to Transform Video Annotations at Scale | [**Paper**](https://arxiv.org/abs/2310.04900) |
+| 8) **ELLA**: Equip Diffusion Models with LLM for Enhanced Semantic Alignment (-) | [**Paper**](https://arxiv.org/abs/2403.05135), [Github](https://github.com/TencentQQGYLab/ELLA) |
+| 9) **SELMA**: Learning and Merging Skill-Specific Text-to-Image Experts with Auto-Generated Data | [**Paper**](https://arxiv.org/abs/2403.06952) |
+| 10) **LLMGA**: Multimodal Large Language Model based Generation Assistant | [**Paper**](https://arxiv.org/abs/2311.16500), [Github](https://github.com/dvlab-research/LLMGA) |
 | <h3 id="security">Security</h3> | |
 | **论文**  | **链接** |
 | 1) **BeaverTails:** Towards Improved Safety Alignment of LLM via a Human-Preference Dataset | [**NeurIPS 23 Paper**](https://proceedings.neurips.cc/paper_files/paper/2023/file/4dbb61cb68671edc4ca3712d70083b9f-Paper-Datasets_and_Benchmarks.pdf), [Github](https://github.com/PKU-Alignment/beavertails) |
@@ -419,7 +431,7 @@ MiniSora 开源社区定位为由社区同学自发组织的开源社区，MiniS
 | 16) **DCVC-DC**: Neural Video Compression with Diverse Contexts | [**CVPR 23 Paper**](https://arxiv.org/abs/2302.14402), [Github](https://github.com/microsoft/DCVC/tree/main/DCVC-DC) |
 | 17) **DCVC-FM**: Neural Video Compression with Feature Modulation | [**CVPR 24 Paper**](https://arxiv.org/abs/2402.17414), [Github](https://github.com/microsoft/DCVC/tree/main/DCVC-FM) |
 | 18) **SSF**: Scale-Space Flow for End-to-End Optimized Video Compression | [**CVPR 20 Paper**](https://openaccess.thecvf.com/content_CVPR_2020/html/Agustsson_Scale-Space_Flow_for_End-to-End_Optimized_Video_Compression_CVPR_2020_paper.html), [Github](https://github.com/InterDigitalInc/CompressAI) |
-| <h3 id="Mamba">Mamba</h3> | 
+| <h3 id="Mamba">Mamba</h3> ||
 | <h4 id="theoretical-foundations-and-model-architecture">Theoretical Foundations and Model Architecture</h4> | |
 | **论文** | **链接** |
 | 1) **Mamba**: Linear-Time Sequence Modeling with Selective State Spaces | [**Paper**](https://arxiv.org/abs/2312.00752), [Github](https://github.com/state-spaces/mamba) |
