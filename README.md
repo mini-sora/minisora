@@ -51,9 +51,9 @@ The MiniSora open-source community is positioned as a community-driven initiativ
 2. **Training-Efficiency**: It should achieve good results without requiring extensive training time.
 3. **Inference-Efficiency**: When generating videos during inference, there is no need for high length or resolution; acceptable parameters include 3-10 seconds in length and 480p resolution.
 
-### [MiniSora-DiT](../minisora-DiT/README.md): Reproducing the DiT Paper with XTuner
+### [MiniSora-DiT](https://github.com/mini-sora/MiniSora-DiT): Reproducing the DiT Paper with XTuner
 
-[https://github.com/mini-sora/minisora-DiT](../minisora-DiT/README.md)
+[https://github.com/mini-sora/minisora-DiT](https://github.com/mini-sora/MiniSora-DiT)
 
 #### Requirements
 
