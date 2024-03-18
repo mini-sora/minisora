@@ -155,7 +155,7 @@ MiniSora 开源社区定位为由社区同学自发组织的开源社区，MiniS
 | 7) **Stable Cascade**: Würstchen: An efficient architecture for large-scale text-to-image diffusion models | [**ICLR 24 Paper**](https://openreview.net/forum?id=gU58d5QeGv), [Github](https://github.com/Stability-AI/StableCascade), [Blog](https://stability.ai/news/introducing-stable-cascade) |
 | 8) Diffusion Models in Vision: A Survey| [**TPAMI 23 Paper**](https://arxiv.org/abs/2011.13456), [Github](https://github.com/CroitoruAlin/Diffusion-Models-in-Vision-A-Survey)|
 | 9) **Improved DDPM**: Improved Denoising Diffusion Probabilistic Models | [**ICML 21 Paper**](https://arxiv.org/abs/2102.09672), [Github](https://github.com/openai/improved-diffusion) 
-| 10) **VideoFusion**: Decomposed Diffusion Models for High-Quality Video Generation| [**Paper**](https://arxiv.org/abs/2303.08320)| | 
+| 10) **VideoFusion**: Decomposed Diffusion Models for High-Quality Video Generation| [**CVPR 23 Paper**](https://arxiv.org/abs/2303.08320)| | 
 | <h3 id="diffusion-transformer">Diffusion Transformer</h3> | |
 | **论文**  | **链接** |
 | 1) **UViT**: All are Worth Words: A ViT Backbone for Diffusion Models | [**CVPR 23 Paper**](https://arxiv.org/abs/2209.12152), [Github](https://github.com/baofff/U-ViT), [ModelScope](https://modelscope.cn/models?name=UVit&page=1) |
