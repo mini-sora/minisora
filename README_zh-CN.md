@@ -408,6 +408,9 @@ MiniSora 开源社区定位为由社区同学自发组织的开源社区，MiniS
 | 20) Unsafe Diffusion: On the Generation of Unsafe Images and Hateful Memes From Text-To-Image Models | **[SIGSAC 23 Paper](https://arxiv.org/pdf/2305.13873)**, [Github](https://github.com/YitingQu/unsafe-diffusion) |
 | 21) Forget-Me-Not: Learning to Forget in Text-to-Image Diffusion Models | **[Paper](https://arxiv.org/pdf/2303.17591)**, [Github](https://github.com/SHI-Labs/Forget-Me-Not) |
 | 22) Unified Concept Editing in Diffusion Models              | [**WACV 24 Paper**](https://openaccess.thecvf.com/content/WACV2024/papers/Gandikota_Unified_Concept_Editing_in_Diffusion_Models_WACV_2024_paper.pdf), [Project](https://unified.baulab.info/) |
+| 23) Diffusion Model Alignment Using Direct Preference Optimization | [**Paper**](https://arxiv.org/abs/2311.12908)                |
+| 24) **RAFT:** Reward rAnked FineTuning for Generative Foundation Model Alignment | [**TMLR 23 Paper**](https://arxiv.org/abs/2304.06767) , [Github](https://github.com/OptimalScale/LMFlow) |
+| 25) Self-Alignment of Large Language Models via Monopolylogue-based Social Scene Simulation | [**Paper**](https://arxiv.org/pdf/2402.05699), [Github](https://github.com/ShuoTang123/MATRIX), [Project](https://shuotang123.github.io/MATRIX/) |
 | <h3 id="world-model">World Model</h3> | |
 | **论文**  | **链接** |
 | 1) **NExT-GPT**: Any-to-Any Multimodal LLM | [**Paper**](https://arxiv.org/abs/2309.05519), [Github](https://github.com/NExT-GPT/NExT-GPT) |
