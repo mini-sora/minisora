@@ -226,7 +226,7 @@ We hope the community member has the following characteristics:
 | 26) **VideoFusion**: Decomposed Diffusion Models for High-Quality Video Generation | [**CVPR 23 Paper**](https://arxiv.org/abs/2303.08320)|
 | <h3 id="dataset">06 Dataset</h3> | |
 | <h4 id="dataset_paper">Public Datasets</h4> | |
-| **Paper** | **Link** |
+| **Dataset Name - Paper** | **Link** |
 | 1) **Panda-70M** - Panda-70M: Captioning 70M Videos with Multiple Cross-Modality Teachers<br><small>`70M Clips, 720P, Downloadable`</small>|[**CVPR 24 Paper**](https://arxiv.org/abs/2402.19479), [Github](https://github.com/snap-research/Panda-70M), [Project](https://snap-research.github.io/Panda-70M/)|
 | 2) **InternVid-10M** - InternVid: A Large-scale Video-Text Dataset for Multimodal Understanding and Generation<br><small>`10M Clips, 720P, Downloadable`</small>|[**ArXiv 24 Paper**](https://arxiv.org/abs/2307.06942), [Github](https://github.com/OpenGVLab/InternVideo/tree/main/Data/InternVid)|
 | 3) **CelebV-Text** - CelebV-Text: A Large-Scale Facial Text-Video Dataset<br><small>`70K Clips, 720P, Downloadable`</small>|[**CVPR 23 Paper**](https://arxiv.org/abs/2303.14717), [Github](https://github.com/celebv-text/CelebV-Text), [Project](https://celebv-text.github.io/)|
