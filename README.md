@@ -137,10 +137,10 @@ We hope the community member has the following characteristics:
 - 13 [World Model](#world-model)
 - 14 [Video Compression](#video-compression)
 - 15 [Mamba](#Mamba)
-    - 14.1 [Theoretical Foundations and Model Architecture](#theoretical-foundations-and-model-architecture)
-    - 14.2 [Image Generation and Visual Applications](#image-generation-and-visual-applications)
-    - 14.3 [Video Processing and Understanding](#video-processing-and-understanding)
-    - 14.4 [Medical Image Processing](#medical-image-processing)
+    - 15.1 [Theoretical Foundations and Model Architecture](#theoretical-foundations-and-model-architecture)
+    - 15.2 [Image Generation and Visual Applications](#image-generation-and-visual-applications)
+    - 15.3 [Video Processing and Understanding](#video-processing-and-understanding)
+    - 15.4 [Medical Image Processing](#medical-image-processing)
 - 16 [Existing high-quality resources](#existing-high-quality-resources)
 
 | <h3 id="diffusion-models">01 Diffusion Models</h3> |  |
