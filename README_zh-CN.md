@@ -376,7 +376,7 @@ MiniSora 开源社区定位为由社区同学自发组织的开源社区，MiniS
 | 27) **Vlogger**: Make Your Dream A Vlog | [**CVPR 24 Paper**](https://arxiv.org/abs/2401.09414), [Github](https://github.com/Vchitect/Vlogger) |
 | 28) **GALA3D**: Towards Text-to-3D Complex Scene Generation via Layout-guided Generative Gaussian Splatting | [Paper](https://github.com/VDIGPKU/GALA3D) |
 | 29) **MuLan**: Multimodal-LLM Agent for Progressive Multi-Object Diffusion | [Paper](https://arxiv.org/abs/2402.12741) |
-| 30) **ELLA**: ELLA: Equip Diffusion Models with LLM for Enhanced Semantic Alignmentn | [**Paper**](https://arxiv.org/abs/2403.05135), [Github](https://github.com/ELLA-Diffusion/ELLA), [Project](https://ella-diffusion.github.io/) |
+| 30) **ELLA**: Equip Diffusion Models with LLM for Enhanced Semantic Alignment | [**Paper**](https://arxiv.org/abs/2403.05135), [Github](https://github.com/ELLA-Diffusion/ELLA), [Project](https://ella-diffusion.github.io/) |
 | <h4 id="theoretical-foundations-and-model-architecture">Recaption</h4> |  |
 | **Paper** | **Link** |
 | 1) **LAVIE**: High-Quality Video Generation with Cascaded Latent Diffusion Models | [**Paper**](https://arxiv.org/abs/2309.15103), [GitHub](https://github.com/Vchitect/LaVie) |
