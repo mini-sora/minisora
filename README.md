@@ -196,6 +196,7 @@ We hope the community member has the following characteristics:
 | <h3 id="diffusion-unet">04 Diffusion UNet</h3> | |
 | **Paper** | **Link** |
 | 1) Taming Transformers for High-Resolution Image Synthesis | [**CVPR 21 Paper**](https://arxiv.org/pdf/2012.09841.pdf),[GitHub](https://github.com/CompVis/taming-transformers) ,[Project](https://compvis.github.io/taming-transformers/)|
+| 2) ELLA: Equip Diffusion Models with LLM for Enhanced Semantic Alignment | [**ArXiv 24 Paper**](https://arxiv.org/abs/2403.05135) [Github](https://github.com/TencentQQGYLab/ELLA) |
 | <h3 id="video-generation">05 Video Generation</h3> | |
 | **Paper** | **Link** |
 | 1) **Animatediff**: Animate Your Personalized Text-to-Image Diffusion Models without Specific Tuning | [**ICLR 24 Paper**](https://arxiv.org/abs/2307.04725), [GitHub](https://github.com/guoyww/animatediff/), [ModelScope](https://modelscope.cn/models?name=Animatediff&page=1) |
