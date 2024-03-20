@@ -153,6 +153,7 @@ MiniSora 开源社区定位为由社区同学自发组织的开源社区，MiniS
 - 17 [高效训练](#train)
   - 17.1 [Pipeline](#train_pip)
   - 17.2 [Zero并行](#train_zero)
+  - 17.3 [新架构](#train_struct)
 - 18 [高效推理](#infer)
   - 18.1 [减少Sampling Steps](#infer_reduce)
     - 18.1.1 [连续Steps](#infer_reduce_continuous)
@@ -389,7 +390,6 @@ MiniSora 开源社区定位为由社区同学自发组织的开源社区，MiniS
 | 27) **Vlogger**: Make Your Dream A Vlog | [**CVPR 24 Paper**](https://arxiv.org/abs/2401.09414), [Github](https://github.com/Vchitect/Vlogger) |
 | 28) **GALA3D**: Towards Text-to-3D Complex Scene Generation via Layout-guided Generative Gaussian Splatting | [Paper](https://github.com/VDIGPKU/GALA3D) |
 | 29) **MuLan**: Multimodal-LLM Agent for Progressive Multi-Object Diffusion | [Paper](https://arxiv.org/abs/2402.12741) |
-| 30) **ELLA**: Equip Diffusion Models with LLM for Enhanced Semantic Alignment | [**Paper**](https://arxiv.org/abs/2403.05135), [Github](https://github.com/ELLA-Diffusion/ELLA), [Project](https://ella-diffusion.github.io/) |
 | <h4 id="theoretical-foundations-and-model-architecture">Recaption</h4> |  |
 | **Paper** | **Link** |
 | 1) **LAVIE**: High-Quality Video Generation with Cascaded Latent Diffusion Models | [**Paper**](https://arxiv.org/abs/2309.15103), [GitHub](https://github.com/Vchitect/LaVie) |
@@ -399,9 +399,8 @@ MiniSora 开源社区定位为由社区同学自发组织的开源社区，MiniS
 | 5) **VideoChat**: Chat-Centric Video Understanding | [**CVPR 24 Paper**](https://arxiv.org/abs/2305.06355), [Github](https://github.com/OpenGVLab/Ask-Anything) |
 | 6) De-Diffusion Makes Text a Strong Cross-Modal Interface | [**Paper**](https://arxiv.org/abs/2311.00618) |
 | 7) **HowToCaption**: Prompting LLMs to Transform Video Annotations at Scale | [**Paper**](https://arxiv.org/abs/2310.04900) |
-| 8) **ELLA**: Equip Diffusion Models with LLM for Enhanced Semantic Alignment (-) | [**Paper**](https://arxiv.org/abs/2403.05135), [Github](https://github.com/TencentQQGYLab/ELLA) |
-| 9) **SELMA**: Learning and Merging Skill-Specific Text-to-Image Experts with Auto-Generated Data | [**Paper**](https://arxiv.org/abs/2403.06952) |
-| 10) **LLMGA**: Multimodal Large Language Model based Generation Assistant | [**Paper**](https://arxiv.org/abs/2311.16500), [Github](https://github.com/dvlab-research/LLMGA) |
+| 8) **SELMA**: Learning and Merging Skill-Specific Text-to-Image Experts with Auto-Generated Data | [**Paper**](https://arxiv.org/abs/2403.06952) |
+| 9) **LLMGA**: Multimodal Large Language Model based Generation Assistant | [**Paper**](https://arxiv.org/abs/2311.16500), [Github](https://github.com/dvlab-research/LLMGA) |
 | <h3 id="security">12 Security</h3> | |
 | **论文**  | **链接** |
 | 1) **BeaverTails:** Towards Improved Safety Alignment of LLM via a Human-Preference Dataset | [**NeurIPS 23 Paper**](https://proceedings.neurips.cc/paper_files/paper/2023/file/4dbb61cb68671edc4ca3712d70083b9f-Paper-Datasets_and_Benchmarks.pdf), [Github](https://github.com/PKU-Alignment/beavertails) |
@@ -516,7 +515,7 @@ MiniSora 开源社区定位为由社区同学自发组织的开源社区，MiniS
 | 3) ZeRO-Offload: Democratizing Billion-Scale Model Training | [**ArXiv 21 Paper**](https://arxiv.org/abs/2101.06840) |
 | 4) PyTorch FSDP: Experiences on Scaling Fully Sharded Data Parallel | [**ArXiv 23 Paper**](https://arxiv.org/abs/2304.11277) |
 | <h4 id="train_struct">17.3 新架构</h4> | |
-| 1) ELLA: Equip Diffusion Models with LLM for Enhanced Semantic Alignment | [**ArXiv 24 Paper**](https://arxiv.org/abs/2403.05135) |
+| 1) ELLA: Equip Diffusion Models with LLM for Enhanced Semantic Alignment | [**ArXiv 24 Paper**](https://arxiv.org/abs/2403.05135) [Github](https://github.com/TencentQQGYLab/ELLA) |
 | <h3 id="infer">18 高效推理</h3> | |
 | <h4 id="infer_reduce">18.1 减少Sampling Steps</h4> | |
 | <h5 id="infer_reduce_continuous">18.1.1 连续Steps</h4> | |
