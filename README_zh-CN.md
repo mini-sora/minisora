@@ -129,6 +129,13 @@ MiniSora 开源社区定位为由社区同学自发组织的开源社区，MiniS
 - 04 [Diffusion UNet](#diffusion-unet)
 - 05 [Video Generation](#video-generation)
 - 06 [Dataset](#dataset)
+  - 6.1 [数据集资源](#dataset_paper)
+  - 6.2 [数据集增强方法](#video_aug)
+    - 6.2.1 [基础变换](#video_aug_basic)
+    - 6.2.2 [由特征空间增强](#video_aug_feature)
+    - 6.2.3 [基于GAN网络增强](#video_aug_gan)
+    - 6.2.4 [基于Encoder/Decoder方法](#video_aug_ed)
+    - 6.2.5 [使用模拟器](#video_aug_simulate)
 - 07 [Patchifying Methods](#patchifying-methods)
 - 08 [Long-context](#long-context)
 - 09 [Audio Related Resource](#audio-related-resource)
@@ -143,6 +150,18 @@ MiniSora 开源社区定位为由社区同学自发组织的开源社区，MiniS
   - 15.3 [Video Processing and Understanding](#video-processing-and-understanding)
   - 15.4 [Medical Image Processing](#medical-image-processing)
 - 16 [Existing high-quality resources](#existing-high-quality-resources)
+- 17 [高效训练](#train)
+  - 17.1 [Pipeline](#train_pip)
+  - 17.2 [Zero并行](#train_zero)
+  - 17.3 [新架构](#train_struct)
+- 18 [高效推理](#infer)
+  - 18.1 [减少Sampling Steps](#infer_reduce)
+    - 18.1.1 [连续Steps](#infer_reduce_continuous)
+    - 18.1.2 [快速Sampling](#infer_reduce_fast)
+    - 18.1.3 [Step蒸馏](#infer_reduce_dist)
+  - 18.2 [优化推理过程](#infer_opt)
+    - 18.2.1 [低比特量化](#infer_opt_low)
+    - 18.2.2 [并行/稀疏推理](#infer_opt_ps)
 
 | <h3 id="diffusion-models">01 Diffusion Model</h3> |  |
 | :------------- | :------------- |
@@ -179,6 +198,7 @@ MiniSora 开源社区定位为由社区同学自发组织的开源社区，MiniS
 | <h3 id="diffusion-unet">04 Diffusion UNet</h3> | |
 | **Paper** | **Link** |
 | 1) Taming Transformers for High-Resolution Image Synthesis | [**CVPR 21 Paper**](https://arxiv.org/pdf/2012.09841.pdf),[GitHub](https://github.com/CompVis/taming-transformers) ,[Project](https://compvis.github.io/taming-transformers/)|
+| 2) ELLA: Equip Diffusion Models with LLM for Enhanced Semantic Alignment | [**ArXiv 24 Paper**](https://arxiv.org/abs/2403.05135) [Github](https://github.com/TencentQQGYLab/ELLA) |
 | <h3 id="video-generation">05 Video Generation</h3> | |
 | **论文**  | **链接** |
 | 1) **Animatediff**: Animate Your Personalized Text-to-Image Diffusion Models without Specific Tuning | [**ICLR 24 Paper**](https://arxiv.org/abs/2307.04725), [Github](https://github.com/guoyww/animatediff/), [ModelScope](https://modelscope.cn/models?name=Animatediff&page=1) |
@@ -208,6 +228,7 @@ MiniSora 开源社区定位为由社区同学自发组织的开源社区，MiniS
 | 25) **PYoCo**: Preserve Your Own Correlation: A Noise Prior for Video Diffusion Models | [**ICCV 23 Paper**](https://arxiv.org/abs/2305.10474), [Project](https://research.nvidia.com/labs/dir/pyoco/)|
 | 26) **VideoFusion**: Decomposed Diffusion Models for High-Quality Video Generation| [**CVPR 23 Paper**](https://arxiv.org/abs/2303.08320)|
 | <h3 id="dataset">06 Dataset</h3> | |
+| <h4 id="dataset_paper">6.1 数据集资源</h4>  | |
 | **数据集名称 - 论文**  | **链接** |
 | 1) **Panda-70M** - Panda-70M: Captioning 70M Videos with Multiple Cross-Modality Teachers<br><small>`70M Clips, 720P, Downloadable`</small>|[**CVPR 24 Paper**](https://arxiv.org/abs/2402.19479), [Github](https://github.com/snap-research/Panda-70M), [Project](https://snap-research.github.io/Panda-70M/)|
 | 2) **InternVid-10M** - InternVid: A Large-scale Video-Text Dataset for Multimodal Understanding and Generation<br><small>`10M Clips, 720P, Downloadable`</small>|[**ArXiv 24 Paper**](https://arxiv.org/abs/2307.06942), [Github](https://github.com/OpenGVLab/InternVideo/tree/main/Data/InternVid)|
@@ -227,50 +248,40 @@ MiniSora 开源社区定位为由社区同学自发组织的开源社区，MiniS
 | 16) **Youku-mPLUG** -  First open-source large-scale Chinese video text dataset<br><small>`Downloadable`</small> | [**Arxiv 23 Paper**](https://arxiv.org/abs/2306.04362), [Project](https://github.com/X-PLUG/Youku-mPLUG)|
 | 17) **VidProM** - VidProM: A Million-scale Real Prompt-Gallery Dataset for Text-to-Video Diffusion Models<br><small>`6.69M, Downloadable`</small>| [**Arxiv 24 Paper**](https://arxiv.org/abs/2403.06098), [Github](https://github.com/WangWenhao0716/VidProM) |
 | 18) **Pixabay100** - A video dataset collected from Pixabay<br><small>`Downloadable`</small>| [Github](https://github.com/ECNU-CILAB/Pixabay100/) |
-| <h4>NMNP: Nice method, not public</h4> | |
-| 1) **WebVid** -  Large-scale text-video dataset, containing 10 million video-text pairs scraped from the stock footage sites<br><small>`10M video-text pairs`</small> | [**Arxiv 21 Paper**](https://arxiv.org/abs/2104.00650), [Project](https://www.robots.ox.ac.uk/~vgg/research/frozen-in-time/)|
-| <h4>视频增强方法</h4> |  |
-| <h5>基础变换</h5> | |
-| <h6>时域变换</h6> | |
+| 19) **WebVid** -  Large-scale text-video dataset, containing 10 million video-text pairs scraped from the stock footage sites<br><small>`10M video-text pairs`</small> | [**Arxiv 21 Paper**](https://arxiv.org/abs/2104.00650), [Project](https://www.robots.ox.ac.uk/~vgg/research/frozen-in-time/)|
+| <h4 id="video_aug">6.2 数据集增强方法</h4> |  |
+| <h5 id="video_aug_basic">6.2.1 基础变换</h5> | |
 | Three-stream CNNs for action recognition | [**PRL 17 Paper**](https://www.sciencedirect.com/science/article/pii/S0167865517301071) |
 | Dynamic Hand Gesture Recognition Using Multi-direction 3D Convolutional Neural Networks | [**EL 19 Paper**](http://www.engineeringletters.com/issues_v27/issue_3/EL_27_3_12.pdf)|
-| <h6>图像层面增强</h6> | |
 | Intra-clip Aggregation for Video Person Re-identification | [**ICIP 20 Paper**](https://arxiv.org/abs/1905.01722)|
-| <h6>帧融合增强</h6> | |
 | VideoMix: Rethinking Data Augmentation for Video Classification | [**CVPR 20 Paper**](https://arxiv.org/abs/2012.03457) |
 | mixup: Beyond Empirical Risk Minimization | [**ICLR 17 Paper**](https://arxiv.org/abs/1710.09412) |
 | CutMix: Regularization Strategy to Train Strong Classifiers With Localizable Features | [**ICCV 19 Paper**](https://openaccess.thecvf.com/content_ICCV_2019/html/Yun_CutMix_Regularization_Strategy_to_Train_Strong_Classifiers_With_Localizable_Features_ICCV_2019_paper.html) |
-| <h6>基于光流场变换</h6> | |
 | Video Salient Object Detection via Fully Convolutional Networks | [**ICIP 18 Paper**](https://ieeexplore.ieee.org/abstract/document/8047320) |
-| <h6>亮度分布增强</h6> | |
 | Illumination-Based Data Augmentation for Robust Background Subtraction | [**SKIMA 19 Paper**](https://ieeexplore.ieee.org/abstract/document/8982527) |
 | Image editing-based data augmentation for illumination-insensitive background subtraction | [**EIM 20 Paper**](https://www.emerald.com/insight/content/doi/10.1108/JEIM-02-2020-0042/full/html) |
-| <h6>模拟鱼眼畸变增强</h6> ||
-| Universal Semantic Segmentation for Fisheye Urban Driving Images | [**SMC 20 Paper**](https://ieeexplore.ieee.org/abstract/document/9283099) |
-| <h5>由特征空间增强</h5> | |
+| <h5 id="video_aug_feature">6.2.2 由特征空间增强</h5> | |
 | Feature Re-Learning with Data Augmentation for Content-based Video Recommendation | [**ACM 18 Paper**](https://dl.acm.org/doi/abs/10.1145/3240508.3266441) |
 | GAC-GAN: A General Method for Appearance-Controllable Human Video Motion Transfer | [**Trans 21 Paper**](https://ieeexplore.ieee.org/abstract/document/9147027) |
-| <h5>基于GAN网络增强</h5> | |
+| <h5 id="video_aug_gan">6.2.3 基于GAN网络增强</h5> | |
 | Deep Video-Based Performance Cloning | [**CVPR 18 Paper**](https://arxiv.org/abs/1808.06847) |
 | Adversarial Action Data Augmentation for Similar Gesture Action Recognition | [**IJCNN 19 Paper**](https://ieeexplore.ieee.org/abstract/document/8851993) |
 | Self-Paced Video Data Augmentation by Generative Adversarial Networks with Insufficient Samples | [**MM 20 Paper**](https://dl.acm.org/doi/abs/10.1145/3394171.3414003) |
 | GAC-GAN: A General Method for Appearance-Controllable Human Video Motion Transfer | [**Trans 20 Paper**](https://ieeexplore.ieee.org/abstract/document/9147027) |
 | Dynamic Facial Expression Generation on Hilbert Hypersphere With Conditional Wasserstein Generative Adversarial Nets | [**TPAMI 20 Paper**](https://ieeexplore.ieee.org/abstract/document/9117185) |
 | CrowdGAN: Identity-Free Interactive Crowd Video Generation and Beyond | [**TPAMI 22 Paper**](https://www.computer.org/csdl/journal/tp/5555/01/09286483/1por0TYwZvG) |
-| <h5>基于Encoder/Decoder方法</h5> | |
+| <h5 id="video_aug_ed">6.2.4 基于Encoder/Decoder方法</h5> | |
 | Rotationally-Temporally Consistent Novel View Synthesis of Human Performance Video | [**ECCV 20 Paper**](https://link.springer.com/chapter/10.1007/978-3-030-58548-8_23) |
 | Autoencoder-based Data Augmentation for Deepfake Detection | [**ACM 23 Paper**](https://dl.acm.org/doi/abs/10.1145/3592572.3592840) |
-| <h5>使用模拟器</h5> | |
-| <h6>基于UE引擎</h6> | |
+| <h5 id="video_aug_simulate">6.2.5 使用模拟器</h5> | |
 | A data augmentation methodology for training machine/deep learning gait recognition algorithms | [**CVPR 16 Paper**](https://arxiv.org/abs/1610.07570) |
 | ElderSim: A Synthetic Data Generation Platform for Human Action Recognition in Eldercare Applications | [**IEEE 21 Paper**](https://ieeexplore.ieee.org/abstract/document/9324837) |
 | Mid-Air: A Multi-Modal Dataset for Extremely Low Altitude Drone Flights | [**CVPR 19 Paper**](https://openaccess.thecvf.com/content_CVPRW_2019/html/UAVision/Fonder_Mid-Air_A_Multi-Modal_Dataset_for_Extremely_Low_Altitude_Drone_Flights_CVPRW_2019_paper.html) |
-| <h6>基于Unity引擎</h6> | |
 | Generating Human Action Videos by Coupling 3D Game Engines and Probabilistic Graphical Models | [**IJCV 19 Paper**](https://link.springer.com/article/10.1007/s11263-019-01222-z) |
 | Using synthetic data for person tracking under adverse weather conditions | [**IVC 21 Paper**](https://www.sciencedirect.com/science/article/pii/S0262885621000925) |
-| <h6>基于GTA游戏</h6> | |
 | Unlimited Road-scene Synthetic Annotation (URSA) Dataset | [**ITSC 18 Paper**](https://ieeexplore.ieee.org/abstract/document/8569519) |
 | SAIL-VOS 3D: A Synthetic Dataset and Baselines for Object Detection and 3D Mesh Reconstruction From Video Data | [**CVPR 21 Paper**](https://openaccess.thecvf.com/content/CVPR2021/html/Hu_SAIL-VOS_3D_A_Synthetic_Dataset_and_Baselines_for_Object_Detection_CVPR_2021_paper.html) |
+| Universal Semantic Segmentation for Fisheye Urban Driving Images | [**SMC 20 Paper**](https://ieeexplore.ieee.org/abstract/document/9283099) |
 | <h3 id="patchifying-methods">07 Patchifying Methods</h3> | |
 | **论文** | **链接** |
 | 1) **ViT**: An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale | [**CVPR 21 Paper**](https://arxiv.org/abs/2010.11929), [Github](https://github.com/google-research/vision_transformer) |
@@ -380,7 +391,6 @@ MiniSora 开源社区定位为由社区同学自发组织的开源社区，MiniS
 | 27) **Vlogger**: Make Your Dream A Vlog | [**CVPR 24 Paper**](https://arxiv.org/abs/2401.09414), [Github](https://github.com/Vchitect/Vlogger) |
 | 28) **GALA3D**: Towards Text-to-3D Complex Scene Generation via Layout-guided Generative Gaussian Splatting | [Paper](https://github.com/VDIGPKU/GALA3D) |
 | 29) **MuLan**: Multimodal-LLM Agent for Progressive Multi-Object Diffusion | [Paper](https://arxiv.org/abs/2402.12741) |
-| 30) **ELLA**: Equip Diffusion Models with LLM for Enhanced Semantic Alignment | [**Paper**](https://arxiv.org/abs/2403.05135), [Github](https://github.com/ELLA-Diffusion/ELLA), [Project](https://ella-diffusion.github.io/) |
 | <h4 id="theoretical-foundations-and-model-architecture">Recaption</h4> |  |
 | **Paper** | **Link** |
 | 1) **LAVIE**: High-Quality Video Generation with Cascaded Latent Diffusion Models | [**Paper**](https://arxiv.org/abs/2309.15103), [GitHub](https://github.com/Vchitect/LaVie) |
@@ -390,9 +400,8 @@ MiniSora 开源社区定位为由社区同学自发组织的开源社区，MiniS
 | 5) **VideoChat**: Chat-Centric Video Understanding | [**CVPR 24 Paper**](https://arxiv.org/abs/2305.06355), [Github](https://github.com/OpenGVLab/Ask-Anything) |
 | 6) De-Diffusion Makes Text a Strong Cross-Modal Interface | [**Paper**](https://arxiv.org/abs/2311.00618) |
 | 7) **HowToCaption**: Prompting LLMs to Transform Video Annotations at Scale | [**Paper**](https://arxiv.org/abs/2310.04900) |
-| 8) **ELLA**: Equip Diffusion Models with LLM for Enhanced Semantic Alignment (-) | [**Paper**](https://arxiv.org/abs/2403.05135), [Github](https://github.com/TencentQQGYLab/ELLA) |
-| 9) **SELMA**: Learning and Merging Skill-Specific Text-to-Image Experts with Auto-Generated Data | [**Paper**](https://arxiv.org/abs/2403.06952) |
-| 10) **LLMGA**: Multimodal Large Language Model based Generation Assistant | [**Paper**](https://arxiv.org/abs/2311.16500), [Github](https://github.com/dvlab-research/LLMGA) |
+| 8) **SELMA**: Learning and Merging Skill-Specific Text-to-Image Experts with Auto-Generated Data | [**Paper**](https://arxiv.org/abs/2403.06952) |
+| 9) **LLMGA**: Multimodal Large Language Model based Generation Assistant | [**Paper**](https://arxiv.org/abs/2311.16500), [Github](https://github.com/dvlab-research/LLMGA) |
 | <h3 id="security">12 Security</h3> | |
 | **论文**  | **链接** |
 | 1) **BeaverTails:** Towards Improved Safety Alignment of LLM via a Human-Preference Dataset | [**NeurIPS 23 Paper**](https://proceedings.neurips.cc/paper_files/paper/2023/file/4dbb61cb68671edc4ca3712d70083b9f-Paper-Datasets_and_Benchmarks.pdf), [Github](https://github.com/PKU-Alignment/beavertails) |
@@ -492,6 +501,49 @@ MiniSora 开源社区定位为由社区同学自发组织的开源社区，MiniS
 | 18) **LAVIS** - A Library for Language-Vision Intelligence | [**ACL 23 Paper**](https://aclanthology.org/2023.acl-demo.3.pdf), [GitHub](https://github.com/salesforce/lavis), [Page](https://opensource.salesforce.com/LAVIS//latest/index.html) |
 | 19) **OpenDiT**: An Easy, Fast and Memory-Efficient System for DiT Training and Inference | [Github](https://github.com/NUS-HPC-AI-Lab/OpenDiT) |
 | 20) Awesome-Long-Context |[GitHub1](https://github.com/zetian1025/awesome-long-context), [GitHub2](https://github.com/showlab/Awesome-Long-Context) |
+| <h3 id="train">17 高效训练</h3> | |
+| <h4 id="train_pip">17.1 Pipeline</h4> | |
+| 1) GPipe: Efficient Training of Giant Neural Networks using Pipeline Parallelism | [**NeurIPS 19 Paper**](https://proceedings.neurips.cc/paper_files/paper/2019/hash/093f65e080a295f8076b1c5722a46aa2-Abstract.html) |
+| 2) TeraPipe: Token-Level Pipeline Parallelism for Training Large-Scale Language Models | [**ICML 21 Paper**](https://proceedings.mlr.press/v139/li21y.html) |
+| 3) PipeDream: generalized pipeline parallelism for DNN training | [**SOSP 19 Paper**](https://dl.acm.org/doi/abs/10.1145/3341301.3359646) |
+| 4) Beyond Data and Model Parallelism for Deep Neural Networks. | [**MLSys 19 Paper**](https://proceedings.mlsys.org/paper_files/paper/2019/hash/b422680f3db0986ddd7f8f126baaf0fa-Abstract.html) |
+| 5) Efficient large-scale language model training on GPU clusters using megatron-LM | [**SC 21 Paper**](https://dl.acm.org/doi/abs/10.1145/3458817.3476209) |
+| 6) GSPMD: General and Scalable Parallelization for ML Computation Graphs | [**ArXiv 21 Paper**](https://arxiv.org/abs/2105.04663) |
+| 7) OneFlow: Redesign the Distributed Deep Learning Framework from Scratch | [**ArXiv 22 Paper**](https://arxiv.org/abs/2110.15032)|
+| <h4 id="train_zero">17.2 Zero并行</h4> | |
+| 1) ZeRO: Memory Optimizations Toward Training Trillion Parameter Models | [**ArXiv 20 Paper**](https://arxiv.org/abs/1910.02054) |
+| 2) DeepSpeed: System Optimizations Enable Training Deep Learning Models with Over 100 Billion Parameters | [**ACM 20 Paper**](https://dl.acm.org/doi/abs/10.1145/3394486.3406703) |
+| 3) ZeRO-Offload: Democratizing Billion-Scale Model Training | [**ArXiv 21 Paper**](https://arxiv.org/abs/2101.06840) |
+| 4) PyTorch FSDP: Experiences on Scaling Fully Sharded Data Parallel | [**ArXiv 23 Paper**](https://arxiv.org/abs/2304.11277) |
+| <h4 id="train_struct">17.3 新架构</h4> | |
+| 1) ELLA: Equip Diffusion Models with LLM for Enhanced Semantic Alignment | [**ArXiv 24 Paper**](https://arxiv.org/abs/2403.05135) [Github](https://github.com/TencentQQGYLab/ELLA) |
+| <h3 id="infer">18 高效推理</h3> | |
+| <h4 id="infer_reduce">18.1 减少Sampling Steps</h4> | |
+| <h5 id="infer_reduce_continuous">18.1.1 连续Steps</h4> | |
+| 1) Generative Modeling by Estimating Gradients of the Data Distribution | [**NeurIPS 19 Paper**](https://arxiv.org/abs/1907.05600) |
+| 2) WaveGrad: Estimating Gradients for Waveform Generation | [**ArXiv 20 Paper**](https://arxiv.org/abs/2009.00713) |
+| 3) Noise Level Limited Sub-Modeling for Diffusion Probabilistic Vocoders | [**ICASSP 21 Paper**](https://ieeexplore.ieee.org/abstract/document/9415087) |
+| 4) Noise Estimation for Generative Diffusion Models | [**ArXiv 21 Paper**](https://arxiv.org/abs/2104.02600) |
+| <h5 id="infer_reduce_fast">18.1.2 快速Sampling</h5> | |
+| 1) Denoising Diffusion Implicit Models | [**ICLR 21 Paper**](https://arxiv.org/abs/2010.02502) |
+| 2) DiffWave: A Versatile Diffusion Model for Audio Synthesis | [**ICLR 21 Paper**](https://arxiv.org/abs/2009.09761) |
+| 3) On Fast Sampling of Diffusion Probabilistic Models | [**ArXiv 21 Paper**](https://arxiv.org/abs/2106.00132) |
+| 4) DPM-Solver: A Fast ODE Solver for Diffusion Probabilistic Model Sampling in Around 10 Steps | [**NeurIPS 22 Paper**](https://arxiv.org/abs/2206.00927) |
+| 5) DPM-Solver++: Fast Solver for Guided Sampling of Diffusion Probabilistic Models | [**ArXiv 22 Paper**](https://arxiv.org/abs/2211.01095) |
+| 6) Fast Sampling of Diffusion Models with Exponential Integrator | [**ICLR 22 Paper**](https://arxiv.org/abs/2204.13902) |
+| <h5 id="infer_reduce_dist">18.1.3 Step蒸馏</h5> | |
+| 1) On Distillation of Guided Diffusion Models | [**CVPR 23 Paper**](https://arxiv.org/abs/2210.03142) |
+| 2) Progressive Distillation for Fast Sampling of Diffusion Models | [**ICLR 22 Paper**](https://arxiv.org/abs/2202.00512) |
+| 3) SnapFusion: Text-to-Image Diffusion Model on Mobile Devices within Two Seconds | [**NeurIPS 23 Paper**](https://proceedings.neurips.cc/paper_files/paper/2023/hash/41bcc9d3bddd9c90e1f44b29e26d97ff-Abstract-Conference.html) |
+| 4) Tackling the Generative Learning Trilemma with Denoising Diffusion GANs | [**ICLR 22 Paper**](https://arxiv.org/abs/2112.07804) |
+| <h4 id="infer_opt">18.2 优化推理过程</h4> | |
+| <h5 id="infer_opt_low">18.2.1 低比特量化</h5> | |
+| 1) Q-Diffusion: Quantizing Diffusion Models | [**CVPR 23 Paper**](https://openaccess.thecvf.com/content/ICCV2023/html/Li_Q-Diffusion_Quantizing_Diffusion_Models_ICCV_2023_paper.html) |
+| 2) Q-DM: An Efficient Low-bit Quantized Diffusion Model | [**NeurIPS 23 Paper**](https://proceedings.neurips.cc/paper_files/paper/2023/hash/f1ee1cca0721de55bb35cf28ab95e1b4-Abstract-Conference.html) |
+| 3) Temporal Dynamic Quantization for Diffusion Models | [**NeurIPS 23 Paper**](https://proceedings.neurips.cc/paper_files/paper/2023/hash/983591c3e9a0dc94a99134b3238bbe52-Abstract-Conference.html) |
+| <h5 id="infer_opt_ps">18.2.2 并行/稀疏推理</h5> | |
+| 1) DistriFusion: Distributed Parallel Inference for High-Resolution Diffusion Models | [**CVPR 24 Paper**](https://arxiv.org/abs/2402.19481) |
+| 2) Efficient Spatially Sparse Inference for Conditional GANs and Diffusion Models | [**NeurIPS 22 Paper**](https://proceedings.neurips.cc/paper_files/paper/2022/hash/b9603de9e49d0838e53b6c9cf9d06556-Abstract-Conference.html) |
 
 ## 引用
 
