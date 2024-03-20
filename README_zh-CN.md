@@ -168,6 +168,7 @@ MiniSora 开源社区定位为由社区同学自发组织的开源社区，MiniS
 | 9) **PIXART-Σ**: Weak-to-Strong Training of Diffusion Transformer for 4K Text-to-Image Generation | [**Paper**](https://arxiv.org/pdf/2403.04692.pdf), [Project](https://pixart-alpha.github.io/PixArt-sigma-project/) |
 | 10) **PIXART-α**: Fast Training of Diffusion Transformer for Photorealistic Text-To-Image Synthesiss | [**Paper**](https://arxiv.org/pdf/2310.00426.pdf), [GitHub](https://github.com/PixArt-alpha/PixArt-alpha) |
 | 11) **PIXART-δ**: Fast and Controllable Image Generation With Latent Consistency Model | [**Paper**](https://arxiv.org/pdf/2401.05252.pdf), |
+| 12) Taming Transformers for High-Resolution Image Synthesis | [**CVPR 21 Paper**](https://arxiv.org/pdf/2012.09841.pdf),[GitHub](https://github.com/CompVis/taming-transformers) ,[Project](https://compvis.github.io/taming-transformers/) |
 | <h3 id="baseline-video-generation-models">Baseline Video Generation Models</h3> | |
 | **论文**  | **链接** |
 | 1) **ViViT**: A Video Vision Transformer | [**ICCV 21 Paper**](https://arxiv.org/pdf/2103.15691v2.pdf), [Github](https://github.com/google-research/scenic) |
