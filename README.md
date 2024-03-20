@@ -174,6 +174,9 @@ We hope the community member has the following characteristics:
 | 3) **DiT**: Scalable Diffusion Models with Transformers | [**ICCV 23 Paper**](https://arxiv.org/abs/2212.09748), [Github](https://github.com/facebookresearch/DiT), [Project](https://www.wpeebles.com/DiT), [ModelScope](https://modelscope.cn/models?name=Dit&page=1)|
 | 4) **Text2Video-Zero**: Text-to-Image Diffusion Models are Zero-Shot Video Generators | [**Paper**](https://arxiv.org/abs/2303.13439), [GitHub](https://github.com/Picsart-AI-Research/Text2Video-Zero) |
 | 5) **Latte**: Latent Diffusion Transformer for Video Generation | [**Paper**](https://arxiv.org/pdf/2401.03048v1.pdf), [GitHub](https://github.com/Vchitect/Latte), [Project](https://maxin-cn.github.io/latte_project/)|
+| <h3 id="diffusion-unet">Diffusion UNet</h3> | |
+| **Paper** | **Link** |
+| 1) Taming Transformers for High-Resolution Image Synthesis | [**CVPR 21 Paper**](https://arxiv.org/pdf/2012.09841.pdf),[GitHub](https://github.com/CompVis/taming-transformers) ,[Project](https://compvis.github.io/taming-transformers/)|
 | <h3 id="video-generation">Video Generation</h3> | |
 | **Paper** | **Link** |
 | 1) **Animatediff**: Animate Your Personalized Text-to-Image Diffusion Models without Specific Tuning | [**ICLR 24 Paper**](https://arxiv.org/abs/2307.04725), [GitHub](https://github.com/guoyww/animatediff/), [ModelScope](https://modelscope.cn/models?name=Animatediff&page=1) |
