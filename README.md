@@ -125,24 +125,25 @@ We hope the community member has the following characteristics:
 - 01 [Diffusion Model](#diffusion-models)
 - 02 [Diffusion Transformer](#diffusion-transformer)
 - 03 [Baseline Video Generation Models](#baseline-video-generation-models)
-- 04 [Video Generation](#video-generation)
-- 05 [Dataset](#dataset)
-- 06 [Patchifying Methods](#patchifying-methods)
-- 07 [Long-context](#long-context)
-- 08 [Audio Related Resource](#audio-related-resource)
-- 09 [Consistency](#consistency)
-- 10 [Prompt Engineering](#prompt-engineering)
-- 11 [Security](#security)
-- 12 [World Model](#world-model)
-- 13 [Video Compression](#video-compression)
-- 14 [Mamba](#Mamba)
-    - 14.1 [Theoretical Foundations and Model Architecture](#theoretical-foundations-and-model-architecture)
-    - 14.2 [Image Generation and Visual Applications](#image-generation-and-visual-applications)
-    - 14.3 [Video Processing and Understanding](#video-processing-and-understanding)
-    - 14.4 [Medical Image Processing](#medical-image-processing)
-- 15 [Existing high-quality resources](#existing-high-quality-resources)
+- 04 [Diffusion UNet](#diffusion-unet)
+- 05 [Video Generation](#video-generation)
+- 06 [Dataset](#dataset)
+- 07 [Patchifying Methods](#patchifying-methods)
+- 08 [Long-context](#long-context)
+- 09 [Audio Related Resource](#audio-related-resource)
+- 10 [Consistency](#consistency)
+- 11 [Prompt Engineering](#prompt-engineering)
+- 12 [Security](#security)
+- 13 [World Model](#world-model)
+- 14 [Video Compression](#video-compression)
+- 15 [Mamba](#Mamba)
+    - 15.1 [Theoretical Foundations and Model Architecture](#theoretical-foundations-and-model-architecture)
+    - 15.2 [Image Generation and Visual Applications](#image-generation-and-visual-applications)
+    - 15.3 [Video Processing and Understanding](#video-processing-and-understanding)
+    - 15.4 [Medical Image Processing](#medical-image-processing)
+- 16 [Existing high-quality resources](#existing-high-quality-resources)
 
-| <h3 id="diffusion-models">Diffusion Models</h3> |  |
+| <h3 id="diffusion-models">01 Diffusion Models</h3> |  |
 | :------------- | :------------- |
 | **Paper** | **Link** |
 | 1) **Guided-Diffusion**: Diffusion Models Beat GANs on Image Synthesis | [**NeurIPS 21 Paper**](https://arxiv.org/abs/2105.05233), [GitHub](https://github.com/openai/guided-diffusion)|
@@ -154,7 +155,7 @@ We hope the community member has the following characteristics:
 | 7) **Stable Cascade**: Würstchen: An efficient architecture for large-scale text-to-image diffusion models | [**ICLR 24 Paper**](https://openreview.net/forum?id=gU58d5QeGv), [GitHub](https://github.com/Stability-AI/StableCascade), [Blog](https://stability.ai/news/introducing-stable-cascade) |
 | 8) Diffusion Models in Vision: A Survey| [**TPAMI 23 Paper**](https://arxiv.org/abs/2011.13456), [GitHub](https://github.com/CroitoruAlin/Diffusion-Models-in-Vision-A-Survey)|
 | 9) **Improved DDPM**: Improved Denoising Diffusion Probabilistic Models | [**ICML 21 Paper**](https://arxiv.org/abs/2102.09672), [Github](https://github.com/openai/improved-diffusion) |
-| <h3 id="diffusion-transformer">Diffusion Transformer</h3> | |
+| <h3 id="diffusion-transformer">02 Diffusion Transformer</h3> | |
 | **Paper** | **Link** |
 | 1) **UViT**: All are Worth Words: A ViT Backbone for Diffusion Models | [**CVPR 23 Paper**](https://arxiv.org/abs/2209.12152), [GitHub](https://github.com/baofff/U-ViT), [ModelScope](https://modelscope.cn/models?name=UVit&page=1) |
 | 2) **DiT**: Scalable Diffusion Models with Transformers | [**ICCV 23 Paper**](https://arxiv.org/abs/2212.09748), [GitHub](https://github.com/facebookresearch/DiT), [Project](https://www.wpeebles.com/DiT), [ModelScope](https://modelscope.cn/models?name=Dit&page=1)|
@@ -167,17 +168,17 @@ We hope the community member has the following characteristics:
 | 9) **PIXART-Σ**: Weak-to-Strong Training of Diffusion Transformer for 4K Text-to-Image Generation | [**Paper**](https://arxiv.org/pdf/2403.04692.pdf), [Project](https://pixart-alpha.github.io/PixArt-sigma-project/) |
 | 10) **PIXART-α**: Fast Training of Diffusion Transformer for Photorealistic Text-To-Image Synthesiss | [**Paper**](https://arxiv.org/pdf/2310.00426.pdf), [GitHub](https://github.com/PixArt-alpha/PixArt-alpha) |
 | 11) **PIXART-δ**: Fast and Controllable Image Generation With Latent Consistency Model | [**Paper**](https://arxiv.org/pdf/2401.05252.pdf), |
-| <h3 id="baseline-video-generation-models">Baseline Video Generation Models</h3> | |
+| <h3 id="baseline-video-generation-models">03 Baseline Video Generation Models</h3> | |
 | **Paper** | **Link** |
 | 1) **ViViT**: A Video Vision Transformer | [**ICCV 21 Paper**](https://arxiv.org/pdf/2103.15691v2.pdf), [GitHub](https://github.com/google-research/scenic) |
 | 2) **VideoLDM**: Align your Latents: High-Resolution Video Synthesis with Latent Diffusion Models | [**CVPR 23 Paper**](https://arxiv.org/abs/2304.08818) |
 | 3) **DiT**: Scalable Diffusion Models with Transformers | [**ICCV 23 Paper**](https://arxiv.org/abs/2212.09748), [Github](https://github.com/facebookresearch/DiT), [Project](https://www.wpeebles.com/DiT), [ModelScope](https://modelscope.cn/models?name=Dit&page=1)|
 | 4) **Text2Video-Zero**: Text-to-Image Diffusion Models are Zero-Shot Video Generators | [**Paper**](https://arxiv.org/abs/2303.13439), [GitHub](https://github.com/Picsart-AI-Research/Text2Video-Zero) |
 | 5) **Latte**: Latent Diffusion Transformer for Video Generation | [**Paper**](https://arxiv.org/pdf/2401.03048v1.pdf), [GitHub](https://github.com/Vchitect/Latte), [Project](https://maxin-cn.github.io/latte_project/)|
-| <h3 id="diffusion-unet">Diffusion UNet</h3> | |
+| <h3 id="diffusion-unet">04 Diffusion UNet</h3> | |
 | **Paper** | **Link** |
 | 1) Taming Transformers for High-Resolution Image Synthesis | [**CVPR 21 Paper**](https://arxiv.org/pdf/2012.09841.pdf),[GitHub](https://github.com/CompVis/taming-transformers) ,[Project](https://compvis.github.io/taming-transformers/)|
-| <h3 id="video-generation">Video Generation</h3> | |
+| <h3 id="video-generation">05 Video Generation</h3> | |
 | **Paper** | **Link** |
 | 1) **Animatediff**: Animate Your Personalized Text-to-Image Diffusion Models without Specific Tuning | [**ICLR 24 Paper**](https://arxiv.org/abs/2307.04725), [GitHub](https://github.com/guoyww/animatediff/), [ModelScope](https://modelscope.cn/models?name=Animatediff&page=1) |
 | 2) **I2VGen-XL**: High-Quality Image-to-Video Synthesis via Cascaded Diffusion Models | [**Paper**](https://arxiv.org/abs/2311.04145), [GitHub](https://github.com/ali-vilab/i2vgen-xl),  [ModelScope](https://modelscope.cn/models/iic/i2vgen-xl/summary)|
@@ -205,7 +206,7 @@ We hope the community member has the following characteristics:
 | 24) **LaVie**: High-Quality Video Generation with Cascaded Latent Diffusion Models | [**Paper**](https://arxiv.org/abs/2309.15103), [GitHub](https://github.com/Vchitect/LaVie) ,[Project](https://vchitect.github.io/LaVie-project/)|
 | 25) **PYoCo**: Preserve Your Own Correlation: A Noise Prior for Video Diffusion Models | [**ICCV 23 Paper**](https://arxiv.org/abs/2305.10474), [Project](https://research.nvidia.com/labs/dir/pyoco/)|
 | 26) **VideoFusion**: Decomposed Diffusion Models for High-Quality Video Generation | [**CVPR 23 Paper**](https://arxiv.org/abs/2303.08320)|
-| <h3 id="dataset">Dataset</h3> | |
+| <h3 id="dataset">06 Dataset</h3> | |
 | **Dataset Name - Paper**  | **Link** |
 | 1) **Panda-70M** - Panda-70M: Captioning 70M Videos with Multiple Cross-Modality Teachers<br><small>`70M Clips, 720P, Downloadable`</small>|[**CVPR 24 Paper**](https://arxiv.org/abs/2402.19479), [Github](https://github.com/snap-research/Panda-70M), [Project](https://snap-research.github.io/Panda-70M/)|
 | 2) **InternVid-10M** - InternVid: A Large-scale Video-Text Dataset for Multimodal Understanding and Generation<br><small>`10M Clips, 720P, Downloadable`</small>|[**ArXiv 24 Paper**](https://arxiv.org/abs/2307.06942), [Github](https://github.com/OpenGVLab/InternVideo/tree/main/Data/InternVid)|
@@ -269,7 +270,7 @@ We hope the community member has the following characteristics:
 | <h6>GTA Game based</h6> | |
 | Unlimited Road-scene Synthetic Annotation (URSA) Dataset | [**ITSC 18 Paper**](https://ieeexplore.ieee.org/abstract/document/8569519) |
 | SAIL-VOS 3D: A Synthetic Dataset and Baselines for Object Detection and 3D Mesh Reconstruction From Video Data | [**CVPR 21 Paper**](https://openaccess.thecvf.com/content/CVPR2021/html/Hu_SAIL-VOS_3D_A_Synthetic_Dataset_and_Baselines_for_Object_Detection_CVPR_2021_paper.html) |
-| <h3 id="patchifying-methods">Patchifying Methods</h3> | |
+| <h3 id="patchifying-methods">07 Patchifying Methods</h3> | |
 | **Paper** | **Link** |
 | 1) **ViT**: An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale | [**CVPR 21 Paper**](https://arxiv.org/abs/2010.11929), [Github](https://github.com/google-research/vision_transformer) |
 | 2) **MAE**: Masked Autoencoders Are Scalable Vision Learners| [**CVPR 22 Paper**](https://arxiv.org/abs/2111.06377), [Github](https://github.com/facebookresearch/mae) |
@@ -291,7 +292,7 @@ We hope the community member has the following characteristics:
 | 18) **CLIP**: Learning Transferable Visual Models From Natural Language Supervision | [**CVPR 21 Paper**](https://arxiv.org/abs/2010.11929), [Github](https://github.com/openai/CLIP) |
 | 19) **BLIP**: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation | [**Paper**](https://arxiv.org/abs/2201.12086), [Github](https://github.com/salesforce/BLIP) |
 | 20) **BLIP-2**: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models | [**Paper**](https://arxiv.org/abs/2301.12597), [Github](https://github.com/salesforce/LAVIS/tree/main/projects/blip2) |
-| <h3 id="long-context">Long-context</h3> | |
+| <h3 id="long-context">08 Long-context</h3> | |
 | **Paper** | **Link** |
 | 1) World Model on Million-Length Video And Language With RingAttention | [**Paper**](https://arxiv.org/abs/2402.08268), [GitHub](https://github.com/LargeWorldModel/LWM) |
 | 2) Ring Attention with Blockwise Transformers for Near-Infinite Context | [**Paper**](https://arxiv.org/abs/2310.01889), [GitHub](https://github.com/lhao499/RingAttention) |
@@ -300,7 +301,7 @@ We hope the community member has the following characteristics:
 | 5) The What, Why, and How of Context Length Extension Techniques in Large Language Models – A Detailed Survey | [**Paper**](https://arxiv.org/pdf/2401.07872) |
 | 6) **MovieChat**: From Dense Token to Sparse Memory for Long Video Understanding | [**CVPR 24 Paper**](https://arxiv.org/abs/2307.16449), [GitHub](https://github.com/rese1f/MovieChat), [Project](https://rese1f.github.io/MovieChat/) |
 | 7) **MemoryBank**: Enhancing Large Language Models with Long-Term Memory | [**Paper**](https://arxiv.org/pdf/2305.10250.pdf), [GitHub](https://github.com/zhongwanjun/MemoryBank-SiliconFriend) |
-| <h3 id="audio-related-resource">Audio Related Resource</h3> | |
+| <h3 id="audio-related-resource">09 Audio Related Resource</h3> | |
 | **Paper**  | **Link** |
 | 1) **Stable Audio**: Fast Timing-Conditioned Latent Audio Diffusion | [**Paper**](https://arxiv.org/abs/2402.04825), [Github](https://github.com/Stability-AI/stable-audio-tools), [Blog](https://stability.ai/research/stable-audio-efficient-timing-latent-diffusion)|
 | 2) **MM-Diffusion**: Learning Multi-Modal Diffusion Models for Joint Audio and Video Generation | [**CVPR 23 Paper**](http://openaccess.thecvf.com/content/CVPR2023/papers/Ruan_MM-Diffusion_Learning_Multi-Modal_Diffusion_Models_for_Joint_Audio_and_Video_CVPR_2023_paper.pdf), [GitHub](https://github.com/researchmm/MM-Diffusion) |
@@ -325,7 +326,7 @@ We hope the community member has the following characteristics:
 | 21) **Video-LLaMA**: An Instruction-tuned Audio-Visual Language Model for Video Understanding | [**EMNLP 23 Paper**](https://arxiv.org/abs/2306.02858) |
 | 22) Audio-Visual LLM for Video Understanding | [**Paper**](https://arxiv.org/abs/2312.06720) |
 | 23) **VideoPoet**: A Large Language Model for Zero-Shot Video Generation (-) | [**Paper**](https://arxiv.org/abs/2312.14125), [Project](http://sites.research.google/videopoet/), [Blog](https://blog.research.google/2023/12/videopoet-large-language-model-for-zero.html) |
-| <h3 id="consistency">Consistency</h3> | |
+| <h3 id="consistency">10 Consistency</h3> | |
 | **Paper**  | **Link** |
 | 1) Consistency Models | [**Paper**](https://arxiv.org/pdf/2303.01469.pdf), [GitHub](https://github.com/openai/consistency_models) |
 | 2) Improved Techniques for Training Consistency Models | [**Paper**](https://arxiv.org/abs/2310.14189)|
@@ -347,7 +348,7 @@ We hope the community member has the following characteristics:
 | 17) **VideoDirectorGPT**: Consistent Multi-scene Video Generation via LLM-Guided Planning (-) | [**Paper**](https://arxiv.org/abs/2309.15091) |
 | 18) **VideoDrafter**: Content-Consistent Multi-Scene Video Generation with LLM (-) | [**Paper**](https://arxiv.org/abs/2401.01256) |
 | 19) **MaskDiffusion**: Boosting Text-to-Image Consistency with Conditional Mask| [**Paper**](https://arxiv.org/abs/2309.04399) |
-| <h3 id="prompt-engineering">Prompt Engineering</h3> | |
+| <h3 id="prompt-engineering">11 Prompt Engineering</h3> | |
 | **Paper**  | **Link** |
 | 1) **RealCompo**: Dynamic Equilibrium between Realism and Compositionality Improves Text-to-Image Diffusion Models | [**Paper**](https://arxiv.org/abs/2402.12908), [GitHub](https://github.com/YangLing0818/RealCompo), [Project](https://cominclip.github.io/RealCompo_Page/) |
 | 2) **Mastering Text-to-Image Diffusion**: Recaptioning, Planning, and Generating with Multimodal LLMs | [**Paper**](https://arxiv.org/abs/2401.11708), [GitHub](https://github.com/YangLing0818/RPG-DiffusionMaster) |
@@ -391,7 +392,7 @@ We hope the community member has the following characteristics:
 | 8) **ELLA**: Equip Diffusion Models with LLM for Enhanced Semantic Alignment (-) | [**Paper**](https://arxiv.org/abs/2403.05135), [Github](https://github.com/TencentQQGYLab/ELLA) |
 | 9) **SELMA**: Learning and Merging Skill-Specific Text-to-Image Experts with Auto-Generated Data | [**Paper**](https://arxiv.org/abs/2403.06952) |
 | 10) **LLMGA**: Multimodal Large Language Model based Generation Assistant | [**Paper**](https://arxiv.org/abs/2311.16500), [Github](https://github.com/dvlab-research/LLMGA) |
-| <h3 id="security">Security</h3> | |
+| <h3 id="security">12 Security</h3> | |
 | **Paper**  | **Link** |
 | 1) **BeaverTails:** Towards Improved Safety Alignment of LLM via a Human-Preference Dataset | [**NeurIPS 23 Paper**](https://proceedings.neurips.cc/paper_files/paper/2023/file/4dbb61cb68671edc4ca3712d70083b9f-Paper-Datasets_and_Benchmarks.pdf), [Github](https://github.com/PKU-Alignment/beavertails) |
 | 2) **LIMA:** Less Is More for Alignment | [**NeurIPS 23 Paper**](https://proceedings.neurips.cc/paper_files/paper/2023/file/ac662d74829e4407ce1d126477f4a03a-Paper-Conference.pdf) |
@@ -418,10 +419,10 @@ We hope the community member has the following characteristics:
 | 23) Diffusion Model Alignment Using Direct Preference Optimization | [**Paper**](https://arxiv.org/abs/2311.12908) |
 | 24) **RAFT:** Reward rAnked FineTuning for Generative Foundation Model Alignment | [**TMLR 23 Paper**](https://arxiv.org/abs/2304.06767) , [Github](https://github.com/OptimalScale/LMFlow) |
 | 25) Self-Alignment of Large Language Models via Monopolylogue-based Social Scene Simulation | [**Paper**](https://arxiv.org/pdf/2402.05699), [Github](https://github.com/ShuoTang123/MATRIX), [Project](https://shuotang123.github.io/MATRIX/) |
-| <h3 id="world-model">World Model</h3> | |
+| <h3 id="world-model">13 World Model</h3> | |
 | **Paper**  | **Link** |
 | 1) **NExT-GPT**: Any-to-Any Multimodal LLM | [**Paper**](https://arxiv.org/abs/2309.05519), [GitHub](https://github.com/NExT-GPT/NExT-GPT) |
-| <h3 id="video-compression">Video Compression</h3> ||
+| <h3 id="video-compression">14 Video Compression</h3> ||
 | **Paper**  | **Link** |
 | 1) **H.261**: Video codec for audiovisual services at p x 64 kbit/s | [**Paper**](https://www.itu.int/rec/T-REC-H.261-199303-I/en) |
 | 2) **H.262**: Information technology - Generic coding of moving pictures and associated audio information: Video | [**Paper**](https://www.itu.int/rec/T-REC-H.262-201202-I/en) |
@@ -441,14 +442,14 @@ We hope the community member has the following characteristics:
 | 16) **DCVC-DC**: Neural Video Compression with Diverse Contexts | [**CVPR 23 Paper**](https://arxiv.org/abs/2302.14402), [Github](https://github.com/microsoft/DCVC/tree/main/DCVC-DC) |
 | 17) **DCVC-FM**: Neural Video Compression with Feature Modulation | [**CVPR 24 Paper**](https://arxiv.org/abs/2402.17414), [Github](https://github.com/microsoft/DCVC/tree/main/DCVC-FM) |
 | 18) **SSF**: Scale-Space Flow for End-to-End Optimized Video Compression | [**CVPR 20 Paper**](https://openaccess.thecvf.com/content_CVPR_2020/html/Agustsson_Scale-Space_Flow_for_End-to-End_Optimized_Video_Compression_CVPR_2020_paper.html), [Github](https://github.com/InterDigitalInc/CompressAI) |
-| <h3 id="Mamba">Mamba</h3> ||
-| <h4 id="theoretical-foundations-and-model-architecture">Theoretical Foundations and Model Architecture</h4> | |
+| <h3 id="Mamba">15 Mamba</h3> ||
+| <h4 id="theoretical-foundations-and-model-architecture">15.1 Theoretical Foundations and Model Architecture</h4> | |
 | **Paper** | **Link** |
 | 1) **Mamba**: Linear-Time Sequence Modeling with Selective State Spaces | [**Paper**](https://arxiv.org/abs/2312.00752), [Github](https://github.com/state-spaces/mamba) |
 | 2) Efficiently Modeling Long Sequences with Structured State Spaces | [**ICLR 22 Paper**](https://iclr.cc/virtual/2022/poster/6959), [Github](https://github.com/state-spaces/s4) |
 | 3) Modeling Sequences with Structured State Spaces | [**Paper**](https://purl.stanford.edu/mb976vf9362) |
 | 4) Long Range Language Modeling via Gated State Spaces | [**Paper**](https://arxiv.org/abs/2206.13947), [GitHub](https://github.com/lucidrains/gated-state-spaces-pytorch) |
-| <h4 id="image-generation-and-visual-applications">Image Generation and Visual Applications</h4> | |
+| <h4 id="image-generation-and-visual-applications">15.2 Image Generation and Visual Applications</h4> | |
 | **Paper** | **Link** |
 | 1) Diffusion Models Without Attention | [**Paper**](https://arxiv.org/abs/2311.18257) |
 | 2) **Pan-Mamba**: Effective Pan-Sharpening with State Space Model  | [**Paper**](https://arxiv.org/abs/2402.12192), [Github](https://github.com/alexhe101/Pan-Mamba) |
@@ -456,19 +457,19 @@ We hope the community member has the following characteristics:
 | 4) Block-State Transformers | [**NIPS 23 Paper**](https://proceedings.neurips.cc/paper_files/paper/2023/hash/16ccd203e9e3696a7ab0dcf568316379-Abstract-Conference.html) |
 | 5) **Vision Mamba**: Efficient Visual Representation Learning with Bidirectional State Space Model | [**Paper**](https://arxiv.org/abs/2401.09417), [Github](https://github.com/hustvl/Vim) |
 | 6) VMamba: Visual State Space Model | [**Paper**](https://arxiv.org/abs/2401.10166), [Github](https://github.com/MzeroMiko/VMamba) |
-| <h4 id="video-processing-and-understanding">Video Processing and Understanding</h4> | |
+| <h4 id="video-processing-and-understanding">15.3 Video Processing and Understanding</h4> | |
 | **Paper** | **Link** |
 | 1) Long Movie Clip Classification with State-Space Video Models | [**ECCV 22 Paper**](https://link.springer.com/chapter/10.1007/978-3-031-19833-5_6), [Github](https://github.com/md-mohaiminul/ViS4mer) |
 | 2) Selective Structured State-Spaces for Long-Form Video Understanding | [**CVPR 23 Paper**](https://openaccess.thecvf.com/content/CVPR2023/html/Wang_Selective_Structured_State-Spaces_for_Long-Form_Video_Understanding_CVPR_2023_paper.html) |
 | 3) Efficient Movie Scene Detection Using State-Space Transformers | [**CVPR 23 Paper**](https://openaccess.thecvf.com/content/CVPR2023/html/Islam_Efficient_Movie_Scene_Detection_Using_State-Space_Transformers_CVPR_2023_paper.html), [Github](https://github.com/md-mohaiminul/TranS4mer) |
 | 4) VideoMamba: State Space Model for Efficient Video Understanding | [**Paper**](http://arxiv.org/abs/2403.06977), [Github](https://github.com/OpenGVLab/VideoMamba) |
-| <h4 id="medical-image-processing">Medical Image Processing</h4> | |
+| <h4 id="medical-image-processing">15.4 Medical Image Processing</h4> | |
 | **Paper** | **Link** |
 | 1) **Swin-UMamba**: Mamba-based UNet with ImageNet-based pretraining | [**Paper**](https://arxiv.org/abs/2402.03302), [Github](https://github.com/JiarunLiu/Swin-UMamba) |
 | 2) **MambaIR**: A Simple Baseline for Image Restoration with State-Space Model | [**Paper**](https://arxiv.org/abs/2402.15648), [Github](https://github.com/csguoh/MambaIR) |
 | 3) VM-UNet: Vision Mamba UNet for Medical Image Segmentation | [**Paper**](https://arxiv.org/abs/2402.02491), [Github](https://github.com/JCruan519/VM-UNet) |
 |  | |
-| <h3 id="existing-high-quality-resources">Existing high-quality resources</h3> | |
+| <h3 id="existing-high-quality-resources">16 Existing high-quality resources</h3> | |
 | **Resources**  | **Link** |
 | 1) Datawhale - AI视频生成学习 | [Feishu doc](https://datawhaler.feishu.cn/docx/G4LkdaffWopVbwxT1oHceiv9n0c) |
 | 2) A Survey on Generative Diffusion Model | [**TKDE 24 Paper**](https://arxiv.org/pdf/2209.02646.pdf), [GitHub](https://github.com/chq1155/A-Survey-on-Generative-Diffusion-Model) |
