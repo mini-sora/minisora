@@ -141,7 +141,7 @@ We hope the community member has the following characteristics:
     - 14.2 [Image Generation and Visual Applications](#image-generation-and-visual-applications)
     - 14.3 [Video Processing and Understanding](#video-processing-and-understanding)
     - 14.4 [Medical Image Processing](#medical-image-processing)
-- 15 [Existing high-quality resources](#existing-high-quality-resources)
+- 16 [Existing high-quality resources](#existing-high-quality-resources)
 
 | <h3 id="diffusion-models">01 Diffusion Models</h3> |  |
 | :------------- | :------------- |
