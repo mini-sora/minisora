@@ -225,7 +225,7 @@ We hope the community member has the following characteristics:
 | 25) **PYoCo**: Preserve Your Own Correlation: A Noise Prior for Video Diffusion Models | [**ICCV 23 Paper**](https://arxiv.org/abs/2305.10474), [Project](https://research.nvidia.com/labs/dir/pyoco/)|
 | 26) **VideoFusion**: Decomposed Diffusion Models for High-Quality Video Generation | [**CVPR 23 Paper**](https://arxiv.org/abs/2303.08320)|
 | <h3 id="dataset">06 Dataset</h3> | |
-| <h4 id="dataset_paper">Public Datasets</h4> | |
+| <h4 id="dataset_paper">6.1 Public Datasets</h4> | |
 | **Dataset Name - Paper** | **Link** |
 | 1) **Panda-70M** - Panda-70M: Captioning 70M Videos with Multiple Cross-Modality Teachers<br><small>`70M Clips, 720P, Downloadable`</small>|[**CVPR 24 Paper**](https://arxiv.org/abs/2402.19479), [Github](https://github.com/snap-research/Panda-70M), [Project](https://snap-research.github.io/Panda-70M/)|
 | 2) **InternVid-10M** - InternVid: A Large-scale Video-Text Dataset for Multimodal Understanding and Generation<br><small>`10M Clips, 720P, Downloadable`</small>|[**ArXiv 24 Paper**](https://arxiv.org/abs/2307.06942), [Github](https://github.com/OpenGVLab/InternVideo/tree/main/Data/InternVid)|
@@ -246,8 +246,8 @@ We hope the community member has the following characteristics:
 | 17) **VidProM** - VidProM: A Million-scale Real Prompt-Gallery Dataset for Text-to-Video Diffusion Models<br><small>`6.69M, Downloadable`</small>| [**Arxiv 24 Paper**](https://arxiv.org/abs/2403.06098), [Github](https://github.com/WangWenhao0716/VidProM) |
 | 18) **Pixabay100** - A video dataset collected from Pixabay<br><small>`Downloadable`</small>| [Github](https://github.com/ECNU-CILAB/Pixabay100/) |
 | 19) **WebVid** -  Large-scale text-video dataset, containing 10 million video-text pairs scraped from the stock footage sites<br><small>`10M video-text pairs`</small> | [**Arxiv 21 Paper**](https://arxiv.org/abs/2104.00650), [Project](https://www.robots.ox.ac.uk/~vgg/research/frozen-in-time/)|
-| <h4 id="video_aug">Video Augmentation Methods</h4> |  |
-| <h5 id="video_aug_basic">Basic Transformations</h5> | |
+| <h4 id="video_aug">6.2 Video Augmentation Methods</h4> |  |
+| <h5 id="video_aug_basic">6.2.1 Basic Transformations</h5> | |
 | Three-stream CNNs for action recognition | [**PRL 17 Paper**](https://www.sciencedirect.com/science/article/pii/S0167865517301071) |
 | Dynamic Hand Gesture Recognition Using Multi-direction 3D Convolutional Neural Networks | [**EL 19 Paper**](http://www.engineeringletters.com/issues_v27/issue_3/EL_27_3_12.pdf)|
 | Intra-clip Aggregation for Video Person Re-identification | [**ICIP 20 Paper**](https://arxiv.org/abs/1905.01722)|
@@ -257,20 +257,20 @@ We hope the community member has the following characteristics:
 | Video Salient Object Detection via Fully Convolutional Networks | [**ICIP 18 Paper**](https://ieeexplore.ieee.org/abstract/document/8047320) |
 | Illumination-Based Data Augmentation for Robust Background Subtraction | [**SKIMA 19 Paper**](https://ieeexplore.ieee.org/abstract/document/8982527) |
 | Image editing-based data augmentation for illumination-insensitive background subtraction | [**EIM 20 Paper**](https://www.emerald.com/insight/content/doi/10.1108/JEIM-02-2020-0042/full/html) |
-| <h5 id="video_aug_feature">Feature Space</h5> | |
+| <h5 id="video_aug_feature">6.2.2 Feature Space</h5> | |
 | Feature Re-Learning with Data Augmentation for Content-based Video Recommendation | [**ACM 18 Paper**](https://dl.acm.org/doi/abs/10.1145/3240508.3266441) |
 | GAC-GAN: A General Method for Appearance-Controllable Human Video Motion Transfer | [**Trans 21 Paper**](https://ieeexplore.ieee.org/abstract/document/9147027) |
-| <h5 id="video_aug_gan">GAN-based Augmentation</h5> | |
+| <h5 id="video_aug_gan">6.2.3 GAN-based Augmentation</h5> | |
 | Deep Video-Based Performance Cloning | [**CVPR 18 Paper**](https://arxiv.org/abs/1808.06847) |
 | Adversarial Action Data Augmentation for Similar Gesture Action Recognition | [**IJCNN 19 Paper**](https://ieeexplore.ieee.org/abstract/document/8851993) |
 | Self-Paced Video Data Augmentation by Generative Adversarial Networks with Insufficient Samples | [**MM 20 Paper**](https://dl.acm.org/doi/abs/10.1145/3394171.3414003) |
 | GAC-GAN: A General Method for Appearance-Controllable Human Video Motion Transfer | [**Trans 20 Paper**](https://ieeexplore.ieee.org/abstract/document/9147027) |
 | Dynamic Facial Expression Generation on Hilbert Hypersphere With Conditional Wasserstein Generative Adversarial Nets | [**TPAMI 20 Paper**](https://ieeexplore.ieee.org/abstract/document/9117185) |
 | CrowdGAN: Identity-Free Interactive Crowd Video Generation and Beyond | [**TPAMI 22 Paper**](https://www.computer.org/csdl/journal/tp/5555/01/09286483/1por0TYwZvG) |
-| <h5 id="video_aug_ed">Encoder/Decoder Based</h5> | |
+| <h5 id="video_aug_ed">6.2.4 Encoder/Decoder Based</h5> | |
 | Rotationally-Temporally Consistent Novel View Synthesis of Human Performance Video | [**ECCV 20 Paper**](https://link.springer.com/chapter/10.1007/978-3-030-58548-8_23) |
 | Autoencoder-based Data Augmentation for Deepfake Detection | [**ACM 23 Paper**](https://dl.acm.org/doi/abs/10.1145/3592572.3592840) |
-| <h5 id="video_aug_simulation">Simulation</h5> | |
+| <h5 id="video_aug_simulation">6.2.5 Simulation</h5> | |
 | A data augmentation methodology for training machine/deep learning gait recognition algorithms | [**CVPR 16 Paper**](https://arxiv.org/abs/1610.07570) |
 | ElderSim: A Synthetic Data Generation Platform for Human Action Recognition in Eldercare Applications | [**IEEE 21 Paper**](https://ieeexplore.ieee.org/abstract/document/9324837) |
 | Mid-Air: A Multi-Modal Dataset for Extremely Low Altitude Drone Flights | [**CVPR 19 Paper**](https://openaccess.thecvf.com/content_CVPRW_2019/html/UAVision/Fonder_Mid-Air_A_Multi-Modal_Dataset_for_Extremely_Low_Altitude_Drone_Flights_CVPRW_2019_paper.html) |
@@ -501,7 +501,7 @@ We hope the community member has the following characteristics:
 | 19) **OpenDiT**: An Easy, Fast and Memory-Efficient System for DiT Training and Inference | [GitHub](https://github.com/NUS-HPC-AI-Lab/OpenDiT) |
 | 20) Awesome-Long-Context |[GitHub1](https://github.com/zetian1025/awesome-long-context), [GitHub2](https://github.com/showlab/Awesome-Long-Context) |
 | <h3 id="train">17 Efficient Training</h3> | |
-| <h4 id="train_pip">Pipeline</h4> | |
+| <h4 id="train_pip">17.1 Pipeline</h4> | |
 | 1) GPipe: Efficient Training of Giant Neural Networks using Pipeline Parallelism | [**NeurIPS 19 Paper**](https://proceedings.neurips.cc/paper_files/paper/2019/hash/093f65e080a295f8076b1c5722a46aa2-Abstract.html) |
 | 2) TeraPipe: Token-Level Pipeline Parallelism for Training Large-Scale Language Models | [**ICML 21 Paper**](https://proceedings.mlr.press/v139/li21y.html) |
 | 3) PipeDream: generalized pipeline parallelism for DNN training | [**SOSP 19 Paper**](https://dl.acm.org/doi/abs/10.1145/3341301.3359646) |
@@ -509,36 +509,36 @@ We hope the community member has the following characteristics:
 | 5) Efficient large-scale language model training on GPU clusters using megatron-LM | [**SC 21 Paper**](https://dl.acm.org/doi/abs/10.1145/3458817.3476209) |
 | 6) GSPMD: General and Scalable Parallelization for ML Computation Graphs | [**ArXiv 21 Paper**](https://arxiv.org/abs/2105.04663) |
 | 7) OneFlow: Redesign the Distributed Deep Learning Framework from Scratch | [**ArXiv 22 Paper**](https://arxiv.org/abs/2110.15032)|
-| <h4 id="train_zero">Zero-redundancy Parallelism</h4> | |
+| <h4 id="train_zero">17.2 Zero-redundancy Parallelism</h4> | |
 | 1) ZeRO: Memory Optimizations Toward Training Trillion Parameter Models | [**ArXiv 20 Paper**](https://arxiv.org/abs/1910.02054) |
 | 2) DeepSpeed: System Optimizations Enable Training Deep Learning Models with Over 100 Billion Parameters | [**ACM 20 Paper**](https://dl.acm.org/doi/abs/10.1145/3394486.3406703) |
 | 3) ZeRO-Offload: Democratizing Billion-Scale Model Training | [**ArXiv 21 Paper**](https://arxiv.org/abs/2101.06840) |
 | 4) PyTorch FSDP: Experiences on Scaling Fully Sharded Data Parallel | [**ArXiv 23 Paper**](https://arxiv.org/abs/2304.11277) |
 | <h3 id="infer">18 Efficient Inference</h3> | |
-| <h4 id="infer_reduce">Reduce Sampling Steps</h4> | |
-| <h5 id="infer_reduce_continuous">Continuous Steps</h4> | |
+| <h4 id="infer_reduce">18.1 Reduce Sampling Steps</h4> | |
+| <h5 id="infer_reduce_continuous">18.1.1 Continuous Steps</h4> | |
 | 1) Generative Modeling by Estimating Gradients of the Data Distribution | [**NeurIPS 19 Paper**](https://arxiv.org/abs/1907.05600) |
 | 2) WaveGrad: Estimating Gradients for Waveform Generation | [**ArXiv 20 Paper**](https://arxiv.org/abs/2009.00713) |
 | 3) Noise Level Limited Sub-Modeling for Diffusion Probabilistic Vocoders | [**ICASSP 21 Paper**](https://ieeexplore.ieee.org/abstract/document/9415087) |
 | 4) Noise Estimation for Generative Diffusion Models | [**ArXiv 21 Paper**](https://arxiv.org/abs/2104.02600) |
-| <h5 id="infer_reduce_fast">Fast Sampling</h5> | |
+| <h5 id="infer_reduce_fast">18.1.2 Fast Sampling</h5> | |
 | 1) Denoising Diffusion Implicit Models | [**ICLR 21 Paper**](https://arxiv.org/abs/2010.02502) |
 | 2) DiffWave: A Versatile Diffusion Model for Audio Synthesis | [**ICLR 21 Paper**](https://arxiv.org/abs/2009.09761) |
 | 3) On Fast Sampling of Diffusion Probabilistic Models | [**ArXiv 21 Paper**](https://arxiv.org/abs/2106.00132) |
 | 4) DPM-Solver: A Fast ODE Solver for Diffusion Probabilistic Model Sampling in Around 10 Steps | [**NeurIPS 22 Paper**](https://arxiv.org/abs/2206.00927) |
 | 5) DPM-Solver++: Fast Solver for Guided Sampling of Diffusion Probabilistic Models | [**ArXiv 22 Paper**](https://arxiv.org/abs/2211.01095) |
 | 6) Fast Sampling of Diffusion Models with Exponential Integrator | [**ICLR 22 Paper**](https://arxiv.org/abs/2204.13902) |
-| <h5 id="infer_reduce_dist">Step distillation</h5> | |
+| <h5 id="infer_reduce_dist">18.1.3 Step distillation</h5> | |
 | 1) On Distillation of Guided Diffusion Models | [**CVPR 23 Paper**](https://arxiv.org/abs/2210.03142) |
 | 2) Progressive Distillation for Fast Sampling of Diffusion Models | [**ICLR 22 Paper**](https://arxiv.org/abs/2202.00512) |
 | 3) SnapFusion: Text-to-Image Diffusion Model on Mobile Devices within Two Seconds | [**NeurIPS 23 Paper**](https://proceedings.neurips.cc/paper_files/paper/2023/hash/41bcc9d3bddd9c90e1f44b29e26d97ff-Abstract-Conference.html) |
 | 4) Tackling the Generative Learning Trilemma with Denoising Diffusion GANs | [**ICLR 22 Paper**](https://arxiv.org/abs/2112.07804) |
-| <h4 id="infer_opt">Optimizing Inference</h4> | |
-| <h5 id="infer_opt_low">Low-bit Quantization</h5> | |
+| <h4 id="infer_opt">18.2 Optimizing Inference</h4> | |
+| <h5 id="infer_opt_low">18.2.1 Low-bit Quantization</h5> | |
 | 1) Q-Diffusion: Quantizing Diffusion Models | [**CVPR 23 Paper**](https://openaccess.thecvf.com/content/ICCV2023/html/Li_Q-Diffusion_Quantizing_Diffusion_Models_ICCV_2023_paper.html) |
 | 2) Q-DM: An Efficient Low-bit Quantized Diffusion Model | [**NeurIPS 23 Paper**](https://proceedings.neurips.cc/paper_files/paper/2023/hash/f1ee1cca0721de55bb35cf28ab95e1b4-Abstract-Conference.html) |
 | 3) Temporal Dynamic Quantization for Diffusion Models | [**NeurIPS 23 Paper**](https://proceedings.neurips.cc/paper_files/paper/2023/hash/983591c3e9a0dc94a99134b3238bbe52-Abstract-Conference.html) |
-| <h5 id="infer_opt_ps">Parallel/Sparse inference</h5> | |
+| <h5 id="infer_opt_ps">18.2.2 Parallel/Sparse inference</h5> | |
 | 1) DistriFusion: Distributed Parallel Inference for High-Resolution Diffusion Models | [**CVPR 24 Paper**](https://arxiv.org/abs/2402.19481) |
 | 2) Efficient Spatially Sparse Inference for Conditional GANs and Diffusion Models | [**NeurIPS 22 Paper**](https://proceedings.neurips.cc/paper_files/paper/2022/hash/b9603de9e49d0838e53b6c9cf9d06556-Abstract-Conference.html) |
 
