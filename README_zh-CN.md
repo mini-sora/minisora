@@ -467,6 +467,7 @@ MiniSora 开源社区定位为由社区同学自发组织的开源社区，MiniS
 | 4) Block-State Transformers | [**NIPS 23 Paper**](https://proceedings.neurips.cc/paper_files/paper/2023/hash/16ccd203e9e3696a7ab0dcf568316379-Abstract-Conference.html) |
 | 5) **Vision Mamba**: Efficient Visual Representation Learning with Bidirectional State Space Model | [**Paper**](https://arxiv.org/abs/2401.09417), [Github](https://github.com/hustvl/Vim) |
 | 6) VMamba: Visual State Space Model | [**Paper**](https://arxiv.org/abs/2401.10166), [Github](https://github.com/MzeroMiko/VMamba) |
+| 7) ZigMa: Zigzag Mamba Diffusion Model | [**Paper**](https://arxiv.org/abs/2403.13802), [Github](https://taohu.me/zigma/) |
 | <h4 id="video-processing-and-understanding">15.3 Video Processing and Understanding</h4> | |
 | **论文** | **链接** |
 | 1) Long Movie Clip Classification with State-Space Video Models | [**ECCV 22 Paper**](https://link.springer.com/chapter/10.1007/978-3-031-19833-5_6), [Github](https://github.com/md-mohaiminul/ViS4mer) |
