@@ -402,6 +402,12 @@ MiniSora 开源社区定位为由社区同学自发组织的开源社区，MiniS
 | 7) **HowToCaption**: Prompting LLMs to Transform Video Annotations at Scale | [**ArXiv 23**](https://arxiv.org/abs/2310.04900) |
 | 8) **SELMA**: Learning and Merging Skill-Specific Text-to-Image Experts with Auto-Generated Data | [**ArXiv 24**](https://arxiv.org/abs/2403.06952) |
 | 9) **LLMGA**: Multimodal Large Language Model based Generation Assistant | [**ArXiv 23**](https://arxiv.org/abs/2311.16500), [Github](https://github.com/dvlab-research/LLMGA) |
+| 10) **ELLA**: Equip Diffusion Models with LLM for Enhanced Semantic Alignment | [**ArXiv 24**](https://arxiv.org/abs/2403.05135), [Github](https://github.com/TencentQQGYLab/ELLA) |
+| 11) **MyVLM**: Personalizing VLMs for User-Specific Queries | [**ArXiv 24**](https://arxiv.org/pdf/2403.14599.pdf) |
+| 12) A Picture is Worth a Thousand Words: Principled Recaptioning Improves Image Generation | [**ArXiv 23**](https://arxiv.org/abs/2310.16656), [Github](https://github.com/girliemac/a-picture-is-worth-a-1000-words) |
+| 13) **Mastering Text-to-Image Diffusion**: Recaptioning, Planning, and Generating with Multimodal LLMs(-) | [**ArXiv 24**](https://arxiv.org/html/2401.11708v2), [Github](https://github.com/YangLing0818/RPG-DiffusionMaster) |
+| 14) **FlexCap**: Generating Rich, Localized, and Flexible Captions in Images | [**ArXiv 24**](https://arxiv.org/abs/2403.12026) |
+| 15) **Video ReCap**: Recursive Captioning of Hour-Long Videos | [**ArXiv 24**](https://arxiv.org/pdf/2402.13250.pdf), [Github](https://github.com/md-mohaiminul/VideoRecap) |
 | <h3 id="security">12 Security</h3> | |
 | **论文**  | **链接** |
 | 1) **BeaverTails:** Towards Improved Safety Alignment of LLM via a Human-Preference Dataset | [**NeurIPS 23 Paper**](https://proceedings.neurips.cc/paper_files/paper/2023/file/4dbb61cb68671edc4ca3712d70083b9f-Paper-Datasets_and_Benchmarks.pdf), [Github](https://github.com/PKU-Alignment/beavertails) |
