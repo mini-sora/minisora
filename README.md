@@ -547,7 +547,6 @@ We hope the community member has the following characteristics:
 | <h5 id="train_non_mem">17.2.3 Memory Efficient Optimizer</h5> | |
 | 1) Adafactor: Adaptive Learning Rates with Sublinear Memory Cost | [**PMLR 18 Paper**](https://proceedings.mlr.press/v80/shazeer18a.html?ref=https://githubhelp.com) |
 | 2) Memory-Efficient Adaptive Optimization for Large-Scale Learning | [**Paper**](http://dml.mathdoc.fr/item/1901.11150/) || <h5 id="train_paral_dp">17.1.1 Data Parallelism (DP)</h5> | |
-| 
 | <h4 id="train_struct">17.3 Novel Structure</h4> | |
 | 1) ELLA: Equip Diffusion Models with LLM for Enhanced Semantic Alignment | [**ArXiv 24**](https://arxiv.org/abs/2403.05135) [Github](https://github.com/TencentQQGYLab/ELLA) |
 | <h3 id="infer">18 Efficient Inference</h3> | |
