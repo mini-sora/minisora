@@ -150,8 +150,17 @@ We hope the community member has the following characteristics:
     - 15.4 [Medical Image Processing](#medical-image-processing)
 - 16 [Existing high-quality resources](#existing-high-quality-resources)
 - 17 [Efficient Training](#train)
-  - 17.1 [Pipeline](#train_pip)
-  - 17.2 [Zero-redundancy Parallelism](#train_zero)
+  - 17.1 [Parallelism based Approach](#train_paral)
+    - 17.1.1 [Data Parallelism (DP)](#train_paral_dp)
+    - 17.1.2 [Model Parallelism (MP)](#train_paral_mp)
+    - 17.1.3 [Pipeline Parallelism (PP)](#train_paral_pp)
+    - 17.1.4 [Generalized Parallelism (GP)](#train_paral_gp)
+    - 17.1.5 [ZeRO Parallelism (ZP)](#train_paral_zp)
+  - 17.2 [Non-parallelism based Approach](#train_non)
+    - 17.2.1 [Reducing Activation Memory](#train_non_reduce)
+    - 17.2.2 [CPU-Offloading](#train_non_cpu)
+    - 17.2.3 [Memory Efficient Optimizer](#train_non_mem)
+  - 17.3 [Novel Structure](#train_struct)
 - 18 [Efficient Inference](#infer)
   - 18.1 [Reduce Sampling Steps](#infer_reduce)
     - 18.1.1 [Continuous Steps](#infer_reduce_continuous)
@@ -508,19 +517,36 @@ We hope the community member has the following characteristics:
 | 20) Awesome-Long-Context |[GitHub1](https://github.com/zetian1025/awesome-long-context), [GitHub2](https://github.com/showlab/Awesome-Long-Context) |
 | 21) Lite-Sora |[GitHub](https://github.com/modelscope/lite-sora/) |
 | <h3 id="train">17 Efficient Training</h3> | |
-| <h4 id="train_pip">17.1 Pipeline</h4> | |
+| <h4 id="train_paral">17.1 Parallelism based Approach</h4> | |
+| <h5 id="train_paral_dp">17.1.1 Data Parallelism (DP)</h5> | |
+| 1) A bridging model for parallel computation | [**Paper**](https://dl.acm.org/doi/abs/10.1145/79173.79181)|
+| 2) PyTorch Distributed: Experiences on Accelerating Data Parallel Training | [**VLDB 20 Paper**](https://arxiv.org/abs/2006.15704) |
+| <h5 id="train_paral_mp">17.1.2 Model Parallelism (MP)</h5> | |
+| 1) Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism | [**ArXiv 19 Paper**](https://arxiv.org/abs/1909.08053) |
+| 2) TeraPipe: Token-Level Pipeline Parallelism for Training Large-Scale Language Models | [**PMLR 21 Paper**](https://proceedings.mlr.press/v139/li21y.html) |
+| <h5 id="train_paral_pp">17.1.3 Pipeline Parallelism (PP)</h5> | |
 | 1) GPipe: Efficient Training of Giant Neural Networks using Pipeline Parallelism | [**NeurIPS 19 Paper**](https://proceedings.neurips.cc/paper_files/paper/2019/hash/093f65e080a295f8076b1c5722a46aa2-Abstract.html) |
-| 2) TeraPipe: Token-Level Pipeline Parallelism for Training Large-Scale Language Models | [**ICML 21 Paper**](https://proceedings.mlr.press/v139/li21y.html) |
-| 3) PipeDream: generalized pipeline parallelism for DNN training | [**SOSP 19 Paper**](https://dl.acm.org/doi/abs/10.1145/3341301.3359646) |
-| 4) Beyond Data and Model Parallelism for Deep Neural Networks. | [**MLSys 19 Paper**](https://proceedings.mlsys.org/paper_files/paper/2019/hash/b422680f3db0986ddd7f8f126baaf0fa-Abstract.html) |
-| 5) Efficient large-scale language model training on GPU clusters using megatron-LM | [**SC 21 Paper**](https://dl.acm.org/doi/abs/10.1145/3458817.3476209) |
-| 6) GSPMD: General and Scalable Parallelization for ML Computation Graphs | [**ArXiv 21**](https://arxiv.org/abs/2105.04663) |
-| 7) OneFlow: Redesign the Distributed Deep Learning Framework from Scratch | [**ArXiv 22**](https://arxiv.org/abs/2110.15032) |
-| <h4 id="train_zero">17.2 Zero-redundancy Parallelism</h4> | |
+| 2) PipeDream: generalized pipeline parallelism for DNN training | [**SOSP 19 Paper**](https://dl.acm.org/doi/abs/10.1145/3341301.3359646) |
+| <h5 id="train_paral_gp">17.1.4 Generalized Parallelism (GP)</h5> | |
+| 1) Mesh-TensorFlow: Deep Learning for Supercomputers | [**ArXiv 18 Paper**](https://arxiv.org/abs/1811.02084) |
+| 2) Beyond Data and Model Parallelism for Deep Neural Networks | [**MLSys 19 Paper**](https://proceedings.mlsys.org/paper_files/paper/2019/hash/b422680f3db0986ddd7f8f126baaf0fa-Abstract.html) |
+| <h5 id="train_paral_zp">17.1.5 ZeRO Parallelism (ZP)</h5> | |
 | 1) ZeRO: Memory Optimizations Toward Training Trillion Parameter Models | [**ArXiv 20**](https://arxiv.org/abs/1910.02054) |
 | 2) DeepSpeed: System Optimizations Enable Training Deep Learning Models with Over 100 Billion Parameters | [**ACM 20 Paper**](https://dl.acm.org/doi/abs/10.1145/3394486.3406703) |
 | 3) ZeRO-Offload: Democratizing Billion-Scale Model Training | [**ArXiv 21**](https://arxiv.org/abs/2101.06840) |
 | 4) PyTorch FSDP: Experiences on Scaling Fully Sharded Data Parallel | [**ArXiv 23**](https://arxiv.org/abs/2304.11277) |
+| <h4 id="train_non">17.2 Non-parallelism based Approach</h4> | |
+| <h5 id="train_non_reduce">17.2.1 Reducing Activation Memory</h5> | |
+| 1) Gist: Efficient Data Encoding for Deep Neural Network Training | [**IEEE 18 Paper**](https://ieeexplore.ieee.org/abstract/document/8416872) |
+| 2) Checkmate: Breaking the Memory Wall with Optimal Tensor Rematerialization | [**MLSys 20 Paper**](https://proceedings.mlsys.org/paper_files/paper/2020/hash/0b816ae8f06f8dd3543dc3d9ef196cab-Abstract.html) |
+| 3) Training Deep Nets with Sublinear Memory Cost | [**ArXiv 16 Paper**](https://arxiv.org/abs/1604.06174) |
+| 4) Superneurons: dynamic GPU memory management for training deep neural networks | [**ACM 18 Paper**](https://dl.acm.org/doi/abs/10.1145/3178487.3178491) |
+| <h5 id="train_non_cpu">17.2.2 CPU-Offloading</h5> | |
+| 1) Training Large Neural Networks with Constant Memory using a New Execution Algorithm | [**ArXiv 20 Paper**](https://arxiv.org/abs/2002.05645) |
+| 2) vDNN: Virtualized deep neural networks for scalable, memory-efficient neural network design | [**IEEE 16 Paper**](https://ieeexplore.ieee.org/abstract/document/7783721) | 
+| <h5 id="train_non_mem">17.2.3 Memory Efficient Optimizer</h5> | |
+| 1) Adafactor: Adaptive Learning Rates with Sublinear Memory Cost | [**PMLR 18 Paper**](https://proceedings.mlr.press/v80/shazeer18a.html?ref=https://githubhelp.com) |
+| 2) Memory-Efficient Adaptive Optimization for Large-Scale Learning | [**Paper**](http://dml.mathdoc.fr/item/1901.11150/) || <h5 id="train_paral_dp">17.1.1 Data Parallelism (DP)</h5> | |
 | <h4 id="train_struct">17.3 Novel Structure</h4> | |
 | 1) ELLA: Equip Diffusion Models with LLM for Enhanced Semantic Alignment | [**ArXiv 24**](https://arxiv.org/abs/2403.05135) [Github](https://github.com/TencentQQGYLab/ELLA) |
 | <h3 id="infer">18 Efficient Inference</h3> | |
