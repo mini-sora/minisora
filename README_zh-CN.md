@@ -257,6 +257,7 @@ MiniSora 开源社区定位为由社区同学自发组织的开源社区，MiniS
 | 17) **VidProM** - VidProM: A Million-scale Real Prompt-Gallery Dataset for Text-to-Video Diffusion Models<br><small>`6.69M, Downloadable`</small>| [**ArXiv 24**](https://arxiv.org/abs/2403.06098), [Github](https://github.com/WangWenhao0716/VidProM) |
 | 18) **Pixabay100** - A video dataset collected from Pixabay<br><small>`Downloadable`</small>| [Github](https://github.com/ECNU-CILAB/Pixabay100/) |
 | 19) **WebVid** -  Large-scale text-video dataset, containing 10 million video-text pairs scraped from the stock footage sites<br><small>`10M video-text pairs`</small> | [**ArXiv 21**](https://arxiv.org/abs/2104.00650), [Project](https://www.robots.ox.ac.uk/~vgg/research/frozen-in-time/) |
+| 20) **MiraData(Mini-Sora Data)**: A Large-Scale Video Dataset with Long Durations and Structured Captions<br><small>`10M video-text pairs`</small> | [Project](https://mira-space.github.io/) |
 | <h4 id="video_aug">6.2 数据集增强方法</h4> |  |
 | <h5 id="video_aug_basic">6.2.1 基础变换</h5> | |
 | Three-stream CNNs for action recognition | [**PRL 17 Paper**](https://www.sciencedirect.com/science/article/pii/S0167865517301071) |
