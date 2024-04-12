@@ -518,6 +518,7 @@ MiniSora 开源社区定位为由社区同学自发组织的开源社区，MiniS
 | 19) **OpenDiT**: An Easy, Fast and Memory-Efficient System for DiT Training and Inference | [Github](https://github.com/NUS-HPC-AI-Lab/OpenDiT) |
 | 20) Awesome-Long-Context |[GitHub1](https://github.com/zetian1025/awesome-long-context), [GitHub2](https://github.com/showlab/Awesome-Long-Context) |
 | 21) Lite-Sora |[GitHub](https://github.com/modelscope/lite-sora/) |
+| 22) **Mira**: A Mini-step Towards Sora-like Long Video Generation |[GitHub](https://github.com/mira-space/Mira), [Project](https://mira-space.github.io/) |
 | <h3 id="train">17 高效训练</h3> | |
 | <h4 id="train_paral">17.1 并行训练方法</h4> | |
 | <h5 id="train_paral_dp">17.1.1 数据并行(DP)</h5> | |
