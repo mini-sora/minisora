@@ -416,7 +416,12 @@ We hope the community member has the following characteristics:
 | 13) **Mastering Text-to-Image Diffusion**: Recaptioning, Planning, and Generating with Multimodal LLMs(-) | [**ArXiv 24**](https://arxiv.org/html/2401.11708v2), [Github](https://github.com/YangLing0818/RPG-DiffusionMaster) |
 | 14) **FlexCap**: Generating Rich, Localized, and Flexible Captions in Images | [**ArXiv 24**](https://arxiv.org/abs/2403.12026) |
 | 15) **Video ReCap**: Recursive Captioning of Hour-Long Videos | [**ArXiv 24**](https://arxiv.org/pdf/2402.13250.pdf), [Github](https://github.com/md-mohaiminul/VideoRecap) |
-| <h3 id="security">12 Security</h3> | |
+| 16) **BLIP**: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation | [**ICML 22**](https://arxiv.org/abs/2201.12086), [Github](https://github.com/salesforce/BLIP) |
+| 17) **PromptCap**: Prompt-Guided Task-Aware Image Captioning | [**ICCV 23**](https://arxiv.org/abs/2211.09699), [Github](https://github.com/Yushi-Hu/PromptCap) |
+| 18) **CIC**: A framework for Culturally-aware Image Captioning | [**ArXiv 24**](https://arxiv.org/abs/2402.05374) |
+| 19) Improving Image Captioning Descriptiveness by Ranking and LLM-based Fusion | [**ArXiv 24**](https://arxiv.org/abs/2306.11593) |
+| 20) **FuseCap**: Leveraging Large Language Models for Enriched Fused Image Captions | [**WACV 24**](https://arxiv.org/abs/2305.17718), [Github](https://github.com/RotsteinNoam/FuseCap) |
+| <h3 id="security">12 Security</h3> |  |
 | **Paper**  | **Link** |
 | 1) **BeaverTails:** Towards Improved Safety Alignment of LLM via a Human-Preference Dataset | [**NeurIPS 23 Paper**](https://proceedings.neurips.cc/paper_files/paper/2023/file/4dbb61cb68671edc4ca3712d70083b9f-Paper-Datasets_and_Benchmarks.pdf), [Github](https://github.com/PKU-Alignment/beavertails) |
 | 2) **LIMA:** Less Is More for Alignment | [**NeurIPS 23 Paper**](https://proceedings.neurips.cc/paper_files/paper/2023/file/ac662d74829e4407ce1d126477f4a03a-Paper-Conference.pdf) |
@@ -545,10 +550,10 @@ We hope the community member has the following characteristics:
 | 4) Superneurons: dynamic GPU memory management for training deep neural networks | [**ACM 18 Paper**](https://dl.acm.org/doi/abs/10.1145/3178487.3178491) |
 | <h5 id="train_non_cpu">17.2.2 CPU-Offloading</h5> | |
 | 1) Training Large Neural Networks with Constant Memory using a New Execution Algorithm | [**ArXiv 20 Paper**](https://arxiv.org/abs/2002.05645) |
-| 2) vDNN: Virtualized deep neural networks for scalable, memory-efficient neural network design | [**IEEE 16 Paper**](https://ieeexplore.ieee.org/abstract/document/7783721) | 
+| 2) vDNN: Virtualized deep neural networks for scalable, memory-efficient neural network design | [**IEEE 16 Paper**](https://ieeexplore.ieee.org/abstract/document/7783721) |
 | <h5 id="train_non_mem">17.2.3 Memory Efficient Optimizer</h5> | |
 | 1) Adafactor: Adaptive Learning Rates with Sublinear Memory Cost | [**PMLR 18 Paper**](https://proceedings.mlr.press/v80/shazeer18a.html?ref=https://githubhelp.com) |
-| 2) Memory-Efficient Adaptive Optimization for Large-Scale Learning | [**Paper**](http://dml.mathdoc.fr/item/1901.11150/) || <h5 id="train_paral_dp">17.1.1 Data Parallelism (DP)</h5> | |
+| 2) Memory-Efficient Adaptive Optimization for Large-Scale Learning | [**Paper**](http://dml.mathdoc.fr/item/1901.11150/) |
 | <h4 id="train_struct">17.3 Novel Structure</h4> | |
 | 1) ELLA: Equip Diffusion Models with LLM for Enhanced Semantic Alignment | [**ArXiv 24**](https://arxiv.org/abs/2403.05135) [Github](https://github.com/TencentQQGYLab/ELLA) |
 | <h3 id="infer">18 Efficient Inference</h3> | |
