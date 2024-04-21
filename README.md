@@ -182,6 +182,13 @@ We hope the community member has the following characteristics:
 | 7) **Stable Cascade**: Würstchen: An efficient architecture for large-scale text-to-image diffusion models | [**ICLR 24 Paper**](https://openreview.net/forum?id=gU58d5QeGv), [GitHub](https://github.com/Stability-AI/StableCascade), [Blog](https://stability.ai/news/introducing-stable-cascade) |
 | 8) Diffusion Models in Vision: A Survey| [**TPAMI 23 Paper**](https://arxiv.org/abs/2011.13456), [GitHub](https://github.com/CroitoruAlin/Diffusion-Models-in-Vision-A-Survey)|
 | 9) **Improved DDPM**: Improved Denoising Diffusion Probabilistic Models | [**ICML 21 Paper**](https://arxiv.org/abs/2102.09672), [Github](https://github.com/openai/improved-diffusion) |
+| 10) Classifier-free diffusion guidance | [**NIPS 21 Paper**](https://arxiv.org/abs/2207.12598) |
+| 11) **Glide**: Towards photorealistic image generation and editing with text-guided diffusion models | [**Paper**](https://arxiv.org/abs/2112.10741), [Github](https://github.com/openai/glide-text2im) |
+| 12) **VQ-DDM**: Global Context with Discrete Diffusion in Vector Quantised Modelling for Image Generation | [**CVPR 22 Paper**](https://openaccess.thecvf.com/content/CVPR2022/papers/Hu_Global_Context_With_Discrete_Diffusion_in_Vector_Quantised_Modelling_for_CVPR_2022_paper.pdf), [Github](https://github.com/anonymrelease/VQ-DDM) |
+| 13) Diffusion Models for Medical Anomaly Detection | [**Paper**](https://arxiv.org/abs/2203.04306), [Github](https://github.com/JuliaWolleb/diffusion-anomaly) |
+| 14) Generation of Anonymous Chest Radiographs Using Latent Diffusion Models for Training Thoracic Abnormality Classification Systems | [**Paper**](https://arxiv.org/abs/2211.01323) |
+| 15) **DiffusionDet**: Diffusion Model for Object Detection | [**ICCV 23 Paper**](https://openaccess.thecvf.com/content/ICCV2023/papers/Chen_DiffusionDet_Diffusion_Model_for_Object_Detection_ICCV_2023_paper.pdf), [Github](https://github.com/ShoufaChen/DiffusionDet) |
+| 16) Label-efficient semantic segmentation with diffusion models | [**ICLR 22 Paper**](https://arxiv.org/abs/2112.03126), [Github](https://github.com/yandex-research/ddpm-segmentation), [Project](https://yandex-research.github.io/ddpm-segmentation/) |
 | <h3 id="diffusion-transformer">02 Diffusion Transformer</h3> | |
 | **Paper** | **Link** |
 | 1) **UViT**: All are Worth Words: A ViT Backbone for Diffusion Models | [**CVPR 23 Paper**](https://arxiv.org/abs/2209.12152), [GitHub](https://github.com/baofff/U-ViT), [ModelScope](https://modelscope.cn/models?name=UVit&page=1) |
@@ -199,7 +206,7 @@ We hope the community member has the following characteristics:
 | **Paper** | **Link** |
 | 1) **ViViT**: A Video Vision Transformer | [**ICCV 21 Paper**](https://arxiv.org/pdf/2103.15691v2.pdf), [GitHub](https://github.com/google-research/scenic) |
 | 2) **VideoLDM**: Align your Latents: High-Resolution Video Synthesis with Latent Diffusion Models | [**CVPR 23 Paper**](https://arxiv.org/abs/2304.08818) |
-| 3) **DiT**: Scalable Diffusion Models with Transformers | [**ICCV 23 Paper**](https://arxiv.org/abs/2212.09748), [Github](https://github.com/facebookresearch/DiT), [Project](https://www.wpeebles.com/DiT), [ModelScope](https://modelscope.cn/models?name=Dit&page=1)|
+| 3) **DiT**: Scalable Diffusion Models with Transformers | [**ICCV 23 Paper**](https://arxiv.org/abs/2212.09748), [Github](https://github.com/facebookresearch/DiT), [Project](https://www.wpeebles.com/DiT), [ModelScope](https://modelscope.cn/models?name=Dit&page=1) |
 | 4) **Text2Video-Zero**: Text-to-Image Diffusion Models are Zero-Shot Video Generators | [**ArXiv 23**](https://arxiv.org/abs/2303.13439), [GitHub](https://github.com/Picsart-AI-Research/Text2Video-Zero) |
 | 5) **Latte**: Latent Diffusion Transformer for Video Generation | [**ArXiv 24**](https://arxiv.org/pdf/2401.03048v1.pdf), [GitHub](https://github.com/Vchitect/Latte), [Project](https://maxin-cn.github.io/latte_project/) |
 | <h3 id="diffusion-unet">04 Diffusion UNet</h3> [ModelScope](https://modelscope.cn/models/AI-ModelScope/Latte/summary)| |
