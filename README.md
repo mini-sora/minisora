@@ -590,6 +590,7 @@ We hope the community member has the following characteristics:
 | <h5 id="infer_opt_ps">18.2.2 Parallel/Sparse inference</h5> | |
 | 1) DistriFusion: Distributed Parallel Inference for High-Resolution Diffusion Models | [**CVPR 24 Paper**](https://arxiv.org/abs/2402.19481) |
 | 2) Efficient Spatially Sparse Inference for Conditional GANs and Diffusion Models | [**NeurIPS 22 Paper**](https://proceedings.neurips.cc/paper_files/paper/2022/hash/b9603de9e49d0838e53b6c9cf9d06556-Abstract-Conference.html) |
+| 3) PipeFusion: Displaced Patch Pipeline Parallelism for Inference of Diffusion Transformer Models | [**ArXiv 24**](https://arxiv.org/abs/2405.14430) |
 
 ## Citation
 
