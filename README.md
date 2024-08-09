@@ -494,6 +494,7 @@ We hope the community member has the following characteristics:
 | 5) **Vision Mamba**: Efficient Visual Representation Learning with Bidirectional State Space Model | [**ArXiv 24**](https://arxiv.org/abs/2401.09417), [Github](https://github.com/hustvl/Vim) |
 | 6) VMamba: Visual State Space Model | [**ArXiv 24**](https://arxiv.org/abs/2401.10166), [Github](https://github.com/MzeroMiko/VMamba) |
 | 7) ZigMa: Zigzag Mamba Diffusion Model | [**ArXiv 24**](https://arxiv.org/abs/2403.13802), [Github](https://taohu.me/zigma/) |
+| 8) **MambaVision**: A Hybrid Mamba-Transformer Vision Backbone | [**ArXiv 24**](https://arxiv.org/pdf/2407.08083), [GitHub](https://github.com/NVlabs/MambaVision) |
 | <h4 id="video-processing-and-understanding">15.3 Video Processing and Understanding</h4> | |
 | **Paper** | **Link** |
 | 1) Long Movie Clip Classification with State-Space Video Models | [**ECCV 22 Paper**](https://link.springer.com/chapter/10.1007/978-3-031-19833-5_6), [Github](https://github.com/md-mohaiminul/ViS4mer) |
