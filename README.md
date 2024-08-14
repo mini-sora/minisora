@@ -264,6 +264,7 @@ We hope the community member has the following characteristics:
 | 18) **Pixabay100** - A video dataset collected from Pixabay<br><small>`Downloadable`</small>| [Github](https://github.com/ECNU-CILAB/Pixabay100/) |
 | 19) **WebVid** -  Large-scale text-video dataset, containing 10 million video-text pairs scraped from the stock footage sites<br><small>`Long Durations and Structured Captions`</small> | [**ArXiv 21**](https://arxiv.org/abs/2104.00650), [Project](https://www.robots.ox.ac.uk/~vgg/research/frozen-in-time/) , [ModelScope](https://modelscope.cn/datasets/AI-ModelScope/webvid-10M/summary)|
 | 20) **MiraData(Mini-Sora Data)**: A Large-Scale Video Dataset with Long Durations and Structured Captions<br><small>`10M video-text pairs`</small> | [Github](https://github.com/mira-space/MiraData), [Project](https://mira-space.github.io/) |
+| 21) **IDForge**: A video dataset featuring scenes of people speaking.<br><small>`300k Clips, Downloadable`</small> | [**ArXiv 24**](https://arxiv.org/abs/2401.11764), [Github](https://github.com/xyyandxyy/IDForge)  |
 | <h4 id="video_aug">6.2 Video Augmentation Methods</h4> |  |
 | <h5 id="video_aug_basic">6.2.1 Basic Transformations</h5> | |
 | Three-stream CNNs for action recognition | [**PRL 17 Paper**](https://www.sciencedirect.com/science/article/pii/S0167865517301071) |
