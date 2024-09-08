@@ -203,6 +203,9 @@ We hope the community member has the following characteristics:
 | 10) **PIXART-α**: Fast Training of Diffusion Transformer for Photorealistic Text-To-Image Synthesis | [**ArXiv 23**](https://arxiv.org/pdf/2310.00426.pdf), [GitHub](https://github.com/PixArt-alpha/PixArt-alpha) [ModelScope](https://modelscope.cn/models/aojie1997/cv_PixArt-alpha_text-to-image/summary)|
 | 11) **PIXART-δ**: Fast and Controllable Image Generation With Latent Consistency Model | [**ArXiv 24**](https://arxiv.org/pdf/2401.05252.pdf), |
 | 12) **Lumina-T2X**: Transforming Text into Any Modality, Resolution, and Duration via Flow-based Large Diffusion Transformers | [**ArXiv 24**](https://arxiv.org/pdf/2405.05945), [GitHub](https://github.com/Alpha-VLLM/Lumina-T2X) |
+| 13) **DDM**: Deconstructing Denoising Diffusion Models for Self-Supervised Learning | [**ArXiv 24**](https://arxiv.org/pdf/2401.14404v1)|
+| 14) Autoregressive Image Generation without Vector Quantization | [**ArXiv 24**](https://arxiv.org/pdf/2406.11838), [GitHub](https://github.com/LTH14/mar) |
+| 15) **Transfusion**: Predict the Next Token and Diffuse Images with One Multi-Modal Model | [**ArXiv 24**](https://arxiv.org/pdf/2408.11039)|
 | <h3 id="baseline-video-generation-models">03 Baseline Video Generation Models</h3> | |
 | **Paper** | **Link** |
 | 1) **ViViT**: A Video Vision Transformer | [**ICCV 21 Paper**](https://arxiv.org/pdf/2103.15691v2.pdf), [GitHub](https://github.com/google-research/scenic) |
