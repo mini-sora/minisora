@@ -37,6 +37,7 @@ MiniSora 开源社区定位为由社区同学自发组织的开源社区，MiniS
 
 ## 最近更新
 
+- [**Movie Gen**: A Cast of Media Foundation Models](https://ai.meta.com/static-resource/movie-gen-research-paper)
 - [**Stable Diffusion 3**: MM-DiT: Scaling Rectified Flow Transformers for High-Resolution Image Synthesis](https://stability.ai/news/stable-diffusion-3-research-paper)
 - [**MiniSora-DiT**](https://github.com/mini-sora/minisora-DiT): 基于XTuner复现论文DiT
 - [MiniSora与Sora复现最新进展](./docs/survey_README_zh-CN.md)
@@ -213,9 +214,9 @@ MiniSora 开源社区定位为由社区同学自发组织的开源社区，MiniS
 | 2) **VideoLDM**: Align your Latents: High-Resolution Video Synthesis with Latent Diffusion Models | [**CVPR 23 Paper**](https://arxiv.org/abs/2304.08818) |
 | 3) **DiT**: Scalable Diffusion Models with Transformers | [**ICCV 23 Paper**](https://arxiv.org/abs/2212.09748), [Github](https://github.com/facebookresearch/DiT), [Project](https://www.wpeebles.com/DiT), [ModelScope](https://modelscope.cn/models?name=Dit&page=1)|
 | 4) **Text2Video-Zero**: Text-to-Image Diffusion Models are Zero-Shot Video Generators | [**ArXiv 23**](https://arxiv.org/abs/2303.13439), [Github](https://github.com/Picsart-AI-Research/Text2Video-Zero) |
-| 5) **Latte**: Latent Diffusion Transformer for Video Generation | [**ArXiv 24**](https://arxiv.org/pdf/2401.03048v1.pdf), [GitHub](https://github.com/Vchitect/Latte), [Project](https://maxin-cn.github.io/latte_project/) |
-| <h3 id="diffusion-unet">04 Diffusion UNet</h3> [ModelScope](https://modelscope.cn/models/AI-ModelScope/Latte/summary)| |
-| **Paper** | **Link** |
+| 5) **Latte**: Latent Diffusion Transformer for Video Generation | [**ArXiv 24**](https://arxiv.org/pdf/2401.03048v1.pdf), [GitHub](https://github.com/Vchitect/Latte), [Project](https://maxin-cn.github.io/latte_project/), [ModelScope](https://modelscope.cn/models/AI-ModelScope/Latte/summary)|
+| <h3 id="diffusion-unet">04 Diffusion UNet</h3> |
+| **论文**  | **链接** |
 | 1) Taming Transformers for High-Resolution Image Synthesis | [**CVPR 21 Paper**](https://arxiv.org/pdf/2012.09841.pdf),[GitHub](https://github.com/CompVis/taming-transformers) ,[Project](https://compvis.github.io/taming-transformers/)|
 | 2) ELLA: Equip Diffusion Models with LLM for Enhanced Semantic Alignment | [**ArXiv 24**](https://arxiv.org/abs/2403.05135) [Github](https://github.com/TencentQQGYLab/ELLA) |
 | <h3 id="video-generation">05 Video Generation</h3> | |
@@ -246,6 +247,7 @@ MiniSora 开源社区定位为由社区同学自发组织的开源社区，MiniS
 | 24) **LaVie**: High-Quality Video Generation with Cascaded Latent Diffusion Models | [**ArXiv 23**](https://arxiv.org/abs/2309.15103), [GitHub](https://github.com/Vchitect/LaVie) ,[Project](https://vchitect.github.io/LaVie-project/) |
 | 25) **PYoCo**: Preserve Your Own Correlation: A Noise Prior for Video Diffusion Models | [**ICCV 23 Paper**](https://arxiv.org/abs/2305.10474), [Project](https://research.nvidia.com/labs/dir/pyoco/)|
 | 26) **VideoFusion**: Decomposed Diffusion Models for High-Quality Video Generation| [**CVPR 23 Paper**](https://arxiv.org/abs/2303.08320)|
+| 27) **Movie Gen**: A Cast of Media Foundation Models | [**Paper**](https://ai.meta.com/static-resource/movie-gen-research-paper), [Project](https://ai.meta.com/research/movie-gen/)|
 | <h3 id="dataset">06 Dataset</h3> | |
 | <h4 id="dataset_paper">6.1 数据集资源</h4>  | |
 | **数据集名称 - 论文**  | **链接** |
@@ -359,6 +361,7 @@ MiniSora 开源社区定位为由社区同学自发组织的开源社区，MiniS
 | 21) **Video-LLaMA**: An Instruction-tuned Audio-Visual Language Model for Video Understanding | [**EMNLP 23 Paper**](https://arxiv.org/abs/2306.02858) |
 | 22) Audio-Visual LLM for Video Understanding | [**ArXiv 23**](https://arxiv.org/abs/2312.06720) |
 | 23) **VideoPoet**: A Large Language Model for Zero-Shot Video Generation (-) | [**ArXiv 23**](https://arxiv.org/abs/2312.14125), [Project](http://sites.research.google/videopoet/), [Blog](https://blog.research.google/2023/12/videopoet-large-language-model-for-zero.html) |
+| 24) **Movie Gen**: A Cast of Media Foundation Models | [**Paper**](https://ai.meta.com/static-resource/movie-gen-research-paper), [Project](https://ai.meta.com/research/movie-gen/)|
 | <h3 id="consistency">10 Consistency</h3> | |
 | **论文**  | **链接** |
 | 1) Consistency Models | [**Paper**](https://arxiv.org/pdf/2303.01469.pdf), [GitHub](https://github.com/openai/consistency_models) |
