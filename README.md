@@ -37,6 +37,7 @@ The MiniSora open-source community is positioned as a community-driven initiativ
 
 ## Hot News
 
+- [**Movie Gen**: A Cast of Media Foundation Models](https://ai.meta.com/static-resource/movie-gen-research-paper)
 - [**Stable Diffusion 3**: MM-DiT: Scaling Rectified Flow Transformers for High-Resolution Image Synthesis](https://stability.ai/news/stable-diffusion-3-research-paper)
 - [**MiniSora-DiT**](../minisora-DiT/README.md): Reproducing the DiT Paper with XTuner
 - [**Introduction of MiniSora and Latest Progress in Replicating Sora**](./docs/survey_README.md)
@@ -245,6 +246,7 @@ We hope the community member has the following characteristics:
 | 24) **LaVie**: High-Quality Video Generation with Cascaded Latent Diffusion Models | [**ArXiv 23**](https://arxiv.org/abs/2309.15103), [GitHub](https://github.com/Vchitect/LaVie) ,[Project](https://vchitect.github.io/LaVie-project/) |
 | 25) **PYoCo**: Preserve Your Own Correlation: A Noise Prior for Video Diffusion Models | [**ICCV 23 Paper**](https://arxiv.org/abs/2305.10474), [Project](https://research.nvidia.com/labs/dir/pyoco/)|
 | 26) **VideoFusion**: Decomposed Diffusion Models for High-Quality Video Generation | [**CVPR 23 Paper**](https://arxiv.org/abs/2303.08320)|
+| 27) **Movie Gen**: A Cast of Media Foundation Models | [**ICCV 23 Paper**](https://ai.meta.com/static-resource/movie-gen-research-paper), [Project](https://ai.meta.com/research/movie-gen/)|
 | <h3 id="dataset">06 Dataset</h3> | |
 | <h4 id="dataset_paper">6.1 Public Datasets</h4> | |
 | **Dataset Name - Paper** | **Link** |
@@ -358,6 +360,7 @@ We hope the community member has the following characteristics:
 | 21) **Video-LLaMA**: An Instruction-tuned Audio-Visual Language Model for Video Understanding | [**EMNLP 23 Paper**](https://arxiv.org/abs/2306.02858) |
 | 22) Audio-Visual LLM for Video Understanding | [**ArXiv 23**](https://arxiv.org/abs/2312.06720) |
 | 23) **VideoPoet**: A Large Language Model for Zero-Shot Video Generation (-) | [**ArXiv 23**](https://arxiv.org/abs/2312.14125), [Project](http://sites.research.google/videopoet/), [Blog](https://blog.research.google/2023/12/videopoet-large-language-model-for-zero.html) |
+| 24) **Movie Gen**: A Cast of Media Foundation Models | [**ICCV 23 Paper**](https://ai.meta.com/static-resource/movie-gen-research-paper), [Project](https://ai.meta.com/research/movie-gen/)|
 | <h3 id="consistency">10 Consistency</h3> | |
 | **Paper**  | **Link** |
 | 1) Consistency Models | [**Paper**](https://arxiv.org/pdf/2303.01469.pdf), [GitHub](https://github.com/openai/consistency_models) |
