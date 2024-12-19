@@ -41,6 +41,7 @@ The MiniSora open-source community is positioned as a community-driven initiativ
 
 ## Hot News
 
+- [OpenAI Sora](https://openai.com/index/sora-system-card/) is coming out!
 - [**Movie Gen**: A Cast of Media Foundation Models](https://ai.meta.com/static-resource/movie-gen-research-paper)
 - [**Stable Diffusion 3**: MM-DiT: Scaling Rectified Flow Transformers for High-Resolution Image Synthesis](https://stability.ai/news/stable-diffusion-3-research-paper)
 - [**MiniSora-DiT**](../minisora-DiT/README.md): Reproducing the DiT Paper with XTuner
