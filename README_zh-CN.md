@@ -9,6 +9,10 @@
 [![Stargazers][stars-shield]][stars-url]
 <br />
 
+<div align="center">
+<a href="https://trendshift.io/repositories/8252" target="_blank"><img src="https://trendshift.io/api/badge/repositories/8252" alt="mini-sora%2Fminisora | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+</div>
+
 <!-- PROJECT LOGO -->
 <div align="center">
 
@@ -37,6 +41,7 @@ MiniSora 开源社区定位为由社区同学自发组织的开源社区，MiniS
 
 ## 最近更新
 
+- [OpenAI Sora](https://openai.com/index/sora-system-card/) 正式向用户开放!
 - [**Movie Gen**: A Cast of Media Foundation Models](https://ai.meta.com/static-resource/movie-gen-research-paper)
 - [**Stable Diffusion 3**: MM-DiT: Scaling Rectified Flow Transformers for High-Resolution Image Synthesis](https://stability.ai/news/stable-diffusion-3-research-paper)
 - [**MiniSora-DiT**](https://github.com/mini-sora/minisora-DiT): 基于XTuner复现论文DiT
