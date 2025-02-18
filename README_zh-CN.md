@@ -213,6 +213,8 @@ MiniSora 开源社区定位为由社区同学自发组织的开源社区，MiniS
 | 13) **DDM**: Deconstructing Denoising Diffusion Models for Self-Supervised Learning | [**ArXiv 24**](https://arxiv.org/pdf/2401.14404v1)|
 | 14) Autoregressive Image Generation without Vector Quantization | [**ArXiv 24**](https://arxiv.org/pdf/2406.11838), [GitHub](https://github.com/LTH14/mar) |
 | 15) **Transfusion**: Predict the Next Token and Diffuse Images with One Multi-Modal Model | [**ArXiv 24**](https://arxiv.org/pdf/2408.11039)|
+| 16) Scaling Diffusion Language Models via Adaptation from Autoregressive Models | [**ArXiv 24**](https://arxiv.org/pdf/2410.17891)|
+| 17) Large Language Diffusion Models | [**ArXiv 25**](https://arxiv.org/pdf/2502.09992)|
 | <h3 id="baseline-video-generation-models">03 Baseline Video Generation Models</h3> | |
 | **论文**  | **链接** |
 | 1) **ViViT**: A Video Vision Transformer | [**ICCV 21 Paper**](https://arxiv.org/pdf/2103.15691v2.pdf), [Github](https://github.com/google-research/scenic) |
@@ -253,6 +255,7 @@ MiniSora 开源社区定位为由社区同学自发组织的开源社区，MiniS
 | 25) **PYoCo**: Preserve Your Own Correlation: A Noise Prior for Video Diffusion Models | [**ICCV 23 Paper**](https://arxiv.org/abs/2305.10474), [Project](https://research.nvidia.com/labs/dir/pyoco/)|
 | 26) **VideoFusion**: Decomposed Diffusion Models for High-Quality Video Generation| [**CVPR 23 Paper**](https://arxiv.org/abs/2303.08320)|
 | 27) **Movie Gen**: A Cast of Media Foundation Models | [**Paper**](https://ai.meta.com/static-resource/movie-gen-research-paper), [Project](https://ai.meta.com/research/movie-gen/)|
+| 28) Step-Video-T2V Technical Report: The Practice, Challenges, and Future of Video Foundation Model| [**ArXiv 25**](https://arxiv.org/pdf/2502.10248), [Project](https://github.com/stepfun-ai/Step-Video-T2V)|
 | <h3 id="dataset">06 Dataset</h3> | |
 | <h4 id="dataset_paper">6.1 数据集资源</h4>  | |
 | **数据集名称 - 论文**  | **链接** |
